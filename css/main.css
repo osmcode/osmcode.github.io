@@ -1,0 +1,93 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #fffdea;
+    color: #202040;
+    margin: 0;
+    padding: 0;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.header {
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width: 800px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0 0 6px 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: #202040;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.footer {
+    font-size: 80%;
+    border-top: 1px solid #c0c0c0;
+    margin: 10px auto 2px auto;
+    padding-top: 2px;
+    max-width: 800px;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
