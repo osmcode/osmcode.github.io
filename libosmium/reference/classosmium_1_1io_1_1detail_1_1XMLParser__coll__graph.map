@@ -1,0 +1,7 @@
+<map id="osmium::io::detail::XMLParser" name="osmium::io::detail::XMLParser">
+<area shape="rect" id="node2" href="$classosmium_1_1memory_1_1Buffer.html" title="osmium::memory::Buffer" alt="" coords="215,5,380,38"/>
+<area shape="rect" id="node4" href="$classosmium_1_1thread_1_1Queue.html" title="osmium::thread::Queue\l\&lt; std::string \&gt;" alt="" coords="219,61,376,115"/>
+<area shape="rect" id="node6" href="$classosmium_1_1io_1_1Header.html" title="osmium::io::Header" alt="" coords="229,138,365,171"/>
+<area shape="rect" id="node8" href="$classosmium_1_1util_1_1Options.html" title="osmium::util::Options" alt="" coords="5,138,152,171"/>
+<area shape="rect" id="node10" href="$classosmium_1_1thread_1_1Queue.html" title="osmium::thread::Queue\l\&lt; osmium::memory::Buffer \&gt;" alt="" coords="203,194,392,249"/>
+</map>

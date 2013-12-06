@@ -1,0 +1,14 @@
+<map id="include/osmium/io/compression.hpp" name="include/osmium/io/compression.hpp">
+<area shape="rect" id="node3" href="$bzip2__compression_8hpp.html" title="include/osmium/io/bzip2\l_compression.hpp" alt="" coords="317,89,480,143"/>
+<area shape="rect" id="node11" href="$gzip__compression_8hpp.html" title="include/osmium/io/gzip\l_compression.hpp" alt="" coords="504,89,659,143"/>
+<area shape="rect" id="node14" href="$reader_8hpp.html" title="include/osmium/io/reader.hpp" alt="" coords="104,99,293,133"/>
+<area shape="rect" id="node22" href="$writer_8hpp.html" title="include/osmium/io/writer.hpp" alt="" coords="683,99,869,133"/>
+<area shape="rect" id="node5" href="$any__compression_8hpp.html" title="include/osmium/io/any\l_compression.hpp" alt="" coords="355,193,507,247"/>
+<area shape="rect" id="node7" href="$any__input_8hpp.html" title="include/osmium/io/any\l_input.hpp" alt="" coords="180,297,332,351"/>
+<area shape="rect" id="node9" href="$any__output_8hpp.html" title="include/osmium/io/any\l_output.hpp" alt="" coords="613,297,765,351"/>
+<area shape="rect" id="node16" href="$pbf__input_8hpp.html" title="include/osmium/io/pbf\l_input.hpp" alt="" coords="181,193,331,247"/>
+<area shape="rect" id="node19" href="$xml__input_8hpp.html" title="include/osmium/io/xml\l_input.hpp" alt="" coords="5,193,157,247"/>
+<area shape="rect" id="node24" href="$opl__output_8hpp.html" title="include/osmium/io/opl\l_output.hpp" alt="" coords="531,193,677,247"/>
+<area shape="rect" id="node27" href="$pbf__output_8hpp.html" title="include/osmium/io/pbf\l_output.hpp" alt="" coords="701,193,851,247"/>
+<area shape="rect" id="node30" href="$xml__output_8hpp.html" title="include/osmium/io/xml\l_output.hpp" alt="" coords="875,193,1027,247"/>
+</map>

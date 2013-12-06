@@ -1,0 +1,13 @@
+<map id="include/osmium/io/input_iterator.hpp" name="include/osmium/io/input_iterator.hpp">
+<area shape="rect" id="node3" href="$diff__visitor_8hpp.html" title="include/osmium/diff\l_visitor.hpp" alt="" coords="209,110,343,165"/>
+<area shape="rect" id="node5" href="$visitor_8hpp.html" title="include/osmium/visitor.hpp" alt="" coords="367,121,543,154"/>
+<area shape="rect" id="node7" href="$disk__store_8hpp.html" title="include/osmium/handler\l/disk_store.hpp" alt="" coords="5,214,163,269"/>
+<area shape="rect" id="node9" href="$opl__output__format_8hpp.html" title="include/osmium/io/detail\l/opl_output_format.hpp" alt="" coords="187,214,349,269"/>
+<area shape="rect" id="node15" href="$pbf__output__format_8hpp.html" title="include/osmium/io/detail\l/pbf_output_format.hpp" alt="" coords="373,214,536,269"/>
+<area shape="rect" id="node20" href="$xml__output__format_8hpp.html" title="include/osmium/io/detail\l/xml_output_format.hpp" alt="" coords="560,214,723,269"/>
+<area shape="rect" id="node25" href="$dump_8hpp.html" title="include/osmium/osm\l/dump.hpp" alt="" coords="747,214,888,269"/>
+<area shape="rect" id="node11" href="$opl__output_8hpp.html" title="include/osmium/io/opl\l_output.hpp" alt="" coords="203,318,349,373"/>
+<area shape="rect" id="node13" href="$any__output_8hpp.html" title="include/osmium/io/any\l_output.hpp" alt="" coords="379,422,531,477"/>
+<area shape="rect" id="node17" href="$pbf__output_8hpp.html" title="include/osmium/io/pbf\l_output.hpp" alt="" coords="380,318,529,373"/>
+<area shape="rect" id="node22" href="$xml__output_8hpp.html" title="include/osmium/io/xml\l_output.hpp" alt="" coords="559,318,711,373"/>
+</map>

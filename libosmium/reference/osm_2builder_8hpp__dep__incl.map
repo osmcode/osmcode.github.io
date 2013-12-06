@@ -1,0 +1,7 @@
+<map id="include/osmium/osm/builder.hpp" name="include/osmium/osm/builder.hpp">
+<area shape="rect" id="node3" href="$pbf__input__format_8hpp.html" title="include/osmium/io/detail\l/pbf_input_format.hpp" alt="" coords="5,110,168,165"/>
+<area shape="rect" id="node9" href="$xml__input__format_8hpp.html" title="include/osmium/io/detail\l/xml_input_format.hpp" alt="" coords="192,110,355,165"/>
+<area shape="rect" id="node5" href="$pbf__input_8hpp.html" title="include/osmium/io/pbf\l_input.hpp" alt="" coords="15,214,164,269"/>
+<area shape="rect" id="node7" href="$any__input_8hpp.html" title="include/osmium/io/any\l_input.hpp" alt="" coords="103,318,255,373"/>
+<area shape="rect" id="node11" href="$xml__input_8hpp.html" title="include/osmium/io/xml\l_input.hpp" alt="" coords="193,214,345,269"/>
+</map>

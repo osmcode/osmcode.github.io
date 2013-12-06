@@ -1,0 +1,14 @@
+<map id="include/osmium/geom/ogr.hpp" name="include/osmium/geom/ogr.hpp">
+<area shape="rect" id="node11" href="$factory_8hpp.html" title="osmium/geom/factory.hpp" alt="" coords="1079,110,1249,143"/>
+<area shape="rect" id="node17" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="1681,358,1852,391"/>
+<area shape="rect" id="node31" href="$node_8hpp.html" title="osmium/osm/node.hpp" alt="" coords="1087,193,1241,226"/>
+<area shape="rect" id="node87" href="$way_8hpp.html" title="osmium/osm/way.hpp" alt="" coords="1311,193,1460,226"/>
+<area shape="rect" id="node33" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="312,441,493,474"/>
+<area shape="rect" id="node37" href="$object_8hpp.html" title="osmium/osm/object.hpp" alt="" coords="1084,275,1244,309"/>
+<area shape="rect" id="node48" href="$collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="749,441,952,474"/>
+<area shape="rect" id="node56" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="1017,523,1191,557"/>
+<area shape="rect" id="node61" href="$entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="517,441,675,474"/>
+<area shape="rect" id="node67" href="$tag_8hpp.html" title="osmium/osm/tag.hpp" alt="" coords="983,358,1127,391"/>
+<area shape="rect" id="node76" href="$timestamp_8hpp.html" title="osmium/osm/timestamp.hpp" alt="" coords="69,358,256,391"/>
+<area shape="rect" id="node83" href="$types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="1348,358,1505,391"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="osmium::memory::detail::ItemHelper" name="osmium::memory::detail::ItemHelper">
+<area shape="rect" id="node3" href="$classosmium_1_1memory_1_1Item.html" title="osmium::memory::Item" alt="" coords="223,170,380,203"/>
+<area shape="rect" id="node31" href="$classosmium_1_1RelationMember.html" title="osmium::RelationMember" alt="" coords="216,226,387,259"/>
+<area shape="rect" id="node33" href="$classosmium_1_1Tag.html" title="osmium::Tag" alt="" coords="253,282,349,315"/>
+<area shape="rect" id="node35" href="$classosmium_1_1WayNode.html" title="osmium::WayNode" alt="" coords="235,338,368,371"/>
+<area shape="rect" id="node5" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; RelationMember \&gt;" alt="" coords="435,5,624,59"/>
+<area shape="rect" id="node9" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; Tag \&gt;" alt="" coords="435,82,624,137"/>
+<area shape="rect" id="node13" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; WayNode \&gt;" alt="" coords="435,159,624,214"/>
+<area shape="rect" id="node17" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; TMember \&gt;" alt="" coords="435,237,624,291"/>
+<area shape="rect" id="node19" href="$classosmium_1_1OSMEntity.html" title="osmium::OSMEntity" alt="" coords="460,314,599,347"/>
+<area shape="rect" id="node7" href="$classosmium_1_1RelationMemberList.html" title="osmium::RelationMemberList" alt="" coords="672,15,864,49"/>
+<area shape="rect" id="node11" href="$classosmium_1_1TagList.html" title="osmium::TagList" alt="" coords="709,93,827,126"/>
+<area shape="rect" id="node15" href="$classosmium_1_1WayNodeList.html" title="osmium::WayNodeList" alt="" coords="691,170,845,203"/>
+<area shape="rect" id="node21" href="$classosmium_1_1Changeset.html" title="osmium::Changeset" alt="" coords="699,286,837,319"/>
+<area shape="rect" id="node23" href="$classosmium_1_1Object.html" title="osmium::Object" alt="" coords="711,342,825,375"/>
+<area shape="rect" id="node25" href="$classosmium_1_1Node.html" title="osmium::Node" alt="" coords="921,286,1028,319"/>
+<area shape="rect" id="node27" href="$classosmium_1_1Relation.html" title="osmium::Relation" alt="" coords="913,342,1036,375"/>
+<area shape="rect" id="node29" href="$classosmium_1_1Way.html" title="osmium::Way" alt="" coords="924,398,1025,431"/>
+</map>

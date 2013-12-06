@@ -1,0 +1,7 @@
+<map id="osmium::index::map::Map&lt; TKey, TValue &gt;" name="osmium::index::map::Map&lt; TKey, TValue &gt;">
+<area shape="rect" id="node3" href="$classosmium_1_1index_1_1map_1_1Dummy.html" title="osmium::index::map\l::Dummy\&lt; TKey, TValue \&gt;" alt="" coords="211,5,389,59"/>
+<area shape="rect" id="node5" href="$classosmium_1_1index_1_1map_1_1SparseTable.html" title="osmium::index::map\l::SparseTable\&lt; TKey,\l TValue \&gt;" alt="" coords="227,82,373,158"/>
+<area shape="rect" id="node7" href="$classosmium_1_1index_1_1map_1_1StlMap.html" title="osmium::index::map\l::StlMap\&lt; TKey, TValue \&gt;" alt="" coords="213,181,387,235"/>
+<area shape="rect" id="node9" href="$classosmium_1_1index_1_1map_1_1VectorBasedDenseMap.html" title="osmium::index::map\l::VectorBasedDenseMap\l\&lt; TKey, TValue \&gt;" alt="" coords="217,258,383,334"/>
+<area shape="rect" id="node11" href="$classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html" title="osmium::index::map\l::VectorBasedSparseMap\l\&lt; TKey, TValue \&gt;" alt="" coords="215,357,385,433"/>
+</map>

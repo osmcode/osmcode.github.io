@@ -1,0 +1,6 @@
+<map id="osmium::Way" name="osmium::Way">
+<area shape="rect" id="node2" href="$classosmium_1_1Object.html" title="osmium::Object" alt="" coords="124,297,239,330"/>
+<area shape="rect" id="node4" href="$classosmium_1_1OSMEntity.html" title="osmium::OSMEntity" alt="" coords="17,203,156,237"/>
+<area shape="rect" id="node6" href="$classosmium_1_1memory_1_1Item.html" title="osmium::memory::Item" alt="" coords="8,110,165,143"/>
+<area shape="rect" id="node8" href="$classosmium_1_1memory_1_1detail_1_1ItemHelper.html" title="osmium::memory::detail\l::ItemHelper" alt="" coords="5,6,168,61"/>
+</map>

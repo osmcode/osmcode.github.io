@@ -1,0 +1,10 @@
+<map id="osmium::memory::Builder" name="osmium::memory::Builder">
+<area shape="rect" id="node3" href="$classosmium_1_1memory_1_1ObjectBuilder.html" title="osmium::memory::ObjectBuilder\l\&lt; RelationMemberList \&gt;" alt="" coords="241,5,449,59"/>
+<area shape="rect" id="node7" href="$classosmium_1_1memory_1_1ObjectBuilder.html" title="osmium::memory::ObjectBuilder\l\&lt; TagList \&gt;" alt="" coords="241,82,449,137"/>
+<area shape="rect" id="node11" href="$classosmium_1_1memory_1_1ObjectBuilder.html" title="osmium::memory::ObjectBuilder\l\&lt; WayNodeList \&gt;" alt="" coords="241,159,449,214"/>
+<area shape="rect" id="node15" href="$classosmium_1_1memory_1_1ObjectBuilder.html" title="osmium::memory::ObjectBuilder\&lt; T \&gt;" alt="" coords="225,237,465,270"/>
+<area shape="rect" id="node5" href="$classosmium_1_1osm_1_1RelationMemberListBuilder.html" title="osmium::osm::RelationMember\lListBuilder" alt="" coords="539,5,741,59"/>
+<area shape="rect" id="node9" href="$classosmium_1_1osm_1_1TagListBuilder.html" title="osmium::osm::TagListBuilder" alt="" coords="545,93,735,126"/>
+<area shape="rect" id="node13" href="$classosmium_1_1osm_1_1WayNodeListBuilder.html" title="osmium::osm::WayNodeList\lBuilder" alt="" coords="547,159,733,214"/>
+<area shape="rect" id="node17" href="$classosmium_1_1osm_1_1OSMObjectBuilder.html" title="osmium::osm::OSMObjectBuilder\&lt; T \&gt;" alt="" coords="516,237,764,270"/>
+</map>

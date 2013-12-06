@@ -1,0 +1,7 @@
+<map id="osmium::io::detail::HeaderBlobParser" name="osmium::io::detail::HeaderBlobParser">
+<area shape="rect" id="node2" href="$classosmium_1_1io_1_1detail_1_1BlobParser.html" title="osmium::io::detail\l::BlobParser\&lt; HeaderBlobParser \&gt;" alt="" coords="5,257,229,311"/>
+<area shape="rect" id="node4" href="$classosmium_1_1io_1_1detail_1_1InputQueueReader.html" title="osmium::io::detail\l::InputQueueReader" alt="" coords="48,131,187,186"/>
+<area shape="rect" id="node6" href="$classosmium_1_1thread_1_1Queue.html" title="osmium::thread::Queue\l\&lt; std::string \&gt;" alt="" coords="39,6,196,61"/>
+<area shape="rect" id="node8" href="$classosmium_1_1io_1_1Header.html" title="osmium::io::Header" alt="" coords="253,267,389,301"/>
+<area shape="rect" id="node10" href="$classosmium_1_1util_1_1Options.html" title="osmium::util::Options" alt="" coords="248,142,395,175"/>
+</map>

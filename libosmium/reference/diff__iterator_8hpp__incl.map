@@ -1,0 +1,12 @@
+<map id="include/osmium/diff_iterator.hpp" name="include/osmium/diff_iterator.hpp">
+<area shape="rect" id="node7" href="$diff__object_8hpp.html" title="osmium/osm/diff_object.hpp" alt="" coords="1509,110,1693,143"/>
+<area shape="rect" id="node9" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="1440,358,1621,391"/>
+<area shape="rect" id="node13" href="$object_8hpp.html" title="osmium/osm/object.hpp" alt="" coords="1257,193,1417,226"/>
+<area shape="rect" id="node64" href="$timestamp_8hpp.html" title="osmium/osm/timestamp.hpp" alt="" coords="1871,275,2057,309"/>
+<area shape="rect" id="node72" href="$types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="1639,275,1796,309"/>
+<area shape="rect" id="node26" href="$collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="331,358,533,391"/>
+<area shape="rect" id="node33" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="784,441,957,474"/>
+<area shape="rect" id="node38" href="$entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="1259,358,1416,391"/>
+<area shape="rect" id="node43" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="943,275,1113,309"/>
+<area shape="rect" id="node55" href="$tag_8hpp.html" title="osmium/osm/tag.hpp" alt="" coords="524,275,668,309"/>
+</map>

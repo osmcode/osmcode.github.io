@@ -1,0 +1,9 @@
+<map id="osmium::handler::Handler" name="osmium::handler::Handler">
+<area shape="rect" id="node3" href="$classosmium_1_1handler_1_1DiskStore.html" title="osmium::handler::DiskStore" alt="" coords="241,5,425,38"/>
+<area shape="rect" id="node5" href="$classosmium_1_1handler_1_1NodeLocationsForWays.html" title="osmium::handler::NodeLocations\lForWays\&lt; TStoragePosIDs,\l TStorageNegIDs \&gt;" alt="" coords="227,61,440,137"/>
+<area shape="rect" id="node7" href="$classosmium_1_1handler_1_1ObjectRelations.html" title="osmium::handler::ObjectRelations" alt="" coords="224,159,443,193"/>
+<area shape="rect" id="node9" href="$classosmium_1_1io_1_1detail_1_1OPLOutputBlock.html" title="osmium::io::detail\l::OPLOutputBlock" alt="" coords="271,215,396,270"/>
+<area shape="rect" id="node11" href="$classosmium_1_1io_1_1detail_1_1PBFOutputFormat.html" title="osmium::io::detail\l::PBFOutputFormat" alt="" coords="265,293,401,347"/>
+<area shape="rect" id="node13" href="$classosmium_1_1io_1_1detail_1_1XMLOutputBlock.html" title="osmium::io::detail\l::XMLOutputBlock" alt="" coords="269,370,397,425"/>
+<area shape="rect" id="node15" href="$classosmium_1_1io_1_1detail_1_1XMLOutputFormat.html" title="osmium::io::detail\l::XMLOutputFormat" alt="" coords="265,447,401,502"/>
+</map>

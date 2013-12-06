@@ -1,0 +1,5 @@
+<map id="osmium::io::Compressor" name="osmium::io::Compressor">
+<area shape="rect" id="node3" href="$classosmium_1_1io_1_1Bzip2Compressor.html" title="osmium::io::Bzip2Compressor" alt="" coords="5,89,203,122"/>
+<area shape="rect" id="node5" href="$classosmium_1_1io_1_1GzipCompressor.html" title="osmium::io::GzipCompressor" alt="" coords="227,89,419,122"/>
+<area shape="rect" id="node7" href="$classosmium_1_1io_1_1NoCompressor.html" title="osmium::io::NoCompressor" alt="" coords="443,89,624,122"/>
+</map>

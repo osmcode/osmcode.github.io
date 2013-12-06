@@ -1,0 +1,6 @@
+<map id="osmium::io::detail::InputFormat" name="osmium::io::detail::InputFormat">
+<area shape="rect" id="node2" href="$classosmium_1_1io_1_1File.html" title="osmium::io::File" alt="" coords="5,102,120,135"/>
+<area shape="rect" id="node4" href="$classosmium_1_1util_1_1Options.html" title="osmium::util::Options" alt="" coords="77,6,224,39"/>
+<area shape="rect" id="node8" href="$classosmium_1_1io_1_1Header.html" title="osmium::io::Header" alt="" coords="144,102,280,135"/>
+<area shape="rect" id="node6" href="$classosmium_1_1thread_1_1Queue.html" title="osmium::thread::Queue\l\&lt; std::string \&gt;" alt="" coords="304,91,461,146"/>
+</map>

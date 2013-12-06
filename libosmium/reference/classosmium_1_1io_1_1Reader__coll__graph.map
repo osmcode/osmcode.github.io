@@ -1,0 +1,6 @@
+<map id="osmium::io::Reader" name="osmium::io::Reader">
+<area shape="rect" id="node2" href="$classosmium_1_1io_1_1File.html" title="osmium::io::File" alt="" coords="245,5,360,38"/>
+<area shape="rect" id="node4" href="$classosmium_1_1util_1_1Options.html" title="osmium::util::Options" alt="" coords="5,5,152,38"/>
+<area shape="rect" id="node6" href="$classosmium_1_1thread_1_1Queue.html" title="osmium::thread::Queue\l\&lt; std::string \&gt;" alt="" coords="224,61,381,115"/>
+<area shape="rect" id="node8" href="$classosmium_1_1thread_1_1CheckedTask.html" title="osmium::thread::CheckedTask\l\&lt; osmium::io::InputThread \&gt;" alt="" coords="203,138,403,193"/>
+</map>

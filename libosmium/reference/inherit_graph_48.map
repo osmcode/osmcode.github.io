@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$classosmium_1_1memory_1_1CollectionIterator.html" title="osmium::memory::Collection\lIterator\&lt; Item \&gt;" alt="" coords="117,5,307,59"/>
+<area shape="rect" id="node5" href="$classosmium_1_1DiffIterator.html" title="osmium::DiffIterator\l\&lt; TBasicIterator \&gt;" alt="" coords="144,82,280,137"/>
+<area shape="rect" id="node7" href="$classosmium_1_1io_1_1OutputIterator.html" title="osmium::io::OutputIterator\l\&lt; TDest \&gt;" alt="" coords="125,159,299,214"/>
+<area shape="rect" id="node9" href="$classosmium_1_1memory_1_1CollectionIterator.html" title="osmium::memory::Collection\lIterator\&lt; TMember \&gt;" alt="" coords="117,237,307,291"/>
+</map>

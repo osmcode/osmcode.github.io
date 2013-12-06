@@ -1,0 +1,25 @@
+<map id="include/osmium" name="include/osmium">
+<area shape="rect" id="node4" href="dir_2aab15b8b41f2be671ff5d9bbbbe6e5a.html" title="detail" alt="" coords="37,261,109,309"/>
+<area shape="rect" id="node5" href="dir_95a1b5f064908ca80105aa4bbf0684b2.html" title="geom" alt="" coords="256,261,328,309"/>
+<area shape="rect" id="node10" href="dir_75e0264027f5362c0e15307996cd0e75.html" title="osm" alt="" coords="256,357,328,405"/>
+<area shape="rect" id="edge16" href="dir_000006_000011.html" title="8" alt="" coords="296,328,304,349"/>
+<area shape="rect" id="node6" href="dir_75b2b69de2082c8929a0d37c7c750421.html" title="handler" alt="" coords="172,69,244,117"/>
+<area shape="rect" id="node7" href="dir_63126a5bc77a93522743dffe5d7c151d.html" title="index" alt="" coords="107,165,179,213"/>
+<area shape="rect" id="edge22" href="dir_000007_000003.html" title="3" alt="" coords="173,144,181,165"/>
+<area shape="rect" id="node8" href="dir_ac5da9c75d28d6ae6f08a93189cec028.html" title="io" alt="" coords="133,261,205,309"/>
+<area shape="rect" id="edge20" href="dir_000007_000008.html" title="1" alt="" coords="187,235,195,257"/>
+<area shape="rect" id="node9" href="dir_2f0d4217f12f65fb65850372efab20b0.html" title="memory" alt="" coords="256,453,328,501"/>
+<area shape="rect" id="edge24" href="dir_000007_000010.html" title="2" alt="" coords="327,433,335,454"/>
+<area shape="rect" id="edge26" href="dir_000007_000011.html" title="12" alt="" coords="261,326,276,348"/>
+<area shape="rect" id="edge14" href="dir_000003_000002.html" title="4" alt="" coords="105,240,113,262"/>
+<area shape="rect" id="edge12" href="dir_000003_000008.html" title="5" alt="" coords="162,230,170,252"/>
+<area shape="rect" id="edge8" href="dir_000008_000010.html" title="14" alt="" coords="265,423,279,444"/>
+<area shape="rect" id="edge10" href="dir_000008_000011.html" title="48" alt="" coords="245,329,259,350"/>
+<area shape="rect" id="node11" href="dir_a8ef8928391e6333b9426b635a6c5204.html" title="thread" alt="" coords="37,357,109,405"/>
+<area shape="rect" id="edge6" href="dir_000008_000012.html" title="12" alt="" coords="109,339,124,361"/>
+<area shape="rect" id="node12" href="dir_b79efb06fdd3a663a8d345b2a94741ba.html" title="util" alt="" coords="133,357,205,405"/>
+<area shape="rect" id="edge4" href="dir_000008_000013.html" title="2" alt="" coords="174,328,182,349"/>
+<area shape="rect" id="edge18" href="dir_000011_000010.html" title="15" alt="" coords="293,424,308,445"/>
+<area shape="rect" id="graph3" href="dir_d362108e4bda0b490ce177423b083a7a.html" alt="" coords="27,59,365,512"/>
+<area shape="rect" id="graph2" href="dir_d7bad051cc3e33ca6df272773611f4b9.html" title="include" alt="" coords="16,16,376,523"/>
+</map>
