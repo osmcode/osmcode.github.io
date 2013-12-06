@@ -1,16 +1,38 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 
 <div id="home">
-    <h1>OSMCODE</h1>
-    <p>Welcome to osmcode.org. This is a repository of software for use with OpenStreetMap.
-    We are still in the process of setting this up...</p>
-    <p>You can find here...</p>
-    <ul>
-        <li><a href="/osmium/">Osmium</a> - A fast and flexible C++ library for working with OSM data</li>
-        <li><a href="/contrib/">Contrib</a> - Mixed more or less useful programs using the Osmium library</li>
-    </ul>
-    <p>More to come...</p>
+    <div class="boxes">
+        <div class="box ">
+            <a href="/libosmium/"><img src="/img/logo-libosmium.png" alt=""/></a>
+            <div class="innerbox">
+                <h2><a href="/libosmium/">Osmium Library</a></h2>
+                A fast and flexible C++ library for working with OSM data.
+            </div>
+        </div>
+        <div class="box onhome">
+            <a href="/osmium/"><img src="/img/logo-osmium.png" alt=""/></a>
+            <div class="innerbox">
+                <h2><a href="/osmium/">Osmium Tool</a></h2>
+                A multipurpose command line tool based on the
+                Osmium Library.
+            </div>
+        </div>
+        <div class="box">
+            <a href="/osmium-contrib/"><img src="/img/logo-osmium-contrib.png" alt=""/></a>
+            <div class="innerbox">
+                <h2><a href="/osmium-contrib/">Osmium Contrib</a></h2>
+                Various programs showing what you can do with the Osmium Library.
+            </div>
+        </div>
+        <div class="box">
+            <a href="/node-osmium/"><img src="/img/logo-node-osmium.png" alt=""/></a>
+            <div class="innerbox">
+                <h2><a href="/node-osmium/">Node-Osmium</a></h2>
+                Use the power of the Osmium Library from NodeJS.
+            </div>
+        </div>
+    </div>
 </div>
