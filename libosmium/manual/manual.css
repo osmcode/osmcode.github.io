@@ -1,0 +1,59 @@
+
+body {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 4px;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
+    background-color: #fffdea;
+    color: #202060;
+}
+
+a {
+    color: #4040a0;
+}
+
+a:visited {
+    color: #202060;
+}
+
+pre {
+    background-color: rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.2);
+    font-size: 90%;
+}
+
+table {
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
+
+table td {
+    vertical-align: top;
+    padding-left: 2px;
+    padding-right: 8px;
+}
+
+h1 {
+    border-bottom: 2px solid #202050;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+    color: #202060;
+    text-decoration: none;
+}
+
+div#header {
+    text-align: center;
+    padding: 2px;
+}
+
+.header-section-number {
+    padding-right: 8px;
+}
+
+div#TOC ul ul {
+    display: none;
+}
