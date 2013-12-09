@@ -14,3 +14,7 @@ Library Manual which lives in its own repository at
 <https://github.com/osmcode/libosmium-manual/> and must be cloned
 in the same directory as this repository.
 
+## Logos
+
+The source for the logos is in the `logos` directory.
+
