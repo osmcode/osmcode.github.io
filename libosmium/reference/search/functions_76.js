@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['valid',['valid',['../classosmium_1_1BBox.html#a96f0571f4309c25f89a3b464f249439a',1,'osmium::BBox::valid()'],['../classosmium_1_1Location.html#a69d3b6c4d8d8f57213d1a4d1a1db4158',1,'osmium::Location::valid()']]],
+  ['valid',['valid',['../classosmium_1_1Box.html#a2a269bf0a3750a6a5a3470f77bb44d24',1,'osmium::Box::valid()'],['../classosmium_1_1Location.html#a69d3b6c4d8d8f57213d1a4d1a1db4158',1,'osmium::Location::valid()']]],
   ['value',['value',['../classosmium_1_1Tag.html#aa246bf4c4e35d958c3f73fc712afff13',1,'osmium::Tag']]],
   ['vectorbaseddensemap',['VectorBasedDenseMap',['../classosmium_1_1index_1_1map_1_1VectorBasedDenseMap.html#a52087357add666ba38116e827fe5edee',1,'osmium::index::map::VectorBasedDenseMap::VectorBasedDenseMap()'],['../classosmium_1_1index_1_1map_1_1VectorBasedDenseMap.html#a267f9b70ac44c1ba54491d20fdff94dd',1,'osmium::index::map::VectorBasedDenseMap::VectorBasedDenseMap(int fd)']]],
   ['vectorbasedsparsemap',['VectorBasedSparseMap',['../classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html#a9b799da4a8d4ead852a32499ab0309ec',1,'osmium::index::map::VectorBasedSparseMap::VectorBasedSparseMap()'],['../classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html#aba1faff58d01ffad336deb5edaa8ede9',1,'osmium::index::map::VectorBasedSparseMap::VectorBasedSparseMap(int fd)']]],

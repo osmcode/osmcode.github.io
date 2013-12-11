@@ -10,5 +10,5 @@ var searchData=
   ['erase_5fremoved',['erase_removed',['../classosmium_1_1index_1_1multimap_1_1VectorBasedSparseMultimap.html#aa54477c8f6ef1b2152631ab6d8275714',1,'osmium::index::multimap::VectorBasedSparseMultimap']]],
   ['error',['error',['../classosmium_1_1io_1_1CompressionFactory.html#a084e0fc4d1375e27d7a4d474f1e48f49',1,'osmium::io::CompressionFactory']]],
   ['execute',['execute',['../classosmium_1_1io_1_1Reader.html#a5b23b6203b1af031aab2d22fe0b1fa5c',1,'osmium::io::Reader']]],
-  ['extend',['extend',['../classosmium_1_1BBox.html#a82392db30eb1a7a2d2c5d435675c6c6d',1,'osmium::BBox']]]
+  ['extend',['extend',['../classosmium_1_1Box.html#a86f7a02175aa3abf864cfd4e2f52d395',1,'osmium::Box']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7ebbox',['~BBox',['../classosmium_1_1BBox.html#a171722d7f6ddb526ac140a3486322264',1,'osmium::BBox']]],
+  ['_7ebox',['~Box',['../classosmium_1_1Box.html#a963f193b9d8a9ce126d4eee3b604773c',1,'osmium::Box']]],
   ['_7ebuffer',['~Buffer',['../classosmium_1_1memory_1_1Buffer.html#a580f92bfe874b214a6887b3aa5f6e5a5',1,'osmium::memory::Buffer']]],
   ['_7ebuilder',['~Builder',['../classosmium_1_1memory_1_1Builder.html#afbd58cbaa83dac847cb77424315d8cd2',1,'osmium::memory::Builder']]],
   ['_7ebzip2compressor',['~Bzip2Compressor',['../classosmium_1_1io_1_1Bzip2Compressor.html#ae2b8b55ce0d2249d3765640c9368383e',1,'osmium::io::Bzip2Compressor']]],

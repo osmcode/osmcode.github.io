@@ -10,7 +10,7 @@
 <area shape="rect" id="node116" href="$relation_8hpp.html" title="osmium/osm/relation.hpp" alt="" coords="1214,89,1382,122"/>
 <area shape="rect" id="node129" href="$way_8hpp.html" title="osmium/osm/way.hpp" alt="" coords="984,89,1134,122"/>
 <area shape="rect" id="node33" href="$collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="847,337,1050,370"/>
-<area shape="rect" id="node51" href="$bbox_8hpp.html" title="osmium/osm/bbox.hpp" alt="" coords="2887,254,3042,287"/>
+<area shape="rect" id="node51" href="$box_8hpp.html" title="osmium/osm/box.hpp" alt="" coords="2887,254,3034,287"/>
 <area shape="rect" id="node65" href="$entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="1988,254,2146,287"/>
 <area shape="rect" id="node81" href="$timestamp_8hpp.html" title="osmium/osm/timestamp.hpp" alt="" coords="2271,254,2458,287"/>
 <area shape="rect" id="node89" href="$types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="1335,254,1492,287"/>

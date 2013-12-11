@@ -11,7 +11,7 @@
 <area shape="rect" id="node40" href="$file__compression_8hpp.html" title="osmium/io/file_compression.hpp" alt="" coords="1336,433,1544,466"/>
 <area shape="rect" id="node58" href="$file__format_8hpp.html" title="osmium/io/file_format.hpp" alt="" coords="1771,433,1941,466"/>
 <area shape="rect" id="node75" href="$queue_8hpp.html" title="osmium/thread/queue.hpp" alt="" coords="1232,329,1403,362"/>
-<area shape="rect" id="node65" href="$bbox_8hpp.html" title="osmium/osm/bbox.hpp" alt="" coords="2356,433,2511,466"/>
+<area shape="rect" id="node65" href="$box_8hpp.html" title="osmium/osm/box.hpp" alt="" coords="2364,433,2511,466"/>
 <area shape="rect" id="node67" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="2527,526,2697,559"/>
 <area shape="rect" id="node111" href="$handler_8hpp.html" title="osmium/handler.hpp" alt="" coords="2372,225,2511,258"/>
 <area shape="rect" id="node114" href="$pbf_8hpp.html" title="osmium/io/detail/pbf.hpp" alt="" coords="2340,526,2503,559"/>

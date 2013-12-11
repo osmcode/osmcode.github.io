@@ -1,5 +1,5 @@
 <map id="include/osmium/io/header.hpp" name="include/osmium/io/header.hpp">
-<area shape="rect" id="node7" href="$bbox_8hpp.html" title="osmium/osm/bbox.hpp" alt="" coords="181,89,336,122"/>
-<area shape="rect" id="node23" href="$options_8hpp.html" title="osmium/util/options.hpp" alt="" coords="493,89,653,122"/>
+<area shape="rect" id="node7" href="$box_8hpp.html" title="osmium/osm/box.hpp" alt="" coords="185,89,332,122"/>
+<area shape="rect" id="node23" href="$options_8hpp.html" title="osmium/util/options.hpp" alt="" coords="489,89,649,122"/>
 <area shape="rect" id="node9" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="173,171,344,205"/>
 </map>

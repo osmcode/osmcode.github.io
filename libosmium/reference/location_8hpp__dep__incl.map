@@ -10,7 +10,7 @@
 <area shape="rect" id="node30" href="$pbf__output__format_8hpp.html" title="include/osmium/io/detail\l/pbf_output_format.hpp" alt="" coords="1541,422,1704,477"/>
 <area shape="rect" id="node35" href="$xml__input__format_8hpp.html" title="include/osmium/io/detail\l/xml_input_format.hpp" alt="" coords="3265,526,3428,581"/>
 <area shape="rect" id="node40" href="$xml__output__format_8hpp.html" title="include/osmium/io/detail\l/xml_output_format.hpp" alt="" coords="1355,422,1517,477"/>
-<area shape="rect" id="node45" href="$bbox_8hpp.html" title="include/osmium/osm\l/bbox.hpp" alt="" coords="2497,110,2639,165"/>
+<area shape="rect" id="node45" href="$box_8hpp.html" title="include/osmium/osm\l/box.hpp" alt="" coords="2497,110,2639,165"/>
 <area shape="rect" id="node82" href="$dump_8hpp.html" title="include/osmium/osm\l/dump.hpp" alt="" coords="2931,422,3072,477"/>
 <area shape="rect" id="node88" href="$osm_2builder_8hpp.html" title="include/osmium/osm\l/builder.hpp" alt="" coords="3697,422,3839,477"/>
 <area shape="rect" id="node100" href="$ostream_8hpp.html" title="include/osmium/osm\l/ostream.hpp" alt="" coords="2740,214,2881,269"/>

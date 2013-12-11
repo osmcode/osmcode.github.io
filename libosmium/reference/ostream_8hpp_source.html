@@ -129,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bbox_8hpp.html">osmium/osm/bbox.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="box_8hpp.html">osmium/osm/box.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="item__type_8hpp.html">osmium/osm/item_type.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="location_8hpp.html">osmium/osm/location.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="tag_8hpp.html">osmium/osm/tag.hpp</a>&gt;</span></div>
@@ -157,16 +157,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> out;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespaceosmium.html#aa232756b6ac2cfd863f5b62d379653bc">   67</a></span>&#160;    <span class="keyword">inline</span> std::ostream&amp; <a class="code" href="namespaceosmium.html#ae5cfb41f2bc4ff3e46d07c8c0efecc7e">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="classosmium_1_1BBox.html">osmium::BBox</a>&amp; bbox) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> (bbox) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespaceosmium.html#af983e98f5336bcfaaa6d691e5782ef50">   67</a></span>&#160;    <span class="keyword">inline</span> std::ostream&amp; <a class="code" href="namespaceosmium.html#ae5cfb41f2bc4ff3e46d07c8c0efecc7e">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="classosmium_1_1Box.html">osmium::Box</a>&amp; box) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> (box) {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            out &lt;&lt; <span class="charliteral">&#39;(&#39;</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                &lt;&lt; bbox.<a class="code" href="classosmium_1_1BBox.html#a3b1170b393f6f856498311a4e99db613">bottom_left</a>().<a class="code" href="classosmium_1_1Location.html#a1b8f2756868924317372c6fd3c7a42ff">lon</a>()</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                &lt;&lt; box.<a class="code" href="classosmium_1_1Box.html#a4ce4551fd3b527f9b1d29ba04b03860f">bottom_left</a>().<a class="code" href="classosmium_1_1Location.html#a1b8f2756868924317372c6fd3c7a42ff">lon</a>()</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                &lt;&lt; <span class="charliteral">&#39;,&#39;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                &lt;&lt; bbox.<a class="code" href="classosmium_1_1BBox.html#a3b1170b393f6f856498311a4e99db613">bottom_left</a>().<a class="code" href="classosmium_1_1Location.html#aabac048687155be3b34e9cee850ee87c">lat</a>()</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                &lt;&lt; box.<a class="code" href="classosmium_1_1Box.html#a4ce4551fd3b527f9b1d29ba04b03860f">bottom_left</a>().<a class="code" href="classosmium_1_1Location.html#aabac048687155be3b34e9cee850ee87c">lat</a>()</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                &lt;&lt; <span class="charliteral">&#39;,&#39;</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                &lt;&lt; bbox.<a class="code" href="classosmium_1_1BBox.html#a3d850a2547be7834efe8543e782d7de8">top_right</a>().<a class="code" href="classosmium_1_1Location.html#a1b8f2756868924317372c6fd3c7a42ff">lon</a>()</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                &lt;&lt; box.<a class="code" href="classosmium_1_1Box.html#acb9ae2b84618bb29cb53e81c2a285078">top_right</a>().<a class="code" href="classosmium_1_1Location.html#a1b8f2756868924317372c6fd3c7a42ff">lon</a>()</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                &lt;&lt; <span class="charliteral">&#39;,&#39;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                &lt;&lt; bbox.<a class="code" href="classosmium_1_1BBox.html#a3d850a2547be7834efe8543e782d7de8">top_right</a>().<a class="code" href="classosmium_1_1Location.html#aabac048687155be3b34e9cee850ee87c">lat</a>()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                &lt;&lt; box.<a class="code" href="classosmium_1_1Box.html#acb9ae2b84618bb29cb53e81c2a285078">top_right</a>().<a class="code" href="classosmium_1_1Location.html#aabac048687155be3b34e9cee850ee87c">lat</a>()</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            out &lt;&lt; <span class="stringliteral">&quot;(undefined)&quot;</span>;</div>
@@ -182,20 +182,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="location_8hpp_html"><div class="ttname"><a href="location_8hpp.html">location.hpp</a></div></div>
 <div class="ttc" id="classosmium_1_1Tag_html_aa246bf4c4e35d958c3f73fc712afff13"><div class="ttname"><a href="classosmium_1_1Tag.html#aa246bf4c4e35d958c3f73fc712afff13">osmium::Tag::value</a></div><div class="ttdeci">const char * value() const </div><div class="ttdef"><b>Definition:</b> tag.hpp:82</div></div>
 <div class="ttc" id="classosmium_1_1Location_html_aabac048687155be3b34e9cee850ee87c"><div class="ttname"><a href="classosmium_1_1Location.html#aabac048687155be3b34e9cee850ee87c">osmium::Location::lat</a></div><div class="ttdeci">constexpr double lat() const noexcept</div><div class="ttdef"><b>Definition:</b> location.hpp:163</div></div>
-<div class="ttc" id="bbox_8hpp_html"><div class="ttname"><a href="bbox_8hpp.html">bbox.hpp</a></div></div>
+<div class="ttc" id="classosmium_1_1Box_html_acb9ae2b84618bb29cb53e81c2a285078"><div class="ttname"><a href="classosmium_1_1Box.html#acb9ae2b84618bb29cb53e81c2a285078">osmium::Box::top_right</a></div><div class="ttdeci">constexpr Location top_right() const noexcept</div><div class="ttdef"><b>Definition:</b> box.hpp:115</div></div>
+<div class="ttc" id="box_8hpp_html"><div class="ttname"><a href="box_8hpp.html">box.hpp</a></div></div>
 <div class="ttc" id="item__type_8hpp_html"><div class="ttname"><a href="item__type_8hpp.html">item_type.hpp</a></div></div>
 <div class="ttc" id="tag_8hpp_html"><div class="ttname"><a href="tag_8hpp.html">tag.hpp</a></div></div>
 <div class="ttc" id="classosmium_1_1Location_html_a1b8f2756868924317372c6fd3c7a42ff"><div class="ttname"><a href="classosmium_1_1Location.html#a1b8f2756868924317372c6fd3c7a42ff">osmium::Location::lon</a></div><div class="ttdeci">constexpr double lon() const noexcept</div><div class="ttdef"><b>Definition:</b> location.hpp:159</div></div>
 <div class="ttc" id="classosmium_1_1Location_html"><div class="ttname"><a href="classosmium_1_1Location.html">osmium::Location</a></div><div class="ttdef"><b>Definition:</b> location.hpp:60</div></div>
-<div class="ttc" id="classosmium_1_1BBox_html_a3b1170b393f6f856498311a4e99db613"><div class="ttname"><a href="classosmium_1_1BBox.html#a3b1170b393f6f856498311a4e99db613">osmium::BBox::bottom_left</a></div><div class="ttdeci">constexpr Location bottom_left() const noexcept</div><div class="ttdef"><b>Definition:</b> bbox.hpp:108</div></div>
-<div class="ttc" id="classosmium_1_1BBox_html_a3d850a2547be7834efe8543e782d7de8"><div class="ttname"><a href="classosmium_1_1BBox.html#a3d850a2547be7834efe8543e782d7de8">osmium::BBox::top_right</a></div><div class="ttdeci">constexpr Location top_right() const noexcept</div><div class="ttdef"><b>Definition:</b> bbox.hpp:115</div></div>
-<div class="ttc" id="classosmium_1_1BBox_html"><div class="ttname"><a href="classosmium_1_1BBox.html">osmium::BBox</a></div><div class="ttdoc">Bounding box. </div><div class="ttdef"><b>Definition:</b> bbox.hpp:41</div></div>
+<div class="ttc" id="classosmium_1_1Box_html"><div class="ttname"><a href="classosmium_1_1Box.html">osmium::Box</a></div><div class="ttdoc">Bounding box. </div><div class="ttdef"><b>Definition:</b> box.hpp:41</div></div>
+<div class="ttc" id="classosmium_1_1Box_html_a4ce4551fd3b527f9b1d29ba04b03860f"><div class="ttname"><a href="classosmium_1_1Box.html#a4ce4551fd3b527f9b1d29ba04b03860f">osmium::Box::bottom_left</a></div><div class="ttdeci">constexpr Location bottom_left() const noexcept</div><div class="ttdef"><b>Definition:</b> box.hpp:108</div></div>
 <div class="ttc" id="classosmium_1_1Tag_html_a99dc6ef3e42a660fa610b1925e602233"><div class="ttname"><a href="classosmium_1_1Tag.html#a99dc6ef3e42a660fa610b1925e602233">osmium::Tag::key</a></div><div class="ttdeci">const char * key() const </div><div class="ttdef"><b>Definition:</b> tag.hpp:78</div></div>
 <div class="ttc" id="namespaceosmium_html_afa4d9f7688160508ad60d82608696b19"><div class="ttname"><a href="namespaceosmium.html#afa4d9f7688160508ad60d82608696b19">osmium::item_type</a></div><div class="ttdeci">item_type</div><div class="ttdef"><b>Definition:</b> item_type.hpp:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 6 2013 18:12:59 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 11 2013 15:12:35 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

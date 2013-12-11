@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['add_5fbbox',['add_bbox',['../classosmium_1_1io_1_1Header.html#a10bb14139b9838ca2ac0db759b9db5f7',1,'osmium::io::Header']]],
+  ['add_5fbox',['add_box',['../classosmium_1_1io_1_1Header.html#a1b2c4b1392900b28a01f44da8c834bd3',1,'osmium::io::Header']]],
   ['add_5fitem',['add_item',['../classosmium_1_1memory_1_1Buffer.html#a695f601af699ff5c0372b2344db6e741',1,'osmium::memory::Buffer::add_item()'],['../classosmium_1_1memory_1_1Builder.html#ab3042bf59d4046a79386d344bfda7d7e',1,'osmium::memory::Builder::add_item()']]],
   ['add_5fmember',['add_member',['../classosmium_1_1osm_1_1RelationMemberListBuilder.html#a9ae8b2f5501d8023659c25135dd6be5a',1,'osmium::osm::RelationMemberListBuilder']]],
   ['add_5fpadding',['add_padding',['../classosmium_1_1memory_1_1Builder.html#aee7e7fff50d4d49b9f82138a81560ce7',1,'osmium::memory::Builder']]],

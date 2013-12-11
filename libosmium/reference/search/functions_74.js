@@ -9,7 +9,7 @@ var searchData=
   ['timestamp2int',['timestamp2int',['../classosmium_1_1io_1_1detail_1_1PBFOutputFormat.html#a84ac74ab3cd351141c22fc717c3361cc',1,'osmium::io::detail::PBFOutputFormat']]],
   ['timestamp_5fformat',['timestamp_format',['../classosmium_1_1Timestamp.html#a3aececbf619231a7ecd4f178563641a5',1,'osmium::Timestamp']]],
   ['to_5fiso',['to_iso',['../classosmium_1_1Timestamp.html#a8100f389eebbfc48594445b08d780813',1,'osmium::Timestamp']]],
-  ['top_5fright',['top_right',['../classosmium_1_1BBox.html#a3d850a2547be7834efe8543e782d7de8',1,'osmium::BBox']]],
+  ['top_5fright',['top_right',['../classosmium_1_1Box.html#acb9ae2b84618bb29cb53e81c2a285078',1,'osmium::Box']]],
   ['try_5fpop',['try_pop',['../classosmium_1_1thread_1_1Queue.html#a004fa737dc942264cc32883c863a708e',1,'osmium::thread::Queue::try_pop()'],['../classosmium_1_1thread_1_1SortedQueue.html#a86a16a935b604afd6bda41fd3d2565cb',1,'osmium::thread::SortedQueue::try_pop()']]],
   ['type',['type',['../classosmium_1_1memory_1_1Item.html#a72f5f3770f19f49f730aab1d951c751a',1,'osmium::memory::Item::type(const item_type item_type)'],['../classosmium_1_1memory_1_1Item.html#af5a1975b792e83f1a8f89157b3596872',1,'osmium::memory::Item::type() const '],['../classosmium_1_1DiffObject.html#a605b2e87b27f6eccfcc3ff021af4e02c',1,'osmium::DiffObject::type()'],['../classosmium_1_1RelationMember.html#a69b43f8408e5011c3a3f15f125f186df',1,'osmium::RelationMember::type()']]]
 ];

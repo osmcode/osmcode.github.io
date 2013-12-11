@@ -1,19 +1,19 @@
 <map id="include/osmium/osm/builder.hpp" name="include/osmium/osm/builder.hpp">
-<area shape="rect" id="node3" href="$memory_2builder_8hpp.html" title="osmium/memory/builder.hpp" alt="" coords="921,275,1105,309"/>
-<area shape="rect" id="node39" href="$osm_8hpp.html" title="osmium/osm.hpp" alt="" coords="1728,110,1851,143"/>
-<area shape="rect" id="node43" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="677,441,859,474"/>
-<area shape="rect" id="node46" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="483,441,653,474"/>
-<area shape="rect" id="node59" href="$object_8hpp.html" title="osmium/osm/object.hpp" alt="" coords="1717,275,1877,309"/>
-<area shape="rect" id="node70" href="$entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="2725,358,2883,391"/>
-<area shape="rect" id="node76" href="$tag_8hpp.html" title="osmium/osm/tag.hpp" alt="" coords="1768,358,1912,391"/>
-<area shape="rect" id="node93" href="$types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="2291,358,2448,391"/>
-<area shape="rect" id="node15" href="$buffer_8hpp.html" title="osmium/memory/buffer.hpp" alt="" coords="1051,358,1229,391"/>
-<area shape="rect" id="node25" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="2055,523,2228,557"/>
-<area shape="rect" id="node29" href="$collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="1800,441,2003,474"/>
-<area shape="rect" id="node41" href="$node_8hpp.html" title="osmium/osm/node.hpp" alt="" coords="1204,193,1359,226"/>
-<area shape="rect" id="node97" href="$way_8hpp.html" title="osmium/osm/way.hpp" alt="" coords="1728,193,1877,226"/>
-<area shape="rect" id="node108" href="$relation_8hpp.html" title="osmium/osm/relation.hpp" alt="" coords="2503,193,2671,226"/>
-<area shape="rect" id="node120" href="$changeset_8hpp.html" title="osmium/osm/changeset.hpp" alt="" coords="1507,275,1693,309"/>
-<area shape="rect" id="node85" href="$timestamp_8hpp.html" title="osmium/osm/timestamp.hpp" alt="" coords="1507,358,1693,391"/>
-<area shape="rect" id="node127" href="$bbox_8hpp.html" title="osmium/osm/bbox.hpp" alt="" coords="568,358,723,391"/>
+<area shape="rect" id="node3" href="$memory_2builder_8hpp.html" title="osmium/memory/builder.hpp" alt="" coords="908,275,1092,309"/>
+<area shape="rect" id="node39" href="$osm_8hpp.html" title="osmium/osm.hpp" alt="" coords="1720,110,1843,143"/>
+<area shape="rect" id="node43" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="669,441,851,474"/>
+<area shape="rect" id="node46" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="475,441,645,474"/>
+<area shape="rect" id="node59" href="$object_8hpp.html" title="osmium/osm/object.hpp" alt="" coords="1709,275,1869,309"/>
+<area shape="rect" id="node70" href="$entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="2717,358,2875,391"/>
+<area shape="rect" id="node76" href="$tag_8hpp.html" title="osmium/osm/tag.hpp" alt="" coords="1760,358,1904,391"/>
+<area shape="rect" id="node93" href="$types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="2283,358,2440,391"/>
+<area shape="rect" id="node15" href="$buffer_8hpp.html" title="osmium/memory/buffer.hpp" alt="" coords="1043,358,1221,391"/>
+<area shape="rect" id="node25" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="2047,523,2220,557"/>
+<area shape="rect" id="node29" href="$collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="1792,441,1995,474"/>
+<area shape="rect" id="node41" href="$node_8hpp.html" title="osmium/osm/node.hpp" alt="" coords="1308,193,1463,226"/>
+<area shape="rect" id="node97" href="$way_8hpp.html" title="osmium/osm/way.hpp" alt="" coords="1720,193,1869,226"/>
+<area shape="rect" id="node108" href="$relation_8hpp.html" title="osmium/osm/relation.hpp" alt="" coords="2495,193,2663,226"/>
+<area shape="rect" id="node120" href="$changeset_8hpp.html" title="osmium/osm/changeset.hpp" alt="" coords="1499,275,1685,309"/>
+<area shape="rect" id="node85" href="$timestamp_8hpp.html" title="osmium/osm/timestamp.hpp" alt="" coords="1499,358,1685,391"/>
+<area shape="rect" id="node127" href="$box_8hpp.html" title="osmium/osm/box.hpp" alt="" coords="568,358,715,391"/>
 </map>

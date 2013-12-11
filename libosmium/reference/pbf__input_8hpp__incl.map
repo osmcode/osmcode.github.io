@@ -13,13 +13,13 @@
 <area shape="rect" id="node115" href="$queue_8hpp.html" title="osmium/thread/queue.hpp" alt="" coords="2105,329,2275,362"/>
 <area shape="rect" id="node54" href="$file__compression_8hpp.html" title="osmium/io/file_compression.hpp" alt="" coords="681,433,889,466"/>
 <area shape="rect" id="node75" href="$file__format_8hpp.html" title="osmium/io/file_format.hpp" alt="" coords="1635,433,1806,466"/>
-<area shape="rect" id="node82" href="$bbox_8hpp.html" title="osmium/osm/bbox.hpp" alt="" coords="3886,433,4041,466"/>
-<area shape="rect" id="node84" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="3886,526,4057,559"/>
+<area shape="rect" id="node82" href="$box_8hpp.html" title="osmium/osm/box.hpp" alt="" coords="3889,433,4035,466"/>
+<area shape="rect" id="node84" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="3889,526,4059,559"/>
 <area shape="rect" id="node138" href="$pbf_8hpp.html" title="osmium/io/detail/pbf.hpp" alt="" coords="3198,225,3361,258"/>
 <area shape="rect" id="node141" href="$zlib_8hpp.html" title="osmium/io/detail/zlib.hpp" alt="" coords="1881,433,2046,466"/>
 <area shape="rect" id="node148" href="$osm_8hpp.html" title="osmium/osm.hpp" alt="" coords="3822,329,3945,362"/>
 <area shape="rect" id="node151" href="$osm_2builder_8hpp.html" title="osmium/osm/builder.hpp" alt="" coords="3635,225,3798,258"/>
 <area shape="rect" id="node155" href="$object_8hpp.html" title="osmium/osm/object.hpp" alt="" coords="3537,329,3697,362"/>
-<area shape="rect" id="node163" href="$timestamp_8hpp.html" title="osmium/osm/timestamp.hpp" alt="" coords="3422,433,3609,466"/>
+<area shape="rect" id="node163" href="$timestamp_8hpp.html" title="osmium/osm/timestamp.hpp" alt="" coords="3425,433,3611,466"/>
 <area shape="rect" id="node173" href="$pool_8hpp.html" title="osmium/thread/pool.hpp" alt="" coords="2698,225,2858,258"/>
 </map>

@@ -171,17 +171,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }; <span class="comment">// class Segment</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="namespaceosmium.html#a715dc6d1239f936b30a0f6ca222ff08d">   87</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceosmium.html#a89c04835ba0fd29390349f0ccea6df07">operator==</a>(<span class="keyword">const</span> <a class="code" href="classosmium_1_1Segment.html">Segment</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classosmium_1_1Segment.html">Segment</a>&amp; rhs) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="namespaceosmium.html#a715dc6d1239f936b30a0f6ca222ff08d">   87</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceosmium.html#a8e71cfbc3cf3069f91cfca036e466401">operator==</a>(<span class="keyword">const</span> <a class="code" href="classosmium_1_1Segment.html">Segment</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classosmium_1_1Segment.html">Segment</a>&amp; rhs) {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> lhs.<a class="code" href="classosmium_1_1Segment.html#a81bf728e9e65452362a8bcb4f36b0acd">first</a>() == rhs.<a class="code" href="classosmium_1_1Segment.html#a81bf728e9e65452362a8bcb4f36b0acd">first</a>() &amp;&amp; lhs.<a class="code" href="classosmium_1_1Segment.html#ad4667d87074f4607416f6a30c78c1ef5">second</a>() == rhs.<a class="code" href="classosmium_1_1Segment.html#ad4667d87074f4607416f6a30c78c1ef5">second</a>();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;} <span class="comment">// namespace osmium</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif // OSMIUM_OSM_SEGMENT_HPP</span></div>
-<div class="ttc" id="namespaceosmium_html_a89c04835ba0fd29390349f0ccea6df07"><div class="ttname"><a href="namespaceosmium.html#a89c04835ba0fd29390349f0ccea6df07">osmium::operator==</a></div><div class="ttdeci">constexpr bool operator==(const BBox &amp;lhs, const BBox &amp;rhs) noexcept</div><div class="ttdef"><b>Definition:</b> bbox.hpp:124</div></div>
 <div class="ttc" id="location_8hpp_html"><div class="ttname"><a href="location_8hpp.html">location.hpp</a></div></div>
 <div class="ttc" id="classosmium_1_1Segment_html"><div class="ttname"><a href="classosmium_1_1Segment.html">osmium::Segment</a></div><div class="ttdef"><b>Definition:</b> segment.hpp:47</div></div>
 <div class="ttc" id="classosmium_1_1Segment_html_a504e4ea6b4a77e82543eb0f704297a0c"><div class="ttname"><a href="classosmium_1_1Segment.html#a504e4ea6b4a77e82543eb0f704297a0c">osmium::Segment::m_second</a></div><div class="ttdeci">osmium::Location m_second</div><div class="ttdef"><b>Definition:</b> segment.hpp:50</div></div>
+<div class="ttc" id="namespaceosmium_html_a8e71cfbc3cf3069f91cfca036e466401"><div class="ttname"><a href="namespaceosmium.html#a8e71cfbc3cf3069f91cfca036e466401">osmium::operator==</a></div><div class="ttdeci">constexpr bool operator==(const Box &amp;lhs, const Box &amp;rhs) noexcept</div><div class="ttdef"><b>Definition:</b> box.hpp:124</div></div>
 <div class="ttc" id="classosmium_1_1Segment_html_a56c95708ca36a9e17059fa4495e0e469"><div class="ttname"><a href="classosmium_1_1Segment.html#a56c95708ca36a9e17059fa4495e0e469">osmium::Segment::m_first</a></div><div class="ttdeci">osmium::Location m_first</div><div class="ttdef"><b>Definition:</b> segment.hpp:49</div></div>
 <div class="ttc" id="classosmium_1_1Segment_html_a6dc27c1596ec32a5efeb520b75779362"><div class="ttname"><a href="classosmium_1_1Segment.html#a6dc27c1596ec32a5efeb520b75779362">osmium::Segment::~Segment</a></div><div class="ttdeci">~Segment()=default</div></div>
 <div class="ttc" id="classosmium_1_1Location_html"><div class="ttname"><a href="classosmium_1_1Location.html">osmium::Location</a></div><div class="ttdef"><b>Definition:</b> location.hpp:60</div></div>
@@ -193,7 +193,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 6 2013 18:12:59 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 11 2013 15:12:35 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
