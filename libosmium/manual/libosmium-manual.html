@@ -55,7 +55,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><a href="#locations"><span class="toc-section-number">3.3</span> Locations</a></li>
 <li><a href="#segments"><span class="toc-section-number">3.4</span> Segments</a></li>
 <li><a href="#undirected-segments"><span class="toc-section-number">3.5</span> Undirected Segments</a></li>
-<li><a href="#bounding-boxes"><span class="toc-section-number">3.6</span> Bounding Boxes</a></li>
+<li><a href="#boxes"><span class="toc-section-number">3.6</span> Boxes</a></li>
 </ul></li>
 <li><a href="#osm-entities"><span class="toc-section-number">4</span> OSM Entities</a><ul>
 <li><a href="#objects"><span class="toc-section-number">4.1</span> Objects</a></li>
@@ -74,26 +74,26 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><a href="#file-formats"><span class="toc-section-number">6.1</span> File Formats</a></li>
 <li><a href="#compression"><span class="toc-section-number">6.2</span> Compression</a></li>
 <li><a href="#headers"><span class="toc-section-number">6.3</span> Headers</a></li>
+<li><a href="#output-formats"><span class="toc-section-number">6.4</span> Output Formats</a><ul>
+<li><a href="#xml"><span class="toc-section-number">6.4.1</span> XML</a></li>
+<li><a href="#pbf"><span class="toc-section-number">6.4.2</span> PBF</a></li>
+<li><a href="#opl-object-per-line-format"><span class="toc-section-number">6.4.3</span> OPL (&quot;Object Per Line&quot;) Format</a></li>
 </ul></li>
-<li><a href="#libraries"><span class="toc-section-number">7</span> Libraries</a><ul>
-<li><a href="#pbf-support"><span class="toc-section-number">7.1</span> PBF Support</a></li>
-<li><a href="#xml-support"><span class="toc-section-number">7.2</span> XML Support</a></li>
-<li><a href="#opl-support"><span class="toc-section-number">7.3</span> OPL Support</a></li>
-<li><a href="#reading-and-writing-osm-files-with-osmium"><span class="toc-section-number">7.4</span> Reading and Writing OSM Files with Osmium</a><ul>
-<li><a href="#the-osmiumiofile-class"><span class="toc-section-number">7.4.1</span> The osmium::io::File class</a></li>
-<li><a href="#reading-a-file"><span class="toc-section-number">7.4.2</span> Reading a File</a></li>
-<li><a href="#the-header"><span class="toc-section-number">7.4.3</span> The Header</a></li>
+<li><a href="#reading-and-writing-osm-files-with-osmium"><span class="toc-section-number">6.5</span> Reading and Writing OSM Files with Osmium</a><ul>
+<li><a href="#the-osmiumiofile-class"><span class="toc-section-number">6.5.1</span> The osmium::io::File class</a></li>
+<li><a href="#reading-a-file"><span class="toc-section-number">6.5.2</span> Reading a File</a></li>
+<li><a href="#the-header"><span class="toc-section-number">6.5.3</span> The Header</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#iterators"><span class="toc-section-number">8</span> Iterators</a><ul>
-<li><a href="#accessing-data-in-buffers"><span class="toc-section-number">8.1</span> Accessing Data in Buffers</a></li>
-<li><a href="#accessing-data-from-files"><span class="toc-section-number">8.2</span> Accessing Data from Files</a></li>
+<li><a href="#iterators"><span class="toc-section-number">7</span> Iterators</a><ul>
+<li><a href="#accessing-data-in-buffers"><span class="toc-section-number">7.1</span> Accessing Data in Buffers</a></li>
+<li><a href="#accessing-data-from-files"><span class="toc-section-number">7.2</span> Accessing Data from Files</a></li>
 </ul></li>
-<li><a href="#visitors-and-handlers"><span class="toc-section-number">9</span> Visitors and Handlers</a></li>
-<li><a href="#indexes"><span class="toc-section-number">10</span> Indexes</a><ul>
-<li><a href="#index-types"><span class="toc-section-number">10.1</span> Index Types</a><ul>
-<li><a href="#map-index"><span class="toc-section-number">10.1.1</span> Map Index</a></li>
-<li><a href="#storage-types"><span class="toc-section-number">10.1.2</span> Storage types</a></li>
+<li><a href="#visitors-and-handlers"><span class="toc-section-number">8</span> Visitors and Handlers</a></li>
+<li><a href="#indexes"><span class="toc-section-number">9</span> Indexes</a><ul>
+<li><a href="#index-types"><span class="toc-section-number">9.1</span> Index Types</a><ul>
+<li><a href="#map-index"><span class="toc-section-number">9.1.1</span> Map Index</a></li>
+<li><a href="#storage-types"><span class="toc-section-number">9.1.2</span> Storage types</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -248,15 +248,15 @@ DEALINGS IN THE SOFTWARE.</code></pre>
 <p>Class: <code>osmium::UndirectedSegment</code></p>
 <p>Include: <code>&lt;osmium/osm/undirected_segment.hpp&gt;</code></p>
 <p>Undirected Segments are connection between two locations. They are not OSM objects but sometimes useful in algorithms.</p>
-<h2 id="bounding-boxes"><a href="#bounding-boxes"><span class="header-section-number">3.6</span> Bounding Boxes</a></h2>
-<p>Class: <code>osmium::BBox</code></p>
-<p>Include: <code>&lt;osmium/osm/bbox.hpp&gt;</code></p>
-<p>A bounding box is a rectangular box described by the minimum and maximum longitude and latitude. It is used, for instance, in the header of OSM files and in changesets.</p>
-<pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::BBox bbox;
-bbox.extend(osmium::Location(<span class="fl">3.2</span>, <span class="fl">4.3</span>));
-bbox.extend({<span class="fl">4.5</span>, <span class="fl">7.2</span>});
-bbox.extend({<span class="fl">3.3</span>, <span class="fl">8.9</span>});
-std::cout &lt;&lt; bbox;  <span class="co">// (3.2,4.3,4.5,8.9)</span></code></pre>
+<h2 id="boxes"><a href="#boxes"><span class="header-section-number">3.6</span> Boxes</a></h2>
+<p>Class: <code>osmium::Box</code></p>
+<p>Include: <code>&lt;osmium/osm/box.hpp&gt;</code></p>
+<p>A box is a rectangle described by the minimum and maximum longitude and latitude. It is used, for instance, in the header of OSM files and in changesets to describe the bounding box.</p>
+<pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::Box box;
+box.extend(osmium::Location(<span class="fl">3.2</span>, <span class="fl">4.3</span>));
+box.extend({<span class="fl">4.5</span>, <span class="fl">7.2</span>});
+box.extend({<span class="fl">3.3</span>, <span class="fl">8.9</span>});
+std::cout &lt;&lt; box;  <span class="co">// (3.2,4.3,4.5,8.9)</span></code></pre>
 <h1 id="osm-entities"><a href="#osm-entities"><span class="header-section-number">4</span> OSM Entities</a></h1>
 <p>Osmium works with the four basic types of OSM entities: Nodes, Ways, and Relations (which are all <a href="#objects">Objects</a>) and Changesets.</p>
 <p>These OSM entities can not be created like any normal C++ object, but they need a buffer to live in. See the next chapter for details. Accessing existing OSM entities on the other hand is easy and straightforward.</p>
@@ -362,7 +362,7 @@ buffer.set_full_callback(full);</code></pre>
 <dd><p>A simple format similar to CSV-files with one OSM entity per line. This format is intended for easy use with standard UNIX command line tools such as <code>grep</code>, <code>cut</code>, and <code>awk</code>.</p>
 </dd>
 </dl>
-<p>OSM files come in many variants, some of which are supported by Osmium. XXX more details</p>
+<p>See <a href="#output-formats">Output Formats</a> for more details about these formats.</p>
 <h2 id="compression"><a href="#compression"><span class="header-section-number">6.2</span> Compression</a></h2>
 <p>Osmium supports compression and decompression of XML and OPL files internally using the GZIP and BZIP2 formats. If you want to use compression you have to include the right header files and link to the <code>libz</code> and <code>libbz2</code> libraries, respectively.</p>
 <h2 id="headers"><a href="#headers"><span class="header-section-number">6.3</span> Headers</a></h2>
@@ -383,21 +383,127 @@ buffer.set_full_callback(full);</code></pre>
 #include &lt;osmmium/io/bzip2_compression.hpp&gt;</code></pre>
 <p>Or, if you want both anyway, you can just use the shortcut:</p>
 <pre><code>#include &lt;osmmium/io/any_compression.hpp&gt;</code></pre>
-<h1 id="libraries"><a href="#libraries"><span class="header-section-number">7</span> Libraries</a></h1>
-<p>If need to link with the following libraries depending on which formats you are using:</p>
-<h2 id="pbf-support"><a href="#pbf-support"><span class="header-section-number">7.1</span> PBF Support</a></h2>
-<p>The <a href="http://wiki.openstreetmap.org/wiki/PBF_Format">PBF</a> file support is based on the <a href="http://code.google.com/p/protobuf/">Google Protocol Buffers library</a>. Several libraries are needed: libprotobuf-lite contains the Protocol Buffers library itself which also needs libpthreads, for compression libz is needed. Those are all standard libraries that should be available on most systems. The OSM PBF format is defined in <a href="https://github.com/scrosby/OSM-binary">libosmpbf</a>, you'll probably have to compile and install this yourself before using it in Osmium.</p>
+<h2 id="output-formats"><a href="#output-formats"><span class="header-section-number">6.4</span> Output Formats</a></h2>
+<h3 id="xml"><a href="#xml"><span class="header-section-number">6.4.1</span> XML</a></h3>
+<p>There are several different XML formats in use in the OSM project. The main formats are the one used for planet files, extracts, and API responses (suffix <code>.osm</code>), the format used for change files (suffix <code>.osc</code>) and the history format (suffixes <code>.osm</code> or <code>.osh</code>).</p>
+<p>Some variants are also used, such as the JOSM format which is similiar to the normal OSM format but has some additions. Support for the features of these formats varies.</p>
+<p>When reading, the OSM change format (<code>.osc</code>) is detected automatically. When writing, you have to set it using the format specifier <code>osc</code> or the format parameter <code>xml_change_format=true</code>.</p>
+<p>For read support you need the expat parser library. Link with:</p>
+<pre><code>-lexpat</code></pre>
+<p>For write support no special library is needed.</p>
+<h3 id="pbf"><a href="#pbf"><span class="header-section-number">6.4.2</span> PBF</a></h3>
+<p>The <a href="http://wiki.openstreetmap.org/wiki/PBF_Format">PBF</a> file format is based on the <a href="http://code.google.com/p/protobuf/">Google Protocol Buffers library</a>. PBF files are very space efficient and faster to use than XML files. PBF files can contain normal OSM data or OSM history data, but there is no equivalent to the XML .osc format.</p>
+<p>The OSM PBF format is defined in <a href="https://github.com/scrosby/OSM-binary">libosmpbf</a>, you'll probably have to compile and install this yourself before using it in Osmium.</p>
+<p>To build with PBF support, several libraries are needed: libprotobuf-lite contains the Protocol Buffers library itself which also needs libpthreads, for compression libz is needed. Those are all standard libraries that should be available on most systems.</p>
 <p>To summarize, you need to link with:</p>
 <pre><code>-pthread -lprotobuf-lite -losmpbf -lz</code></pre>
 <p>The Google Protocol Buffers library allocates some global buffer memory which is never freed. You can call the following function in your code to free these buffers:</p>
 <pre><code>google::protobuf::ShutdownProtobufLibrary();</code></pre>
 <p>You do not have to do this, the function is not necessary for the correct functioning of your program. But if you are using a memory checker like Valgrind you will get error messages otherwise.</p>
-<h2 id="xml-support"><a href="#xml-support"><span class="header-section-number">7.2</span> XML Support</a></h2>
-<p>For read support you need the expat parser library. Link with: -lexpat</p>
-<p>For write support no special library is needed.</p>
-<h2 id="opl-support"><a href="#opl-support"><span class="header-section-number">7.3</span> OPL Support</a></h2>
-<h2 id="reading-and-writing-osm-files-with-osmium"><a href="#reading-and-writing-osm-files-with-osmium"><span class="header-section-number">7.4</span> Reading and Writing OSM Files with Osmium</a></h2>
-<h3 id="the-osmiumiofile-class"><a href="#the-osmiumiofile-class"><span class="header-section-number">7.4.1</span> The osmium::io::File class</a></h3>
+<p>Osmium supports reading and writing of nodes in <em>DenseNodes</em> and non-<em>DenseNodes</em> formats. Default is <em>DenseNodes</em>, as this is much more space-efficient. Add the format parameter <code>pbf_dense_nodes=false</code> to disable <em>DenseNodes</em>.</p>
+<p>Osmium usually will compress PBF blocks using zlib. To disable this, use the format parameter <code>pbf_compression=none</code>.</p>
+<p>Usually PBF files contain all the metadata for objects such as changeset id, username, etc. To save some space you can disable writing of metatdata with the format parameter <code>pbf_add_metadata=false</code>.</p>
+<h3 id="opl-object-per-line-format"><a href="#opl-object-per-line-format"><span class="header-section-number">6.4.3</span> OPL (&quot;Object Per Line&quot;) Format</a></h3>
+<p><em>This format is preliminary, it might change. Please send feedback if you use this format!</em></p>
+<p>This format was created to allow easy access to and manipulation of OSM data with typical UNIX command line tools such as <code>grep</code>, <code>sed</code>, and <code>awk</code>. This can make some ad-hoc OSM data manipulation easy to do, but is probably not as fast as some specialized tool. But it beats grepping in XML files...</p>
+<p>OPL files are only about half the size of OSM XML files, but when compressed they are about the same size.</p>
+<p>Osmium currently can write OPL files, but not read them.</p>
+<p>Each line of the file contains one OSM object (a node, way, or relation) or an OSM changeset. Fields are separated by a space character, lines by a newline character. Fields always appear in the same order and are always present, each field is introduced by a specific character:</p>
+<p>One of these fields is always the first:</p>
+<pre><code>n - Node ID (nodes only)
+w - Way ID (ways only)
+r - Relation ID (relations only)
+c - Changeset ID (changesets only)</code></pre>
+<p>Then for OSM objects in the given order:</p>
+<pre><code>v - Version
+d - Deleted flag (&#39;V&#39; - visible or &#39;D&#39; - deleted)
+c - Changeset ID
+t - Timestamp (ISO Format)
+i - User ID
+u - Username
+T - Tags
+x - Longitude (nodes only)
+y - Latitude (nodes only)
+N - Nodes (ways only)
+M - Members (relations only)</code></pre>
+<p>The N, M, and T fields can be empty. If the user is anonymous, the 'User ID' will be 0 and the 'Username' field will be empty: <code>... i0 u ...</code>. If the node is deleted, the 'Longitude' and 'Latitude' fields are empty. All other fields always contain data.</p>
+<p>The 'Deleted flag' shows whether an object version has been deleted (<code>dD</code>) or whether it is visible (<code>dV</code>). For normal OSM data files this is always <code>dV</code>, but change files and osm history files can contain deleted objects.</p>
+<p>For changesets the fields are different:</p>
+<pre><code>k - num_changes
+s - created_at (start) timestamp (ISO Format)
+e - closed_at (end) timestamp (ISO Format)
+i - User ID
+u - Username
+x - Longitude (left bottom corner, min_lon)
+y - Latitude (left bottom corner, min_lat)
+X - Longitude (right top corner, max_lon)
+Y - Latitude (right top corner, max_lat)
+T - Tags</code></pre>
+<p>The fields e is empty when the changeset is not closed yet. The fields x, y, X, Y can be empty when no bounding box could be derived. The field k can be 0.</p>
+<p><strong>Escaping</strong></p>
+<p>User names, tags, and relation member roles can contain any valid Unicode character. Any characters that have special meaning in OPL files (' ' (space), ',' (comma), '=' (equals) and '@') have to be escaped as well as any non-printing characters.</p>
+<p>Escaped characters are written as <code>%xxxx</code>, ie a percent sign followed by the 4-digit hex code of the Unicode code point.</p>
+<p>Currently there is a hard-coded list in the code of all the characters that don't need escaping. This list is incomplete and subject to change.</p>
+<p><strong>Format Overview</strong></p>
+<p>(Some lines have been broken in this description for easier reading, in the file format they are not.)</p>
+<pre><code>NODE:
+    n(OBJECT_ID) v(VERSION) d(V|D) c(CHANGESET_ID) t(yyyy-mm-ddThh:mm:ssZ)
+    i(USER_ID) u(USERNAME) T(TAGS) x(LONGITUDE) y(LATITUDE)
+
+WAY:
+    w(OBJECT_ID) v(VERSION) d(V|D) c(CHANGESET_ID) t(yyyy-mm-ddThh:mm:ssZ)
+    i(USER_ID) u(USERNAME) T(TAGS) N(WAY_NODES)
+
+RELATION:
+    r(OBJECT_ID) v(VERSION) d(V|D) c(CHANGESET_ID) t(yyyy-mm-ddThh:mm:ssZ)
+    i(USER_ID) u(USERNAME) T(TAGS) M(MEMBERS)
+
+CHANGESET:
+    c(CHANGESET_ID) k(NUM_CHANGES) s(yyyy-mm-ddThh:mm:ssZ) e(yyyy-mm-ddThh:mm:ssZ)
+    i(USER_ID) u(USERNAME) x(LONGITUDE) y(LATITUDE) X(LONGITUDE) Y(LATITUDE) T(TAGS)
+
+TAGS
+    (KEY)=(VALUE),...
+
+WAY_NODES:
+    n(NODE_REF),...
+
+MEMBERS:
+    [nwr](MEMBER_REF)@(MEMBER_ROLE),...</code></pre>
+<p><strong>Usage Examples</strong></p>
+<p>(Note that some of these commands generate quite a lot of output. You might want to add a <code>| less</code> or redirect into a file. For larger OSM files some of these commands might take quite a while, so try them out on small files first.)</p>
+<p>Find all objects tagged <code>highway=...</code>:</p>
+<pre><code>egrep &quot;( T|,)highway=&quot; data.osm.opl</code></pre>
+<p>Find all IDs of ways tagged <code>highway=...</code>:</p>
+<pre><code>egrep &#39;^w&#39; data.osm.opl | egrep &quot;( T|,)highway=&quot; | cut -d&#39; &#39; -f1 | cut -c2-</code></pre>
+<p>Find all nodes with version &gt; 9:</p>
+<pre><code>egrep &#39;^n&#39; data.osm.opl | egrep -v &#39; v. &#39;</code></pre>
+<p>Find the first fields of the relation with the highest version number:</p>
+<pre><code>egrep &#39;^r&#39; data.osm.opl | sort -b -n -k 2.2,2 | tail -1 | cut -d&#39; &#39; -f1-7</code></pre>
+<p>Find all objects with changeset ID 123:</p>
+<pre><code>egrep &#39; c123 &#39; data.osm.opl</code></pre>
+<p>Count how many objects were created in each hour of the day:</p>
+<pre><code>egrep &#39; v1 &#39; data.osm.opl | cut -d&#39; &#39; -f5 | cut -dT -f2 | cut -d: -f1 | sort | uniq -c</code></pre>
+<p>Find all closed ways:</p>
+<pre><code>egrep &#39;^w&#39; data.osm.opl | egrep &#39;N(n[0-9]+),.*\1 &#39;</code></pre>
+<p>Find all ways tagged with <code>area=yes</code> that are not closed:</p>
+<pre><code>egrep &#39;^w&#39; data.osm.opl | egrep &#39;area=yes&#39; | egrep -v &#39;N(n[0-9]+),.*\1 &#39;</code></pre>
+<p>Find all users who have created post boxes:</p>
+<pre><code>egrep &#39; v1 &#39; data.osm.opl | egrep &#39;amenity=post_box&#39; | cut -d&#39; &#39; -f7 | cut -c2- | sort -u</code></pre>
+<p>Find all node IDs used in <code>via</code> roles in relations:</p>
+<pre><code>egrep &#39;^r&#39; data.osm.opl | sed -e &#39;s/^.* M\(.*\) .*$/\1/&#39; | egrep &#39;@via[, ]&#39; | \
+    sed -e &#39;s/,/\n/g&#39; | egrep &#39;^n.*@via$&#39; | cut -d@ -f1 | cut -c2- | sort -nu</code></pre>
+<p>Find all nodes having any tags igoring <code>created_by</code> tags:</p>
+<pre><code>egrep &#39;^n&#39; data.osm.opl | egrep -v &#39; T$&#39; | sed -e &#39;s/\( T\|,\)created_by=[^,]\+\(,\|$\)/\1/&#39; | egrep -v &#39; T$&#39;</code></pre>
+<p>Count tag key usage:</p>
+<pre><code>sed -e &#39;s/^.* T//&#39; data.osm.opl | egrep -v &#39;^$&#39; | sed -e &#39;s/,/\n/g&#39; | cut -d= -f1 | sort | uniq -c | sort -nr</code></pre>
+<p>Order by object type, object id and version (ie the usual order for OSM files):</p>
+<pre><code>sed -e &#39;s/^r/z/&#39; data.osm.opl | sort -b -k1.1,1.1 -k1.2,1n -k2.2,2n | sed -e &#39;s/^z/r/&#39;</code></pre>
+<p>Create statistics on number of nodes in ways:</p>
+<pre><code>egrep &#39;^w&#39; data.osm.opl | cut -d&#39; &#39; -f9 | tr -dc &#39;n\n&#39; | \
+    awk &#39;{a[length]++} END {for(i=1;i&lt;=2000;++i) { print i, a[i] ? a[i] : 0 } }&#39;</code></pre>
+<h2 id="reading-and-writing-osm-files-with-osmium"><a href="#reading-and-writing-osm-files-with-osmium"><span class="header-section-number">6.5</span> Reading and Writing OSM Files with Osmium</a></h2>
+<h3 id="the-osmiumiofile-class"><a href="#the-osmiumiofile-class"><span class="header-section-number">6.5.1</span> The osmium::io::File class</a></h3>
 <p>Before reading from or writing to an OSM file, you have to instantiate an object of class osmium::io::File. It encapsulates the file name as well as any information about the format of the file. In the simplest case the File class can derive the file format from the file name:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::File input_file(<span class="st">&quot;planet.osm.pbf&quot;</span>) <span class="co">// PBF format</span>
 osmium::io::File input_file(<span class="st">&quot;planet.osm.bz2&quot;</span>) <span class="co">// XML with bzip2 compression</span>
@@ -455,7 +561,7 @@ osmium::io::File output_file(<span class="st">&quot;&quot;</span>, <span class="
 <p>It is also possible to change the format after creating a File object using the accessor functions:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::File input_file(<span class="st">&quot;some_file.osm&quot;</span>);
 input_file.format(osmium::io::file_format_pbf);</code></pre>
-<h3 id="reading-a-file"><a href="#reading-a-file"><span class="header-section-number">7.4.2</span> Reading a File</a></h3>
+<h3 id="reading-a-file"><a href="#reading-a-file"><span class="header-section-number">6.5.2</span> Reading a File</a></h3>
 <p>After you have a File object you can instantiate a Reader object to open the file for reading:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::File input_file(<span class="st">&quot;input.osm.pbf&quot;</span>);
 osmium::io::Reader reader(input_file);</code></pre>
@@ -509,7 +615,7 @@ osmium::io::Reader reader(input_file);</code></pre>
 <p>You can close the file at any time. It will also be automatically closed when the Reader object goes out of scope.</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">reader.close();</code></pre>
 <p>In most cases you do not want to work with the buffers, but with the OSM entities within them. See the <a href="#iterators">Iterators</a> chapter and the <a href="#visitors-and-handlers">Visitors and Handlers</a> chapter for more convenient methods of working with open files.</p>
-<h3 id="the-header"><a href="#the-header"><span class="header-section-number">7.4.3</span> The Header</a></h3>
+<h3 id="the-header"><a href="#the-header"><span class="header-section-number">6.5.3</span> The Header</a></h3>
 <table>
 <thead>
 <tr class="header">
@@ -534,10 +640,10 @@ osmium::io::Reader reader(input_file);</code></pre>
 </tr>
 </tbody>
 </table>
-<h1 id="iterators"><a href="#iterators"><span class="header-section-number">8</span> Iterators</a></h1>
+<h1 id="iterators"><a href="#iterators"><span class="header-section-number">7</span> Iterators</a></h1>
 <p>Every C++ programmer is familiar with iterators and their flexibility. There is no reason we couldn't take advantage of that and of the many algorithms supplied by the STL. So libosmium supports several different kinds of iterators to access OSM data. You can iterate over all OSM objects in a buffer, or over all objects from a data source (usually a file), or over a bunch of pointers to OSM objects, and there are output iterators to write to files, too. All these different iterators can be used consistently and easily from your code without having to know much about what's underneath. And because they work just like STL iterators do, you can use all the algorithms from the STL.</p>
 <p>Some of these iterators will keep track of underlying buffers and make sure the buffers and the data in them stay around as long as there is an iterator pointing to it. This adds some overhead but makes using the data much easier.</p>
-<h2 id="accessing-data-in-buffers"><a href="#accessing-data-in-buffers"><span class="header-section-number">8.1</span> Accessing Data in Buffers</a></h2>
+<h2 id="accessing-data-in-buffers"><a href="#accessing-data-in-buffers"><span class="header-section-number">7.1</span> Accessing Data in Buffers</a></h2>
 <p>Buffers containing OSM entities support the usual <code>begin()</code>, <code>end()</code>, <code>cbegin()</code>, and <code>cend()</code> functions:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::memory::Buffer buffer = ...;
 
@@ -551,32 +657,32 @@ osmium::io::Reader reader(input_file);</code></pre>
 <pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">for</span> (<span class="dt">auto</span> item : buffer) {
     ...
 }</code></pre>
-<h2 id="accessing-data-from-files"><a href="#accessing-data-from-files"><span class="header-section-number">8.2</span> Accessing Data from Files</a></h2>
+<h2 id="accessing-data-from-files"><a href="#accessing-data-from-files"><span class="header-section-number">7.2</span> Accessing Data from Files</a></h2>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::Reader reader(<span class="st">&quot;input.osm&quot;</span>);
 osmium::io::InputIterator&lt;osmium::io::Reader&gt; in(reader);
 osmium::io::InputIterator&lt;osmium::io::Reader&gt; end;</code></pre>
-<h1 id="visitors-and-handlers"><a href="#visitors-and-handlers"><span class="header-section-number">9</span> Visitors and Handlers</a></h1>
-<h1 id="indexes"><a href="#indexes"><span class="header-section-number">10</span> Indexes</a></h1>
+<h1 id="visitors-and-handlers"><a href="#visitors-and-handlers"><span class="header-section-number">8</span> Visitors and Handlers</a></h1>
+<h1 id="indexes"><a href="#indexes"><span class="header-section-number">9</span> Indexes</a></h1>
 <p>Osmium is built around the idea that a lot of the things you want to do with OSM data can be done one OSM object at the time without having all (or large parts of) the OSM data in memory or in some kind of database. But there are many things you can not do this way. You do need some kind of storage to hold the data and some indexes to access it efficiently. Osmium provides several class templates that implement several different types of indexes.</p>
-<h2 id="index-types"><a href="#index-types"><span class="header-section-number">10.1</span> Index Types</a></h2>
+<h2 id="index-types"><a href="#index-types"><span class="header-section-number">9.1</span> Index Types</a></h2>
 <p>Osmium provides indexes modelled after the STL map and multimap classes, respectively. These classes are to be found in the osmium::index::map and osmium::index::multimap namespaces.</p>
-<h3 id="map-index"><a href="#map-index"><span class="header-section-number">10.1.1</span> Map Index</a></h3>
+<h3 id="map-index"><a href="#map-index"><span class="header-section-number">9.1.1</span> Map Index</a></h3>
 <p>Often we need some small, fixed amount of data stored for each OSM object. Read and write access is by ID only. Typical use cases include...</p>
 <ul>
 <li>storage of node locations where for each node ID we store the longitude and latitude of that node.</li>
 <li>storing the offset of an OSM object in a buffer.</li>
 <li>a lookup table that gives you for each node ID all IDs of the way (or ways) that include this node.</li>
 </ul>
-<h3 id="storage-types"><a href="#storage-types"><span class="header-section-number">10.1.2</span> Storage types</a></h3>
+<h3 id="storage-types"><a href="#storage-types"><span class="header-section-number">9.1.2</span> Storage types</a></h3>
 <p>There are different strategies of storing this data efficiently and there are several sub-classes of the Map and Multimap classes that use different strategies. It is important that you understand the differences and use the class thats most appropriate for your case.</p>
 <p>The differences can be understood along different axes:</p>
 <p>First, the question is whether the ID space is dense or not. If you are using the full planet data or large portions (such as entire continents) thereof, your ID space is dense, ie most of the possible IDs are actually present in the index. If you are only using small extracts (even with whole countries in them), you ID space is sparse, ie most of the possible IDs are not present in the index. For dense indexes data is often best stored in a kind of array indexed by the ID. For sparse indexes there are several other possibilities.</p>
 <p>The second question is whether you have enought RAM to hold all the data in the index. Of course it is more efficient to keep the index in RAM, but if you don't have enough you need to use a disk-based index.</p>
 <pre><code>handler-example.cpp
     </code></pre>
-<h4 id="list-of-map-index-classes"><a href="#list-of-map-index-classes"><span class="header-section-number">10.1.2.1</span> List of map index classes</a></h4>
+<h4 id="list-of-map-index-classes"><a href="#list-of-map-index-classes"><span class="header-section-number">9.1.2.1</span> List of map index classes</a></h4>
 <p>see also: table in spreadsheet dummy based on vector: with stl vector, with mmap_anon, with mmap_file other: stl map, google sparsetable</p>
-<h4 id="list-of-multimap-index-classes"><a href="#list-of-multimap-index-classes"><span class="header-section-number">10.1.2.2</span> List of multimap index classes</a></h4>
+<h4 id="list-of-multimap-index-classes"><a href="#list-of-multimap-index-classes"><span class="header-section-number">9.1.2.2</span> List of multimap index classes</a></h4>
 <p>based on vector: with stl vector, with mmap_anon, with mmap_file other: stl multimap, hybrid</p>
 </body>
 </html>
