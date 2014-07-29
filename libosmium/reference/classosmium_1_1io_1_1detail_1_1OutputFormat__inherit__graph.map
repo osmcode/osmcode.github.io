@@ -1,5 +1,0 @@
-<map id="osmium::io::detail::OutputFormat" name="osmium::io::detail::OutputFormat">
-<area shape="rect" id="node3" href="$classosmium_1_1io_1_1detail_1_1OPLOutputFormat.html" title="osmium::io::detail\l::OPLOutputFormat" alt="" coords="180,5,313,59"/>
-<area shape="rect" id="node5" href="$classosmium_1_1io_1_1detail_1_1PBFOutputFormat.html" title="osmium::io::detail\l::PBFOutputFormat" alt="" coords="179,82,315,137"/>
-<area shape="rect" id="node7" href="$classosmium_1_1io_1_1detail_1_1XMLOutputFormat.html" title="osmium::io::detail\l::XMLOutputFormat" alt="" coords="179,159,315,214"/>
-</map>

@@ -1,6 +1,5 @@
 <map id="osmium::io::Writer" name="osmium::io::Writer">
-<area shape="rect" id="node2" href="$classosmium_1_1thread_1_1Queue.html" title="osmium::thread::Queue\l\&lt; std::future\&lt; std::string \&gt; \&gt;" alt="" coords="209,5,396,59"/>
-<area shape="rect" id="node4" href="$classosmium_1_1io_1_1File.html" title="osmium::io::File" alt="" coords="245,82,360,115"/>
-<area shape="rect" id="node6" href="$classosmium_1_1util_1_1Options.html" title="osmium::util::Options" alt="" coords="5,82,152,115"/>
-<area shape="rect" id="node8" href="$classosmium_1_1thread_1_1CheckedTask.html" title="osmium::thread::CheckedTask\l\&lt; osmium::io::OutputThread \&gt;" alt="" coords="203,138,403,193"/>
+<area shape="rect" id="node2" href="$classosmium_1_1thread_1_1CheckedTask.html" title="osmium::thread::CheckedTask\l\&lt; detail::WriteThread \&gt;" alt="" coords="5,91,205,146"/>
+<area shape="rect" id="node4" href="$classosmium_1_1io_1_1File.html" title="osmium::io::File" alt="" coords="229,102,344,135"/>
+<area shape="rect" id="node6" href="$classosmium_1_1util_1_1Options.html" title="osmium::util::Options" alt="" coords="213,6,360,39"/>
 </map>

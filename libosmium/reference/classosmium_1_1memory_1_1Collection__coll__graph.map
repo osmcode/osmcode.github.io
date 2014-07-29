@@ -1,4 +1,3 @@
-<map id="osmium::memory::Collection&lt; TMember &gt;" name="osmium::memory::Collection&lt; TMember &gt;">
-<area shape="rect" id="node2" href="$classosmium_1_1memory_1_1Item.html" title="osmium::memory::Item" alt="" coords="21,110,179,143"/>
-<area shape="rect" id="node4" href="$classosmium_1_1memory_1_1detail_1_1ItemHelper.html" title="osmium::memory::detail\l::ItemHelper" alt="" coords="19,6,181,61"/>
+<map id="osmium::memory::Collection&lt; TMember, TCollectionItemType &gt;" name="osmium::memory::Collection&lt; TMember, TCollectionItemType &gt;">
+<area shape="rect" id="node2" href="$classosmium_1_1memory_1_1Item.html" title="osmium::memory::Item" alt="" coords="40,110,197,143"/>
 </map>

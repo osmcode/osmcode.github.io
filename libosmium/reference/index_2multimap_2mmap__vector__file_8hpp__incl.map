@@ -1,9 +1,0 @@
-<map id="include/osmium/index/multimap/mmap_vector_file.hpp" name="include/osmium/index/multimap/mmap_vector_file.hpp">
-<area shape="rect" id="node3" href="$multimap_2vector_8hpp.html" title="osmium/index/multimap\l/vector.hpp" alt="" coords="199,235,359,290"/>
-<area shape="rect" id="node30" href="$detail_2mmap__vector__file_8hpp.html" title="osmium/detail/mmap\l_vector_file.hpp" alt="" coords="576,131,717,186"/>
-<area shape="rect" id="node11" href="$multimap_8hpp.html" title="osmium/index/multimap.hpp" alt="" coords="155,350,339,383"/>
-<area shape="rect" id="node17" href="$read__write_8hpp.html" title="osmium/io/detail/read\l_write.hpp" alt="" coords="515,339,661,394"/>
-<area shape="rect" id="node33" href="$typed__mmap_8hpp.html" title="osmium/detail/typed\l_mmap.hpp" alt="" coords="685,339,824,394"/>
-<area shape="rect" id="node45" href="$mmap__vector__base_8hpp.html" title="osmium/detail/mmap\l_vector_base.hpp" alt="" coords="684,235,825,290"/>
-<area shape="rect" id="node50" href="$tmpfile_8hpp.html" title="osmium/detail/tmpfile.hpp" alt="" coords="899,350,1069,383"/>
-</map>

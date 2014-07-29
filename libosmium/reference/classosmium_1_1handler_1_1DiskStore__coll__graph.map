@@ -1,4 +1,4 @@
 <map id="osmium::handler::DiskStore" name="osmium::handler::DiskStore">
 <area shape="rect" id="node2" href="$classosmium_1_1handler_1_1Handler.html" title="osmium::handler::Handler" alt="" coords="5,17,176,50"/>
-<area shape="rect" id="node4" href="$classosmium_1_1index_1_1map_1_1Map.html" title="osmium::index::map\l::Map\&lt; TKey, TValue \&gt;" alt="" coords="200,6,357,61"/>
+<area shape="rect" id="node4" href="$classosmium_1_1index_1_1map_1_1Map.html" title="osmium::index::map\l::Map\&lt; TId, TValue \&gt;" alt="" coords="200,6,347,61"/>
 </map>

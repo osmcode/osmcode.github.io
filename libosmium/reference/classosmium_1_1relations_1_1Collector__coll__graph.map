@@ -1,0 +1,5 @@
+<map id="osmium::relations::Collector&lt; TCollector, TNodes, TWays, TRelations &gt;" name="osmium::relations::Collector&lt; TCollector, TNodes, TWays, TRelations &gt;">
+<area shape="rect" id="node2" href="$classosmium_1_1memory_1_1Buffer.html" title="osmium::memory::Buffer" alt="" coords="240,18,405,51"/>
+<area shape="rect" id="node4" href="$classosmium_1_1relations_1_1Collector_1_1HandlerPass2.html" title="osmium::relations::\lCollector\&lt; TCollector,\l TNodes, TWays, TRelations\l \&gt;::HandlerPass2" alt="" coords="227,74,419,171"/>
+<area shape="rect" id="node6" href="$classosmium_1_1handler_1_1Handler.html" title="osmium::handler::Handler" alt="" coords="5,106,176,139"/>
+</map>

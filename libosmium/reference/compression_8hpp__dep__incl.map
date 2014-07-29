@@ -1,14 +1,20 @@
 <map id="include/osmium/io/compression.hpp" name="include/osmium/io/compression.hpp">
-<area shape="rect" id="node3" href="$bzip2__compression_8hpp.html" title="include/osmium/io/bzip2\l_compression.hpp" alt="" coords="317,89,480,143"/>
-<area shape="rect" id="node11" href="$gzip__compression_8hpp.html" title="include/osmium/io/gzip\l_compression.hpp" alt="" coords="504,89,659,143"/>
-<area shape="rect" id="node14" href="$reader_8hpp.html" title="include/osmium/io/reader.hpp" alt="" coords="104,99,293,133"/>
-<area shape="rect" id="node22" href="$writer_8hpp.html" title="include/osmium/io/writer.hpp" alt="" coords="683,99,869,133"/>
-<area shape="rect" id="node5" href="$any__compression_8hpp.html" title="include/osmium/io/any\l_compression.hpp" alt="" coords="355,193,507,247"/>
-<area shape="rect" id="node7" href="$any__input_8hpp.html" title="include/osmium/io/any\l_input.hpp" alt="" coords="180,297,332,351"/>
-<area shape="rect" id="node9" href="$any__output_8hpp.html" title="include/osmium/io/any\l_output.hpp" alt="" coords="613,297,765,351"/>
-<area shape="rect" id="node16" href="$pbf__input_8hpp.html" title="include/osmium/io/pbf\l_input.hpp" alt="" coords="181,193,331,247"/>
-<area shape="rect" id="node19" href="$xml__input_8hpp.html" title="include/osmium/io/xml\l_input.hpp" alt="" coords="5,193,157,247"/>
-<area shape="rect" id="node24" href="$opl__output_8hpp.html" title="include/osmium/io/opl\l_output.hpp" alt="" coords="531,193,677,247"/>
-<area shape="rect" id="node27" href="$pbf__output_8hpp.html" title="include/osmium/io/pbf\l_output.hpp" alt="" coords="701,193,851,247"/>
-<area shape="rect" id="node30" href="$xml__output_8hpp.html" title="include/osmium/io/xml\l_output.hpp" alt="" coords="875,193,1027,247"/>
+<area shape="rect" id="node3" href="$bzip2__compression_8hpp.html" title="include/osmium/io/bzip2\l_compression.hpp" alt="" coords="609,89,772,143"/>
+<area shape="rect" id="node11" href="$gzip__compression_8hpp.html" title="include/osmium/io/gzip\l_compression.hpp" alt="" coords="796,89,951,143"/>
+<area shape="rect" id="node14" href="$reader_8hpp.html" title="include/osmium/io/reader.hpp" alt="" coords="367,99,556,133"/>
+<area shape="rect" id="node34" href="$writer_8hpp.html" title="include/osmium/io/writer.hpp" alt="" coords="1033,99,1220,133"/>
+<area shape="rect" id="node5" href="$any__compression_8hpp.html" title="include/osmium/io/any\l_compression.hpp" alt="" coords="721,193,873,247"/>
+<area shape="rect" id="node7" href="$any__input_8hpp.html" title="include/osmium/io/any\l_input.hpp" alt="" coords="545,297,697,351"/>
+<area shape="rect" id="node9" href="$any__output_8hpp.html" title="include/osmium/io/any\l_output.hpp" alt="" coords="980,297,1132,351"/>
+<area shape="rect" id="node16" href="$pbf__input_8hpp.html" title="include/osmium/io/pbf\l_input.hpp" alt="" coords="372,193,521,247"/>
+<area shape="rect" id="node19" href="$reader__iterator_8hpp.html" title="include/osmium/io/reader\l_iterator.hpp" alt="" coords="183,193,348,247"/>
+<area shape="rect" id="node31" href="$xml__input_8hpp.html" title="include/osmium/io/xml\l_input.hpp" alt="" coords="545,193,697,247"/>
+<area shape="rect" id="node21" href="$visitor_8hpp.html" title="include/osmium/visitor.hpp" alt="" coords="177,307,353,341"/>
+<area shape="rect" id="node23" href="$disk__store_8hpp.html" title="include/osmium/handler\l/disk_store.hpp" alt="" coords="5,401,163,455"/>
+<area shape="rect" id="node25" href="$dump_8hpp.html" title="include/osmium/handler\l/dump.hpp" alt="" coords="187,401,344,455"/>
+<area shape="rect" id="node27" href="$collector_8hpp.html" title="include/osmium/relations\l/collector.hpp" alt="" coords="368,401,533,455"/>
+<area shape="rect" id="node29" href="$multipolygon__collector_8hpp.html" title="include/osmium/area\l/multipolygon_collector.hpp" alt="" coords="361,505,540,559"/>
+<area shape="rect" id="node36" href="$opl__output_8hpp.html" title="include/osmium/io/opl\l_output.hpp" alt="" coords="897,193,1044,247"/>
+<area shape="rect" id="node39" href="$pbf__output_8hpp.html" title="include/osmium/io/pbf\l_output.hpp" alt="" coords="1068,193,1217,247"/>
+<area shape="rect" id="node42" href="$xml__output_8hpp.html" title="include/osmium/io/xml\l_output.hpp" alt="" coords="1241,193,1393,247"/>
 </map>

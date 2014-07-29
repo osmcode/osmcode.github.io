@@ -1,9 +1,0 @@
-<map id="osmium::io::detail::PBFInputFormat" name="osmium::io::detail::PBFInputFormat">
-<area shape="rect" id="node2" href="$classosmium_1_1io_1_1detail_1_1InputFormat.html" title="osmium::io::detail\l::InputFormat" alt="" coords="521,55,647,110"/>
-<area shape="rect" id="node4" href="$classosmium_1_1io_1_1File.html" title="osmium::io::File" alt="" coords="225,5,340,38"/>
-<area shape="rect" id="node6" href="$classosmium_1_1util_1_1Options.html" title="osmium::util::Options" alt="" coords="5,31,152,65"/>
-<area shape="rect" id="node10" href="$classosmium_1_1io_1_1Header.html" title="osmium::io::Header" alt="" coords="215,61,351,94"/>
-<area shape="rect" id="node8" href="$classosmium_1_1thread_1_1Queue.html" title="osmium::thread::Queue\l\&lt; std::string \&gt;" alt="" coords="204,134,361,189"/>
-<area shape="rect" id="node13" href="$classosmium_1_1io_1_1detail_1_1InputQueueReader.html" title="osmium::io::detail\l::InputQueueReader" alt="" coords="515,146,653,201"/>
-<area shape="rect" id="node16" href="$classosmium_1_1thread_1_1Queue.html" title="osmium::thread::Queue\l\&lt; std::future\&lt; osmium\l::memory::Buffer \&gt; \&gt;" alt="" coords="505,223,663,299"/>
-</map>

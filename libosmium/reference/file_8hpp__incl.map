@@ -1,5 +1,5 @@
 <map id="include/osmium/io/file.hpp" name="include/osmium/io/file.hpp">
-<area shape="rect" id="node15" href="$file__format_8hpp.html" title="osmium/io/file_format.hpp" alt="" coords="851,99,1021,133"/>
-<area shape="rect" id="node19" href="$file__compression_8hpp.html" title="osmium/io/file_compression.hpp" alt="" coords="195,99,403,133"/>
-<area shape="rect" id="node22" href="$options_8hpp.html" title="osmium/util/options.hpp" alt="" coords="1096,99,1256,133"/>
+<area shape="rect" id="node13" href="$file__format_8hpp.html" title="osmium/io/file_format.hpp" alt="" coords="288,89,459,122"/>
+<area shape="rect" id="node17" href="$file__compression_8hpp.html" title="osmium/io/file_compression.hpp" alt="" coords="565,89,773,122"/>
+<area shape="rect" id="node20" href="$options_8hpp.html" title="osmium/util/options.hpp" alt="" coords="848,89,1008,122"/>
 </map>

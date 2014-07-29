@@ -1,11 +1,3 @@
 <map id="include/osmium/thread/function_wrapper.hpp" name="include/osmium/thread/function_wrapper.hpp">
-<area shape="rect" id="node3" href="$pool_8hpp.html" title="include/osmium/thread\l/pool.hpp" alt="" coords="197,110,349,165"/>
-<area shape="rect" id="node5" href="$opl__output__format_8hpp.html" title="include/osmium/io/detail\l/opl_output_format.hpp" alt="" coords="5,214,168,269"/>
-<area shape="rect" id="node11" href="$pbf__input__format_8hpp.html" title="include/osmium/io/detail\l/pbf_input_format.hpp" alt="" coords="379,214,541,269"/>
-<area shape="rect" id="node17" href="$xml__output__format_8hpp.html" title="include/osmium/io/detail\l/xml_output_format.hpp" alt="" coords="192,214,355,269"/>
-<area shape="rect" id="node7" href="$opl__output_8hpp.html" title="include/osmium/io/opl\l_output.hpp" alt="" coords="16,318,163,373"/>
-<area shape="rect" id="node9" href="$any__output_8hpp.html" title="include/osmium/io/any\l_output.hpp" alt="" coords="107,422,259,477"/>
-<area shape="rect" id="node13" href="$pbf__input_8hpp.html" title="include/osmium/io/pbf\l_input.hpp" alt="" coords="385,318,535,373"/>
-<area shape="rect" id="node15" href="$any__input_8hpp.html" title="include/osmium/io/any\l_input.hpp" alt="" coords="384,422,536,477"/>
-<area shape="rect" id="node19" href="$xml__output_8hpp.html" title="include/osmium/io/xml\l_output.hpp" alt="" coords="191,318,343,373"/>
+<area shape="rect" id="node3" href="$pool_8hpp.html" title="include/osmium/thread\l/pool.hpp" alt="" coords="5,110,157,165"/>
 </map>

@@ -1,0 +1,19 @@
+<map id="include/osmium/geom/geos.hpp" name="include/osmium/geom/geos.hpp">
+<area shape="rect" id="node25" href="$factory_8hpp.html" title="osmium/geom/factory.hpp" alt="" coords="1755,121,1926,154"/>
+<area shape="rect" id="node32" href="$coordinates_8hpp.html" title="osmium/geom/coordinates.hpp" alt="" coords="137,401,337,434"/>
+<area shape="rect" id="node39" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="187,483,358,517"/>
+<area shape="rect" id="node56" href="$collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="2129,483,2331,517"/>
+<area shape="rect" id="node63" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="1487,566,1661,599"/>
+<area shape="rect" id="node68" href="$area_8hpp.html" title="osmium/osm/area.hpp" alt="" coords="2250,214,2399,247"/>
+<area shape="rect" id="node75" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="1387,483,1569,517"/>
+<area shape="rect" id="node128" href="$node__ref_8hpp.html" title="osmium/osm/node_ref.hpp" alt="" coords="1567,401,1743,434"/>
+<area shape="rect" id="node139" href="$node_8hpp.html" title="osmium/osm/node.hpp" alt="" coords="993,214,1147,247"/>
+<area shape="rect" id="node146" href="$way_8hpp.html" title="osmium/osm/way.hpp" alt="" coords="1766,214,1915,247"/>
+<area shape="rect" id="node54" href="$operators_8hpp.html" title="osmium/util/operators.hpp" alt="" coords="814,566,985,599"/>
+<area shape="rect" id="node80" href="$object_8hpp.html" title="osmium/osm/object.hpp" alt="" coords="990,307,1150,341"/>
+<area shape="rect" id="node114" href="$types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="1846,483,2003,517"/>
+<area shape="rect" id="node120" href="$node__ref__list_8hpp.html" title="osmium/osm/node_ref\l_list.hpp" alt="" coords="2003,297,2153,351"/>
+<area shape="rect" id="node90" href="$entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="1133,401,1290,434"/>
+<area shape="rect" id="node95" href="$tag_8hpp.html" title="osmium/osm/tag.hpp" alt="" coords="863,401,1007,434"/>
+<area shape="rect" id="node105" href="$timestamp_8hpp.html" title="osmium/osm/timestamp.hpp" alt="" coords="670,483,857,517"/>
+</map>

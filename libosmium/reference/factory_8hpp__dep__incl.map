@@ -1,5 +1,8 @@
 <map id="include/osmium/geom/factory.hpp" name="include/osmium/geom/factory.hpp">
-<area shape="rect" id="node3" href="$ogr_8hpp.html" title="include/osmium/geom\l/ogr.hpp" alt="" coords="5,110,155,165"/>
-<area shape="rect" id="node5" href="$wkb_8hpp.html" title="include/osmium/geom\l/wkb.hpp" alt="" coords="179,110,328,165"/>
-<area shape="rect" id="node7" href="$wkt_8hpp.html" title="include/osmium/geom\l/wkt.hpp" alt="" coords="352,110,501,165"/>
+<area shape="rect" id="node3" href="$geojson_8hpp.html" title="include/osmium/geom\l/geojson.hpp" alt="" coords="5,110,155,165"/>
+<area shape="rect" id="node5" href="$geos_8hpp.html" title="include/osmium/geom\l/geos.hpp" alt="" coords="179,110,328,165"/>
+<area shape="rect" id="node7" href="$ogr_8hpp.html" title="include/osmium/geom\l/ogr.hpp" alt="" coords="352,110,501,165"/>
+<area shape="rect" id="node11" href="$wkb_8hpp.html" title="include/osmium/geom\l/wkb.hpp" alt="" coords="525,110,675,165"/>
+<area shape="rect" id="node13" href="$wkt_8hpp.html" title="include/osmium/geom\l/wkt.hpp" alt="" coords="699,110,848,165"/>
+<area shape="rect" id="node9" href="$problem__reporter__ogr_8hpp.html" title="include/osmium/area\l/problem_reporter_ogr.hpp" alt="" coords="341,214,512,269"/>
 </map>

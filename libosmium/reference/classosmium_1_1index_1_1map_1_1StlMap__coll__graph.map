@@ -1,3 +1,3 @@
-<map id="osmium::index::map::StlMap&lt; TKey, TValue &gt;" name="osmium::index::map::StlMap&lt; TKey, TValue &gt;">
-<area shape="rect" id="node2" href="$classosmium_1_1index_1_1map_1_1Map.html" title="osmium::index::map\l::Map\&lt; TKey, TValue \&gt;" alt="" coords="13,6,171,61"/>
+<map id="osmium::index::map::StlMap&lt; TId, TValue &gt;" name="osmium::index::map::StlMap&lt; TId, TValue &gt;">
+<area shape="rect" id="node2" href="$classosmium_1_1index_1_1map_1_1Map.html" title="osmium::index::map\l::Map\&lt; TId, TValue \&gt;" alt="" coords="13,6,160,61"/>
 </map>

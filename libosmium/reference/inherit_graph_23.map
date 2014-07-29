@@ -1,4 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classosmium_1_1io_1_1detail_1_1BlobParser.html" title="osmium::io::detail\l::BlobParser\&lt; HeaderBlobParser \&gt;" alt="" coords="5,5,229,59"/>
-<area shape="rect" id="node3" href="$classosmium_1_1io_1_1detail_1_1HeaderBlobParser.html" title="osmium::io::detail\l::HeaderBlobParser" alt="" coords="277,5,413,59"/>
+<area shape="rect" id="node1" href="$classosmium_1_1io_1_1Compressor.html" title="osmium::io::Compressor" alt="" coords="5,61,171,94"/>
+<area shape="rect" id="node3" href="$classosmium_1_1io_1_1Bzip2Compressor.html" title="osmium::io::Bzip2Compressor" alt="" coords="220,5,417,38"/>
+<area shape="rect" id="node5" href="$classosmium_1_1io_1_1GzipCompressor.html" title="osmium::io::GzipCompressor" alt="" coords="223,61,415,94"/>
+<area shape="rect" id="node7" href="$classosmium_1_1io_1_1NoCompressor.html" title="osmium::io::NoCompressor" alt="" coords="228,117,409,150"/>
 </map>

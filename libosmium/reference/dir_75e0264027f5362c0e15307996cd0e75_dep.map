@@ -1,6 +1,9 @@
 <map id="include/osmium/osm" name="include/osmium/osm">
-<area shape="rect" id="node2" href="dir_75e0264027f5362c0e15307996cd0e75.html" title="osm" alt="" coords="27,59,99,107"/>
-<area shape="rect" id="node3" href="dir_2f0d4217f12f65fb65850372efab20b0.html" title="memory" alt="" coords="27,155,99,203"/>
-<area shape="rect" id="edge3" href="dir_000011_000010.html" title="15" alt="" coords="64,125,78,147"/>
-<area shape="rect" id="graph2" href="dir_d362108e4bda0b490ce177423b083a7a.html" title="osmium" alt="" coords="16,16,109,117"/>
+<area shape="rect" id="node2" href="dir_75e0264027f5362c0e15307996cd0e75.html" title="osm" alt="" coords="53,59,125,107"/>
+<area shape="rect" id="node3" href="dir_b79efb06fdd3a663a8d345b2a94741ba.html" title="util" alt="" coords="5,155,77,203"/>
+<area shape="rect" id="edge5" href="dir_000011_000015.html" title="5" alt="" coords="65,131,73,152"/>
+<area shape="rect" id="node4" href="dir_2f0d4217f12f65fb65850372efab20b0.html" title="memory" alt="" coords="101,155,173,203"/>
+<area shape="rect" id="edge7" href="dir_000011_000010.html" title="15" alt="" coords="108,124,123,145"/>
+<area shape="rect" id="edge3" href="dir_000010_000011.html" title="2" alt="" coords="107,116,115,137"/>
+<area shape="rect" id="graph2" href="dir_d362108e4bda0b490ce177423b083a7a.html" title="osmium" alt="" coords="43,16,136,117"/>
 </map>

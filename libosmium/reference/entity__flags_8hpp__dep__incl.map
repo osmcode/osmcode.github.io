@@ -1,9 +1,0 @@
-<map id="include/osmium/osm/entity_flags.hpp" name="include/osmium/osm/entity_flags.hpp">
-<area shape="rect" id="node3" href="$input__format_8hpp.html" title="include/osmium/io/detail\l/input_format.hpp" alt="" coords="184,110,347,165"/>
-<area shape="rect" id="node5" href="$pbf__input__format_8hpp.html" title="include/osmium/io/detail\l/pbf_input_format.hpp" alt="" coords="5,214,168,269"/>
-<area shape="rect" id="node11" href="$xml__input__format_8hpp.html" title="include/osmium/io/detail\l/xml_input_format.hpp" alt="" coords="405,214,568,269"/>
-<area shape="rect" id="node16" href="$reader_8hpp.html" title="include/osmium/io/reader.hpp" alt="" coords="192,225,381,258"/>
-<area shape="rect" id="node7" href="$pbf__input_8hpp.html" title="include/osmium/io/pbf\l_input.hpp" alt="" coords="124,318,273,373"/>
-<area shape="rect" id="node9" href="$any__input_8hpp.html" title="include/osmium/io/any\l_input.hpp" alt="" coords="209,422,361,477"/>
-<area shape="rect" id="node13" href="$xml__input_8hpp.html" title="include/osmium/io/xml\l_input.hpp" alt="" coords="297,318,449,373"/>
-</map>

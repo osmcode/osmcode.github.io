@@ -1,3 +1,4 @@
 <map id="osmium::Box" name="osmium::Box">
-<area shape="rect" id="node2" href="$classosmium_1_1Location.html" title="osmium::Location" alt="" coords="16,113,141,146"/>
+<area shape="rect" id="node2" href="$classosmium_1_1Location.html" title="osmium::Location" alt="" coords="23,113,148,146"/>
+<area shape="rect" id="node4" href="$structosmium_1_1totally__ordered.html" title="osmium::totally_ordered\l\&lt; Location \&gt;" alt="" coords="5,6,165,61"/>
 </map>
