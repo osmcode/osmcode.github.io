@@ -1,21 +1,21 @@
 <map id="osmium::memory::Item" name="osmium::memory::Item">
-<area shape="rect" id="node5" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; RelationMember, osmium\l::item_type::relation_member_list \&gt;" alt="" coords="421,5,648,81"/>
-<area shape="rect" id="node9" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; Tag, osmium::item_type\l::tag_list \&gt;" alt="" coords="440,103,629,179"/>
-<area shape="rect" id="node13" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; osmium::item_type\l::inner_ring \&gt;" alt="" coords="460,202,609,278"/>
-<area shape="rect" id="node17" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; osmium::item_type\l::outer_ring \&gt;" alt="" coords="460,301,609,377"/>
-<area shape="rect" id="node21" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; osmium::item_type\l::way_node_list \&gt;" alt="" coords="460,399,609,475"/>
-<area shape="rect" id="node25" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; TMember, TCollectionItemType \&gt;" alt="" coords="421,498,648,553"/>
-<area shape="rect" id="node27" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; TItemType \&gt;" alt="" coords="460,575,609,630"/>
-<area shape="rect" id="node29" href="$classosmium_1_1OSMEntity.html" title="osmium::OSMEntity" alt="" coords="465,653,604,686"/>
-<area shape="rect" id="node7" href="$classosmium_1_1RelationMemberList.html" title="osmium::RelationMemberList" alt="" coords="696,26,888,59"/>
-<area shape="rect" id="node11" href="$classosmium_1_1TagList.html" title="osmium::TagList" alt="" coords="733,125,851,158"/>
-<area shape="rect" id="node15" href="$classosmium_1_1InnerRing.html" title="osmium::InnerRing" alt="" coords="727,223,857,257"/>
-<area shape="rect" id="node19" href="$classosmium_1_1OuterRing.html" title="osmium::OuterRing" alt="" coords="725,322,859,355"/>
-<area shape="rect" id="node23" href="$classosmium_1_1WayNodeList.html" title="osmium::WayNodeList" alt="" coords="715,421,869,454"/>
-<area shape="rect" id="node31" href="$classosmium_1_1Changeset.html" title="osmium::Changeset" alt="" coords="723,625,861,658"/>
-<area shape="rect" id="node33" href="$classosmium_1_1OSMObject.html" title="osmium::OSMObject" alt="" coords="720,681,864,714"/>
-<area shape="rect" id="node35" href="$classosmium_1_1Area.html" title="osmium::Area" alt="" coords="948,597,1049,630"/>
-<area shape="rect" id="node37" href="$classosmium_1_1Node.html" title="osmium::Node" alt="" coords="945,653,1052,686"/>
-<area shape="rect" id="node39" href="$classosmium_1_1Relation.html" title="osmium::Relation" alt="" coords="937,709,1060,742"/>
-<area shape="rect" id="node41" href="$classosmium_1_1Way.html" title="osmium::Way" alt="" coords="948,765,1049,798"/>
+<area shape="rect" id="node3" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; RelationMember, osmium\l::item_type::relation_member_list \&gt;" alt="" coords="423,5,650,61"/>
+<area shape="rect" id="node5" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; Tag, osmium::item_type\l::tag_list \&gt;" alt="" coords="442,85,631,141"/>
+<area shape="rect" id="node7" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; osmium::item_type\l::inner_ring \&gt;" alt="" coords="462,165,611,221"/>
+<area shape="rect" id="node9" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; osmium::item_type\l::outer_ring \&gt;" alt="" coords="462,245,611,301"/>
+<area shape="rect" id="node11" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; osmium::item_type\l::way_node_list \&gt;" alt="" coords="462,325,611,381"/>
+<area shape="rect" id="node13" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; TMember, TCollectionItemType \&gt;" alt="" coords="421,405,652,446"/>
+<area shape="rect" id="node14" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; TItemType \&gt;" alt="" coords="462,470,611,511"/>
+<area shape="rect" id="node15" href="$classosmium_1_1OSMEntity.html" title="OSMEntity is the abstract base class for the OSMObject and Changeset classes. " alt="" coords="467,536,607,563"/>
+<area shape="rect" id="node4" href="$classosmium_1_1RelationMemberList.html" title="osmium::RelationMemberList" alt="" coords="700,20,892,47"/>
+<area shape="rect" id="node6" href="$classosmium_1_1TagList.html" title="osmium::TagList" alt="" coords="737,100,855,127"/>
+<area shape="rect" id="node8" href="$classosmium_1_1InnerRing.html" title="osmium::InnerRing" alt="" coords="730,180,862,207"/>
+<area shape="rect" id="node10" href="$classosmium_1_1OuterRing.html" title="osmium::OuterRing" alt="" coords="729,260,863,287"/>
+<area shape="rect" id="node12" href="$classosmium_1_1WayNodeList.html" title="osmium::WayNodeList" alt="" coords="719,340,873,367"/>
+<area shape="rect" id="node16" href="$classosmium_1_1Changeset.html" title="An OSM Changeset, a group of changes made by a single user over a short period of time..." alt="" coords="727,511,865,537"/>
+<area shape="rect" id="node17" href="$classosmium_1_1OSMObject.html" title="osmium::OSMObject" alt="" coords="724,561,868,588"/>
+<area shape="rect" id="node18" href="$classosmium_1_1Area.html" title="osmium::Area" alt="" coords="951,485,1053,512"/>
+<area shape="rect" id="node19" href="$classosmium_1_1Node.html" title="osmium::Node" alt="" coords="949,536,1055,563"/>
+<area shape="rect" id="node20" href="$classosmium_1_1Relation.html" title="osmium::Relation" alt="" coords="940,587,1064,613"/>
+<area shape="rect" id="node21" href="$classosmium_1_1Way.html" title="osmium::Way" alt="" coords="951,637,1053,664"/>
 </map>

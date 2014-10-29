@@ -151,7 +151,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>m_buffer
 : <a class="el" href="classosmium_1_1builder_1_1Builder.html#a541240b58f0fad5c1165c65559d10e95">osmium::builder::Builder</a>
+, <a class="el" href="classosmium_1_1io_1_1Bzip2BufferDecompressor.html#af9cfbcccfe462ea692b418cc27132dd0">osmium::io::Bzip2BufferDecompressor</a>
+, <a class="el" href="classosmium_1_1io_1_1File.html#ace1f5fc1eb5dd343c00926e39fe28a0b">osmium::io::File</a>
+, <a class="el" href="classosmium_1_1io_1_1GzipBufferDecompressor.html#a5038b862251ef205d4ebecc544fb4187">osmium::io::GzipBufferDecompressor</a>
 , <a class="el" href="classosmium_1_1io_1_1InputIterator.html#aaece3e38f5987f3b6188e7f987d01ce5">osmium::io::InputIterator&lt; TSource, TItem &gt;</a>
+, <a class="el" href="classosmium_1_1io_1_1NoDecompressor.html#a0a56ca5200042f3e15b56094b36e2a66">osmium::io::NoDecompressor</a>
+</li>
+<li>m_buffer_size
+: <a class="el" href="classosmium_1_1io_1_1Bzip2BufferDecompressor.html#a6ed1953c13fbe03d52a6b33d350ce243">osmium::io::Bzip2BufferDecompressor</a>
+, <a class="el" href="classosmium_1_1io_1_1File.html#a60ff03f9f1d31a8a49f5a6f11df57866">osmium::io::File</a>
+, <a class="el" href="classosmium_1_1io_1_1GzipBufferDecompressor.html#ac7250e46b5cbbcc1257ed3e63c2803c1">osmium::io::GzipBufferDecompressor</a>
+, <a class="el" href="classosmium_1_1io_1_1NoDecompressor.html#af05b36e52d0b5945b352d7763b90264a">osmium::io::NoDecompressor</a>
 </li>
 <li>m_buffer_wrapper
 : <a class="el" href="classosmium_1_1io_1_1OutputIterator.html#a087aaae5afc130a85952040a37cc0adb">osmium::io::OutputIterator&lt; TDest &gt;</a>
@@ -163,6 +173,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>m_bzfile
 : <a class="el" href="classosmium_1_1io_1_1Bzip2Compressor.html#a0ee419e87c6e0000096cf99e80521f4f">osmium::io::Bzip2Compressor</a>
 , <a class="el" href="classosmium_1_1io_1_1Bzip2Decompressor.html#a3c42985b54a0fc1081d1ebc06e836a13">osmium::io::Bzip2Decompressor</a>
+</li>
+<li>m_bzstream
+: <a class="el" href="classosmium_1_1io_1_1Bzip2BufferDecompressor.html#aee194178bfdfabb1dbd0d36193c465ca">osmium::io::Bzip2BufferDecompressor</a>
 </li>
 <li>m_callback
 : <a class="el" href="classosmium_1_1relations_1_1Collector.html#a273eb530e47be57f9c86aff9977f318a">osmium::relations::Collector&lt; TCollector, TNodes, TWays, TRelations &gt;</a>
@@ -239,7 +252,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classosmium_1_1OSMObject.html#ab8ecd1ce3c7f016f6cfa89028f28712e">osmium::OSMObject</a>
 </li>
 <li>m_destination
-: <a class="el" href="classosmium_1_1io_1_1OutputIterator.html#aebdc14e7ef3b1c13d64aceef3d352639">osmium::io::OutputIterator&lt; TDest &gt;</a>
+: <a class="el" href="classosmium_1_1io_1_1OutputIterator.html#a1a0e934cc6421a1ea4fc24cdc0905e8a">osmium::io::OutputIterator&lt; TDest &gt;</a>
 </li>
 <li>m_diff
 : <a class="el" href="classosmium_1_1DiffIterator.html#a2293979074ec0949e6dc25591e853e93">osmium::DiffIterator&lt; TBasicIterator &gt;</a>
@@ -303,7 +316,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structosmium_1_1thread_1_1function__wrapper_1_1impl__type.html#aa595f3296619eabd7bdf396b73190a9e">osmium::thread::function_wrapper::impl_type&lt; F &gt;</a>
 </li>
 <li>m_future
-: <a class="el" href="classosmium_1_1thread_1_1CheckedTask.html#aeef6036315eb54a362f51a354f7924a0">osmium::thread::CheckedTask&lt; T &gt;</a>
+: <a class="el" href="classosmium_1_1thread_1_1CheckedTask.html#a72e00f69484d1bd57436de44aa5538f6">osmium::thread::CheckedTask&lt; T &gt;</a>
 </li>
 <li>m_grow_size
 : <a class="el" href="classosmium_1_1index_1_1map_1_1SparseTable.html#a285bf254c8289cec628b8aa4a4d232f0">osmium::index::map::SparseTable&lt; TId, TValue &gt;</a>
@@ -434,8 +447,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classosmium_1_1util_1_1Options.html#a29f31cca5dbf8ae08f15a6dd28530b04">osmium::util::Options</a>
 </li>
 <li>m_out
-: <a class="el" href="classosmium_1_1area_1_1ProblemReporterStream.html#a6150808cbef76b2da9fa2184f1547507">osmium::area::ProblemReporterStream</a>
-, <a class="el" href="classosmium_1_1handler_1_1Dump.html#a214bd6415fdecc833338d13e3f6af77b">osmium::handler::Dump</a>
+: <a class="el" href="classosmium_1_1area_1_1ProblemReporterStream.html#a9f5a7735edd13b0e76a84c0ceb2bb642">osmium::area::ProblemReporterStream</a>
+, <a class="el" href="classosmium_1_1handler_1_1Dump.html#af37ad86454d3c39099cbbd7f9b66f4f2">osmium::handler::Dump</a>
 </li>
 <li>m_outer_rings
 : <a class="el" href="classosmium_1_1area_1_1Assembler.html#a83871b2184b540e6f6831868368d550d">osmium::area::Assembler</a>
@@ -448,6 +461,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>m_output_queue
 : <a class="el" href="classosmium_1_1io_1_1Writer.html#a8de4e7333096d34b3062d9d119080117">osmium::io::Writer</a>
+</li>
+<li>m_padding
+: <a class="el" href="classosmium_1_1memory_1_1Item.html#ae0f81d7f431bcb702437dcaae24d3f1c">osmium::memory::Item</a>
 </li>
 <li>m_parent
 : <a class="el" href="classosmium_1_1builder_1_1Builder.html#ad17bafe4d425be267c671f6e4c113949">osmium::builder::Builder</a>
@@ -489,7 +505,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classosmium_1_1relations_1_1Collector.html#aed50c5470760625f19897eb4ab62ed6d">osmium::relations::Collector&lt; TCollector, TNodes, TWays, TRelations &gt;</a>
 </li>
 <li>m_removed
-: <a class="el" href="classosmium_1_1memory_1_1Item.html#ae2a4da006b9c1ae7178e18807ec0bfeb">osmium::memory::Item</a>
+: <a class="el" href="classosmium_1_1memory_1_1Item.html#a4b43b5ed4c0e85aeca6ebc8c443407e8">osmium::memory::Item</a>
 </li>
 <li>m_rings
 : <a class="el" href="classosmium_1_1area_1_1Assembler.html#ab58ba651b0eeb6e4323f20b8daeee55c">osmium::area::Assembler</a>
@@ -526,6 +542,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>m_stream_end
 : <a class="el" href="classosmium_1_1io_1_1Bzip2Decompressor.html#a7a0be33cfbcfcf4f31e965db33eb4453">osmium::io::Bzip2Decompressor</a>
+</li>
+<li>m_task
+: <a class="el" href="classosmium_1_1thread_1_1SharedPtrWrapper.html#a5316654a517611568bb6beaa069860e6">osmium::thread::SharedPtrWrapper&lt; TWrapped &gt;</a>
 </li>
 <li>m_thread
 : <a class="el" href="classosmium_1_1thread_1_1CheckedTask.html#af9c8800a527146c89211e75a8e936ee5">osmium::thread::CheckedTask&lt; T &gt;</a>
@@ -587,12 +606,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>m_y
 : <a class="el" href="classosmium_1_1Location.html#a24a09beca7e4a85c77576c0a458a5951">osmium::Location</a>
 </li>
+<li>m_zstream
+: <a class="el" href="classosmium_1_1io_1_1GzipBufferDecompressor.html#a91fbd000f291c3d3ccc7175260d62877">osmium::io::GzipBufferDecompressor</a>
+</li>
 <li>main_map_type
 : <a class="el" href="classosmium_1_1index_1_1multimap_1_1Hybrid.html#a58de3129595ec2333e915d3573a00c70">osmium::index::multimap::Hybrid&lt; TId, TValue &gt;</a>
 , <a class="el" href="classosmium_1_1index_1_1multimap_1_1HybridIterator.html#ad295d37663895c15289bb6f41477e9ff">osmium::index::multimap::HybridIterator&lt; TId, TValue &gt;</a>
 </li>
 <li>Map()
-: <a class="el" href="classosmium_1_1index_1_1map_1_1Map.html#a5bf9637c322a8140c36530928fc4738e">osmium::index::map::Map&lt; TId, TValue &gt;</a>
+: <a class="el" href="classosmium_1_1index_1_1map_1_1Map.html#a8ee1953b90a8fd2d7fbd163785b74465">osmium::index::map::Map&lt; TId, TValue &gt;</a>
 </li>
 <li>max_buffer_size_for_flush
 : <a class="el" href="classosmium_1_1area_1_1MultipolygonCollector.html#a7447f9923c602ef19b4a0364bb625f12">osmium::area::MultipolygonCollector&lt; TAssembler &gt;</a>
@@ -609,8 +631,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>moving_in_buffer()
 : <a class="el" href="classosmium_1_1relations_1_1Collector.html#acc0fa6c36f64d1c6113cefd09a1b5568">osmium::relations::Collector&lt; TCollector, TNodes, TWays, TRelations &gt;</a>
 </li>
+<li>MPFilter()
+: <a class="el" href="structosmium_1_1area_1_1Assembler_1_1MPFilter.html#a1fde017636ccc3e3f496ed8cb47b29f8">osmium::area::Assembler::MPFilter</a>
+</li>
 <li>Multimap()
-: <a class="el" href="classosmium_1_1index_1_1multimap_1_1Multimap.html#ada3876ed294f517e49ca65baae8ca2a8">osmium::index::multimap::Multimap&lt; TId, TValue &gt;</a>
+: <a class="el" href="classosmium_1_1index_1_1multimap_1_1Multimap.html#ac72ef083d94638fcd61d0b2c44d91dc8">osmium::index::multimap::Multimap&lt; TId, TValue &gt;</a>
 </li>
 <li>multipolygon_type
 : <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a9814738f6ac8e703d1ae370a6990e598">osmium::geom::GeometryFactory&lt; TGeomImpl, TProjection &gt;</a>
@@ -622,7 +647,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:39 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

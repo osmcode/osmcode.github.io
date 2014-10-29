@@ -98,19 +98,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;iosfwd&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;<a class="el" href="location_8hpp_source.html">osmium/osm/location.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="compatibility_8hpp_source.html">osmium/util/compatibility.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for segment.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="segment_8hpp__incl.png" border="0" usemap="#include_2osmium_2osm_2segment_8hpp" alt=""/></div>
 <map name="include_2osmium_2osm_2segment_8hpp" id="include_2osmium_2osm_2segment_8hpp">
-<area shape="rect" id="node7" href="location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="256,110,427,143"/><area shape="rect" id="node24" href="operators_8hpp.html" title="osmium/util/operators.hpp" alt="" coords="691,193,861,226"/></map>
+<area shape="rect" id="node4" href="location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="226,95,397,121"/><area shape="rect" id="node10" href="compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="685,169,876,196"/><area shape="rect" id="node11" href="double_8hpp.html" title="osmium/util/double.hpp" alt="" coords="505,169,661,196"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="segment_8hpp__dep__incl.png" border="0" usemap="#include_2osmium_2osm_2segment_8hppdep" alt=""/></div>
 <map name="include_2osmium_2osm_2segment_8hppdep" id="include_2osmium_2osm_2segment_8hppdep">
-<area shape="rect" id="node3" href="undirected__segment_8hpp.html" title="include/osmium/osm\l/undirected_segment.hpp" alt="" coords="5,110,173,165"/></map>
+<area shape="rect" id="node2" href="undirected__segment_8hpp.html" title="include/osmium/osm\l/undirected_segment.hpp" alt="" coords="5,95,173,136"/></map>
 </div>
 </div>
 <p><a href="segment_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -128,11 +129,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a715dc6d1239f936b30a0f6ca222ff08d"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosmium.html#a715dc6d1239f936b30a0f6ca222ff08d">osmium::operator==</a> (const Segment &amp;lhs, const Segment &amp;rhs)</td></tr>
-<tr class="memdesc:a715dc6d1239f936b30a0f6ca222ff08d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Segments are equal if both their locations are equal.  <a href="#a715dc6d1239f936b30a0f6ca222ff08d">More...</a><br /></td></tr>
-<tr class="separator:a715dc6d1239f936b30a0f6ca222ff08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eb9f0cbc67c714781efc0e4f0eabde9"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosmium.html#a7eb9f0cbc67c714781efc0e4f0eabde9">osmium::operator!=</a> (const Segment &amp;lhs, const Segment &amp;rhs)</td></tr>
-<tr class="separator:a7eb9f0cbc67c714781efc0e4f0eabde9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae9a235c6652aecb73e8e52a7830b9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="compatibility_8hpp.html#adaaa45e97bfc874a7ffce06b510b9e17">OSMIUM_CONSTEXPR</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosmium.html#a7ae9a235c6652aecb73e8e52a7830b9c">osmium::operator==</a> (const Segment &amp;lhs, const Segment &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:a7ae9a235c6652aecb73e8e52a7830b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Segments are equal if both their locations are equal.  <a href="#a7ae9a235c6652aecb73e8e52a7830b9c">More...</a><br /></td></tr>
+<tr class="separator:a7ae9a235c6652aecb73e8e52a7830b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0770dcbdca30e942f92769d7e9b3587a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="compatibility_8hpp.html#adaaa45e97bfc874a7ffce06b510b9e17">OSMIUM_CONSTEXPR</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosmium.html#a0770dcbdca30e942f92769d7e9b3587a">osmium::operator!=</a> (const Segment &amp;lhs, const Segment &amp;rhs) noexcept</td></tr>
+<tr class="separator:a0770dcbdca30e942f92769d7e9b3587a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43133b0f3d1fdfda0e57a4ce8becc941"><td class="memTemplParams" colspan="2">template&lt;typename TChar , typename TTraits &gt; </td></tr>
 <tr class="memitem:a43133b0f3d1fdfda0e57a4ce8becc941"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; TChar, <br class="typebreak" />
 TTraits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosmium.html#a43133b0f3d1fdfda0e57a4ce8becc941">osmium::operator&lt;&lt;</a> (std::basic_ostream&lt; TChar, TTraits &gt; &amp;out, const <a class="el" href="classosmium_1_1Segment.html">osmium::Segment</a> &amp;segment)</td></tr>
@@ -141,7 +142,7 @@ TTraits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a cl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

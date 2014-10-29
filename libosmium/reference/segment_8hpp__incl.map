@@ -1,4 +1,5 @@
 <map id="include/osmium/osm/segment.hpp" name="include/osmium/osm/segment.hpp">
-<area shape="rect" id="node7" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="256,110,427,143"/>
-<area shape="rect" id="node24" href="$operators_8hpp.html" title="osmium/util/operators.hpp" alt="" coords="691,193,861,226"/>
+<area shape="rect" id="node4" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="226,95,397,121"/>
+<area shape="rect" id="node10" href="$compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="685,169,876,196"/>
+<area shape="rect" id="node11" href="$double_8hpp.html" title="osmium/util/double.hpp" alt="" coords="505,169,661,196"/>
 </map>

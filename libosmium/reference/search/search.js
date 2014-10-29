@@ -12,12 +12,12 @@ var indexSectionsWithContent =
   2: "os",
   3: "abcdefghilmnopqrstuvwx",
   4: "abcdefghijklmnopqrstuvwxy~",
-  5: "abcdeikmprtuvxy",
+  5: "abcdegikmprstuvxy",
   6: "acdefghiklmnoprstuvw",
   7: "adfiotuw",
   8: "abcefghijnoprtuwxy",
   9: "ciost",
-  10: "o"
+  10: "ot"
 };
 
 var indexSectionNames =

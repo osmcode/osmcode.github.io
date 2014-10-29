@@ -1,5 +1,5 @@
 <map id="include/osmium/osm/tag.hpp" name="include/osmium/osm/tag.hpp">
-<area shape="rect" id="node13" href="$collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="264,110,467,143"/>
-<area shape="rect" id="node19" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="155,193,328,226"/>
-<area shape="rect" id="node25" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="592,110,773,143"/>
+<area shape="rect" id="node7" href="$collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="264,95,467,121"/>
+<area shape="rect" id="node9" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="155,169,328,196"/>
+<area shape="rect" id="node11" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="593,95,775,121"/>
 </map>

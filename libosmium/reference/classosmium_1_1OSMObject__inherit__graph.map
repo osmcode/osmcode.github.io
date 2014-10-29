@@ -1,9 +1,8 @@
 <map id="osmium::OSMObject" name="osmium::OSMObject">
-<area shape="rect" id="node11" href="$classosmium_1_1Area.html" title="osmium::Area" alt="" coords="5,379,107,413"/>
-<area shape="rect" id="node13" href="$classosmium_1_1Node.html" title="osmium::Node" alt="" coords="131,379,237,413"/>
-<area shape="rect" id="node15" href="$classosmium_1_1Relation.html" title="osmium::Relation" alt="" coords="261,379,384,413"/>
-<area shape="rect" id="node17" href="$classosmium_1_1Way.html" title="osmium::Way" alt="" coords="408,379,509,413"/>
-<area shape="rect" id="node2" href="$classosmium_1_1OSMEntity.html" title="osmium::OSMEntity" alt="" coords="97,203,236,237"/>
-<area shape="rect" id="node4" href="$classosmium_1_1memory_1_1Item.html" title="osmium::memory::Item" alt="" coords="88,110,245,143"/>
-<area shape="rect" id="node8" href="$structosmium_1_1totally__ordered.html" title="osmium::totally_ordered\l\&lt; OSMObject \&gt;" alt="" coords="260,193,420,247"/>
+<area shape="rect" id="node5" href="$classosmium_1_1Area.html" title="osmium::Area" alt="" coords="5,319,108,345"/>
+<area shape="rect" id="node6" href="$classosmium_1_1Node.html" title="osmium::Node" alt="" coords="133,319,239,345"/>
+<area shape="rect" id="node7" href="$classosmium_1_1Relation.html" title="osmium::Relation" alt="" coords="264,319,388,345"/>
+<area shape="rect" id="node8" href="$classosmium_1_1Way.html" title="osmium::Way" alt="" coords="412,319,515,345"/>
+<area shape="rect" id="node2" href="$classosmium_1_1OSMEntity.html" title="OSMEntity is the abstract base class for the OSMObject and Changeset classes. " alt="" coords="185,169,325,196"/>
+<area shape="rect" id="node3" href="$classosmium_1_1memory_1_1Item.html" title="osmium::memory::Item" alt="" coords="177,95,334,121"/>
 </map>

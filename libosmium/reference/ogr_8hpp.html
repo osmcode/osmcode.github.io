@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;ogr_geometry.h&gt;</code><br />
@@ -106,14 +107,14 @@ Include dependency graph for ogr.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="ogr_8hpp__incl.png" border="0" usemap="#include_2osmium_2geom_2ogr_8hpp" alt=""/></div>
 <map name="include_2osmium_2geom_2ogr_8hpp" id="include_2osmium_2geom_2ogr_8hpp">
-<area shape="rect" id="node11" href="coordinates_8hpp.html" title="osmium/geom/coordinates.hpp" alt="" coords="2288,379,2488,413"/><area shape="rect" id="node37" href="factory_8hpp.html" title="osmium/geom/factory.hpp" alt="" coords="2013,110,2184,143"/><area shape="rect" id="node19" href="location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="440,462,611,495"/><area shape="rect" id="node35" href="operators_8hpp.html" title="osmium/util/operators.hpp" alt="" coords="301,545,472,578"/><area shape="rect" id="node43" href="collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="1997,462,2200,495"/><area shape="rect" id="node50" href="item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="1696,545,1869,578"/><area shape="rect" id="node55" href="area_8hpp.html" title="osmium/osm/area.hpp" alt="" coords="1760,193,1909,226"/><area shape="rect" id="node62" href="item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="787,462,968,495"/><area shape="rect" id="node114" href="node__ref_8hpp.html" title="osmium/osm/node_ref.hpp" alt="" coords="435,379,611,413"/><area shape="rect" id="node125" href="node_8hpp.html" title="osmium/osm/node.hpp" alt="" coords="1131,193,1285,226"/><area shape="rect" id="node132" href="way_8hpp.html" title="osmium/osm/way.hpp" alt="" coords="957,193,1107,226"/><area shape="rect" id="node67" href="object_8hpp.html" title="osmium/osm/object.hpp" alt="" coords="1040,286,1200,319"/><area shape="rect" id="node101" href="types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="5,462,163,495"/><area shape="rect" id="node107" href="node__ref__list_8hpp.html" title="osmium/osm/node_ref\l_list.hpp" alt="" coords="1760,275,1909,330"/><area shape="rect" id="node77" href="entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="1461,379,1619,413"/><area shape="rect" id="node82" href="tag_8hpp.html" title="osmium/osm/tag.hpp" alt="" coords="1243,379,1387,413"/><area shape="rect" id="node92" href="timestamp_8hpp.html" title="osmium/osm/timestamp.hpp" alt="" coords="1280,462,1467,495"/></map>
+<area shape="rect" id="node7" href="coordinates_8hpp.html" title="osmium/geom/coordinates.hpp" alt="" coords="143,341,343,367"/><area shape="rect" id="node19" href="factory_8hpp.html" title="osmium/geom/factory.hpp" alt="" coords="1277,95,1451,121"/><area shape="rect" id="node10" href="location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="320,423,491,449"/><area shape="rect" id="node16" href="double_8hpp.html" title="osmium/util/double.hpp" alt="" coords="55,497,211,524"/><area shape="rect" id="node15" href="compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="513,497,703,524"/><area shape="rect" id="node20" href="collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="2083,423,2285,449"/><area shape="rect" id="node23" href="item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="1756,497,1929,524"/><area shape="rect" id="node24" href="area_8hpp.html" title="osmium/osm/area.hpp" alt="" coords="2365,169,2515,196"/><area shape="rect" id="node26" href="item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="1030,423,1213,449"/><area shape="rect" id="node38" href="node__ref_8hpp.html" title="osmium/osm/node_ref.hpp" alt="" coords="1159,341,1335,367"/><area shape="rect" id="node39" href="node_8hpp.html" title="osmium/osm/node.hpp" alt="" coords="791,169,945,196"/><area shape="rect" id="node40" href="way_8hpp.html" title="osmium/osm/way.hpp" alt="" coords="1494,169,1645,196"/><area shape="rect" id="node27" href="object_8hpp.html" title="osmium/osm/object.hpp" alt="" coords="1489,251,1650,278"/><area shape="rect" id="node36" href="types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="2462,423,2621,449"/><area shape="rect" id="node37" href="node__ref__list_8hpp.html" title="osmium/osm/node_ref\l_list.hpp" alt="" coords="2547,244,2698,285"/><area shape="rect" id="node29" href="item__iterator_8hpp.html" title="osmium/memory/item\l_iterator.hpp" alt="" coords="1813,333,1961,375"/><area shape="rect" id="node30" href="entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="1578,341,1737,367"/><area shape="rect" id="node31" href="tag_8hpp.html" title="osmium/osm/tag.hpp" alt="" coords="1409,341,1553,367"/><area shape="rect" id="node32" href="timestamp_8hpp.html" title="osmium/osm/timestamp.hpp" alt="" coords="616,423,803,449"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="ogr_8hpp__dep__incl.png" border="0" usemap="#include_2osmium_2geom_2ogr_8hppdep" alt=""/></div>
 <map name="include_2osmium_2geom_2ogr_8hppdep" id="include_2osmium_2geom_2ogr_8hppdep">
-<area shape="rect" id="node3" href="problem__reporter__ogr_8hpp.html" title="include/osmium/area\l/problem_reporter_ogr.hpp" alt="" coords="5,110,176,165"/></map>
+<area shape="rect" id="node2" href="problem__reporter__ogr_8hpp.html" title="include/osmium/area\l/problem_reporter_ogr.hpp" alt="" coords="5,95,179,136"/></map>
 </div>
 </div>
 <p><a href="ogr_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -168,7 +169,7 @@ Typedefs</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:10 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

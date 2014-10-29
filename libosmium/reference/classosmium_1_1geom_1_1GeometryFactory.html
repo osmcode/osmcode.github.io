@@ -117,8 +117,6 @@ TGeomImpl::multipolygon_type&#160;</td><td class="memItemRight" valign="bottom">
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a34116d9cbf37e57a7f007c8bcdce8331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a34116d9cbf37e57a7f007c8bcdce8331">GeometryFactory</a> ()=default</td></tr>
-<tr class="separator:a34116d9cbf37e57a7f007c8bcdce8331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00f4e49f6ea015856ea11414423c28c7"><td class="memTemplParams" colspan="2">template&lt;class... TArgs&gt; </td></tr>
 <tr class="memitem:a00f4e49f6ea015856ea11414423c28c7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a00f4e49f6ea015856ea11414423c28c7">GeometryFactory</a> (TArgs &amp;&amp;...args)</td></tr>
 <tr class="separator:a00f4e49f6ea015856ea11414423c28c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,16 +133,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2db19c43a69d83d25922689020ce5540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b2fb3cc0154a06c288d733360fdd127"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#acf2c08d6aa1f549667d2e133ee721906">point_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a7b2fb3cc0154a06c288d733360fdd127">create_point</a> (const <a class="el" href="classosmium_1_1NodeRef.html">osmium::NodeRef</a> &amp;node_ref)</td></tr>
 <tr class="separator:a7b2fb3cc0154a06c288d733360fdd127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7076117148f0feaf0e27e4db899bad0"><td class="memTemplParams" colspan="2">template&lt;class TIter &gt; </td></tr>
-<tr class="memitem:ab7076117148f0feaf0e27e4db899bad0"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#ab7076117148f0feaf0e27e4db899bad0">fill_linestring</a> (TIter it, TIter end)</td></tr>
-<tr class="separator:ab7076117148f0feaf0e27e4db899bad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f6c2440f4acd5c20d42e8d19efa5a90"><td class="memTemplParams" colspan="2">template&lt;class TIter &gt; </td></tr>
-<tr class="memitem:a6f6c2440f4acd5c20d42e8d19efa5a90"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a6f6c2440f4acd5c20d42e8d19efa5a90">fill_linestring_unique</a> (TIter it, TIter end)</td></tr>
-<tr class="separator:a6f6c2440f4acd5c20d42e8d19efa5a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d480006dc1921ec518e95ecf43cb28b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a1d480006dc1921ec518e95ecf43cb28b">linestring_start</a> ()</td></tr>
+<tr class="separator:a1d480006dc1921ec518e95ecf43cb28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccbd1bee6c4bc0ab59b89aeead06dee"><td class="memTemplParams" colspan="2">template&lt;class TIter &gt; </td></tr>
+<tr class="memitem:a3ccbd1bee6c4bc0ab59b89aeead06dee"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a3ccbd1bee6c4bc0ab59b89aeead06dee">fill_linestring</a> (TIter it, TIter end)</td></tr>
+<tr class="separator:a3ccbd1bee6c4bc0ab59b89aeead06dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2096e7c32d95bf6ed474129ccef1ac3"><td class="memTemplParams" colspan="2">template&lt;class TIter &gt; </td></tr>
+<tr class="memitem:ad2096e7c32d95bf6ed474129ccef1ac3"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#ad2096e7c32d95bf6ed474129ccef1ac3">fill_linestring_unique</a> (TIter it, TIter end)</td></tr>
+<tr class="separator:ad2096e7c32d95bf6ed474129ccef1ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada506f64a82cbd6afd2be39752a4cf71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#aa49c6550e2f9bb29b742c74bd34b85cf">linestring_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#ada506f64a82cbd6afd2be39752a4cf71">linestring_finish</a> (size_t num_points)</td></tr>
+<tr class="separator:ada506f64a82cbd6afd2be39752a4cf71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad632ed48ee97fba2edffc5979eb3ac07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#aa49c6550e2f9bb29b742c74bd34b85cf">linestring_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#ad632ed48ee97fba2edffc5979eb3ac07">create_linestring</a> (const <a class="el" href="classosmium_1_1WayNodeList.html">osmium::WayNodeList</a> &amp;wnl, <a class="el" href="namespaceosmium_1_1geom.html#a45e8115e2b7e9b1452bdd3abca5a2b15">use_nodes</a> un=<a class="el" href="namespaceosmium_1_1geom.html#a45e8115e2b7e9b1452bdd3abca5a2b15a673eb027e9c056f57140322807351dd5">use_nodes::unique</a>, <a class="el" href="namespaceosmium_1_1geom.html#ae7ae9981d6479fafc1ad2c3d902fdc15">direction</a> dir=<a class="el" href="namespaceosmium_1_1geom.html#ae7ae9981d6479fafc1ad2c3d902fdc15a965dbaac085fc891bfbbd4f9d145bbc8">direction::forward</a>)</td></tr>
 <tr class="separator:ad632ed48ee97fba2edffc5979eb3ac07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65d7852ee3639599f9c734713af1f827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#aa49c6550e2f9bb29b742c74bd34b85cf">linestring_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a65d7852ee3639599f9c734713af1f827">create_linestring</a> (const <a class="el" href="classosmium_1_1Way.html">osmium::Way</a> &amp;way, <a class="el" href="namespaceosmium_1_1geom.html#a45e8115e2b7e9b1452bdd3abca5a2b15">use_nodes</a> un=<a class="el" href="namespaceosmium_1_1geom.html#a45e8115e2b7e9b1452bdd3abca5a2b15a673eb027e9c056f57140322807351dd5">use_nodes::unique</a>, <a class="el" href="namespaceosmium_1_1geom.html#ae7ae9981d6479fafc1ad2c3d902fdc15">direction</a> dir=<a class="el" href="namespaceosmium_1_1geom.html#ae7ae9981d6479fafc1ad2c3d902fdc15a965dbaac085fc891bfbbd4f9d145bbc8">direction::forward</a>)</td></tr>
 <tr class="separator:a65d7852ee3639599f9c734713af1f827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f734663ed8e3fb5388d179dde0622d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a3f734663ed8e3fb5388d179dde0622d2">polygon_start</a> ()</td></tr>
+<tr class="separator:a3f734663ed8e3fb5388d179dde0622d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2183e8ed3dd5d472aab1174604184942"><td class="memTemplParams" colspan="2">template&lt;class TIter &gt; </td></tr>
+<tr class="memitem:a2183e8ed3dd5d472aab1174604184942"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a2183e8ed3dd5d472aab1174604184942">fill_polygon</a> (TIter it, TIter end)</td></tr>
+<tr class="separator:a2183e8ed3dd5d472aab1174604184942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9c0565bba27fcb35378cecdc8cb492"><td class="memTemplParams" colspan="2">template&lt;class TIter &gt; </td></tr>
+<tr class="memitem:a5c9c0565bba27fcb35378cecdc8cb492"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a5c9c0565bba27fcb35378cecdc8cb492">fill_polygon_unique</a> (TIter it, TIter end)</td></tr>
+<tr class="separator:a5c9c0565bba27fcb35378cecdc8cb492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8223b74055ba8829f791e79919b3dfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a17e0fcad178717cf4031844c1f1fb72d">polygon_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#ae8223b74055ba8829f791e79919b3dfd">polygon_finish</a> (size_t num_points)</td></tr>
+<tr class="separator:ae8223b74055ba8829f791e79919b3dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c2788b7b26e911bd66261768b2de92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a9814738f6ac8e703d1ae370a6990e598">multipolygon_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a07c2788b7b26e911bd66261768b2de92">create_multipolygon</a> (const <a class="el" href="classosmium_1_1Area.html">osmium::Area</a> &amp;area)</td></tr>
 <tr class="separator:a07c2788b7b26e911bd66261768b2de92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -237,31 +249,6 @@ template&lt;class TGeomImpl , class TProjection  = IdentityProjection&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a34116d9cbf37e57a7f007c8bcdce8331"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TGeomImpl , class TProjection  = IdentityProjection&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::<a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">GeometryFactory</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a00f4e49f6ea015856ea11414423c28c7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -571,7 +558,7 @@ template&lt;class TGeomImpl , class TProjection  = IdentityProjection&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab7076117148f0feaf0e27e4db899bad0"></a>
+<a class="anchor" id="a3ccbd1bee6c4bc0ab59b89aeead06dee"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -583,7 +570,7 @@ template&lt;class TIter &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::fill_linestring </td>
+          <td class="memname">size_t <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::fill_linestring </td>
           <td>(</td>
           <td class="paramtype">TIter&#160;</td>
           <td class="paramname"><em>it</em>, </td>
@@ -609,7 +596,7 @@ template&lt;class TIter &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6f6c2440f4acd5c20d42e8d19efa5a90"></a>
+<a class="anchor" id="ad2096e7c32d95bf6ed474129ccef1ac3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -621,7 +608,7 @@ template&lt;class TIter &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::fill_linestring_unique </td>
+          <td class="memname">size_t <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::fill_linestring_unique </td>
           <td>(</td>
           <td class="paramtype">TIter&#160;</td>
           <td class="paramname"><em>it</em>, </td>
@@ -636,6 +623,184 @@ template&lt;class TIter &gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2183e8ed3dd5d472aab1174604184942"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TGeomImpl , class TProjection  = IdentityProjection&gt; </div>
+<div class="memtemplate">
+template&lt;class TIter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::fill_polygon </td>
+          <td>(</td>
+          <td class="paramtype">TIter&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TIter&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c9c0565bba27fcb35378cecdc8cb492"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TGeomImpl , class TProjection  = IdentityProjection&gt; </div>
+<div class="memtemplate">
+template&lt;class TIter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::fill_polygon_unique </td>
+          <td>(</td>
+          <td class="paramtype">TIter&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TIter&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ada506f64a82cbd6afd2be39752a4cf71"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TGeomImpl , class TProjection  = IdentityProjection&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#aa49c6550e2f9bb29b742c74bd34b85cf">linestring_type</a> <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::linestring_finish </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_points</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1d480006dc1921ec518e95ecf43cb28b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TGeomImpl , class TProjection  = IdentityProjection&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::linestring_start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8223b74055ba8829f791e79919b3dfd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TGeomImpl , class TProjection  = IdentityProjection&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a17e0fcad178717cf4031844c1f1fb72d">polygon_type</a> <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::polygon_finish </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_points</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3f734663ed8e3fb5388d179dde0622d2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TGeomImpl , class TProjection  = IdentityProjection&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html">osmium::geom::GeometryFactory</a>&lt; TGeomImpl, TProjection &gt;::polygon_start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -723,7 +888,7 @@ template&lt;class TGeomImpl , class TProjection  = IdentityProjection&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -1,5 +1,6 @@
 <map id="include/osmium/index/multimap/stl_vector.hpp" name="include/osmium/index/multimap/stl_vector.hpp">
-<area shape="rect" id="node5" href="$multimap_2vector_8hpp.html" title="osmium/index/multimap\l/vector.hpp" alt="" coords="88,110,248,165"/>
-<area shape="rect" id="node13" href="$multimap_8hpp.html" title="osmium/index/multimap.hpp" alt="" coords="205,225,389,258"/>
-<area shape="rect" id="node19" href="$index_8hpp.html" title="osmium/index/index.hpp" alt="" coords="389,318,552,351"/>
+<area shape="rect" id="node3" href="$multimap_2vector_8hpp.html" title="osmium/index/multimap\l/vector.hpp" alt="" coords="88,95,248,136"/>
+<area shape="rect" id="node7" href="$multimap_8hpp.html" title="osmium/index/multimap.hpp" alt="" coords="206,191,391,218"/>
+<area shape="rect" id="node9" href="$index_8hpp.html" title="osmium/index/index.hpp" alt="" coords="389,273,552,300"/>
+<area shape="rect" id="node14" href="$compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="634,348,825,375"/>
 </map>

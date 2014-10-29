@@ -108,21 +108,28 @@ Public Types</h2></td></tr>
 <tr class="memitem:a1ff10effae0373226e70101b2a8ec0af"><td class="memItemLeft" align="right" valign="top">typedef std::function<br class="typebreak" />
 &lt; <a class="el" href="classosmium_1_1io_1_1Compressor.html">osmium::io::Compressor</a> *(int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a1ff10effae0373226e70101b2a8ec0af">create_compressor_type</a></td></tr>
 <tr class="separator:a1ff10effae0373226e70101b2a8ec0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73bc225adfc65da8427155807d3c1960"><td class="memItemLeft" align="right" valign="top">typedef std::function<br class="typebreak" />
+<tr class="memitem:aabd92bd5c4d75631dce428556e407c95"><td class="memItemLeft" align="right" valign="top">typedef std::function<br class="typebreak" />
 &lt; <a class="el" href="classosmium_1_1io_1_1Decompressor.html">osmium::io::Decompressor</a> <br class="typebreak" />
-*(int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a73bc225adfc65da8427155807d3c1960">create_decompressor_type</a></td></tr>
-<tr class="separator:a73bc225adfc65da8427155807d3c1960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+*(int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#aabd92bd5c4d75631dce428556e407c95">create_decompressor_type_fd</a></td></tr>
+<tr class="separator:aabd92bd5c4d75631dce428556e407c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68f8655d3320a884eebe68fee177923"><td class="memItemLeft" align="right" valign="top">typedef std::function<br class="typebreak" />
+&lt; <a class="el" href="classosmium_1_1io_1_1Decompressor.html">osmium::io::Decompressor</a> <br class="typebreak" />
+*(const char *, size_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#ac68f8655d3320a884eebe68fee177923">create_decompressor_type_buffer</a></td></tr>
+<tr class="separator:ac68f8655d3320a884eebe68fee177923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a007b28e61e924f2c9225fd49bb2b8217"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a007b28e61e924f2c9225fd49bb2b8217">register_compression</a> (<a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a> compression, <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a1ff10effae0373226e70101b2a8ec0af">create_compressor_type</a> <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a963dedab61e8498ef5804e6f3c7b6ad0">create_compressor</a>, <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a73bc225adfc65da8427155807d3c1960">create_decompressor_type</a> <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a69a513e2c733234f3323ab0ca77dfac5">create_decompressor</a>)</td></tr>
-<tr class="separator:a007b28e61e924f2c9225fd49bb2b8217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625360bf4027c6c17e0c67e28cc8faf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a625360bf4027c6c17e0c67e28cc8faf7">register_compression</a> (<a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a> compression, <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a1ff10effae0373226e70101b2a8ec0af">create_compressor_type</a> <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a963dedab61e8498ef5804e6f3c7b6ad0">create_compressor</a>, <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#aabd92bd5c4d75631dce428556e407c95">create_decompressor_type_fd</a> create_decompressor_fd, <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#ac68f8655d3320a884eebe68fee177923">create_decompressor_type_buffer</a> create_decompressor_buffer)</td></tr>
+<tr class="separator:a625360bf4027c6c17e0c67e28cc8faf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a963dedab61e8498ef5804e6f3c7b6ad0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr<br class="typebreak" />
 &lt; <a class="el" href="classosmium_1_1io_1_1Compressor.html">osmium::io::Compressor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a963dedab61e8498ef5804e6f3c7b6ad0">create_compressor</a> (<a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a> compression, int fd)</td></tr>
 <tr class="separator:a963dedab61e8498ef5804e6f3c7b6ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a513e2c733234f3323ab0ca77dfac5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr<br class="typebreak" />
 &lt; <a class="el" href="classosmium_1_1io_1_1Decompressor.html">osmium::io::Decompressor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a69a513e2c733234f3323ab0ca77dfac5">create_decompressor</a> (<a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a> compression, int fd)</td></tr>
 <tr class="separator:a69a513e2c733234f3323ab0ca77dfac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815fc29f2ae5381b7767a99639dd4521"><td class="memItemLeft" align="right" valign="top">std::unique_ptr<br class="typebreak" />
+&lt; <a class="el" href="classosmium_1_1io_1_1Decompressor.html">osmium::io::Decompressor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a815fc29f2ae5381b7767a99639dd4521">create_decompressor</a> (<a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a> compression, const char *buffer, size_t size)</td></tr>
+<tr class="separator:a815fc29f2ae5381b7767a99639dd4521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -131,12 +138,13 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:afe6f491538377b8cb73cb5467486af00"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; const <br class="typebreak" />
+<tr class="memitem:a64b8c2d4321e1d9fccf5e66aaf6a8f49"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; const <br class="typebreak" />
 <a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a>, <br class="typebreak" />
-std::pair<br class="typebreak" />
+std::tuple<br class="typebreak" />
 &lt; <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a1ff10effae0373226e70101b2a8ec0af">create_compressor_type</a>, <br class="typebreak" />
-<a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a73bc225adfc65da8427155807d3c1960">create_decompressor_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#afe6f491538377b8cb73cb5467486af00">compression_map_type</a></td></tr>
-<tr class="separator:afe6f491538377b8cb73cb5467486af00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#aabd92bd5c4d75631dce428556e407c95">create_decompressor_type_fd</a>, <br class="typebreak" />
+<a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#ac68f8655d3320a884eebe68fee177923">create_decompressor_type_buffer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a64b8c2d4321e1d9fccf5e66aaf6a8f49">compression_map_type</a></td></tr>
+<tr class="separator:a64b8c2d4321e1d9fccf5e66aaf6a8f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -150,19 +158,19 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ae404846d541010f18a02504e9cb285e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d0b4d32c571d32ca8e67c820ffc863"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html">CompressionFactory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a77d0b4d32c571d32ca8e67c820ffc863">operator=</a> (<a class="el" href="classosmium_1_1io_1_1CompressionFactory.html">CompressionFactory</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a77d0b4d32c571d32ca8e67c820ffc863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0eddbebbed00543984b921911ff1278"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#ab0eddbebbed00543984b921911ff1278">error</a> (<a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a> compression)</td></tr>
-<tr class="separator:ab0eddbebbed00543984b921911ff1278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a02f13558cd591aad771c8bafe40d84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="compatibility_8hpp.html#afe19c7da709834c7167980e8aab2eda3">OSMIUM_NORETURN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a3a02f13558cd591aad771c8bafe40d84">error</a> (<a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a> compression)</td></tr>
+<tr class="separator:a3a02f13558cd591aad771c8bafe40d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1bbdb6e497a4a486063a68e4c010bbc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#afe6f491538377b8cb73cb5467486af00">compression_map_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a1bbdb6e497a4a486063a68e4c010bbc4">m_callbacks</a> {}</td></tr>
+<tr class="memitem:a1bbdb6e497a4a486063a68e4c010bbc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a64b8c2d4321e1d9fccf5e66aaf6a8f49">compression_map_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a1bbdb6e497a4a486063a68e4c010bbc4">m_callbacks</a></td></tr>
 <tr class="separator:a1bbdb6e497a4a486063a68e4c010bbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This singleton factory class is used to register compression algorithms used for reading and writing OSM files.</p>
 <p>For each algorithm we store two functions that construct a compressor and decompressor object, respectively. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="afe6f491538377b8cb73cb5467486af00"></a>
+<a class="anchor" id="a64b8c2d4321e1d9fccf5e66aaf6a8f49"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -170,7 +178,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;const <a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a>, std::pair&lt;<a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a1ff10effae0373226e70101b2a8ec0af">create_compressor_type</a>, <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a73bc225adfc65da8427155807d3c1960">create_decompressor_type</a>&gt; &gt; <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#afe6f491538377b8cb73cb5467486af00">osmium::io::CompressionFactory::compression_map_type</a></td>
+          <td class="memname">typedef std::map&lt;const <a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a>, std::tuple&lt;<a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a1ff10effae0373226e70101b2a8ec0af">create_compressor_type</a>, <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#aabd92bd5c4d75631dce428556e407c95">create_decompressor_type_fd</a>, <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#ac68f8655d3320a884eebe68fee177923">create_decompressor_type_buffer</a>&gt; &gt; <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a64b8c2d4321e1d9fccf5e66aaf6a8f49">osmium::io::CompressionFactory::compression_map_type</a></td>
         </tr>
       </table>
   </td>
@@ -194,12 +202,24 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a73bc225adfc65da8427155807d3c1960"></a>
+<a class="anchor" id="ac68f8655d3320a884eebe68fee177923"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;<a class="el" href="classosmium_1_1io_1_1Decompressor.html">osmium::io::Decompressor</a>*(int)&gt; <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a73bc225adfc65da8427155807d3c1960">osmium::io::CompressionFactory::create_decompressor_type</a></td>
+          <td class="memname">typedef std::function&lt;<a class="el" href="classosmium_1_1io_1_1Decompressor.html">osmium::io::Decompressor</a>*(const char*, size_t)&gt; <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#ac68f8655d3320a884eebe68fee177923">osmium::io::CompressionFactory::create_decompressor_type_buffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aabd92bd5c4d75631dce428556e407c95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;<a class="el" href="classosmium_1_1io_1_1Decompressor.html">osmium::io::Decompressor</a>*(int)&gt; <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#aabd92bd5c4d75631dce428556e407c95">osmium::io::CompressionFactory::create_decompressor_type_fd</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -347,7 +367,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab0eddbebbed00543984b921911ff1278"></a>
+<a class="anchor" id="a815fc29f2ae5381b7767a99639dd4521"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -355,7 +375,47 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void osmium::io::CompressionFactory::error </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classosmium_1_1io_1_1Decompressor.html">osmium::io::Decompressor</a>&gt; osmium::io::CompressionFactory::create_decompressor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a>&#160;</td>
+          <td class="paramname"><em>compression</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a02f13558cd591aad771c8bafe40d84"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="compatibility_8hpp.html#afe19c7da709834c7167980e8aab2eda3">OSMIUM_NORETURN</a> void osmium::io::CompressionFactory::error </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceosmium_1_1io.html#a807da0f02ddca3b66d0f4b471ff3466c">osmium::io::file_compression</a>&#160;</td>
           <td class="paramname"><em>compression</em></td><td>)</td>
@@ -442,7 +502,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a007b28e61e924f2c9225fd49bb2b8217"></a>
+<a class="anchor" id="a625360bf4027c6c17e0c67e28cc8faf7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -464,8 +524,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a73bc225adfc65da8427155807d3c1960">create_decompressor_type</a>&#160;</td>
-          <td class="paramname"><em>create_decompressor</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#aabd92bd5c4d75631dce428556e407c95">create_decompressor_type_fd</a>&#160;</td>
+          <td class="paramname"><em>create_decompressor_fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#ac68f8655d3320a884eebe68fee177923">create_decompressor_type_buffer</a>&#160;</td>
+          <td class="paramname"><em>create_decompressor_buffer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -491,7 +557,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#afe6f491538377b8cb73cb5467486af00">compression_map_type</a> osmium::io::CompressionFactory::m_callbacks {}</td>
+          <td class="memname"><a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a64b8c2d4321e1d9fccf5e66aaf6a8f49">compression_map_type</a> osmium::io::CompressionFactory::m_callbacks</td>
         </tr>
       </table>
   </td>
@@ -509,7 +575,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:39 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -103,7 +103,7 @@ Collaboration diagram for osmium::io::Writer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classosmium_1_1io_1_1Writer__coll__graph.png" border="0" usemap="#osmium_1_1io_1_1Writer_coll__map" alt="Collaboration graph"/></div>
 <map name="osmium_1_1io_1_1Writer_coll__map" id="osmium_1_1io_1_1Writer_coll__map">
-<area shape="rect" id="node2" href="classosmium_1_1thread_1_1CheckedTask.html" title="osmium::thread::CheckedTask\l\&lt; detail::WriteThread \&gt;" alt="" coords="5,91,205,146"/><area shape="rect" id="node4" href="classosmium_1_1io_1_1File.html" title="osmium::io::File" alt="" coords="229,102,344,135"/><area shape="rect" id="node6" href="classosmium_1_1util_1_1Options.html" title="osmium::util::Options" alt="" coords="213,6,360,39"/></map>
+<area shape="rect" id="node2" href="classosmium_1_1thread_1_1CheckedTask.html" title="osmium::thread::CheckedTask\l\&lt; detail::WriteThread \&gt;" alt="" coords="5,81,207,123"/><area shape="rect" id="node3" href="classosmium_1_1io_1_1File.html" title="osmium::io::File" alt="" coords="231,89,346,115"/><area shape="rect" id="node4" href="classosmium_1_1util_1_1Options.html" title="osmium::util::Options" alt="" coords="215,5,362,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -132,7 +132,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aa09dbf31fd61ad61dbbabc9cb22825b7"><td class="memItemLeft" align="right" valign="top">std::unique_ptr<br class="typebreak" />
 &lt; osmium::io::detail::OutputFormat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1Writer.html#aa09dbf31fd61ad61dbbabc9cb22825b7">m_output</a></td></tr>
 <tr class="separator:aa09dbf31fd61ad61dbbabc9cb22825b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8de4e7333096d34b3062d9d119080117"><td class="memItemLeft" align="right" valign="top">osmium::io::detail::data_queue_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1Writer.html#a8de4e7333096d34b3062d9d119080117">m_output_queue</a> {}</td></tr>
+<tr class="memitem:a8de4e7333096d34b3062d9d119080117"><td class="memItemLeft" align="right" valign="top">osmium::io::detail::data_queue_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1Writer.html#a8de4e7333096d34b3062d9d119080117">m_output_queue</a></td></tr>
 <tr class="separator:a8de4e7333096d34b3062d9d119080117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a52368a850cf94e42cc618091f7a985"><td class="memItemLeft" align="right" valign="top">std::unique_ptr<br class="typebreak" />
 &lt; <a class="el" href="classosmium_1_1io_1_1Compressor.html">osmium::io::Compressor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1io_1_1Writer.html#a9a52368a850cf94e42cc618091f7a985">m_compressor</a></td></tr>
@@ -348,7 +348,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Flush writes to output file and close it. If you do not call this, the destructor of <a class="el" href="classosmium_1_1io_1_1Writer.html">Writer</a> will also do the same thing. But because this call might thrown an exception, it is better to call <a class="el" href="classosmium_1_1io_1_1Writer.html#af6296fb4b0f80d13b9ef1fed9e2f6b4b">close()</a> explicitly.</p>
+<p>Flush writes to output file and closes it. If you do not call this, the destructor of <a class="el" href="classosmium_1_1io_1_1Writer.html">Writer</a> will also do the same thing. But because this call might thrown an exception, it is better to call <a class="el" href="classosmium_1_1io_1_1Writer.html#af6296fb4b0f80d13b9ef1fed9e2f6b4b">close()</a> explicitly.</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">Some</td><td>form of std::runtime_error when there is a problem. </td></tr>
@@ -482,7 +482,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">osmium::io::detail::data_queue_type osmium::io::Writer::m_output_queue {}</td>
+          <td class="memname">osmium::io::detail::data_queue_type osmium::io::Writer::m_output_queue</td>
         </tr>
       </table>
   </td>
@@ -520,7 +520,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:39 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

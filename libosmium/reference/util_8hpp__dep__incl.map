@@ -1,5 +1,5 @@
 <map id="include/osmium/geom/util.hpp" name="include/osmium/geom/util.hpp">
-<area shape="rect" id="node3" href="$haversine_8hpp.html" title="include/osmium/geom\l/haversine.hpp" alt="" coords="5,110,155,165"/>
-<area shape="rect" id="node5" href="$mercator__projection_8hpp.html" title="include/osmium/geom\l/mercator_projection.hpp" alt="" coords="179,110,344,165"/>
-<area shape="rect" id="node7" href="$projection_8hpp.html" title="include/osmium/geom\l/projection.hpp" alt="" coords="368,110,517,165"/>
+<area shape="rect" id="node2" href="$haversine_8hpp.html" title="include/osmium/geom\l/haversine.hpp" alt="" coords="5,95,155,136"/>
+<area shape="rect" id="node3" href="$mercator__projection_8hpp.html" title="include/osmium/geom\l/mercator_projection.hpp" alt="" coords="179,95,344,136"/>
+<area shape="rect" id="node4" href="$projection_8hpp.html" title="include/osmium/geom\l/projection.hpp" alt="" coords="368,95,517,136"/>
 </map>

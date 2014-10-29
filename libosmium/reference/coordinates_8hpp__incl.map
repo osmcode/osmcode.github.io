@@ -1,4 +1,5 @@
 <map id="include/osmium/geom/coordinates.hpp" name="include/osmium/geom/coordinates.hpp">
-<area shape="rect" id="node9" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="400,110,571,143"/>
-<area shape="rect" id="node25" href="$operators_8hpp.html" title="osmium/util/operators.hpp" alt="" coords="208,193,379,226"/>
+<area shape="rect" id="node5" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="311,95,482,121"/>
+<area shape="rect" id="node11" href="$double_8hpp.html" title="osmium/util/double.hpp" alt="" coords="720,169,876,196"/>
+<area shape="rect" id="node10" href="$compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="168,169,359,196"/>
 </map>

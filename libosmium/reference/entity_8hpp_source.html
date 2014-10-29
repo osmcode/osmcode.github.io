@@ -130,31 +130,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>osmium {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classosmium_1_1OSMEntity.html">   43</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classosmium_1_1OSMEntity.html">OSMEntity</a> : <span class="keyword">public</span> <a class="code" href="classosmium_1_1memory_1_1Item.html">osmium::memory::Item</a> {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classosmium_1_1OSMEntity.html#ae33be6890b0e554bc835f4ca84c63861">   47</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classosmium_1_1OSMEntity.html#ae33be6890b0e554bc835f4ca84c63861">OSMEntity</a>(<a class="code" href="namespaceosmium_1_1memory.html#a5da17fecd36e90707d1387809dbe4f19">osmium::memory::item_size_type</a> size, <a class="code" href="namespaceosmium.html#a8a523b8c8e0d816b9f12a74aa5bc13b8">osmium::item_type</a> <a class="code" href="classosmium_1_1memory_1_1Item.html#af5a1975b792e83f1a8f89157b3596872">type</a>) :</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="classosmium_1_1memory_1_1Item.html#a3fe72677424697699268527e5f2a7bf6">Item</a>(size, type) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }; <span class="comment">// class OSMEntity</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// namespace osmium</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // OSMIUM_OSM_ENTITY_HPP</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">namespace </span>detail {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> TSubitem, <span class="keyword">class</span> TIter&gt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">inline</span> TSubitem&amp; subitem_of_type(TIter it, TIter <a class="code" href="namespacestd.html#a8b1369366663fd9e18f56e9878fdd3b0">end</a>) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">for</span> (; it != <a class="code" href="namespacestd.html#a8b1369366663fd9e18f56e9878fdd3b0">end</a>; ++it) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">if</span> (it-&gt;type() == TSubitem::itemtype) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>TSubitem&amp;<span class="keyword">&gt;</span>(*it);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">// If no subitem of the TSubitem type was found,</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">// return a default constructed one.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keyword">static</span> TSubitem subitem;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> subitem;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    } <span class="comment">// namespace detail</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classosmium_1_1OSMEntity.html">   62</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classosmium_1_1OSMEntity.html">OSMEntity</a> : <span class="keyword">public</span> <a class="code" href="classosmium_1_1memory_1_1Item.html">osmium::memory::Item</a> {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classosmium_1_1OSMEntity.html#ae33be6890b0e554bc835f4ca84c63861">   66</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classosmium_1_1OSMEntity.html#ae33be6890b0e554bc835f4ca84c63861">OSMEntity</a>(<a class="code" href="namespaceosmium_1_1memory.html#a5da17fecd36e90707d1387809dbe4f19">osmium::memory::item_size_type</a> size, <a class="code" href="namespaceosmium.html#a8a523b8c8e0d816b9f12a74aa5bc13b8">osmium::item_type</a> <a class="code" href="classosmium_1_1memory_1_1Item.html#a1096322ceae98849e611e4f6db3e1208">type</a>) :</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="classosmium_1_1memory_1_1Item.html#a72173f15631de546041353a4302a2943">Item</a>(size, type) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }; <span class="comment">// class OSMEntity</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace osmium</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // OSMIUM_OSM_ENTITY_HPP</span></div>
 <div class="ttc" id="namespaceosmium_html_a8a523b8c8e0d816b9f12a74aa5bc13b8"><div class="ttname"><a href="namespaceosmium.html#a8a523b8c8e0d816b9f12a74aa5bc13b8">osmium::item_type</a></div><div class="ttdeci">item_type</div><div class="ttdef"><b>Definition:</b> item_type.hpp:42</div></div>
-<div class="ttc" id="classosmium_1_1OSMEntity_html"><div class="ttname"><a href="classosmium_1_1OSMEntity.html">osmium::OSMEntity</a></div><div class="ttdef"><b>Definition:</b> entity.hpp:43</div></div>
-<div class="ttc" id="classosmium_1_1OSMEntity_html_ae33be6890b0e554bc835f4ca84c63861"><div class="ttname"><a href="classosmium_1_1OSMEntity.html#ae33be6890b0e554bc835f4ca84c63861">osmium::OSMEntity::OSMEntity</a></div><div class="ttdeci">OSMEntity(osmium::memory::item_size_type size, osmium::item_type type)</div><div class="ttdef"><b>Definition:</b> entity.hpp:47</div></div>
-<div class="ttc" id="classosmium_1_1memory_1_1Item_html_af5a1975b792e83f1a8f89157b3596872"><div class="ttname"><a href="classosmium_1_1memory_1_1Item.html#af5a1975b792e83f1a8f89157b3596872">osmium::memory::Item::type</a></div><div class="ttdeci">item_type type() const </div><div class="ttdef"><b>Definition:</b> item.hpp:152</div></div>
-<div class="ttc" id="classosmium_1_1memory_1_1Item_html"><div class="ttname"><a href="classosmium_1_1memory_1_1Item.html">osmium::memory::Item</a></div><div class="ttdef"><b>Definition:</b> item.hpp:96</div></div>
+<div class="ttc" id="classosmium_1_1OSMEntity_html"><div class="ttname"><a href="classosmium_1_1OSMEntity.html">osmium::OSMEntity</a></div><div class="ttdoc">OSMEntity is the abstract base class for the OSMObject and Changeset classes. </div><div class="ttdef"><b>Definition:</b> entity.hpp:62</div></div>
+<div class="ttc" id="classosmium_1_1OSMEntity_html_ae33be6890b0e554bc835f4ca84c63861"><div class="ttname"><a href="classosmium_1_1OSMEntity.html#ae33be6890b0e554bc835f4ca84c63861">osmium::OSMEntity::OSMEntity</a></div><div class="ttdeci">OSMEntity(osmium::memory::item_size_type size, osmium::item_type type)</div><div class="ttdef"><b>Definition:</b> entity.hpp:66</div></div>
+<div class="ttc" id="classosmium_1_1memory_1_1Item_html"><div class="ttname"><a href="classosmium_1_1memory_1_1Item.html">osmium::memory::Item</a></div><div class="ttdef"><b>Definition:</b> item.hpp:100</div></div>
+<div class="ttc" id="namespacestd_html_a8b1369366663fd9e18f56e9878fdd3b0"><div class="ttname"><a href="namespacestd.html#a8b1369366663fd9e18f56e9878fdd3b0">std::end</a></div><div class="ttdeci">osmium::io::InputIterator&lt; osmium::io::Reader &gt; end(osmium::io::Reader &amp;)</div><div class="ttdef"><b>Definition:</b> reader_iterator.hpp:45</div></div>
+<div class="ttc" id="classosmium_1_1memory_1_1Item_html_a72173f15631de546041353a4302a2943"><div class="ttname"><a href="classosmium_1_1memory_1_1Item.html#a72173f15631de546041353a4302a2943">osmium::memory::Item::Item</a></div><div class="ttdeci">Item(item_size_type size=0, item_type type=item_type()) noexcept</div><div class="ttdef"><b>Definition:</b> item.hpp:122</div></div>
 <div class="ttc" id="item_8hpp_html"><div class="ttname"><a href="item_8hpp.html">item.hpp</a></div></div>
-<div class="ttc" id="classosmium_1_1memory_1_1Item_html_a3fe72677424697699268527e5f2a7bf6"><div class="ttname"><a href="classosmium_1_1memory_1_1Item.html#a3fe72677424697699268527e5f2a7bf6">osmium::memory::Item::Item</a></div><div class="ttdeci">Item(item_size_type size=0, item_type type=item_type())</div><div class="ttdef"><b>Definition:</b> item.hpp:125</div></div>
-<div class="ttc" id="namespaceosmium_1_1memory_html_a5da17fecd36e90707d1387809dbe4f19"><div class="ttname"><a href="namespaceosmium_1_1memory.html#a5da17fecd36e90707d1387809dbe4f19">osmium::memory::item_size_type</a></div><div class="ttdeci">uint32_t item_size_type</div><div class="ttdef"><b>Definition:</b> item.hpp:94</div></div>
+<div class="ttc" id="namespaceosmium_1_1memory_html_a5da17fecd36e90707d1387809dbe4f19"><div class="ttname"><a href="namespaceosmium_1_1memory.html#a5da17fecd36e90707d1387809dbe4f19">osmium::memory::item_size_type</a></div><div class="ttdeci">uint32_t item_size_type</div><div class="ttdef"><b>Definition:</b> item.hpp:50</div></div>
+<div class="ttc" id="classosmium_1_1memory_1_1Item_html_a1096322ceae98849e611e4f6db3e1208"><div class="ttname"><a href="classosmium_1_1memory_1_1Item.html#a1096322ceae98849e611e4f6db3e1208">osmium::memory::Item::type</a></div><div class="ttdeci">item_type type() const noexcept</div><div class="ttdef"><b>Definition:</b> item.hpp:157</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:10 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

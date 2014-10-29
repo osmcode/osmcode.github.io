@@ -140,43 +140,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa466deec76ecdf5fca6d38571f6324d54">json</a>    = 4</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        };</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1io.html#a02d543d3ce7c38534cc92428b0007008">   50</a></span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="namespaceosmium_1_1io.html#a8c7e17a1b46f9791c1f00dc7d96d61f4">as_string</a>(<a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0a">file_format</a> format) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">switch</span> (format) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aaad921d60486366258809553a3db49a4a">file_format::unknown</a>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;unknown&quot;</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa0f635d0e0f3874fff8b581c132e6c7a7">file_format::xml</a>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;XML&quot;</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa72743163ff5b10cf97587569e4a4b441">file_format::pbf</a>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;PBF&quot;</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa8a86d60bff0d1799a18ec014bb549d89">file_format::opl</a>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;OPL&quot;</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa466deec76ecdf5fca6d38571f6324d54">file_format::json</a>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;JSON&quot;</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TChar, <span class="keyword">typename</span> TTraits&gt;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1io.html#a0826707d0f6dc0ea4912d938c56c266c">   67</a></span>&#160;        <span class="keyword">inline</span> std::basic_ostream&lt;TChar, TTraits&gt;&amp; operator&lt;&lt;(std::basic_ostream&lt;TChar, TTraits&gt;&amp; out, <span class="keyword">const</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0a">file_format</a> format) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> out &lt;&lt; <a class="code" href="namespaceosmium_1_1io.html#a8c7e17a1b46f9791c1f00dc7d96d61f4">as_string</a>(format);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    } <span class="comment">// namespace io</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// namespace osmium</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // OSMIUM_IO_FILE_FORMAT_HPP</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// avoid g++ false positive</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#pragma GCC diagnostic push</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#pragma GCC diagnostic ignored &quot;-Wreturn-type&quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1io.html#a02d543d3ce7c38534cc92428b0007008">   53</a></span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="namespaceosmium_1_1io.html#a8c7e17a1b46f9791c1f00dc7d96d61f4">as_string</a>(<a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0a">file_format</a> format) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">switch</span> (format) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aaad921d60486366258809553a3db49a4a">file_format::unknown</a>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;unknown&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa0f635d0e0f3874fff8b581c132e6c7a7">file_format::xml</a>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;XML&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa72743163ff5b10cf97587569e4a4b441">file_format::pbf</a>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;PBF&quot;</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa8a86d60bff0d1799a18ec014bb549d89">file_format::opl</a>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;OPL&quot;</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa466deec76ecdf5fca6d38571f6324d54">file_format::json</a>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;JSON&quot;</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#pragma GCC diagnostic pop</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TChar, <span class="keyword">typename</span> TTraits&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1io.html#a0826707d0f6dc0ea4912d938c56c266c">   70</a></span>&#160;        <span class="keyword">inline</span> std::basic_ostream&lt;TChar, TTraits&gt;&amp; operator&lt;&lt;(std::basic_ostream&lt;TChar, TTraits&gt;&amp; out, <span class="keyword">const</span> <a class="code" href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0a">file_format</a> format) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">return</span> out &lt;&lt; <a class="code" href="namespaceosmium_1_1io.html#a8c7e17a1b46f9791c1f00dc7d96d61f4">as_string</a>(format);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    } <span class="comment">// namespace io</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace osmium</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // OSMIUM_IO_FILE_FORMAT_HPP</span></div>
 <div class="ttc" id="namespaceosmium_1_1io_html_a179c0803a0f5c409e11f7c3a933cae0aa8a86d60bff0d1799a18ec014bb549d89"><div class="ttname"><a href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa8a86d60bff0d1799a18ec014bb549d89">osmium::io::file_format::opl</a></div></div>
 <div class="ttc" id="namespaceosmium_1_1io_html_a179c0803a0f5c409e11f7c3a933cae0aa0f635d0e0f3874fff8b581c132e6c7a7"><div class="ttname"><a href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa0f635d0e0f3874fff8b581c132e6c7a7">osmium::io::file_format::xml</a></div></div>
 <div class="ttc" id="namespaceosmium_1_1io_html_a179c0803a0f5c409e11f7c3a933cae0aa72743163ff5b10cf97587569e4a4b441"><div class="ttname"><a href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa72743163ff5b10cf97587569e4a4b441">osmium::io::file_format::pbf</a></div></div>
 <div class="ttc" id="namespaceosmium_1_1io_html_a179c0803a0f5c409e11f7c3a933cae0aa466deec76ecdf5fca6d38571f6324d54"><div class="ttname"><a href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aa466deec76ecdf5fca6d38571f6324d54">osmium::io::file_format::json</a></div></div>
-<div class="ttc" id="namespaceosmium_1_1io_html_a8c7e17a1b46f9791c1f00dc7d96d61f4"><div class="ttname"><a href="namespaceosmium_1_1io.html#a8c7e17a1b46f9791c1f00dc7d96d61f4">osmium::io::as_string</a></div><div class="ttdeci">const char * as_string(file_compression compression)</div><div class="ttdef"><b>Definition:</b> file_compression.hpp:48</div></div>
+<div class="ttc" id="namespaceosmium_1_1io_html_a8c7e17a1b46f9791c1f00dc7d96d61f4"><div class="ttname"><a href="namespaceosmium_1_1io.html#a8c7e17a1b46f9791c1f00dc7d96d61f4">osmium::io::as_string</a></div><div class="ttdeci">const char * as_string(file_compression compression)</div><div class="ttdef"><b>Definition:</b> file_compression.hpp:51</div></div>
 <div class="ttc" id="namespaceosmium_1_1io_html_a179c0803a0f5c409e11f7c3a933cae0a"><div class="ttname"><a href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0a">osmium::io::file_format</a></div><div class="ttdeci">file_format</div><div class="ttdef"><b>Definition:</b> file_format.hpp:42</div></div>
 <div class="ttc" id="namespaceosmium_1_1io_html_a179c0803a0f5c409e11f7c3a933cae0aaad921d60486366258809553a3db49a4a"><div class="ttname"><a href="namespaceosmium_1_1io.html#a179c0803a0f5c409e11f7c3a933cae0aaad921d60486366258809553a3db49a4a">osmium::io::file_format::unknown</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:10 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

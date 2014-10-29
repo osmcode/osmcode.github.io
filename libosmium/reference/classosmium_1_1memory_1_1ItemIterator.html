@@ -118,12 +118,17 @@ Collaboration diagram for osmium::memory::ItemIterator&lt; TMember &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae5f92a275d8bbe3696667418851c4959"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#ae5f92a275d8bbe3696667418851c4959">ItemIterator</a> ()</td></tr>
-<tr class="separator:ae5f92a275d8bbe3696667418851c4959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b0adc3ae94d78273377a1df493a446"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#a24b0adc3ae94d78273377a1df493a446">ItemIterator</a> () noexcept</td></tr>
+<tr class="separator:a24b0adc3ae94d78273377a1df493a446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4900f4ce27b74ad2040c4eab41d8b75e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#a4900f4ce27b74ad2040c4eab41d8b75e">ItemIterator</a> (<a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#abbae49fe30aaddd7f85571306d792023">data_type</a> <a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#afe381a45b556e2785449ce68268665b1">data</a>, <a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#abbae49fe30aaddd7f85571306d792023">data_type</a> end)</td></tr>
 <tr class="separator:a4900f4ce27b74ad2040c4eab41d8b75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4861173375177eca6b8ff348d86cec2c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a4861173375177eca6b8ff348d86cec2c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html">ItemIterator</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#a4861173375177eca6b8ff348d86cec2c">cast</a> () const </td></tr>
+<tr class="separator:a4861173375177eca6b8ff348d86cec2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22ea9e7ebd37152464973defb5a8fac1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html">ItemIterator</a>&lt; TMember &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#a22ea9e7ebd37152464973defb5a8fac1">operator++</a> ()</td></tr>
 <tr class="separator:a22ea9e7ebd37152464973defb5a8fac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d715bab355458767f572f9423efc6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html">ItemIterator</a>&lt; TMember &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#a24d715bab355458767f572f9423efc6c">advance_once</a> ()</td></tr>
+<tr class="separator:a24d715bab355458767f572f9423efc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1e1c5052c67540214603ec57d135611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html">ItemIterator</a>&lt; TMember &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#ab1e1c5052c67540214603ec57d135611">operator++</a> (int)</td></tr>
 <tr class="separator:ab1e1c5052c67540214603ec57d135611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6516a1059cbc31450dc048bbbbb14889"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#a6516a1059cbc31450dc048bbbbb14889">operator==</a> (const <a class="el" href="classosmium_1_1memory_1_1ItemIterator.html">ItemIterator</a>&lt; TMember &gt; &amp;rhs) const </td></tr>
@@ -190,7 +195,7 @@ template&lt;class TMember&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae5f92a275d8bbe3696667418851c4959"></a>
+<a class="anchor" id="a24b0adc3ae94d78273377a1df493a446"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -208,7 +213,7 @@ template&lt;class TMember&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -252,6 +257,32 @@ template&lt;class TMember&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a24d715bab355458767f572f9423efc6c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMember&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html">ItemIterator</a>&lt;TMember&gt;&amp; <a class="el" href="classosmium_1_1memory_1_1ItemIterator.html">osmium::memory::ItemIterator</a>&lt; TMember &gt;::advance_once </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Like <a class="el" href="classosmium_1_1memory_1_1ItemIterator.html#a22ea9e7ebd37152464973defb5a8fac1">operator++()</a> but will NOT skip items of unwanted types. Do not use this unless you know what you are doing. </p>
+
+</div>
+</div>
 <a class="anchor" id="a36f26ac4a5983844fe6d4dbf048c1276"></a>
 <div class="memitem">
 <div class="memproto">
@@ -271,6 +302,33 @@ template&lt;class TMember&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4861173375177eca6b8ff348d86cec2c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMember&gt; </div>
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosmium_1_1memory_1_1ItemIterator.html">ItemIterator</a>&lt;T&gt; <a class="el" href="classosmium_1_1memory_1_1ItemIterator.html">osmium::memory::ItemIterator</a>&lt; TMember &gt;::cast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -570,7 +628,7 @@ template&lt;class TMember&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:39 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

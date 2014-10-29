@@ -1,9 +1,9 @@
 <map id="include/osmium/index/multimap.hpp" name="include/osmium/index/multimap.hpp">
-<area shape="rect" id="node3" href="$object__relations_8hpp.html" title="include/osmium/handler\l/object_relations.hpp" alt="" coords="5,110,163,165"/>
-<area shape="rect" id="node5" href="$hybrid_8hpp.html" title="include/osmium/index\l/multimap/hybrid.hpp" alt="" coords="177,339,324,394"/>
-<area shape="rect" id="node7" href="$stl__multimap_8hpp.html" title="include/osmium/index\l/multimap/stl_multimap.hpp" alt="" coords="237,110,419,165"/>
-<area shape="rect" id="node10" href="$multimap_2vector_8hpp.html" title="include/osmium/index\l/multimap/vector.hpp" alt="" coords="463,110,609,165"/>
-<area shape="rect" id="node12" href="$multimap_2mmap__vector__anon_8hpp.html" title="include/osmium/index\l/multimap/mmap_vector\l_anon.hpp" alt="" coords="288,214,451,290"/>
-<area shape="rect" id="node14" href="$multimap_2mmap__vector__file_8hpp.html" title="include/osmium/index\l/multimap/mmap_vector\l_file.hpp" alt="" coords="475,214,637,290"/>
-<area shape="rect" id="node16" href="$multimap_2stl__vector_8hpp.html" title="include/osmium/index\l/multimap/stl_vector.hpp" alt="" coords="661,225,824,279"/>
+<area shape="rect" id="node2" href="$object__relations_8hpp.html" title="include/osmium/handler\l/object_relations.hpp" alt="" coords="5,95,164,136"/>
+<area shape="rect" id="node3" href="$hybrid_8hpp.html" title="include/osmium/index\l/multimap/hybrid.hpp" alt="" coords="179,288,327,329"/>
+<area shape="rect" id="node4" href="$stl__multimap_8hpp.html" title="include/osmium/index\l/multimap/stl_multimap.hpp" alt="" coords="240,95,423,136"/>
+<area shape="rect" id="node5" href="$multimap_2vector_8hpp.html" title="include/osmium/index\l/multimap/vector.hpp" alt="" coords="465,95,613,136"/>
+<area shape="rect" id="node6" href="$multimap_2mmap__vector__anon_8hpp.html" title="include/osmium/index\l/multimap/mmap_vector\l_anon.hpp" alt="" coords="290,184,453,240"/>
+<area shape="rect" id="node7" href="$multimap_2mmap__vector__file_8hpp.html" title="include/osmium/index\l/multimap/mmap_vector\l_file.hpp" alt="" coords="477,184,639,240"/>
+<area shape="rect" id="node8" href="$multimap_2stl__vector_8hpp.html" title="include/osmium/index\l/multimap/stl_vector.hpp" alt="" coords="663,191,829,233"/>
 </map>

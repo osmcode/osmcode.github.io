@@ -1,6 +1,7 @@
 <map id="include/osmium/geom/mercator_projection.hpp" name="include/osmium/geom/mercator_projection.hpp">
-<area shape="rect" id="node7" href="$coordinates_8hpp.html" title="osmium/geom/coordinates.hpp" alt="" coords="269,110,469,143"/>
-<area shape="rect" id="node14" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="424,193,595,226"/>
-<area shape="rect" id="node31" href="$util_8hpp.html" title="osmium/geom/util.hpp" alt="" coords="163,193,312,226"/>
-<area shape="rect" id="node29" href="$operators_8hpp.html" title="osmium/util/operators.hpp" alt="" coords="277,275,448,309"/>
+<area shape="rect" id="node4" href="$coordinates_8hpp.html" title="osmium/geom/coordinates.hpp" alt="" coords="483,95,683,121"/>
+<area shape="rect" id="node7" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="324,169,495,196"/>
+<area shape="rect" id="node16" href="$util_8hpp.html" title="osmium/geom/util.hpp" alt="" coords="710,169,861,196"/>
+<area shape="rect" id="node12" href="$double_8hpp.html" title="osmium/util/double.hpp" alt="" coords="470,244,626,271"/>
+<area shape="rect" id="node11" href="$compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="73,244,263,271"/>
 </map>

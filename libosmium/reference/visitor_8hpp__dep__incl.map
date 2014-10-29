@@ -1,6 +1,6 @@
 <map id="include/osmium/visitor.hpp" name="include/osmium/visitor.hpp">
-<area shape="rect" id="node3" href="$disk__store_8hpp.html" title="include/osmium/handler\l/disk_store.hpp" alt="" coords="5,89,163,143"/>
-<area shape="rect" id="node5" href="$dump_8hpp.html" title="include/osmium/handler\l/dump.hpp" alt="" coords="187,89,344,143"/>
-<area shape="rect" id="node7" href="$collector_8hpp.html" title="include/osmium/relations\l/collector.hpp" alt="" coords="368,89,533,143"/>
-<area shape="rect" id="node9" href="$multipolygon__collector_8hpp.html" title="include/osmium/area\l/multipolygon_collector.hpp" alt="" coords="361,193,540,247"/>
+<area shape="rect" id="node2" href="$disk__store_8hpp.html" title="include/osmium/handler\l/disk_store.hpp" alt="" coords="5,80,164,121"/>
+<area shape="rect" id="node3" href="$dump_8hpp.html" title="include/osmium/handler\l/dump.hpp" alt="" coords="188,80,347,121"/>
+<area shape="rect" id="node4" href="$collector_8hpp.html" title="include/osmium/relations\l/collector.hpp" alt="" coords="371,80,537,121"/>
+<area shape="rect" id="node5" href="$multipolygon__collector_8hpp.html" title="include/osmium/area\l/multipolygon_collector.hpp" alt="" coords="364,169,544,211"/>
 </map>

@@ -1,19 +1,20 @@
 <map id="include/osmium/io/reader_iterator.hpp" name="include/osmium/io/reader_iterator.hpp">
-<area shape="rect" id="node3" href="$reader_8hpp.html" title="osmium/io/reader.hpp" alt="" coords="2080,110,2227,143"/>
-<area shape="rect" id="node130" href="$input__iterator_8hpp.html" title="osmium/io/input_iterator.hpp" alt="" coords="227,110,411,143"/>
-<area shape="rect" id="node27" href="$compression_8hpp.html" title="osmium/io/compression.hpp" alt="" coords="2523,203,2707,237"/>
-<area shape="rect" id="node50" href="$file_8hpp.html" title="osmium/io/file.hpp" alt="" coords="1971,203,2099,237"/>
-<area shape="rect" id="node70" href="$header_8hpp.html" title="osmium/io/header.hpp" alt="" coords="2208,203,2357,237"/>
-<area shape="rect" id="node77" href="$buffer_8hpp.html" title="osmium/memory/buffer.hpp" alt="" coords="600,203,779,237"/>
-<area shape="rect" id="node105" href="$entity__bits_8hpp.html" title="osmium/osm/entity_bits.hpp" alt="" coords="1760,203,1947,237"/>
-<area shape="rect" id="node107" href="$checked__task_8hpp.html" title="osmium/thread/checked\l_task.hpp" alt="" coords="3664,193,3824,247"/>
-<area shape="rect" id="node115" href="$name_8hpp.html" title="osmium/thread/name.hpp" alt="" coords="851,203,1019,237"/>
-<area shape="rect" id="node119" href="$queue_8hpp.html" title="osmium/thread/queue.hpp" alt="" coords="3276,203,3447,237"/>
-<area shape="rect" id="node43" href="$file__compression_8hpp.html" title="osmium/io/file_compression.hpp" alt="" coords="2317,307,2525,341"/>
-<area shape="rect" id="node60" href="$file__format_8hpp.html" title="osmium/io/file_format.hpp" alt="" coords="1624,307,1795,341"/>
-<area shape="rect" id="node63" href="$options_8hpp.html" title="osmium/util/options.hpp" alt="" coords="1869,307,2029,341"/>
-<area shape="rect" id="node74" href="$box_8hpp.html" title="osmium/osm/box.hpp" alt="" coords="2053,307,2200,341"/>
-<area shape="rect" id="node92" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="544,401,717,434"/>
-<area shape="rect" id="node95" href="$item__iterator_8hpp.html" title="osmium/memory/item\l_iterator.hpp" alt="" coords="245,297,392,351"/>
-<area shape="rect" id="node102" href="$entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="704,307,861,341"/>
+<area shape="rect" id="node2" href="$reader_8hpp.html" title="osmium/io/reader.hpp" alt="" coords="2464,95,2611,121"/>
+<area shape="rect" id="node50" href="$input__iterator_8hpp.html" title="osmium/io/input_iterator.hpp" alt="" coords="251,95,437,121"/>
+<area shape="rect" id="node14" href="$compression_8hpp.html" title="osmium/io/compression.hpp" alt="" coords="1909,177,2094,203"/>
+<area shape="rect" id="node23" href="$file_8hpp.html" title="osmium/io/file.hpp" alt="" coords="2271,177,2399,203"/>
+<area shape="rect" id="node30" href="$header_8hpp.html" title="osmium/io/header.hpp" alt="" coords="1298,177,1449,203"/>
+<area shape="rect" id="node32" href="$buffer_8hpp.html" title="osmium/memory/buffer.hpp" alt="" coords="689,177,871,203"/>
+<area shape="rect" id="node41" href="$entity__bits_8hpp.html" title="osmium/osm/entity_bits.hpp" alt="" coords="3041,177,3228,203"/>
+<area shape="rect" id="node42" href="$checked__task_8hpp.html" title="osmium/thread/checked\l_task.hpp" alt="" coords="3389,169,3550,211"/>
+<area shape="rect" id="node45" href="$name_8hpp.html" title="osmium/thread/name.hpp" alt="" coords="3921,177,4090,203"/>
+<area shape="rect" id="node47" href="$queue_8hpp.html" title="osmium/thread/queue.hpp" alt="" coords="3677,177,3849,203"/>
+<area shape="rect" id="node19" href="$file__compression_8hpp.html" title="osmium/io/file_compression.hpp" alt="" coords="2474,266,2683,293"/>
+<area shape="rect" id="node20" href="$compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="1143,348,1334,375"/>
+<area shape="rect" id="node27" href="$file__format_8hpp.html" title="osmium/io/file_format.hpp" alt="" coords="2885,266,3057,293"/>
+<area shape="rect" id="node28" href="$options_8hpp.html" title="osmium/util/options.hpp" alt="" coords="1751,266,1911,293"/>
+<area shape="rect" id="node31" href="$box_8hpp.html" title="osmium/osm/box.hpp" alt="" coords="993,266,1140,293"/>
+<area shape="rect" id="node37" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="635,348,808,375"/>
+<area shape="rect" id="node38" href="$item__iterator_8hpp.html" title="osmium/memory/item\l_iterator.hpp" alt="" coords="245,259,393,300"/>
+<area shape="rect" id="node40" href="$entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="759,266,918,293"/>
 </map>

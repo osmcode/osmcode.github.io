@@ -8,6 +8,7 @@ var searchData=
   ['objectbuilder_3c_20osmium_3a_3aarea_20_3e',['ObjectBuilder&lt; osmium::Area &gt;',['../classosmium_1_1builder_1_1ObjectBuilder.html',1,'osmium::builder']]],
   ['objectbuilder_3c_20osmium_3a_3away_20_3e',['ObjectBuilder&lt; osmium::Way &gt;',['../classosmium_1_1builder_1_1ObjectBuilder.html',1,'osmium::builder']]],
   ['objectbuilder_3c_20relationmemberlist_20_3e',['ObjectBuilder&lt; RelationMemberList &gt;',['../classosmium_1_1builder_1_1ObjectBuilder.html',1,'osmium::builder']]],
+  ['objectbuilder_3c_20t_20_3e',['ObjectBuilder&lt; T &gt;',['../classosmium_1_1builder_1_1ObjectBuilder.html',1,'osmium::builder']]],
   ['objectbuilder_3c_20taglist_20_3e',['ObjectBuilder&lt; TagList &gt;',['../classosmium_1_1builder_1_1ObjectBuilder.html',1,'osmium::builder']]],
   ['objectpointercollection',['ObjectPointerCollection',['../classosmium_1_1ObjectPointerCollection.html',1,'osmium']]],
   ['objectrelations',['ObjectRelations',['../classosmium_1_1handler_1_1ObjectRelations.html',1,'osmium::handler']]],

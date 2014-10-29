@@ -138,15 +138,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classosmium_1_1thread_1_1CheckedTask.html">   46</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classosmium_1_1thread_1_1CheckedTask.html">CheckedTask</a> {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classosmium_1_1thread_1_1CheckedTask.html#af9c8800a527146c89211e75a8e936ee5">   48</a></span>&#160;            std::thread <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#af9c8800a527146c89211e75a8e936ee5">m_thread</a> {};</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classosmium_1_1thread_1_1CheckedTask.html#aeef6036315eb54a362f51a354f7924a0">   49</a></span>&#160;            std::future&lt;void&gt; <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#aeef6036315eb54a362f51a354f7924a0">m_future</a> {};</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classosmium_1_1thread_1_1CheckedTask.html#af9c8800a527146c89211e75a8e936ee5">   48</a></span>&#160;            std::thread <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#af9c8800a527146c89211e75a8e936ee5">m_thread</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classosmium_1_1thread_1_1CheckedTask.html#a72e00f69484d1bd57436de44aa5538f6">   49</a></span>&#160;            std::future&lt;bool&gt; <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#a72e00f69484d1bd57436de44aa5538f6">m_future</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">class</span>... TArgs&gt;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classosmium_1_1thread_1_1CheckedTask.html#a0945097f90857ce124ac48dc39e884f7">   54</a></span>&#160;            <span class="keyword">explicit</span> <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#a0945097f90857ce124ac48dc39e884f7">CheckedTask</a>(TArgs&amp;&amp;... args) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                std::packaged_task&lt;void()&gt; pack_task(T(std::forward&lt;TArgs&gt;(args)...));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#aeef6036315eb54a362f51a354f7924a0">m_future</a> = pack_task.get_future();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                std::packaged_task&lt;bool()&gt; pack_task(T(std::forward&lt;TArgs&gt;(args)...));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#a72e00f69484d1bd57436de44aa5538f6">m_future</a> = pack_task.get_future();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#af9c8800a527146c89211e75a8e936ee5">m_thread</a> = std::thread(std::move(pack_task));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
@@ -161,8 +161,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html">CheckedTask</a>&amp; <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#a7d959f54882b4b47a7273606944bd81c">operator=</a>(<span class="keyword">const</span> <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html">CheckedTask</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classosmium_1_1thread_1_1CheckedTask.html#aa03fe68ec4c55c8951c3f1336172b8a2">   76</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#aa03fe68ec4c55c8951c3f1336172b8a2">check_for_exception</a>() {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#aeef6036315eb54a362f51a354f7924a0">m_future</a>.valid() &amp;&amp; <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#aeef6036315eb54a362f51a354f7924a0">m_future</a>.wait_for(std::chrono::seconds(0)) == std::future_status::ready) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#aeef6036315eb54a362f51a354f7924a0">m_future</a>.get();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#a72e00f69484d1bd57436de44aa5538f6">m_future</a>.valid() &amp;&amp; <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#a72e00f69484d1bd57436de44aa5538f6">m_future</a>.wait_for(std::chrono::seconds(0)) == std::future_status::ready) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#a72e00f69484d1bd57436de44aa5538f6">m_future</a>.get();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
@@ -170,8 +170,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="comment">// If an exception happened in the task, re-throw</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="comment">// it in this thread. This will block if the task</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="comment">// isn&#39;t finished.</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#aeef6036315eb54a362f51a354f7924a0">m_future</a>.valid()) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#aeef6036315eb54a362f51a354f7924a0">m_future</a>.get();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#a72e00f69484d1bd57436de44aa5538f6">m_future</a>.valid()) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <a class="code" href="classosmium_1_1thread_1_1CheckedTask.html#a72e00f69484d1bd57436de44aa5538f6">m_future</a>.get();</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="comment">// Make sure task is done.</span></div>
@@ -188,9 +188,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif // OSMIUM_THREAD_CHECKED_TASK_HPP</span></div>
 <div class="ttc" id="classosmium_1_1thread_1_1CheckedTask_html_acbae6065fd8072db60abebd9a4cdcef3"><div class="ttname"><a href="classosmium_1_1thread_1_1CheckedTask.html#acbae6065fd8072db60abebd9a4cdcef3">osmium::thread::CheckedTask::~CheckedTask</a></div><div class="ttdeci">~CheckedTask()</div><div class="ttdef"><b>Definition:</b> checked_task.hpp:60</div></div>
-<div class="ttc" id="classosmium_1_1thread_1_1CheckedTask_html_aeef6036315eb54a362f51a354f7924a0"><div class="ttname"><a href="classosmium_1_1thread_1_1CheckedTask.html#aeef6036315eb54a362f51a354f7924a0">osmium::thread::CheckedTask::m_future</a></div><div class="ttdeci">std::future&lt; void &gt; m_future</div><div class="ttdef"><b>Definition:</b> checked_task.hpp:49</div></div>
 <div class="ttc" id="classosmium_1_1thread_1_1CheckedTask_html_af9c8800a527146c89211e75a8e936ee5"><div class="ttname"><a href="classosmium_1_1thread_1_1CheckedTask.html#af9c8800a527146c89211e75a8e936ee5">osmium::thread::CheckedTask::m_thread</a></div><div class="ttdeci">std::thread m_thread</div><div class="ttdef"><b>Definition:</b> checked_task.hpp:48</div></div>
 <div class="ttc" id="classosmium_1_1thread_1_1CheckedTask_html_a0b1fbaeedb2ede6c76ff054e5c138ae8"><div class="ttname"><a href="classosmium_1_1thread_1_1CheckedTask.html#a0b1fbaeedb2ede6c76ff054e5c138ae8">osmium::thread::CheckedTask::close</a></div><div class="ttdeci">void close()</div><div class="ttdef"><b>Definition:</b> checked_task.hpp:86</div></div>
+<div class="ttc" id="classosmium_1_1thread_1_1CheckedTask_html_a72e00f69484d1bd57436de44aa5538f6"><div class="ttname"><a href="classosmium_1_1thread_1_1CheckedTask.html#a72e00f69484d1bd57436de44aa5538f6">osmium::thread::CheckedTask::m_future</a></div><div class="ttdeci">std::future&lt; bool &gt; m_future</div><div class="ttdef"><b>Definition:</b> checked_task.hpp:49</div></div>
 <div class="ttc" id="classosmium_1_1thread_1_1CheckedTask_html"><div class="ttname"><a href="classosmium_1_1thread_1_1CheckedTask.html">osmium::thread::CheckedTask</a></div><div class="ttdef"><b>Definition:</b> checked_task.hpp:46</div></div>
 <div class="ttc" id="classosmium_1_1thread_1_1CheckedTask_html_a7d959f54882b4b47a7273606944bd81c"><div class="ttname"><a href="classosmium_1_1thread_1_1CheckedTask.html#a7d959f54882b4b47a7273606944bd81c">osmium::thread::CheckedTask::operator=</a></div><div class="ttdeci">CheckedTask &amp; operator=(const CheckedTask &amp;)=delete</div></div>
 <div class="ttc" id="classosmium_1_1thread_1_1CheckedTask_html_a0945097f90857ce124ac48dc39e884f7"><div class="ttname"><a href="classosmium_1_1thread_1_1CheckedTask.html#a0945097f90857ce124ac48dc39e884f7">osmium::thread::CheckedTask::CheckedTask</a></div><div class="ttdeci">CheckedTask(TArgs &amp;&amp;...args)</div><div class="ttdef"><b>Definition:</b> checked_task.hpp:54</div></div>
@@ -198,7 +198,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:10 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

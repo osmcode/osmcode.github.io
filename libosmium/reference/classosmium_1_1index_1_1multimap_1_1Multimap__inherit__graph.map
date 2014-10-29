@@ -1,6 +1,6 @@
 <map id="osmium::index::multimap::Multimap&lt; TId, TValue &gt;" name="osmium::index::multimap::Multimap&lt; TId, TValue &gt;">
-<area shape="rect" id="node3" href="$classosmium_1_1index_1_1multimap_1_1Hybrid.html" title="osmium::index::multimap\l::Hybrid\&lt; TId, TValue \&gt;" alt="" coords="245,5,413,59"/>
-<area shape="rect" id="node5" href="$classosmium_1_1index_1_1multimap_1_1StlMultimap.html" title="osmium::index::multimap\l::StlMultimap\&lt; TId, TValue \&gt;" alt="" coords="235,82,424,137"/>
-<area shape="rect" id="node7" href="$classosmium_1_1index_1_1multimap_1_1VectorBasedSparseMultimap.html" title="osmium::index::multimap\l::VectorBasedSparseMultimap\l\&lt; TId, TValue \&gt;" alt="" coords="231,159,428,235"/>
-<area shape="rect" id="node9" href="$classosmium_1_1index_1_1multimap_1_1VectorBasedSparseMultimap.html" title="VectorBasedSparseMultimap\l\&lt; TId, TValue \&gt;" alt="" coords="235,258,424,313"/>
+<area shape="rect" id="node2" href="$classosmium_1_1index_1_1multimap_1_1Hybrid.html" title="osmium::index::multimap\l::Hybrid\&lt; TId, TValue \&gt;" alt="" coords="243,5,411,47"/>
+<area shape="rect" id="node3" href="$classosmium_1_1index_1_1multimap_1_1StlMultimap.html" title="osmium::index::multimap\l::StlMultimap\&lt; TId, TValue \&gt;" alt="" coords="232,71,423,112"/>
+<area shape="rect" id="node4" href="$classosmium_1_1index_1_1multimap_1_1VectorBasedSparseMultimap.html" title="osmium::index::multimap\l::VectorBasedSparseMultimap\l\&lt; TId, TValue \&gt;" alt="" coords="228,135,427,191"/>
+<area shape="rect" id="node5" href="$classosmium_1_1index_1_1multimap_1_1VectorBasedSparseMultimap.html" title="VectorBasedSparseMultimap\l\&lt; TId, TValue \&gt;" alt="" coords="232,215,423,256"/>
 </map>

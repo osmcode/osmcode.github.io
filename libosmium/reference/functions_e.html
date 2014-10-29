@@ -133,7 +133,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classosmium_1_1index_1_1multimap_1_1StlMultimap.html#a21ffc4b60596f081b5fe9f8c92433089">osmium::index::multimap::StlMultimap&lt; TId, TValue &gt;</a>
 </li>
 <li>element_type
-: <a class="el" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html#a5e49d8c17e3048d8270f3e298d66ddc4">osmium::index::map::VectorBasedSparseMap&lt; TId, TValue, TVector &gt;</a>
+: <a class="el" href="classosmium_1_1index_1_1map_1_1VectorBasedDenseMap.html#a8b07ca474057b99bc4811533fd198215">osmium::index::map::VectorBasedDenseMap&lt; TVector, TId, TValue &gt;</a>
+, <a class="el" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html#a5e49d8c17e3048d8270f3e298d66ddc4">osmium::index::map::VectorBasedSparseMap&lt; TId, TValue, TVector &gt;</a>
 , <a class="el" href="classosmium_1_1index_1_1multimap_1_1HybridIterator.html#a875070fb0f6fa02cac2ccd4a319427e1">osmium::index::multimap::HybridIterator&lt; TId, TValue &gt;</a>
 , <a class="el" href="classosmium_1_1index_1_1multimap_1_1Multimap.html#a4b6f3ccd0e46a40214d818ca957ef12c">osmium::index::multimap::Multimap&lt; TId, TValue &gt;</a>
 , <a class="el" href="classosmium_1_1index_1_1multimap_1_1StlMultimap.html#a0f26c6e5f9d560daf695e8c8231e073b">osmium::index::multimap::StlMultimap&lt; TId, TValue &gt;</a>
@@ -141,7 +142,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>empty()
 : <a class="el" href="classosmium_1_1memory_1_1Collection.html#ac3da0f873a8c22d64c0253bbfffe9390">osmium::memory::Collection&lt; TMember, TCollectionItemType &gt;</a>
-, <a class="el" href="classosmium_1_1NodeRefList.html#a3ca6b2fd39b9812399a85f9fb43d8e75">osmium::NodeRefList&lt; TItemType &gt;</a>
+, <a class="el" href="classosmium_1_1NodeRefList.html#a2096fefa355e75417c9b996cd46cbfc6">osmium::NodeRefList&lt; TItemType &gt;</a>
 , <a class="el" href="classosmium_1_1thread_1_1Queue.html#ac06a8e759dcdc48a14314b94f28d1518">osmium::thread::Queue&lt; T &gt;</a>
 , <a class="el" href="classosmium_1_1thread_1_1SortedQueue.html#a695d02de1645efb972171b93dd942ca9">osmium::thread::SortedQueue&lt; T &gt;</a>
 </li>
@@ -153,17 +154,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>end()
 : <a class="el" href="classosmium_1_1Changeset.html#af3936c827f070730379128f80d74f26e">osmium::Changeset</a>
+, <a class="el" href="classosmium_1_1index_1_1map_1_1VectorBasedDenseMap.html#ae1d5975377a06172178a7baa8d8056a3">osmium::index::map::VectorBasedDenseMap&lt; TVector, TId, TValue &gt;</a>
 , <a class="el" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html#ab37e439f9fec2ae36fe2c7d98b0ad628">osmium::index::map::VectorBasedSparseMap&lt; TId, TValue, TVector &gt;</a>
 , <a class="el" href="classosmium_1_1index_1_1multimap_1_1StlMultimap.html#a45e9ab9164ecb32d3412fc5ec5c4247a">osmium::index::multimap::StlMultimap&lt; TId, TValue &gt;</a>
 , <a class="el" href="classosmium_1_1memory_1_1Buffer.html#a939be05a0cd091b9ed6ff90b52e2a979">osmium::memory::Buffer</a>
 , <a class="el" href="classosmium_1_1memory_1_1Collection.html#a42a577088201d4825702a96cc3efb942">osmium::memory::Collection&lt; TMember, TCollectionItemType &gt;</a>
 , <a class="el" href="classosmium_1_1NodeRefList.html#a712ee25cc942bf90afbf817d8d550b00">osmium::NodeRefList&lt; TItemType &gt;</a>
 , <a class="el" href="classosmium_1_1ObjectPointerCollection.html#a35efcf8b357d8230f241f67b6a1de25e">osmium::ObjectPointerCollection</a>
-, <a class="el" href="classosmium_1_1OSMObject.html#a59f77f75b675ff04b765d7c0d262b52c">osmium::OSMObject</a>
+, <a class="el" href="classosmium_1_1OSMObject.html#aee3c99d0807d48eeee6a5e0fffe2c75a">osmium::OSMObject</a>
 , <a class="el" href="classosmium_1_1util_1_1Options.html#a8874daa62eb7fe0f2336bb55f01b2d9c">osmium::util::Options</a>
 </li>
 <li>end_time()
-: <a class="el" href="classosmium_1_1DiffObject.html#a63d62c5a3d3d5b186fed6974e4da0550">osmium::DiffObject</a>
+: <a class="el" href="classosmium_1_1DiffObject.html#ae151cc27ca6734f65f4272aa8f274a40">osmium::DiffObject</a>
 </li>
 <li>endpos()
 : <a class="el" href="classosmium_1_1RelationMember.html#a5193a8d62cecc8c3c88c8ccf76c2d113">osmium::RelationMember</a>
@@ -176,23 +178,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classosmium_1_1NodeRefList.html#a28fefe78fb4d5565fcd0bf2f9f34b7ab">osmium::NodeRefList&lt; TItemType &gt;</a>
 , <a class="el" href="classosmium_1_1Way.html#abbb13b6fbfc5a3a0299c9faada5be147">osmium::Way</a>
 </li>
+<li>eof()
+: <a class="el" href="classosmium_1_1io_1_1Reader.html#a2b2baeee90217a5b34310d8625b997b6">osmium::io::Reader</a>
+</li>
 <li>epsg()
 : <a class="el" href="classosmium_1_1geom_1_1GeometryFactory.html#a07abf65bc5ff9dbd4c1b9a0275ef6348">osmium::geom::GeometryFactory&lt; TGeomImpl, TProjection &gt;</a>
-, <a class="el" href="classosmium_1_1geom_1_1IdentityProjection.html#a9fd83b33fb8cdd5fe7984f0c00139786">osmium::geom::IdentityProjection</a>
-, <a class="el" href="classosmium_1_1geom_1_1MercatorProjection.html#ae35a23177bf74b9e1b49bdb76cde54a8">osmium::geom::MercatorProjection</a>
-, <a class="el" href="classosmium_1_1geom_1_1Projection.html#a8fef1f77f736ed8739891ae0264db98a">osmium::geom::Projection</a>
+, <a class="el" href="classosmium_1_1geom_1_1IdentityProjection.html#aed1ec724bb9361a87ce4c590b579c089">osmium::geom::IdentityProjection</a>
+, <a class="el" href="classosmium_1_1geom_1_1MercatorProjection.html#a0e4673885476c374347f83f95700c256">osmium::geom::MercatorProjection</a>
+, <a class="el" href="classosmium_1_1geom_1_1Projection.html#a1bd77404c0c42faa560735fb7fda8c45">osmium::geom::Projection</a>
 </li>
 <li>erase_removed()
 : <a class="el" href="classosmium_1_1index_1_1multimap_1_1VectorBasedSparseMultimap.html#a7b39c6eabd905b7afa69b18f43e3d7fa">osmium::index::multimap::VectorBasedSparseMultimap&lt; TId, TValue, TVector &gt;</a>
 </li>
 <li>error()
-: <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#ab0eddbebbed00543984b921911ff1278">osmium::io::CompressionFactory</a>
+: <a class="el" href="classosmium_1_1io_1_1CompressionFactory.html#a3a02f13558cd591aad771c8bafe40d84">osmium::io::CompressionFactory</a>
 </li>
 <li>execute()
 : <a class="el" href="classosmium_1_1io_1_1Reader.html#a6c5128f86f47e6a92bf83b0b148064a0">osmium::io::Reader</a>
 </li>
 <li>extend()
-: <a class="el" href="classosmium_1_1Box.html#a2463621ff4d05456ec6965160dfaf6d1">osmium::Box</a>
+: <a class="el" href="classosmium_1_1Box.html#a86f7a02175aa3abf864cfd4e2f52d395">osmium::Box</a>
 </li>
 <li>extra_map_type
 : <a class="el" href="classosmium_1_1index_1_1multimap_1_1Hybrid.html#a3a7b259267a7e658f36519a2f9b0b300">osmium::index::multimap::Hybrid&lt; TId, TValue &gt;</a>
@@ -202,7 +207,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:39 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

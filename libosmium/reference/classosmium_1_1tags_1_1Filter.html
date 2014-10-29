@@ -101,6 +101,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="filter_8hpp_source.html">filter.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for osmium::tags::Filter&lt; TKey, TValue, TKeyComp, TValueComp &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classosmium_1_1tags_1_1Filter__inherit__graph.png" border="0" usemap="#osmium_1_1tags_1_1Filter_3_01TKey_00_01TValue_00_01TKeyComp_00_01TValueComp_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="osmium_1_1tags_1_1Filter_3_01TKey_00_01TValue_00_01TKeyComp_00_01TValueComp_01_4_inherit__map" id="osmium_1_1tags_1_1Filter_3_01TKey_00_01TValue_00_01TKeyComp_00_01TValueComp_01_4_inherit__map">
+<area shape="rect" id="node2" href="structosmium_1_1area_1_1Assembler_1_1MPFilter.html" title="osmium::area::Assembler\l::MPFilter" alt="" coords="16,109,187,151"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -109,14 +116,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0e8836e2add1ec9d303389ff32d1d940"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classosmium_1_1tags_1_1Filter.html">Filter</a>&lt; TKey, TValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1tags_1_1Filter.html#a0e8836e2add1ec9d303389ff32d1d940">filter_type</a></td></tr>
-<tr class="separator:a0e8836e2add1ec9d303389ff32d1d940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0bd0d7dfe448804b6c8e62119926001"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classosmium_1_1tags_1_1Filter.html">Filter</a>&lt; TKey, TValue, <br class="typebreak" />
+TKeyComp, TValueComp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1tags_1_1Filter.html#af0bd0d7dfe448804b6c8e62119926001">filter_type</a></td></tr>
+<tr class="separator:af0bd0d7dfe448804b6c8e62119926001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae418a7949b31204e8ded9736abfbfca6"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="classosmium_1_1Tag.html">osmium::Tag</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1tags_1_1Filter.html#ae418a7949b31204e8ded9736abfbfca6">argument_type</a></td></tr>
 <tr class="separator:ae418a7949b31204e8ded9736abfbfca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a404edc9acfbe67938ce46cd099bedd3f"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1tags_1_1Filter.html#a404edc9acfbe67938ce46cd099bedd3f">result_type</a></td></tr>
 <tr class="separator:a404edc9acfbe67938ce46cd099bedd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7521f4088abe8b28a4ec91ce1b786a"><td class="memItemLeft" align="right" valign="top">typedef boost::filter_iterator<br class="typebreak" />
-&lt; <a class="el" href="classosmium_1_1tags_1_1Filter.html#a0e8836e2add1ec9d303389ff32d1d940">filter_type</a>, <br class="typebreak" />
+&lt; <a class="el" href="classosmium_1_1tags_1_1Filter.html#af0bd0d7dfe448804b6c8e62119926001">filter_type</a>, <br class="typebreak" />
 <a class="el" href="classosmium_1_1memory_1_1Collection.html#a4cd3a52e534f223084343dfe747ad8ba">osmium::TagList::const_iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1tags_1_1Filter.html#a0b7521f4088abe8b28a4ec91ce1b786a">iterator</a></td></tr>
 <tr class="separator:a0b7521f4088abe8b28a4ec91ce1b786a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -143,7 +151,7 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a59d96082352c62b33a9203c7cc5ce39f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structosmium_1_1tags_1_1Filter_1_1Rule.html">Rule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1tags_1_1Filter.html#a59d96082352c62b33a9203c7cc5ce39f">m_rules</a> {}</td></tr>
+<tr class="memitem:a59d96082352c62b33a9203c7cc5ce39f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structosmium_1_1tags_1_1Filter_1_1Rule.html">Rule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1tags_1_1Filter.html#a59d96082352c62b33a9203c7cc5ce39f">m_rules</a></td></tr>
 <tr class="separator:a59d96082352c62b33a9203c7cc5ce39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a365263b0c191cb0d88aeea1f6644ec71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1tags_1_1Filter.html#a365263b0c191cb0d88aeea1f6644ec71">m_default_result</a></td></tr>
 <tr class="separator:a365263b0c191cb0d88aeea1f6644ec71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,14 +171,14 @@ template&lt;class TKey , class TValue  = void, class TKeyComp  = match_key&lt;TK
 
 </div>
 </div>
-<a class="anchor" id="a0e8836e2add1ec9d303389ff32d1d940"></a>
+<a class="anchor" id="af0bd0d7dfe448804b6c8e62119926001"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TKey , class TValue  = void, class TKeyComp  = match_key&lt;TKey&gt;, class TValueComp  = match_value&lt;TValue&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classosmium_1_1tags_1_1Filter.html">Filter</a>&lt;TKey, TValue&gt; <a class="el" href="classosmium_1_1tags_1_1Filter.html">osmium::tags::Filter</a>&lt; TKey, TValue, TKeyComp, TValueComp &gt;::<a class="el" href="classosmium_1_1tags_1_1Filter.html#a0e8836e2add1ec9d303389ff32d1d940">filter_type</a></td>
+          <td class="memname">typedef <a class="el" href="classosmium_1_1tags_1_1Filter.html">Filter</a>&lt;TKey, TValue, TKeyComp, TValueComp&gt; <a class="el" href="classosmium_1_1tags_1_1Filter.html">osmium::tags::Filter</a>&lt; TKey, TValue, TKeyComp, TValueComp &gt;::<a class="el" href="classosmium_1_1tags_1_1Filter.html#af0bd0d7dfe448804b6c8e62119926001">filter_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -184,7 +192,7 @@ template&lt;class TKey , class TValue  = void, class TKeyComp  = match_key&lt;TK
 template&lt;class TKey , class TValue  = void, class TKeyComp  = match_key&lt;TKey&gt;, class TValueComp  = match_value&lt;TValue&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::filter_iterator&lt;<a class="el" href="classosmium_1_1tags_1_1Filter.html#a0e8836e2add1ec9d303389ff32d1d940">filter_type</a>, <a class="el" href="classosmium_1_1memory_1_1Collection.html#a4cd3a52e534f223084343dfe747ad8ba">osmium::TagList::const_iterator</a>&gt; <a class="el" href="classosmium_1_1tags_1_1Filter.html">osmium::tags::Filter</a>&lt; TKey, TValue, TKeyComp, TValueComp &gt;::<a class="el" href="classosmium_1_1tags_1_1Filter.html#a0b7521f4088abe8b28a4ec91ce1b786a">iterator</a></td>
+          <td class="memname">typedef boost::filter_iterator&lt;<a class="el" href="classosmium_1_1tags_1_1Filter.html#af0bd0d7dfe448804b6c8e62119926001">filter_type</a>, <a class="el" href="classosmium_1_1memory_1_1Collection.html#a4cd3a52e534f223084343dfe747ad8ba">osmium::TagList::const_iterator</a>&gt; <a class="el" href="classosmium_1_1tags_1_1Filter.html">osmium::tags::Filter</a>&lt; TKey, TValue, TKeyComp, TValueComp &gt;::<a class="el" href="classosmium_1_1tags_1_1Filter.html#a0b7521f4088abe8b28a4ec91ce1b786a">iterator</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -416,7 +424,7 @@ template&lt;class TKey , class TValue  = void, class TKeyComp  = match_key&lt;TK
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structosmium_1_1tags_1_1Filter_1_1Rule.html">Rule</a>&gt; <a class="el" href="classosmium_1_1tags_1_1Filter.html">osmium::tags::Filter</a>&lt; TKey, TValue, TKeyComp, TValueComp &gt;::m_rules {}</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structosmium_1_1tags_1_1Filter_1_1Rule.html">Rule</a>&gt; <a class="el" href="classosmium_1_1tags_1_1Filter.html">osmium::tags::Filter</a>&lt; TKey, TValue, TKeyComp, TValueComp &gt;::m_rules</td>
         </tr>
       </table>
   </td>
@@ -434,7 +442,7 @@ template&lt;class TKey , class TValue  = void, class TKeyComp  = match_key&lt;TK
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:39 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -1,7 +1,7 @@
 <map id="include/osmium/io/overwrite.hpp" name="include/osmium/io/overwrite.hpp">
-<area shape="rect" id="node3" href="$writer_8hpp.html" title="include/osmium/io/writer.hpp" alt="" coords="157,89,344,122"/>
-<area shape="rect" id="node5" href="$opl__output_8hpp.html" title="include/osmium/io/opl\l_output.hpp" alt="" coords="5,171,152,226"/>
-<area shape="rect" id="node9" href="$pbf__output_8hpp.html" title="include/osmium/io/pbf\l_output.hpp" alt="" coords="176,171,325,226"/>
-<area shape="rect" id="node12" href="$xml__output_8hpp.html" title="include/osmium/io/xml\l_output.hpp" alt="" coords="349,171,501,226"/>
-<area shape="rect" id="node7" href="$any__output_8hpp.html" title="include/osmium/io/any\l_output.hpp" alt="" coords="175,275,327,330"/>
+<area shape="rect" id="node2" href="$writer_8hpp.html" title="include/osmium/io/writer.hpp" alt="" coords="159,80,347,107"/>
+<area shape="rect" id="node3" href="$opl__output_8hpp.html" title="include/osmium/io/opl\l_output.hpp" alt="" coords="5,155,153,196"/>
+<area shape="rect" id="node5" href="$pbf__output_8hpp.html" title="include/osmium/io/pbf\l_output.hpp" alt="" coords="178,155,327,196"/>
+<area shape="rect" id="node6" href="$xml__output_8hpp.html" title="include/osmium/io/xml\l_output.hpp" alt="" coords="351,155,503,196"/>
+<area shape="rect" id="node4" href="$any__output_8hpp.html" title="include/osmium/io/any\l_output.hpp" alt="" coords="177,244,329,285"/>
 </map>

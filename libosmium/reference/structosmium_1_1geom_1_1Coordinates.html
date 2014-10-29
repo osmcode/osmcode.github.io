@@ -101,14 +101,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acf4c5c8e1c88e2879dcdb88f24e143f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structosmium_1_1geom_1_1Coordinates.html#acf4c5c8e1c88e2879dcdb88f24e143f9">Coordinates</a> (double cx, double cy)</td></tr>
-<tr class="separator:acf4c5c8e1c88e2879dcdb88f24e143f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7289bd4a280cdc0a93b19958e9768c44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structosmium_1_1geom_1_1Coordinates.html#a7289bd4a280cdc0a93b19958e9768c44">Coordinates</a> (double cx, double cy) noexcept</td></tr>
+<tr class="separator:a7289bd4a280cdc0a93b19958e9768c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fb8234b62ecdb4469c0a9b788330538"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structosmium_1_1geom_1_1Coordinates.html#a7fb8234b62ecdb4469c0a9b788330538">Coordinates</a> (const <a class="el" href="classosmium_1_1Location.html">osmium::Location</a> &amp;location)</td></tr>
 <tr class="separator:a7fb8234b62ecdb4469c0a9b788330538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a528c8876abe509b642da7f53de395761"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structosmium_1_1geom_1_1Coordinates.html#a528c8876abe509b642da7f53de395761">append_to_string</a> (std::string &amp;s, const char infix) const </td></tr>
-<tr class="separator:a528c8876abe509b642da7f53de395761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa38a85d138ef8b3d938993b588f4f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structosmium_1_1geom_1_1Coordinates.html#aaaa38a85d138ef8b3d938993b588f4f7">append_to_string</a> (std::string &amp;s, const char prefix, const char infix, const char suffix) const </td></tr>
-<tr class="separator:aaaa38a85d138ef8b3d938993b588f4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53fb178e1c9cb00fdc4f0d7cd61d76e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structosmium_1_1geom_1_1Coordinates.html#ad53fb178e1c9cb00fdc4f0d7cd61d76e">append_to_string</a> (std::string &amp;s, const char infix, int precision) const </td></tr>
+<tr class="separator:ad53fb178e1c9cb00fdc4f0d7cd61d76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125bb2246342ea5f8b135f7dcc1f9ca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structosmium_1_1geom_1_1Coordinates.html#a125bb2246342ea5f8b135f7dcc1f9ca7">append_to_string</a> (std::string &amp;s, const char prefix, const char infix, const char suffix, int precision) const </td></tr>
+<tr class="separator:a125bb2246342ea5f8b135f7dcc1f9ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -118,7 +118,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a71a10efd862ff9ed4c988d73065ac9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="acf4c5c8e1c88e2879dcdb88f24e143f9"></a>
+<a class="anchor" id="a7289bd4a280cdc0a93b19958e9768c44"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -145,7 +145,7 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -177,7 +177,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a528c8876abe509b642da7f53de395761"></a>
+<a class="anchor" id="ad53fb178e1c9cb00fdc4f0d7cd61d76e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -194,7 +194,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char&#160;</td>
-          <td class="paramname"><em>infix</em>&#160;</td>
+          <td class="paramname"><em>infix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>precision</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -211,7 +217,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaaa38a85d138ef8b3d938993b588f4f7"></a>
+<a class="anchor" id="a125bb2246342ea5f8b135f7dcc1f9ca7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -240,7 +246,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char&#160;</td>
-          <td class="paramname"><em>suffix</em>&#160;</td>
+          <td class="paramname"><em>suffix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>precision</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -288,7 +300,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

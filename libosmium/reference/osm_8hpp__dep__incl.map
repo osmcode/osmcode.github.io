@@ -1,26 +1,10 @@
 <map id="include/osmium/osm.hpp" name="include/osmium/osm.hpp">
-<area shape="rect" id="node3" href="$osm__object__builder_8hpp.html" title="include/osmium/builder\l/osm_object_builder.hpp" alt="" coords="136,401,299,455"/>
-<area shape="rect" id="node9" href="$item__iterator_8hpp.html" title="include/osmium/memory\l/item_iterator.hpp" alt="" coords="440,89,603,143"/>
-<area shape="rect" id="node30" href="$visitor_8hpp.html" title="include/osmium/visitor.hpp" alt="" coords="491,515,667,549"/>
-<area shape="rect" id="node5" href="$assembler_8hpp.html" title="include/osmium/area\l/assembler.hpp" alt="" coords="52,505,193,559"/>
-<area shape="rect" id="node7" href="$builder__helper_8hpp.html" title="include/osmium/builder\l/builder_helper.hpp" alt="" coords="236,505,391,559"/>
-<area shape="rect" id="node11" href="$disk__store_8hpp.html" title="include/osmium/handler\l/disk_store.hpp" alt="" coords="881,609,1039,663"/>
-<area shape="rect" id="node13" href="$buffer_8hpp.html" title="include/osmium/memory\l/buffer.hpp" alt="" coords="440,193,603,247"/>
-<area shape="rect" id="node16" href="$multipolygon__collector_8hpp.html" title="include/osmium/area\l/multipolygon_collector.hpp" alt="" coords="117,713,296,767"/>
-<area shape="rect" id="node18" href="$builder_8hpp.html" title="include/osmium/builder\l/builder.hpp" alt="" coords="144,297,299,351"/>
-<area shape="rect" id="node22" href="$diff__visitor_8hpp.html" title="include/osmium/diff\l_visitor.hpp" alt="" coords="525,401,659,455"/>
-<area shape="rect" id="node25" href="$input__iterator_8hpp.html" title="include/osmium/io/input\l_iterator.hpp" alt="" coords="576,297,733,351"/>
-<area shape="rect" id="node35" href="$collector_8hpp.html" title="include/osmium/relations\l/collector.hpp" alt="" coords="325,609,491,663"/>
-<area shape="rect" id="node38" href="$output__iterator_8hpp.html" title="include/osmium/io/output\l_iterator.hpp" alt="" coords="757,297,923,351"/>
-<area shape="rect" id="node40" href="$reader_8hpp.html" title="include/osmium/io/reader.hpp" alt="" coords="997,307,1187,341"/>
-<area shape="rect" id="node50" href="$writer_8hpp.html" title="include/osmium/io/writer.hpp" alt="" coords="1416,307,1603,341"/>
-<area shape="rect" id="node28" href="$reader__iterator_8hpp.html" title="include/osmium/io/reader\l_iterator.hpp" alt="" coords="683,401,848,455"/>
-<area shape="rect" id="node33" href="$dump_8hpp.html" title="include/osmium/handler\l/dump.hpp" alt="" coords="515,609,672,663"/>
-<area shape="rect" id="node42" href="$pbf__input_8hpp.html" title="include/osmium/io/pbf\l_input.hpp" alt="" coords="1173,401,1323,455"/>
-<area shape="rect" id="node47" href="$xml__input_8hpp.html" title="include/osmium/io/xml\l_input.hpp" alt="" coords="997,401,1149,455"/>
-<area shape="rect" id="node44" href="$any__input_8hpp.html" title="include/osmium/io/any\l_input.hpp" alt="" coords="1084,505,1236,559"/>
-<area shape="rect" id="node52" href="$opl__output_8hpp.html" title="include/osmium/io/opl\l_output.hpp" alt="" coords="1523,401,1669,455"/>
-<area shape="rect" id="node56" href="$pbf__output_8hpp.html" title="include/osmium/io/pbf\l_output.hpp" alt="" coords="1693,401,1843,455"/>
-<area shape="rect" id="node59" href="$xml__output_8hpp.html" title="include/osmium/io/xml\l_output.hpp" alt="" coords="1347,401,1499,455"/>
-<area shape="rect" id="node54" href="$any__output_8hpp.html" title="include/osmium/io/any\l_output.hpp" alt="" coords="1520,505,1672,559"/>
+<area shape="rect" id="node2" href="$osm__object__builder_8hpp.html" title="include/osmium/builder\l/osm_object_builder.hpp" alt="" coords="169,80,331,121"/>
+<area shape="rect" id="node5" href="$visitor_8hpp.html" title="include/osmium/visitor.hpp" alt="" coords="440,87,617,114"/>
+<area shape="rect" id="node3" href="$assembler_8hpp.html" title="include/osmium/area\l/assembler.hpp" alt="" coords="5,169,148,211"/>
+<area shape="rect" id="node4" href="$builder__helper_8hpp.html" title="include/osmium/builder\l/builder_helper.hpp" alt="" coords="173,169,327,211"/>
+<area shape="rect" id="node6" href="$disk__store_8hpp.html" title="include/osmium/handler\l/disk_store.hpp" alt="" coords="352,169,511,211"/>
+<area shape="rect" id="node7" href="$dump_8hpp.html" title="include/osmium/handler\l/dump.hpp" alt="" coords="535,169,693,211"/>
+<area shape="rect" id="node8" href="$collector_8hpp.html" title="include/osmium/relations\l/collector.hpp" alt="" coords="717,169,884,211"/>
+<area shape="rect" id="node9" href="$multipolygon__collector_8hpp.html" title="include/osmium/area\l/multipolygon_collector.hpp" alt="" coords="711,259,891,300"/>
 </map>

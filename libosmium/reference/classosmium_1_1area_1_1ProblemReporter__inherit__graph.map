@@ -1,5 +1,5 @@
 <map id="osmium::area::ProblemReporter" name="osmium::area::ProblemReporter">
-<area shape="rect" id="node3" href="$classosmium_1_1area_1_1ProblemReporterOGR.html" title="osmium::area::ProblemReporterOGR" alt="" coords="5,99,243,133"/>
-<area shape="rect" id="node5" href="$classosmium_1_1area_1_1ProblemReporterStream.html" title="osmium::area::ProblemReporter\lStream" alt="" coords="267,89,472,143"/>
-<area shape="rect" id="node7" href="$classosmium_1_1area_1_1ProblemReporterException.html" title="osmium::area::ProblemReporter\lException" alt="" coords="267,193,472,247"/>
+<area shape="rect" id="node2" href="$classosmium_1_1area_1_1ProblemReporterOGR.html" title="osmium::area::ProblemReporterOGR" alt="" coords="5,87,243,114"/>
+<area shape="rect" id="node3" href="$classosmium_1_1area_1_1ProblemReporterStream.html" title="osmium::area::ProblemReporter\lStream" alt="" coords="267,80,474,121"/>
+<area shape="rect" id="node4" href="$classosmium_1_1area_1_1ProblemReporterException.html" title="osmium::area::ProblemReporter\lException" alt="" coords="267,169,474,211"/>
 </map>

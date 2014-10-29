@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../structosmium_1_1geom_1_1Coordinates.html#a7cf1f0178eb338a5c87922f9321cb13e',1,'osmium::geom::Coordinates']]]
+  ['undefined_5fcoordinate',['undefined_coordinate',['../classosmium_1_1Location.html#adac4b085c4c48b8d6501295b2879e19e',1,'osmium::Location']]]
 ];

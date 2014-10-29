@@ -180,15 +180,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    <span class="comment">// default implementation is empty</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }; <span class="comment">// class Multimap</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        } <span class="comment">// namespace map</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classosmium_1_1index_1_1multimap_1_1Multimap.html#ae40299c4390ea82368da969b6d8f1a1f">  117</a></span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classosmium_1_1index_1_1multimap_1_1Multimap.html#ae40299c4390ea82368da969b6d8f1a1f">dump_as_list</a>(<span class="keywordtype">int</span> <span class="comment">/*fd*/</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    std::runtime_error(<span class="stringliteral">&quot;can&#39;t dump as list&quot;</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                }</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    } <span class="comment">// namespace index</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }; <span class="comment">// class Multimap</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;} <span class="comment">// namespace osmium</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        } <span class="comment">// namespace map</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif // OSMIUM_INDEX_MULTIMAP_HPP</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    } <span class="comment">// namespace index</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;} <span class="comment">// namespace osmium</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif // OSMIUM_INDEX_MULTIMAP_HPP</span></div>
 <div class="ttc" id="classosmium_1_1index_1_1multimap_1_1Multimap_html_ac6755961f974672e6029a7f01618cf46"><div class="ttname"><a href="classosmium_1_1index_1_1multimap_1_1Multimap.html#ac6755961f974672e6029a7f01618cf46">osmium::index::multimap::Multimap::size</a></div><div class="ttdeci">virtual size_t size() const =0</div></div>
 <div class="ttc" id="classosmium_1_1index_1_1multimap_1_1Multimap_html_a0ff4cb0c04dbb7b14393b7129a711845"><div class="ttname"><a href="classosmium_1_1index_1_1multimap_1_1Multimap.html#a0ff4cb0c04dbb7b14393b7129a711845">osmium::index::multimap::Multimap::~Multimap</a></div><div class="ttdeci">virtual ~Multimap() noexcept=default</div></div>
 <div class="ttc" id="classosmium_1_1index_1_1multimap_1_1Multimap_html_a9c9458058290860a9f71d8f1219b1fff"><div class="ttname"><a href="classosmium_1_1index_1_1multimap_1_1Multimap.html#a9c9458058290860a9f71d8f1219b1fff">osmium::index::multimap::Multimap::set</a></div><div class="ttdeci">virtual void set(const TId id, const TValue value)=0</div><div class="ttdoc">Set the field with id to value. </div></div>
@@ -197,6 +201,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classosmium_1_1index_1_1multimap_1_1Multimap_html_a2cc9fd2f9d1a00174fc5c51512a3d4fe"><div class="ttname"><a href="classosmium_1_1index_1_1multimap_1_1Multimap.html#a2cc9fd2f9d1a00174fc5c51512a3d4fe">osmium::index::multimap::Multimap::operator=</a></div><div class="ttdeci">Multimap &amp; operator=(const Multimap &amp;)=delete</div></div>
 <div class="ttc" id="classosmium_1_1index_1_1multimap_1_1Multimap_html_a4b6f3ccd0e46a40214d818ca957ef12c"><div class="ttname"><a href="classosmium_1_1index_1_1multimap_1_1Multimap.html#a4b6f3ccd0e46a40214d818ca957ef12c">osmium::index::multimap::Multimap::element_type</a></div><div class="ttdeci">std::pair&lt; TId, TValue &gt; element_type</div><div class="ttdef"><b>Definition:</b> multimap.hpp:55</div></div>
 <div class="ttc" id="classosmium_1_1index_1_1multimap_1_1Multimap_html_ac72ef083d94638fcd61d0b2c44d91dc8"><div class="ttname"><a href="classosmium_1_1index_1_1multimap_1_1Multimap.html#ac72ef083d94638fcd61d0b2c44d91dc8">osmium::index::multimap::Multimap::Multimap</a></div><div class="ttdeci">Multimap()=default</div></div>
+<div class="ttc" id="classosmium_1_1index_1_1multimap_1_1Multimap_html_ae40299c4390ea82368da969b6d8f1a1f"><div class="ttname"><a href="classosmium_1_1index_1_1multimap_1_1Multimap.html#ae40299c4390ea82368da969b6d8f1a1f">osmium::index::multimap::Multimap::dump_as_list</a></div><div class="ttdeci">virtual void dump_as_list(int) const </div><div class="ttdef"><b>Definition:</b> multimap.hpp:117</div></div>
 <div class="ttc" id="classosmium_1_1index_1_1multimap_1_1Multimap_html"><div class="ttname"><a href="classosmium_1_1index_1_1multimap_1_1Multimap.html">osmium::index::multimap::Multimap</a></div><div class="ttdef"><b>Definition:</b> multimap.hpp:52</div></div>
 <div class="ttc" id="classosmium_1_1index_1_1multimap_1_1Multimap_html_a38aaa0e5bfe559587e4ff9bebe1abf53"><div class="ttname"><a href="classosmium_1_1index_1_1multimap_1_1Multimap.html#a38aaa0e5bfe559587e4ff9bebe1abf53">osmium::index::multimap::Multimap::used_memory</a></div><div class="ttdeci">virtual size_t used_memory() const =0</div></div>
 <div class="ttc" id="classosmium_1_1index_1_1multimap_1_1Multimap_html_aaa86f52f27f10ed738cfbb8f7a7e4c45"><div class="ttname"><a href="classosmium_1_1index_1_1multimap_1_1Multimap.html#aaa86f52f27f10ed738cfbb8f7a7e4c45">osmium::index::multimap::Multimap::sort</a></div><div class="ttdeci">virtual void sort()</div><div class="ttdef"><b>Definition:</b> multimap.hpp:113</div></div>
@@ -206,7 +211,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:10 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

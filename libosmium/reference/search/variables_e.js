@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['y',['../structosmium_1_1geom_1_1Coordinates.html#a71a10efd862ff9ed4c988d73065ac9a1',1,'osmium::geom::Coordinates']]]
+  ['value',['value',['../structosmium_1_1tags_1_1Filter_1_1Rule.html#a3632f14aa77bffeaf418a9416022ad16',1,'osmium::tags::Filter::Rule']]]
 ];

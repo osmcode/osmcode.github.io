@@ -1,4 +1,6 @@
 <map id="include/osmium/io/bzip2_compression.hpp" name="include/osmium/io/bzip2_compression.hpp">
-<area shape="rect" id="node13" href="$compression_8hpp.html" title="osmium/io/compression.hpp" alt="" coords="333,110,517,143"/>
-<area shape="rect" id="node32" href="$file__compression_8hpp.html" title="osmium/io/file_compression.hpp" alt="" coords="992,203,1200,237"/>
+<area shape="rect" id="node7" href="$compression_8hpp.html" title="osmium/io/compression.hpp" alt="" coords="491,95,676,121"/>
+<area shape="rect" id="node15" href="$file__compression_8hpp.html" title="osmium/io/file_compression.hpp" alt="" coords="1000,177,1209,203"/>
+<area shape="rect" id="node17" href="$compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="1233,177,1424,203"/>
+<area shape="rect" id="node18" href="$cast_8hpp.html" title="osmium/util/cast.hpp" alt="" coords="1451,95,1593,121"/>
 </map>

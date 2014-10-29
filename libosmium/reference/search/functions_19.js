@@ -1,10 +1,10 @@
 var searchData=
 [
   ['_7eassembler',['~Assembler',['../classosmium_1_1area_1_1Assembler.html#af5dc7b52f254da21dc897cd4122b0fbc',1,'osmium::area::Assembler']]],
-  ['_7eassemblerconfig',['~AssemblerConfig',['../structosmium_1_1area_1_1AssemblerConfig.html#acdf1997305b39e271085b1a02dead201',1,'osmium::area::AssemblerConfig']]],
   ['_7ebox',['~Box',['../classosmium_1_1Box.html#a963f193b9d8a9ce126d4eee3b604773c',1,'osmium::Box']]],
   ['_7ebuffer',['~Buffer',['../classosmium_1_1memory_1_1Buffer.html#a580f92bfe874b214a6887b3aa5f6e5a5',1,'osmium::memory::Buffer']]],
   ['_7ebuilder',['~Builder',['../classosmium_1_1builder_1_1Builder.html#aa6b607f45a3806b6b8523f468905042c',1,'osmium::builder::Builder']]],
+  ['_7ebzip2bufferdecompressor',['~Bzip2BufferDecompressor',['../classosmium_1_1io_1_1Bzip2BufferDecompressor.html#ab84c09b9f166a0b3f88f5c5a022fdf45',1,'osmium::io::Bzip2BufferDecompressor']]],
   ['_7ebzip2compressor',['~Bzip2Compressor',['../classosmium_1_1io_1_1Bzip2Compressor.html#ae2b8b55ce0d2249d3765640c9368383e',1,'osmium::io::Bzip2Compressor']]],
   ['_7ebzip2decompressor',['~Bzip2Decompressor',['../classosmium_1_1io_1_1Bzip2Decompressor.html#a24d4f21be2e810cc6592e733aa1e0bde',1,'osmium::io::Bzip2Decompressor']]],
   ['_7echeckedtask',['~CheckedTask',['../classosmium_1_1thread_1_1CheckedTask.html#acbae6065fd8072db60abebd9a4cdcef3',1,'osmium::thread::CheckedTask']]],
@@ -13,6 +13,7 @@ var searchData=
   ['_7ediskstore',['~DiskStore',['../classosmium_1_1handler_1_1DiskStore.html#ae1bfb55a0a63f3e75d1d4677589d8cc5',1,'osmium::handler::DiskStore']]],
   ['_7edummy',['~Dummy',['../classosmium_1_1index_1_1map_1_1Dummy.html#ad78b2af95eb29eecc2e01c524dbef18f',1,'osmium::index::map::Dummy']]],
   ['_7efile',['~File',['../classosmium_1_1io_1_1File.html#a6924285ae97e2e9542a37543e2aa0b56',1,'osmium::io::File']]],
+  ['_7egzipbufferdecompressor',['~GzipBufferDecompressor',['../classosmium_1_1io_1_1GzipBufferDecompressor.html#aa244e3d976657c9f93c859a683a8fccf',1,'osmium::io::GzipBufferDecompressor']]],
   ['_7egzipcompressor',['~GzipCompressor',['../classosmium_1_1io_1_1GzipCompressor.html#a982175b3488c5e20c03eae75876c915b',1,'osmium::io::GzipCompressor']]],
   ['_7egzipdecompressor',['~GzipDecompressor',['../classosmium_1_1io_1_1GzipDecompressor.html#a5e9bb7d7e321b426e4ac99f84eecf865',1,'osmium::io::GzipDecompressor']]],
   ['_7eheader',['~Header',['../classosmium_1_1io_1_1Header.html#a81004ab3a906dfd4170180643b701440',1,'osmium::io::Header']]],

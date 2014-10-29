@@ -131,45 +131,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>osmium {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structosmium_1_1projection__error.html">   41</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structosmium_1_1projection__error.html">projection_error</a> : <span class="keyword">public</span> std::runtime_error {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structosmium_1_1projection__error.html#a9f0039a8103903cc67390e664609c3ff">   43</a></span>&#160;        <a class="code" href="structosmium_1_1projection__error.html#a9f0039a8103903cc67390e664609c3ff">projection_error</a>(<span class="keyword">const</span> std::string&amp; what) :</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            std::runtime_error(what) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structosmium_1_1projection__error.html">   45</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structosmium_1_1projection__error.html">projection_error</a> : <span class="keyword">public</span> std::runtime_error {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structosmium_1_1projection__error.html#a9dcce3e50d54901e0d1de04c6f2fc382">   47</a></span>&#160;        <a class="code" href="structosmium_1_1projection__error.html#a9dcce3e50d54901e0d1de04c6f2fc382">projection_error</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* what) :</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structosmium_1_1projection__error.html#a9f0039a8103903cc67390e664609c3ff">   47</a></span>&#160;        <a class="code" href="structosmium_1_1projection__error.html#a9f0039a8103903cc67390e664609c3ff">projection_error</a>(<span class="keyword">const</span> std::string&amp; what) :</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            std::runtime_error(what) {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }; <span class="comment">// struct projection_error</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">namespace </span>geom {</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structosmium_1_1projection__error.html#a9dcce3e50d54901e0d1de04c6f2fc382">   51</a></span>&#160;        <a class="code" href="structosmium_1_1projection__error.html#a9dcce3e50d54901e0d1de04c6f2fc382">projection_error</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* what) :</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            std::runtime_error(what) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1geom.html#af2a4d67892dc1bd7d9605e0d7344f876">   55</a></span>&#160;        constexpr <span class="keywordtype">double</span> <a class="code" href="namespaceosmium_1_1geom.html#af2a4d67892dc1bd7d9605e0d7344f876">PI</a> = 3.14159265358979323846;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }; <span class="comment">// struct projection_error</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1geom.html#aad31ee3f309efe145f6f69fa4c689820">   58</a></span>&#160;        <span class="keyword">inline</span> constexpr <span class="keywordtype">double</span> <a class="code" href="namespaceosmium_1_1geom.html#aad31ee3f309efe145f6f69fa4c689820">deg_to_rad</a>(<span class="keywordtype">double</span> degree) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> degree * (<a class="code" href="namespaceosmium_1_1geom.html#af2a4d67892dc1bd7d9605e0d7344f876">PI</a> / 180.0);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1geom.html#ac5953f40d58ee89dbe62343d67f41808">   63</a></span>&#160;        <span class="keyword">inline</span> constexpr <span class="keywordtype">double</span> <a class="code" href="namespaceosmium_1_1geom.html#ac5953f40d58ee89dbe62343d67f41808">rad_to_deg</a>(<span class="keywordtype">double</span> radians) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> radians * (180.0 / <a class="code" href="namespaceosmium_1_1geom.html#af2a4d67892dc1bd7d9605e0d7344f876">PI</a>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    } <span class="comment">// namespace geom</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace osmium</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">namespace </span>geom {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1geom.html#af2a4d67892dc1bd7d9605e0d7344f876">   59</a></span>&#160;        constexpr <span class="keywordtype">double</span> <a class="code" href="namespaceosmium_1_1geom.html#af2a4d67892dc1bd7d9605e0d7344f876">PI</a> = 3.14159265358979323846;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1geom.html#a5bc0dc48d58cc7878e180bd956d2f4fb">   62</a></span>&#160;        <span class="keyword">inline</span> constexpr <span class="keywordtype">double</span> <a class="code" href="namespaceosmium_1_1geom.html#a5bc0dc48d58cc7878e180bd956d2f4fb">deg_to_rad</a>(<span class="keywordtype">double</span> degree) noexcept {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> degree * (<a class="code" href="namespaceosmium_1_1geom.html#af2a4d67892dc1bd7d9605e0d7344f876">PI</a> / 180.0);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1geom.html#ad62a0e28266e40e2e774b094b6a43079">   67</a></span>&#160;        <span class="keyword">inline</span> constexpr <span class="keywordtype">double</span> <a class="code" href="namespaceosmium_1_1geom.html#ad62a0e28266e40e2e774b094b6a43079">rad_to_deg</a>(<span class="keywordtype">double</span> radians) noexcept {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> radians * (180.0 / <a class="code" href="namespaceosmium_1_1geom.html#af2a4d67892dc1bd7d9605e0d7344f876">PI</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // OSMIUM_GEOM_UTIL_HPP</span></div>
-<div class="ttc" id="structosmium_1_1projection__error_html_a9dcce3e50d54901e0d1de04c6f2fc382"><div class="ttname"><a href="structosmium_1_1projection__error.html#a9dcce3e50d54901e0d1de04c6f2fc382">osmium::projection_error::projection_error</a></div><div class="ttdeci">projection_error(const char *what)</div><div class="ttdef"><b>Definition:</b> util.hpp:47</div></div>
-<div class="ttc" id="namespaceosmium_1_1geom_html_ac5953f40d58ee89dbe62343d67f41808"><div class="ttname"><a href="namespaceosmium_1_1geom.html#ac5953f40d58ee89dbe62343d67f41808">osmium::geom::rad_to_deg</a></div><div class="ttdeci">constexpr double rad_to_deg(double radians)</div><div class="ttdoc">Convert angle from radians to degrees. </div><div class="ttdef"><b>Definition:</b> util.hpp:63</div></div>
-<div class="ttc" id="namespaceosmium_1_1geom_html_aad31ee3f309efe145f6f69fa4c689820"><div class="ttname"><a href="namespaceosmium_1_1geom.html#aad31ee3f309efe145f6f69fa4c689820">osmium::geom::deg_to_rad</a></div><div class="ttdeci">constexpr double deg_to_rad(double degree)</div><div class="ttdoc">Convert angle from degrees to radians. </div><div class="ttdef"><b>Definition:</b> util.hpp:58</div></div>
-<div class="ttc" id="structosmium_1_1projection__error_html_a9f0039a8103903cc67390e664609c3ff"><div class="ttname"><a href="structosmium_1_1projection__error.html#a9f0039a8103903cc67390e664609c3ff">osmium::projection_error::projection_error</a></div><div class="ttdeci">projection_error(const std::string &amp;what)</div><div class="ttdef"><b>Definition:</b> util.hpp:43</div></div>
-<div class="ttc" id="structosmium_1_1projection__error_html"><div class="ttname"><a href="structosmium_1_1projection__error.html">osmium::projection_error</a></div><div class="ttdef"><b>Definition:</b> util.hpp:41</div></div>
-<div class="ttc" id="namespaceosmium_1_1geom_html_af2a4d67892dc1bd7d9605e0d7344f876"><div class="ttname"><a href="namespaceosmium_1_1geom.html#af2a4d67892dc1bd7d9605e0d7344f876">osmium::geom::PI</a></div><div class="ttdeci">constexpr double PI</div><div class="ttdef"><b>Definition:</b> util.hpp:55</div></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    } <span class="comment">// namespace geom</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// namespace osmium</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // OSMIUM_GEOM_UTIL_HPP</span></div>
+<div class="ttc" id="structosmium_1_1projection__error_html_a9dcce3e50d54901e0d1de04c6f2fc382"><div class="ttname"><a href="structosmium_1_1projection__error.html#a9dcce3e50d54901e0d1de04c6f2fc382">osmium::projection_error::projection_error</a></div><div class="ttdeci">projection_error(const char *what)</div><div class="ttdef"><b>Definition:</b> util.hpp:51</div></div>
+<div class="ttc" id="namespaceosmium_1_1geom_html_a5bc0dc48d58cc7878e180bd956d2f4fb"><div class="ttname"><a href="namespaceosmium_1_1geom.html#a5bc0dc48d58cc7878e180bd956d2f4fb">osmium::geom::deg_to_rad</a></div><div class="ttdeci">constexpr double deg_to_rad(double degree) noexcept</div><div class="ttdoc">Convert angle from degrees to radians. </div><div class="ttdef"><b>Definition:</b> util.hpp:62</div></div>
+<div class="ttc" id="structosmium_1_1projection__error_html_a9f0039a8103903cc67390e664609c3ff"><div class="ttname"><a href="structosmium_1_1projection__error.html#a9f0039a8103903cc67390e664609c3ff">osmium::projection_error::projection_error</a></div><div class="ttdeci">projection_error(const std::string &amp;what)</div><div class="ttdef"><b>Definition:</b> util.hpp:47</div></div>
+<div class="ttc" id="structosmium_1_1projection__error_html"><div class="ttname"><a href="structosmium_1_1projection__error.html">osmium::projection_error</a></div><div class="ttdef"><b>Definition:</b> util.hpp:45</div></div>
+<div class="ttc" id="namespaceosmium_1_1geom_html_af2a4d67892dc1bd7d9605e0d7344f876"><div class="ttname"><a href="namespaceosmium_1_1geom.html#af2a4d67892dc1bd7d9605e0d7344f876">osmium::geom::PI</a></div><div class="ttdeci">constexpr double PI</div><div class="ttdef"><b>Definition:</b> util.hpp:59</div></div>
+<div class="ttc" id="namespaceosmium_1_1geom_html_ad62a0e28266e40e2e774b094b6a43079"><div class="ttname"><a href="namespaceosmium_1_1geom.html#ad62a0e28266e40e2e774b094b6a43079">osmium::geom::rad_to_deg</a></div><div class="ttdeci">constexpr double rad_to_deg(double radians) noexcept</div><div class="ttdoc">Convert angle from radians to degrees. </div><div class="ttdef"><b>Definition:</b> util.hpp:67</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:10 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

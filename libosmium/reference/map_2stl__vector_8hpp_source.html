@@ -139,23 +139,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TId, <span class="keyword">typename</span> TValue&gt;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index_1_1map.html#ab399c73305eb407579be35cdc894ba5d">   47</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classosmium_1_1index_1_1map_1_1VectorBasedDenseMap.html">DenseMapMem</a> = <a class="code" href="classosmium_1_1index_1_1map_1_1VectorBasedDenseMap.html">VectorBasedDenseMap&lt;std::vector&lt;TValue&gt;</a>, TId, TValue&gt;;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TId, <span class="keyword">typename</span> TValue&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index_1_1map.html#a630514376a8b11b955183d9983403d19">   50</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html">SparseMapMem</a> = <a class="code" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html">VectorBasedSparseMap&lt;TId, TValue, std::vector&gt;</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index_1_1map.html#ab7eb022d158491d1f196e0461cd8473d">   50</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespaceosmium_1_1index_1_1map.html#ab7eb022d158491d1f196e0461cd8473d">StdVectorWrap</a> = std::vector&lt;T&gt;;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        } <span class="comment">// namespace map</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    } <span class="comment">// namespace index</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace osmium</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // OSMIUM_INDEX_MAP_STL_VECTOR_HPP</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TId, <span class="keyword">typename</span> TValue&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index_1_1map.html#a7a3f6635cf8193da570caecedc35f4bf">   53</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html">SparseMapMem</a> = <a class="code" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html">VectorBasedSparseMap&lt;TId, TValue, StdVectorWrap&gt;</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        } <span class="comment">// namespace map</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    } <span class="comment">// namespace index</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// namespace osmium</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // OSMIUM_INDEX_MAP_STL_VECTOR_HPP</span></div>
 <div class="ttc" id="classosmium_1_1index_1_1map_1_1VectorBasedDenseMap_html"><div class="ttname"><a href="classosmium_1_1index_1_1map_1_1VectorBasedDenseMap.html">osmium::index::map::VectorBasedDenseMap</a></div><div class="ttdef"><b>Definition:</b> vector.hpp:51</div></div>
-<div class="ttc" id="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap_html"><div class="ttname"><a href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html">osmium::index::map::VectorBasedSparseMap</a></div><div class="ttdef"><b>Definition:</b> vector.hpp:107</div></div>
+<div class="ttc" id="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap_html"><div class="ttname"><a href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html">osmium::index::map::VectorBasedSparseMap</a></div><div class="ttdef"><b>Definition:</b> vector.hpp:136</div></div>
 <div class="ttc" id="map_2vector_8hpp_html"><div class="ttname"><a href="map_2vector_8hpp.html">vector.hpp</a></div></div>
+<div class="ttc" id="namespaceosmium_1_1index_1_1map_html_ab7eb022d158491d1f196e0461cd8473d"><div class="ttname"><a href="namespaceosmium_1_1index_1_1map.html#ab7eb022d158491d1f196e0461cd8473d">osmium::index::map::StdVectorWrap</a></div><div class="ttdeci">std::vector&lt; T &gt; StdVectorWrap</div><div class="ttdef"><b>Definition:</b> stl_vector.hpp:50</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:10 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

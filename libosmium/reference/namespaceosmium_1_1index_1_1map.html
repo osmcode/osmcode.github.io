@@ -130,9 +130,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ab399c73305eb407579be35cdc894ba5d"><td class="memTemplParams" colspan="2">template&lt;typename TId , typename TValue &gt; </td></tr>
 <tr class="memitem:ab399c73305eb407579be35cdc894ba5d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosmium_1_1index_1_1map.html#ab399c73305eb407579be35cdc894ba5d">DenseMapMem</a> = <a class="el" href="classosmium_1_1index_1_1map_1_1VectorBasedDenseMap.html">VectorBasedDenseMap</a>&lt; std::vector&lt; TValue &gt;, TId, TValue &gt;</td></tr>
 <tr class="separator:ab399c73305eb407579be35cdc894ba5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a630514376a8b11b955183d9983403d19"><td class="memTemplParams" colspan="2">template&lt;typename TId , typename TValue &gt; </td></tr>
-<tr class="memitem:a630514376a8b11b955183d9983403d19"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosmium_1_1index_1_1map.html#a630514376a8b11b955183d9983403d19">SparseMapMem</a> = <a class="el" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html">VectorBasedSparseMap</a>&lt; TId, TValue, std::vector &gt;</td></tr>
-<tr class="separator:a630514376a8b11b955183d9983403d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7eb022d158491d1f196e0461cd8473d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab7eb022d158491d1f196e0461cd8473d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosmium_1_1index_1_1map.html#ab7eb022d158491d1f196e0461cd8473d">StdVectorWrap</a> = std::vector&lt; T &gt;</td></tr>
+<tr class="separator:ab7eb022d158491d1f196e0461cd8473d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3f6635cf8193da570caecedc35f4bf"><td class="memTemplParams" colspan="2">template&lt;typename TId , typename TValue &gt; </td></tr>
+<tr class="memitem:a7a3f6635cf8193da570caecedc35f4bf"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosmium_1_1index_1_1map.html#a7a3f6635cf8193da570caecedc35f4bf">SparseMapMem</a> = <a class="el" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html">VectorBasedSparseMap</a>&lt; TId, TValue, <a class="el" href="namespaceosmium_1_1index_1_1map.html#ab7eb022d158491d1f196e0461cd8473d">StdVectorWrap</a> &gt;</td></tr>
+<tr class="separator:a7a3f6635cf8193da570caecedc35f4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Key-value containers with unique integer values for a key. </p>
@@ -193,14 +196,14 @@ template&lt;typename TId , typename TValue &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a630514376a8b11b955183d9983403d19"></a>
+<a class="anchor" id="a7a3f6635cf8193da570caecedc35f4bf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TId , typename TValue &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceosmium_1_1index_1_1map.html#a630514376a8b11b955183d9983403d19">osmium::index::map::SparseMapMem</a> = typedef <a class="el" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html">VectorBasedSparseMap</a>&lt;TId, TValue, std::vector&gt;</td>
+          <td class="memname">using <a class="el" href="namespaceosmium_1_1index_1_1map.html#a7a3f6635cf8193da570caecedc35f4bf">osmium::index::map::SparseMapMem</a> = typedef <a class="el" href="classosmium_1_1index_1_1map_1_1VectorBasedSparseMap.html">VectorBasedSparseMap</a>&lt;TId, TValue, <a class="el" href="namespaceosmium_1_1index_1_1map.html#ab7eb022d158491d1f196e0461cd8473d">StdVectorWrap</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -221,10 +224,24 @@ template&lt;typename TId , typename TValue &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ab7eb022d158491d1f196e0461cd8473d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceosmium_1_1index_1_1map.html#ab7eb022d158491d1f196e0461cd8473d">osmium::index::map::StdVectorWrap</a> = typedef std::vector&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:39 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

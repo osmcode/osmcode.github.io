@@ -1,5 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classosmium_1_1util_1_1Options.html" title="osmium::util::Options" alt="" coords="5,33,152,66"/>
-<area shape="rect" id="node3" href="$classosmium_1_1io_1_1File.html" title="osmium::io::File" alt="" coords="211,5,325,38"/>
-<area shape="rect" id="node5" href="$classosmium_1_1io_1_1Header.html" title="osmium::io::Header" alt="" coords="200,61,336,94"/>
+<area shape="rect" id="node1" href="$classosmium_1_1util_1_1VerboseOutput.html" title="osmium::util::VerboseOutput" alt="" coords="5,5,193,32"/>
 </map>

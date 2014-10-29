@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>Osmium: osmium::builder::ObjectBuilder&lt; T &gt; Class Template Reference</title>
+<title>Osmium: osmium::builder::ObjectBuilder&lt; TItem &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -92,74 +92,80 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classosmium_1_1builder_1_1ObjectBuilder-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">osmium::builder::ObjectBuilder&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">osmium::builder::ObjectBuilder&lt; TItem &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="builder_8hpp_source.html">builder.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for osmium::builder::ObjectBuilder&lt; T &gt;:</div>
+Inheritance diagram for osmium::builder::ObjectBuilder&lt; TItem &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classosmium_1_1builder_1_1ObjectBuilder__inherit__graph.png" border="0" usemap="#osmium_1_1builder_1_1ObjectBuilder_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="osmium_1_1builder_1_1ObjectBuilder_3_01T_01_4_inherit__map" id="osmium_1_1builder_1_1ObjectBuilder_3_01T_01_4_inherit__map">
-<area shape="rect" id="node5" href="classosmium_1_1builder_1_1NodeRefListBuilder.html" title="osmium::builder::NodeRef\lListBuilder\&lt; T \&gt;" alt="" coords="5,171,179,226"/><area shape="rect" id="node7" href="classosmium_1_1builder_1_1OSMObjectBuilder.html" title="osmium::builder::OSMObject\lBuilder\&lt; T \&gt;" alt="" coords="203,171,392,226"/><area shape="rect" id="node2" href="classosmium_1_1builder_1_1Builder.html" title="osmium::builder::Builder" alt="" coords="113,6,276,39"/></map>
+<div class="center"><img src="classosmium_1_1builder_1_1ObjectBuilder__inherit__graph.png" border="0" usemap="#osmium_1_1builder_1_1ObjectBuilder_3_01TItem_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="osmium_1_1builder_1_1ObjectBuilder_3_01TItem_01_4_inherit__map" id="osmium_1_1builder_1_1ObjectBuilder_3_01TItem_01_4_inherit__map">
+<area shape="rect" id="node2" href="classosmium_1_1builder_1_1Builder.html" title="osmium::builder::Builder" alt="" coords="24,5,187,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for osmium::builder::ObjectBuilder&lt; T &gt;:</div>
+Collaboration diagram for osmium::builder::ObjectBuilder&lt; TItem &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classosmium_1_1builder_1_1ObjectBuilder__coll__graph.png" border="0" usemap="#osmium_1_1builder_1_1ObjectBuilder_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="osmium_1_1builder_1_1ObjectBuilder_3_01T_01_4_coll__map" id="osmium_1_1builder_1_1ObjectBuilder_3_01T_01_4_coll__map">
-<area shape="rect" id="node2" href="classosmium_1_1builder_1_1Builder.html" title="osmium::builder::Builder" alt="" coords="40,110,203,143"/><area shape="rect" id="node4" href="classosmium_1_1memory_1_1Buffer.html" title="osmium::memory::Buffer" alt="" coords="39,6,204,39"/></map>
+<div class="center"><img src="classosmium_1_1builder_1_1ObjectBuilder__coll__graph.png" border="0" usemap="#osmium_1_1builder_1_1ObjectBuilder_3_01TItem_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="osmium_1_1builder_1_1ObjectBuilder_3_01TItem_01_4_coll__map" id="osmium_1_1builder_1_1ObjectBuilder_3_01TItem_01_4_coll__map">
+<area shape="rect" id="node2" href="classosmium_1_1builder_1_1Builder.html" title="osmium::builder::Builder" alt="" coords="24,95,187,121"/><area shape="rect" id="node3" href="classosmium_1_1memory_1_1Buffer.html" title="osmium::memory::Buffer" alt="" coords="22,5,189,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a118ce2cd77f9194d61c869d9cc3e70b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html#a118ce2cd77f9194d61c869d9cc3e70b6">ObjectBuilder</a> (<a class="el" href="classosmium_1_1memory_1_1Buffer.html">osmium::memory::Buffer</a> &amp;<a class="el" href="classosmium_1_1builder_1_1Builder.html#abcac21909dd2786cf012ff11833a1300">buffer</a>, <a class="el" href="classosmium_1_1builder_1_1Builder.html">Builder</a> *parent=nullptr)</td></tr>
-<tr class="separator:a118ce2cd77f9194d61c869d9cc3e70b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a709388c860b5eae9fd98297406941"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html#ac0a709388c860b5eae9fd98297406941">object</a> ()</td></tr>
-<tr class="separator:ac0a709388c860b5eae9fd98297406941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13bdabcb5d872e6efda6d6e4eba47403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html#a13bdabcb5d872e6efda6d6e4eba47403">add_user</a> (const char *user)</td></tr>
-<tr class="separator:a13bdabcb5d872e6efda6d6e4eba47403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af906cc6c36512cf836e85f11ec0108ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html#af906cc6c36512cf836e85f11ec0108ce">ObjectBuilder</a> (<a class="el" href="classosmium_1_1memory_1_1Buffer.html">osmium::memory::Buffer</a> &amp;<a class="el" href="classosmium_1_1builder_1_1Builder.html#a71a072afe62fa18645929dd867a0f2db">buffer</a>, <a class="el" href="classosmium_1_1builder_1_1Builder.html">Builder</a> *parent=nullptr)</td></tr>
+<tr class="separator:af906cc6c36512cf836e85f11ec0108ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d196b4c875fa40509ec2f7e2d0ab50"><td class="memItemLeft" align="right" valign="top">TItem &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html#af0d196b4c875fa40509ec2f7e2d0ab50">object</a> () noexcept</td></tr>
+<tr class="separator:af0d196b4c875fa40509ec2f7e2d0ab50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716958a861a9805017b7e8c9d0ef51bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html#a716958a861a9805017b7e8c9d0ef51bf">add_user</a> (const char *user, const <a class="el" href="namespaceosmium.html#a6f6efda558b2d90161dbd3ba4aa3473d">string_size_type</a> length)</td></tr>
+<tr class="separator:a716958a861a9805017b7e8c9d0ef51bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef1e0bdfe56a1a389af293335e8ea69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html#aaef1e0bdfe56a1a389af293335e8ea69">add_user</a> (const char *user)</td></tr>
+<tr class="separator:aaef1e0bdfe56a1a389af293335e8ea69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd0c0e9ec1fe2c636d7963b32ec71d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html#a2fd0c0e9ec1fe2c636d7963b32ec71d6">add_user</a> (const std::string &amp;user)</td></tr>
+<tr class="separator:a2fd0c0e9ec1fe2c636d7963b32ec71d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classosmium_1_1builder_1_1Builder"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classosmium_1_1builder_1_1Builder')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classosmium_1_1builder_1_1Builder.html">osmium::builder::Builder</a></td></tr>
 <tr class="memitem:a268ce620e70939a4bb3b41f7a8d19ae5 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a268ce620e70939a4bb3b41f7a8d19ae5">add_padding</a> (bool self=false)</td></tr>
 <tr class="separator:a268ce620e70939a4bb3b41f7a8d19ae5 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af428d84b465b0a27d5b138917cf761ae inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#af428d84b465b0a27d5b138917cf761ae">add_size</a> (uint32_t <a class="el" href="classosmium_1_1builder_1_1Builder.html#a37c09697255e6e5c0445ef1bc2c49820">size</a>)</td></tr>
+<tr class="memitem:af428d84b465b0a27d5b138917cf761ae inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#af428d84b465b0a27d5b138917cf761ae">add_size</a> (uint32_t <a class="el" href="classosmium_1_1builder_1_1Builder.html#a0a8467827ca960e91f28eb2ca0065f33">size</a>)</td></tr>
 <tr class="separator:af428d84b465b0a27d5b138917cf761ae inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37c09697255e6e5c0445ef1bc2c49820 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a37c09697255e6e5c0445ef1bc2c49820">size</a> () const </td></tr>
-<tr class="separator:a37c09697255e6e5c0445ef1bc2c49820 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8467827ca960e91f28eb2ca0065f33 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a0a8467827ca960e91f28eb2ca0065f33">size</a> () const noexcept</td></tr>
+<tr class="separator:a0a8467827ca960e91f28eb2ca0065f33 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1424a49ae606d5ef0750b5830ea4a381 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a1424a49ae606d5ef0750b5830ea4a381">add_item</a> (const <a class="el" href="classosmium_1_1memory_1_1Item.html">osmium::memory::Item</a> *<a class="el" href="classosmium_1_1builder_1_1Builder.html#ad18eff437402a17c02522e2671967cca">item</a>)</td></tr>
 <tr class="separator:a1424a49ae606d5ef0750b5830ea4a381 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad24868128652dfaac289481500b63e inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a6ad24868128652dfaac289481500b63e inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a6ad24868128652dfaac289481500b63e">reserve_space_for</a> ()</td></tr>
 <tr class="separator:a6ad24868128652dfaac289481500b63e inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a7c53759432bbb2636ed50fae5845bb inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a6a7c53759432bbb2636ed50fae5845bb">append</a> (const char *str)</td></tr>
-<tr class="separator:a6a7c53759432bbb2636ed50fae5845bb inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcac21909dd2786cf012ff11833a1300 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1memory_1_1Buffer.html">osmium::memory::Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#abcac21909dd2786cf012ff11833a1300">buffer</a> ()</td></tr>
-<tr class="memdesc:abcac21909dd2786cf012ff11833a1300 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the buffer this builder is using.  <a href="#abcac21909dd2786cf012ff11833a1300">More...</a><br /></td></tr>
-<tr class="separator:abcac21909dd2786cf012ff11833a1300 inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063afed07a800a1cea12c4ad724f0e1f inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceosmium_1_1memory.html#a5da17fecd36e90707d1387809dbe4f19">osmium::memory::item_size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a063afed07a800a1cea12c4ad724f0e1f">append</a> (const char *data, const <a class="el" href="namespaceosmium_1_1memory.html#a5da17fecd36e90707d1387809dbe4f19">osmium::memory::item_size_type</a> length)</td></tr>
+<tr class="separator:a063afed07a800a1cea12c4ad724f0e1f inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd943a9c3696c791c3e0b84a3c4df2f inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceosmium_1_1memory.html#a5da17fecd36e90707d1387809dbe4f19">osmium::memory::item_size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a1cd943a9c3696c791c3e0b84a3c4df2f">append</a> (const char *str)</td></tr>
+<tr class="separator:a1cd943a9c3696c791c3e0b84a3c4df2f inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a072afe62fa18645929dd867a0f2db inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1memory_1_1Buffer.html">osmium::memory::Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a71a072afe62fa18645929dd867a0f2db">buffer</a> () noexcept</td></tr>
+<tr class="memdesc:a71a072afe62fa18645929dd867a0f2db inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the buffer this builder is using.  <a href="#a71a072afe62fa18645929dd867a0f2db">More...</a><br /></td></tr>
+<tr class="separator:a71a072afe62fa18645929dd867a0f2db inherit pub_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classosmium_1_1builder_1_1Builder"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classosmium_1_1builder_1_1Builder')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classosmium_1_1builder_1_1Builder.html">osmium::builder::Builder</a></td></tr>
-<tr class="memitem:a546bd5bfc42877b6ae44328f72e4bfc0 inherit pro_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a546bd5bfc42877b6ae44328f72e4bfc0">Builder</a> (<a class="el" href="classosmium_1_1memory_1_1Buffer.html">osmium::memory::Buffer</a> &amp;<a class="el" href="classosmium_1_1builder_1_1Builder.html#abcac21909dd2786cf012ff11833a1300">buffer</a>, <a class="el" href="classosmium_1_1builder_1_1Builder.html">Builder</a> *parent, size_t <a class="el" href="classosmium_1_1builder_1_1Builder.html#a37c09697255e6e5c0445ef1bc2c49820">size</a>)</td></tr>
-<tr class="separator:a546bd5bfc42877b6ae44328f72e4bfc0 inherit pro_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393c859950c53b850bdd4e244635456e inherit pro_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#a393c859950c53b850bdd4e244635456e">Builder</a> (<a class="el" href="classosmium_1_1memory_1_1Buffer.html">osmium::memory::Buffer</a> &amp;<a class="el" href="classosmium_1_1builder_1_1Builder.html#a71a072afe62fa18645929dd867a0f2db">buffer</a>, <a class="el" href="classosmium_1_1builder_1_1Builder.html">Builder</a> *parent, <a class="el" href="namespaceosmium_1_1memory.html#a5da17fecd36e90707d1387809dbe4f19">osmium::memory::item_size_type</a> <a class="el" href="classosmium_1_1builder_1_1Builder.html#a0a8467827ca960e91f28eb2ca0065f33">size</a>)</td></tr>
+<tr class="separator:a393c859950c53b850bdd4e244635456e inherit pro_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b607f45a3806b6b8523f468905042c inherit pro_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#aa6b607f45a3806b6b8523f468905042c">~Builder</a> ()=default</td></tr>
 <tr class="separator:aa6b607f45a3806b6b8523f468905042c inherit pro_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18eff437402a17c02522e2671967cca inherit pro_methods_classosmium_1_1builder_1_1Builder"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1memory_1_1Item.html">osmium::memory::Item</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1builder_1_1Builder.html#ad18eff437402a17c02522e2671967cca">item</a> () const </td></tr>
 <tr class="separator:ad18eff437402a17c02522e2671967cca inherit pro_methods_classosmium_1_1builder_1_1Builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a118ce2cd77f9194d61c869d9cc3e70b6"></a>
+<a class="anchor" id="af906cc6c36512cf836e85f11ec0108ce"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class TItem&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html">osmium::builder::ObjectBuilder</a>&lt; T &gt;::<a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html">ObjectBuilder</a> </td>
+          <td class="memname"><a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html">osmium::builder::ObjectBuilder</a>&lt; TItem &gt;::<a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html">ObjectBuilder</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classosmium_1_1memory_1_1Buffer.html">osmium::memory::Buffer</a> &amp;&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -186,17 +192,61 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a13bdabcb5d872e6efda6d6e4eba47403"></a>
+<a class="anchor" id="a716958a861a9805017b7e8c9d0ef51bf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class TItem&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html">osmium::builder::ObjectBuilder</a>&lt; T &gt;::add_user </td>
+          <td class="memname">void <a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html">osmium::builder::ObjectBuilder</a>&lt; TItem &gt;::add_user </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceosmium.html#a6f6efda558b2d90161dbd3ba4aa3473d">string_size_type</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add user name to buffer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>Pointer to user name. </td></tr>
+    <tr><td class="paramname">length</td><td>Length of user name including \0 byte. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaef1e0bdfe56a1a389af293335e8ea69"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TItem&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html">osmium::builder::ObjectBuilder</a>&lt; TItem &gt;::add_user </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>user</em></td><td>)</td>
@@ -209,20 +259,60 @@ template&lt;class T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Add user name to buffer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>Pointer to \0-terminated user name. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="ac0a709388c860b5eae9fd98297406941"></a>
+<a class="anchor" id="a2fd0c0e9ec1fe2c636d7963b32ec71d6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class TItem&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T&amp; <a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html">osmium::builder::ObjectBuilder</a>&lt; T &gt;::object </td>
+          <td class="memname">void <a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html">osmium::builder::ObjectBuilder</a>&lt; TItem &gt;::add_user </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add user name to buffer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>User name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af0d196b4c875fa40509ec2f7e2d0ab50"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TItem&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TItem&amp; <a class="el" href="classosmium_1_1builder_1_1ObjectBuilder.html">osmium::builder::ObjectBuilder</a>&lt; TItem &gt;::object </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -230,7 +320,7 @@ template&lt;class T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -243,7 +333,7 @@ template&lt;class T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -132,54 +132,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>osmium {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="compatibility_8hpp.html">osmium/util/compatibility.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structosmium_1_1not__found.html">   48</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structosmium_1_1not__found.html">not_found</a> : <span class="keyword">public</span> std::runtime_error {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structosmium_1_1not__found.html#ac80d01bb26fc5983b291cd1ddb0d5c24">   50</a></span>&#160;        <a class="code" href="structosmium_1_1not__found.html#ac80d01bb26fc5983b291cd1ddb0d5c24">not_found</a>(<span class="keyword">const</span> std::string&amp; what) :</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            std::runtime_error(what) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structosmium_1_1not__found.html#a9260167f2fa8aabe544417579e3083a5">   54</a></span>&#160;        <a class="code" href="structosmium_1_1not__found.html#a9260167f2fa8aabe544417579e3083a5">not_found</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* what) :</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            std::runtime_error(what) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }; <span class="comment">// struct not_found</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>osmium {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structosmium_1_1not__found.html">   50</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structosmium_1_1not__found.html">not_found</a> : <span class="keyword">public</span> std::runtime_error {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structosmium_1_1not__found.html#ac80d01bb26fc5983b291cd1ddb0d5c24">   52</a></span>&#160;        <a class="code" href="structosmium_1_1not__found.html#ac80d01bb26fc5983b291cd1ddb0d5c24">not_found</a>(<span class="keyword">const</span> std::string&amp; what) :</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            std::runtime_error(what) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structosmium_1_1not__found.html#a9260167f2fa8aabe544417579e3083a5">   56</a></span>&#160;        <a class="code" href="structosmium_1_1not__found.html#a9260167f2fa8aabe544417579e3083a5">not_found</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* what) :</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            std::runtime_error(what) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index.html">   63</a></span>&#160;    <span class="keyword">namespace </span>index {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TKey&gt;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index.html#a4dab906eb08aa1a1f81fa975b40a7c5b">   66</a></span>&#160;        [[noreturn]] <span class="keywordtype">void</span> <a class="code" href="namespaceosmium_1_1index.html#a4dab906eb08aa1a1f81fa975b40a7c5b">not_found_error</a>(TKey key) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            std::stringstream s;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            s &lt;&lt; <span class="stringliteral">&quot;id &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; no found&quot;</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">throw</span> <a class="code" href="structosmium_1_1not__found.html">not_found</a>(s.str());</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index.html#acde6a9af8edf8179b5a3f4508650c212">   80</a></span>&#160;        <span class="keyword">inline</span> constexpr T <a class="code" href="namespaceosmium_1_1index.html#acde6a9af8edf8179b5a3f4508650c212">empty_value</a>() {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> T{};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index.html#a8d4251761d5e5b9cc221f570d99ed6f6">   90</a></span>&#160;        <span class="keyword">inline</span> constexpr <span class="keywordtype">size_t</span> <a class="code" href="namespaceosmium_1_1index.html#a8d4251761d5e5b9cc221f570d99ed6f6">empty_value&lt;size_t&gt;</a>() {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> std::numeric_limits&lt;size_t&gt;::max();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    } <span class="comment">// namespace index</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }; <span class="comment">// struct not_found</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index.html">   65</a></span>&#160;    <span class="keyword">namespace </span>index {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TKey&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index.html#a7196954bc490f578c9a82e4f43ce1183">   68</a></span>&#160;        <a class="code" href="compatibility_8hpp.html#afe19c7da709834c7167980e8aab2eda3">OSMIUM_NORETURN</a> <span class="keywordtype">void</span> <a class="code" href="namespaceosmium_1_1index.html#a7196954bc490f578c9a82e4f43ce1183">not_found_error</a>(TKey key) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            std::stringstream s;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            s &lt;&lt; <span class="stringliteral">&quot;id &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; no found&quot;</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">throw</span> <a class="code" href="structosmium_1_1not__found.html">not_found</a>(s.str());</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index.html#acde6a9af8edf8179b5a3f4508650c212">   82</a></span>&#160;        <span class="keyword">inline</span> constexpr T <a class="code" href="namespaceosmium_1_1index.html#acde6a9af8edf8179b5a3f4508650c212">empty_value</a>() {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> T{};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="namespaceosmium_1_1index.html#a61f507b2c7969f0b0ac9fca6b77bc2c6">   92</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="compatibility_8hpp.html#adaaa45e97bfc874a7ffce06b510b9e17">OSMIUM_CONSTEXPR</a> <span class="keywordtype">size_t</span> <a class="code" href="namespaceosmium_1_1index.html#a61f507b2c7969f0b0ac9fca6b77bc2c6">empty_value&lt;size_t&gt;</a>() {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">return</span> std::numeric_limits&lt;size_t&gt;::max();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="comment">// namespace osmium</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    } <span class="comment">// namespace index</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // OSMIUM_INDEX_INDEX_HPP</span></div>
-<div class="ttc" id="structosmium_1_1not__found_html_a9260167f2fa8aabe544417579e3083a5"><div class="ttname"><a href="structosmium_1_1not__found.html#a9260167f2fa8aabe544417579e3083a5">osmium::not_found::not_found</a></div><div class="ttdeci">not_found(const char *what)</div><div class="ttdef"><b>Definition:</b> index.hpp:54</div></div>
-<div class="ttc" id="namespaceosmium_1_1index_html_a8d4251761d5e5b9cc221f570d99ed6f6"><div class="ttname"><a href="namespaceosmium_1_1index.html#a8d4251761d5e5b9cc221f570d99ed6f6">osmium::index::empty_value&lt; size_t &gt;</a></div><div class="ttdeci">constexpr size_t empty_value&lt; size_t &gt;()</div><div class="ttdef"><b>Definition:</b> index.hpp:90</div></div>
-<div class="ttc" id="namespaceosmium_1_1index_html_a4dab906eb08aa1a1f81fa975b40a7c5b"><div class="ttname"><a href="namespaceosmium_1_1index.html#a4dab906eb08aa1a1f81fa975b40a7c5b">osmium::index::not_found_error</a></div><div class="ttdeci">void not_found_error(TKey key)</div><div class="ttdef"><b>Definition:</b> index.hpp:66</div></div>
-<div class="ttc" id="structosmium_1_1not__found_html_ac80d01bb26fc5983b291cd1ddb0d5c24"><div class="ttname"><a href="structosmium_1_1not__found.html#ac80d01bb26fc5983b291cd1ddb0d5c24">osmium::not_found::not_found</a></div><div class="ttdeci">not_found(const std::string &amp;what)</div><div class="ttdef"><b>Definition:</b> index.hpp:50</div></div>
-<div class="ttc" id="structosmium_1_1not__found_html"><div class="ttname"><a href="structosmium_1_1not__found.html">osmium::not_found</a></div><div class="ttdef"><b>Definition:</b> index.hpp:48</div></div>
-<div class="ttc" id="namespaceosmium_1_1index_html_acde6a9af8edf8179b5a3f4508650c212"><div class="ttname"><a href="namespaceosmium_1_1index.html#acde6a9af8edf8179b5a3f4508650c212">osmium::index::empty_value</a></div><div class="ttdeci">constexpr T empty_value()</div><div class="ttdef"><b>Definition:</b> index.hpp:80</div></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <span class="comment">// namespace osmium</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif // OSMIUM_INDEX_INDEX_HPP</span></div>
+<div class="ttc" id="structosmium_1_1not__found_html_a9260167f2fa8aabe544417579e3083a5"><div class="ttname"><a href="structosmium_1_1not__found.html#a9260167f2fa8aabe544417579e3083a5">osmium::not_found::not_found</a></div><div class="ttdeci">not_found(const char *what)</div><div class="ttdef"><b>Definition:</b> index.hpp:56</div></div>
+<div class="ttc" id="namespaceosmium_1_1index_html_a61f507b2c7969f0b0ac9fca6b77bc2c6"><div class="ttname"><a href="namespaceosmium_1_1index.html#a61f507b2c7969f0b0ac9fca6b77bc2c6">osmium::index::empty_value&lt; size_t &gt;</a></div><div class="ttdeci">OSMIUM_CONSTEXPR size_t empty_value&lt; size_t &gt;()</div><div class="ttdef"><b>Definition:</b> index.hpp:92</div></div>
+<div class="ttc" id="compatibility_8hpp_html_afe19c7da709834c7167980e8aab2eda3"><div class="ttname"><a href="compatibility_8hpp.html#afe19c7da709834c7167980e8aab2eda3">OSMIUM_NORETURN</a></div><div class="ttdeci">#define OSMIUM_NORETURN</div><div class="ttdef"><b>Definition:</b> compatibility.hpp:44</div></div>
+<div class="ttc" id="namespaceosmium_1_1index_html_a7196954bc490f578c9a82e4f43ce1183"><div class="ttname"><a href="namespaceosmium_1_1index.html#a7196954bc490f578c9a82e4f43ce1183">osmium::index::not_found_error</a></div><div class="ttdeci">OSMIUM_NORETURN void not_found_error(TKey key)</div><div class="ttdef"><b>Definition:</b> index.hpp:68</div></div>
+<div class="ttc" id="compatibility_8hpp_html_adaaa45e97bfc874a7ffce06b510b9e17"><div class="ttname"><a href="compatibility_8hpp.html#adaaa45e97bfc874a7ffce06b510b9e17">OSMIUM_CONSTEXPR</a></div><div class="ttdeci">#define OSMIUM_CONSTEXPR</div><div class="ttdef"><b>Definition:</b> compatibility.hpp:43</div></div>
+<div class="ttc" id="structosmium_1_1not__found_html_ac80d01bb26fc5983b291cd1ddb0d5c24"><div class="ttname"><a href="structosmium_1_1not__found.html#ac80d01bb26fc5983b291cd1ddb0d5c24">osmium::not_found::not_found</a></div><div class="ttdeci">not_found(const std::string &amp;what)</div><div class="ttdef"><b>Definition:</b> index.hpp:52</div></div>
+<div class="ttc" id="structosmium_1_1not__found_html"><div class="ttname"><a href="structosmium_1_1not__found.html">osmium::not_found</a></div><div class="ttdef"><b>Definition:</b> index.hpp:50</div></div>
+<div class="ttc" id="namespaceosmium_1_1index_html_acde6a9af8edf8179b5a3f4508650c212"><div class="ttname"><a href="namespaceosmium_1_1index.html#acde6a9af8edf8179b5a3f4508650c212">osmium::index::empty_value</a></div><div class="ttdeci">constexpr T empty_value()</div><div class="ttdef"><b>Definition:</b> index.hpp:82</div></div>
+<div class="ttc" id="compatibility_8hpp_html"><div class="ttname"><a href="compatibility_8hpp.html">compatibility.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:10 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

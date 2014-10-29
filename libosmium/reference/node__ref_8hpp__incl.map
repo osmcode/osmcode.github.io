@@ -1,7 +1,8 @@
 <map id="include/osmium/osm/node_ref.hpp" name="include/osmium/osm/node_ref.hpp">
-<area shape="rect" id="node7" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="207,110,381,143"/>
-<area shape="rect" id="node13" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="405,110,586,143"/>
-<area shape="rect" id="node19" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="661,110,831,143"/>
-<area shape="rect" id="node34" href="$operators_8hpp.html" title="osmium/util/operators.hpp" alt="" coords="1051,193,1222,226"/>
-<area shape="rect" id="node36" href="$types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="26,110,183,143"/>
+<area shape="rect" id="node4" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="209,95,382,121"/>
+<area shape="rect" id="node7" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="407,95,589,121"/>
+<area shape="rect" id="node9" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="665,95,835,121"/>
+<area shape="rect" id="node18" href="$types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="25,95,184,121"/>
+<area shape="rect" id="node13" href="$compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="1055,169,1245,196"/>
+<area shape="rect" id="node14" href="$double_8hpp.html" title="osmium/util/double.hpp" alt="" coords="699,169,855,196"/>
 </map>

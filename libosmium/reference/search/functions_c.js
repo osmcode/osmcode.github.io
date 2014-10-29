@@ -9,6 +9,7 @@ var searchData=
   ['members_5fbuffer',['members_buffer',['../classosmium_1_1relations_1_1Collector.html#a1263e44ae78a5af0c191b3e045f720d0',1,'osmium::relations::Collector']]],
   ['mercator_5fto_5flonlat',['mercator_to_lonlat',['../namespaceosmium_1_1geom.html#ae61e8de9e6b09e947a36dae5a05e5bec',1,'osmium::geom']]],
   ['moving_5fin_5fbuffer',['moving_in_buffer',['../classosmium_1_1relations_1_1Collector.html#acc0fa6c36f64d1c6113cefd09a1b5568',1,'osmium::relations::Collector']]],
+  ['mpfilter',['MPFilter',['../structosmium_1_1area_1_1Assembler_1_1MPFilter.html#a1fde017636ccc3e3f496ed8cb47b29f8',1,'osmium::area::Assembler::MPFilter']]],
   ['multimap',['Multimap',['../classosmium_1_1index_1_1multimap_1_1Multimap.html#a08d600fcf6cb318bfd2945ea7361b5fe',1,'osmium::index::multimap::Multimap::Multimap(const Multimap &amp;)=delete'],['../classosmium_1_1index_1_1multimap_1_1Multimap.html#ada3876ed294f517e49ca65baae8ca2a8',1,'osmium::index::multimap::Multimap::Multimap(Multimap &amp;&amp;)=default'],['../classosmium_1_1index_1_1multimap_1_1Multimap.html#ac72ef083d94638fcd61d0b2c44d91dc8',1,'osmium::index::multimap::Multimap::Multimap()=default']]],
   ['multipolygoncollector',['MultipolygonCollector',['../classosmium_1_1area_1_1MultipolygonCollector.html#aaac78586ef55fc3def3c2ebf9489c2a4',1,'osmium::area::MultipolygonCollector']]]
 ];

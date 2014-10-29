@@ -1,7 +1,7 @@
 <map id="include/osmium/tags/regex_filter.hpp" name="include/osmium/tags/regex_filter.hpp">
-<area shape="rect" id="node7" href="$filter_8hpp.html" title="osmium/tags/filter.hpp" alt="" coords="179,110,328,143"/>
-<area shape="rect" id="node16" href="$collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="152,297,355,330"/>
-<area shape="rect" id="node29" href="$tag_8hpp.html" title="osmium/osm/tag.hpp" alt="" coords="371,203,515,237"/>
-<area shape="rect" id="node23" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="304,379,477,413"/>
-<area shape="rect" id="node40" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="531,297,712,330"/>
+<area shape="rect" id="node4" href="$filter_8hpp.html" title="osmium/tags/filter.hpp" alt="" coords="181,95,332,121"/>
+<area shape="rect" id="node8" href="$collection_8hpp.html" title="osmium/memory/collection.hpp" alt="" coords="155,259,358,285"/>
+<area shape="rect" id="node14" href="$tag_8hpp.html" title="osmium/osm/tag.hpp" alt="" coords="374,177,518,203"/>
+<area shape="rect" id="node11" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="305,333,478,360"/>
+<area shape="rect" id="node17" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="535,259,717,285"/>
 </map>

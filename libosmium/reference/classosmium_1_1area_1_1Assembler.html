@@ -89,9 +89,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classosmium_1_1area_1_1Assembler-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -105,9 +107,14 @@ Collaboration diagram for osmium::area::Assembler:</div>
 <div class="dyncontent">
 <div class="center"><img src="classosmium_1_1area_1_1Assembler__coll__graph.png" border="0" usemap="#osmium_1_1area_1_1Assembler_coll__map" alt="Collaboration graph"/></div>
 <map name="osmium_1_1area_1_1Assembler_coll__map" id="osmium_1_1area_1_1Assembler_coll__map">
-<area shape="rect" id="node2" href="structosmium_1_1area_1_1AssemblerConfig.html" title="osmium::area::AssemblerConfig" alt="" coords="5,110,213,143"/><area shape="rect" id="node4" href="classosmium_1_1area_1_1ProblemReporter.html" title="osmium::area::ProblemReporter" alt="" coords="7,6,212,39"/></map>
+<area shape="rect" id="node2" href="structosmium_1_1area_1_1AssemblerConfig.html" title="osmium::area::AssemblerConfig" alt="" coords="5,95,215,121"/><area shape="rect" id="node3" href="classosmium_1_1area_1_1ProblemReporter.html" title="osmium::area::ProblemReporter" alt="" coords="7,5,213,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structosmium_1_1area_1_1Assembler_1_1MPFilter.html">MPFilter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:abda8df5ef125c8c71a9b6a8f9870a1b1"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
@@ -166,17 +173,22 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a2085af73962db0d57f3f939717fe2653"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#a2085af73962db0d57f3f939717fe2653">create_rings</a> ()</td></tr>
 <tr class="separator:a2085af73962db0d57f3f939717fe2653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a016a85a3c16df068b43d08ef9a1f3241"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structosmium_1_1area_1_1Assembler_1_1MPFilter.html">MPFilter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#a016a85a3c16df068b43d08ef9a1f3241">filter</a> ()</td></tr>
+<tr class="separator:a016a85a3c16df068b43d08ef9a1f3241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a52d91e8643af67f27b2a7a364a99fa01"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structosmium_1_1area_1_1AssemblerConfig.html">AssemblerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#a52d91e8643af67f27b2a7a364a99fa01">m_config</a></td></tr>
 <tr class="separator:a52d91e8643af67f27b2a7a364a99fa01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af20c472564ebbf33660041f22a294bbe"><td class="memItemLeft" align="right" valign="top">osmium::area::detail::SegmentList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#af20c472564ebbf33660041f22a294bbe">m_segment_list</a></td></tr>
 <tr class="separator:af20c472564ebbf33660041f22a294bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab58ba651b0eeb6e4323f20b8daeee55c"><td class="memItemLeft" align="right" valign="top">std::list&lt; ProtoRing &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#ab58ba651b0eeb6e4323f20b8daeee55c">m_rings</a> {}</td></tr>
+<tr class="memitem:ab58ba651b0eeb6e4323f20b8daeee55c"><td class="memItemLeft" align="right" valign="top">std::list&lt; ProtoRing &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#ab58ba651b0eeb6e4323f20b8daeee55c">m_rings</a></td></tr>
 <tr class="separator:ab58ba651b0eeb6e4323f20b8daeee55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83871b2184b540e6f6831868368d550d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ProtoRing * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#a83871b2184b540e6f6831868368d550d">m_outer_rings</a> {}</td></tr>
+<tr class="memitem:a83871b2184b540e6f6831868368d550d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ProtoRing * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#a83871b2184b540e6f6831868368d550d">m_outer_rings</a></td></tr>
 <tr class="separator:a83871b2184b540e6f6831868368d550d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cbad72536e227111b73b61c228b0076"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ProtoRing * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#a9cbad72536e227111b73b61c228b0076">m_inner_rings</a> {}</td></tr>
+<tr class="memitem:a9cbad72536e227111b73b61c228b0076"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ProtoRing * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#a9cbad72536e227111b73b61c228b0076">m_inner_rings</a></td></tr>
 <tr class="separator:a9cbad72536e227111b73b61c228b0076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf9961d9cda0cc71c036662370601b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1area_1_1Assembler.html#aebf9961d9cda0cc71c036662370601b8">m_inner_outer_mismatches</a> { 0 }</td></tr>
 <tr class="separator:aebf9961d9cda0cc71c036662370601b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -607,6 +619,29 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a016a85a3c16df068b43d08ef9a1f3241"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structosmium_1_1area_1_1Assembler_1_1MPFilter.html">MPFilter</a>&amp; osmium::area::Assembler::filter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5794c0528e9c26d34003b57d830eff0e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -937,7 +972,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;ProtoRing*&gt; osmium::area::Assembler::m_inner_rings {}</td>
+          <td class="memname">std::vector&lt;ProtoRing*&gt; osmium::area::Assembler::m_inner_rings</td>
         </tr>
       </table>
   </td>
@@ -957,7 +992,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;ProtoRing*&gt; osmium::area::Assembler::m_outer_rings {}</td>
+          <td class="memname">std::vector&lt;ProtoRing*&gt; osmium::area::Assembler::m_outer_rings</td>
         </tr>
       </table>
   </td>
@@ -977,7 +1012,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;ProtoRing&gt; osmium::area::Assembler::m_rings {}</td>
+          <td class="memname">std::list&lt;ProtoRing&gt; osmium::area::Assembler::m_rings</td>
         </tr>
       </table>
   </td>
@@ -1015,7 +1050,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:38 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

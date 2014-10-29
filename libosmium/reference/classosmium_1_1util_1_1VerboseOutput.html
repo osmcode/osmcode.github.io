@@ -103,8 +103,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a95f4664bf7f50068179c55987684ee12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1util_1_1VerboseOutput.html#a95f4664bf7f50068179c55987684ee12">VerboseOutput</a> (bool <a class="el" href="classosmium_1_1util_1_1VerboseOutput.html#aa285e3a2e7ec66cfe6b56d703200cfe5">verbose</a>=false)</td></tr>
-<tr class="separator:a95f4664bf7f50068179c55987684ee12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c4d0042c69f5537d800f91cbb477b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1util_1_1VerboseOutput.html#ac8c4d0042c69f5537d800f91cbb477b2">VerboseOutput</a> (bool <a class="el" href="classosmium_1_1util_1_1VerboseOutput.html#aa285e3a2e7ec66cfe6b56d703200cfe5">verbose</a>=false) noexcept</td></tr>
+<tr class="separator:ac8c4d0042c69f5537d800f91cbb477b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50707fef210c25b9d63061d1d4a7ff09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1util_1_1VerboseOutput.html#a50707fef210c25b9d63061d1d4a7ff09">~VerboseOutput</a> ()=default</td></tr>
 <tr class="separator:a50707fef210c25b9d63061d1d4a7ff09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a553b872a9668aa35b0201bad653e8987"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1util_1_1VerboseOutput.html#a553b872a9668aa35b0201bad653e8987">VerboseOutput</a> (const <a class="el" href="classosmium_1_1util_1_1VerboseOutput.html">VerboseOutput</a> &amp;)=default</td></tr>
@@ -115,8 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8bb2a5e9d18366bc1259247faf5e7fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8daff91911e9fbad29b1f11847137948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosmium_1_1util_1_1VerboseOutput.html">VerboseOutput</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1util_1_1VerboseOutput.html#a8daff91911e9fbad29b1f11847137948">operator=</a> (<a class="el" href="classosmium_1_1util_1_1VerboseOutput.html">VerboseOutput</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a8daff91911e9fbad29b1f11847137948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b2af87d0af952fc97084a2900c9ff28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1util_1_1VerboseOutput.html#a1b2af87d0af952fc97084a2900c9ff28">runtime</a> () const noexcept</td></tr>
-<tr class="separator:a1b2af87d0af952fc97084a2900c9ff28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc49804c7a271472cd41c4fd33f1f59"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1util_1_1VerboseOutput.html#afbc49804c7a271472cd41c4fd33f1f59">runtime</a> () const noexcept</td></tr>
+<tr class="separator:afbc49804c7a271472cd41c4fd33f1f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa285e3a2e7ec66cfe6b56d703200cfe5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosmium_1_1util_1_1VerboseOutput.html#aa285e3a2e7ec66cfe6b56d703200cfe5">verbose</a> () const noexcept</td></tr>
 <tr class="memdesc:aa285e3a2e7ec66cfe6b56d703200cfe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get "verbose" setting.  <a href="#aa285e3a2e7ec66cfe6b56d703200cfe5">More...</a><br /></td></tr>
 <tr class="separator:aa285e3a2e7ec66cfe6b56d703200cfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +151,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>Osmium programs often run for a long time because of the amount of OSM data processed. This class helps with keeping the user up to date by offering an easy way for programs to optionally output verbose information about what's going on.</p>
 <p>Use an object of this class instead of std::cerr as an output stream. Nothing is actually written if the object is not set to verbose mode. If it is set to verbose mode, each line is prepended with the running time, ie the time since the <a class="el" href="classosmium_1_1util_1_1VerboseOutput.html">VerboseOutput</a> object was created. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a95f4664bf7f50068179c55987684ee12"></a>
+<a class="anchor" id="ac8c4d0042c69f5537d800f91cbb477b2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -168,7 +168,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -295,7 +295,7 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1b2af87d0af952fc97084a2900c9ff28"></a>
+<a class="anchor" id="afbc49804c7a271472cd41c4fd33f1f59"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -303,7 +303,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int osmium::util::VerboseOutput::runtime </td>
+          <td class="memname">time_t osmium::util::VerboseOutput::runtime </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -503,7 +503,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 29 2014 14:06:11 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 29 2014 13:44:39 for Osmium by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

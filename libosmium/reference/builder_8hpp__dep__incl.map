@@ -1,5 +1,5 @@
 <map id="include/osmium/builder/builder.hpp" name="include/osmium/builder/builder.hpp">
-<area shape="rect" id="node3" href="$osm__object__builder_8hpp.html" title="include/osmium/builder\l/osm_object_builder.hpp" alt="" coords="80,110,243,165"/>
-<area shape="rect" id="node5" href="$assembler_8hpp.html" title="include/osmium/area\l/assembler.hpp" alt="" coords="5,214,147,269"/>
-<area shape="rect" id="node7" href="$builder__helper_8hpp.html" title="include/osmium/builder\l/builder_helper.hpp" alt="" coords="171,214,325,269"/>
+<area shape="rect" id="node2" href="$osm__object__builder_8hpp.html" title="include/osmium/builder\l/osm_object_builder.hpp" alt="" coords="82,95,245,136"/>
+<area shape="rect" id="node3" href="$assembler_8hpp.html" title="include/osmium/area\l/assembler.hpp" alt="" coords="5,184,148,225"/>
+<area shape="rect" id="node4" href="$builder__helper_8hpp.html" title="include/osmium/builder\l/builder_helper.hpp" alt="" coords="173,184,327,225"/>
 </map>

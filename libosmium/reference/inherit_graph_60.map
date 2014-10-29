@@ -1,28 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node3" href="$classosmium_1_1memory_1_1Item.html" title="osmium::memory::Item" alt="" coords="223,371,380,405"/>
-<area shape="rect" id="node43" href="$classosmium_1_1NodeRef.html" title="osmium::NodeRef" alt="" coords="237,315,365,349"/>
-<area shape="rect" id="node45" href="$classosmium_1_1RelationMember.html" title="osmium::RelationMember" alt="" coords="216,427,387,461"/>
-<area shape="rect" id="node47" href="$classosmium_1_1Tag.html" title="osmium::Tag" alt="" coords="253,483,349,517"/>
-<area shape="rect" id="node5" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; RelationMember, osmium\l::item_type::relation_member_list \&gt;" alt="" coords="435,5,661,81"/>
-<area shape="rect" id="node9" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; Tag, osmium::item_type\l::tag_list \&gt;" alt="" coords="453,103,643,179"/>
-<area shape="rect" id="node13" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; osmium::item_type\l::inner_ring \&gt;" alt="" coords="473,202,623,278"/>
-<area shape="rect" id="node17" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; osmium::item_type\l::outer_ring \&gt;" alt="" coords="473,301,623,377"/>
-<area shape="rect" id="node21" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; osmium::item_type\l::way_node_list \&gt;" alt="" coords="473,399,623,475"/>
-<area shape="rect" id="node25" href="$classosmium_1_1memory_1_1Collection.html" title="osmium::memory::Collection\l\&lt; TMember, TCollectionItemType \&gt;" alt="" coords="435,498,661,553"/>
-<area shape="rect" id="node27" href="$classosmium_1_1NodeRefList.html" title="osmium::NodeRefList\l\&lt; TItemType \&gt;" alt="" coords="473,575,623,630"/>
-<area shape="rect" id="node29" href="$classosmium_1_1OSMEntity.html" title="osmium::OSMEntity" alt="" coords="479,730,617,763"/>
-<area shape="rect" id="node7" href="$classosmium_1_1RelationMemberList.html" title="osmium::RelationMemberList" alt="" coords="709,26,901,59"/>
-<area shape="rect" id="node11" href="$classosmium_1_1TagList.html" title="osmium::TagList" alt="" coords="747,125,864,158"/>
-<area shape="rect" id="node15" href="$classosmium_1_1InnerRing.html" title="osmium::InnerRing" alt="" coords="740,223,871,257"/>
-<area shape="rect" id="node19" href="$classosmium_1_1OuterRing.html" title="osmium::OuterRing" alt="" coords="739,322,872,355"/>
-<area shape="rect" id="node23" href="$classosmium_1_1WayNodeList.html" title="osmium::WayNodeList" alt="" coords="728,421,883,454"/>
-<area shape="rect" id="node31" href="$classosmium_1_1Changeset.html" title="osmium::Changeset" alt="" coords="736,699,875,733"/>
-<area shape="rect" id="node33" href="$classosmium_1_1OSMObject.html" title="osmium::OSMObject" alt="" coords="733,761,877,794"/>
-<area shape="rect" id="node35" href="$classosmium_1_1Area.html" title="osmium::Area" alt="" coords="961,677,1063,710"/>
-<area shape="rect" id="node37" href="$classosmium_1_1Node.html" title="osmium::Node" alt="" coords="959,733,1065,766"/>
-<area shape="rect" id="node39" href="$classosmium_1_1Relation.html" title="osmium::Relation" alt="" coords="951,789,1073,822"/>
-<area shape="rect" id="node41" href="$classosmium_1_1Way.html" title="osmium::Way" alt="" coords="961,845,1063,878"/>
-<area shape="rect" id="node48" href="$structosmium_1_1totally__ordered.html" title="osmium::totally_ordered\l\&lt; Changeset \&gt;" alt="" coords="468,653,628,707"/>
-<area shape="rect" id="node50" href="$structosmium_1_1totally__ordered.html" title="osmium::totally_ordered\l\&lt; NodeRef \&gt;" alt="" coords="7,305,167,359"/>
-<area shape="rect" id="node52" href="$structosmium_1_1totally__ordered.html" title="osmium::totally_ordered\l\&lt; OSMObject \&gt;" alt="" coords="468,786,628,841"/>
+<area shape="rect" id="node1" href="$classosmium_1_1thread_1_1SortedQueue.html" title="osmium::thread::SortedQueue\&lt; T \&gt;" alt="" coords="5,5,233,32"/>
 </map>
