@@ -1,26 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <meta name="author" content="Jochen Topf jochen@topf.org" />
-  <title>OSMIUM-FILE-FORMATS(5)</title>
-  <style type="text/css">code{white-space: pre;}</style>
-</head>
-<body>
-<div id="header">
-<h1 class="title">OSMIUM-FILE-FORMATS(5)</h1>
-<h2 class="author">Jochen Topf <script type="text/javascript">
-<!--
-h='&#116;&#x6f;&#112;&#102;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#106;&#x6f;&#x63;&#104;&#x65;&#110;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>&#106;&#x6f;&#x63;&#104;&#x65;&#110;&#32;&#x61;&#116;&#32;&#116;&#x6f;&#112;&#102;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></h2>
-</div>
-<h1 id="name">NAME</h1>
+---
+layout: default
+title: OSMIUM-FILE-FORMATS(5) - Osmium Manpages
+---
+&uarr; <a href='..'>Osmium</a>
+<h1 class='title'>OSMIUM-FILE-FORMATS(5)</h1>
+<h2 id="name">NAME</h2>
 <p>osmium-file-formats - OSM file formats known to Osmium.</p>
-<h1 id="formats">FORMATS</h1>
+<h2 id="formats">FORMATS</h2>
 <p>The <strong>osmium</strong> command line tool supports all file formats supported by the Osmium library. These are:</p>
 <ul>
 <li>The classical XML format in the variants <em>.osm</em> (for data files), <em>.osh</em> (for data files with history) and <em>.osc</em> (for change files).</li>
@@ -28,11 +14,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li>The OPL format (usually with suffix <em>.osm.opl</em>).</li>
 </ul>
 <p>In addition, XML and OPL files can be compressed using <em>gzip</em> or <em>bzip2</em>. (Add <em>.gz</em> or <em>.bz2</em> suffixes, respectively.)</p>
-<h1 id="autodetection">AUTODETECTION</h1>
+<h2 id="autodetection">AUTODETECTION</h2>
 <p>Which format a file has is usually autodetected from the file name suffix.</p>
 <p>If this doesn't work, either because you are reading from stdin or writing to stdout, or because you have an unusual file name, you have to set the format manually. You can also set the format manually if you want to set special format options.</p>
 <p>Most <strong>osmium</strong> commands support the <strong>--input-format</strong> and <strong>--output-format</strong> options to set the format. They take a comma-separated list of arguments, the first is the format, further arguments set additional options.</p>
-<h1 id="special-format-options">SPECIAL FORMAT OPTIONS</h1>
+<h2 id="special-format-options">SPECIAL FORMAT OPTIONS</h2>
 <p>The following options can be added when writing OSM files:</p>
 <dl>
 <dt>xml_change_format=true/false</dt>
@@ -51,7 +37,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <dd><p>Enable/disable writing of object metadata such as changeset id, username, etc. Disabling this will make files a bit smaller.</p>
 </dd>
 </dl>
-<h1 id="examples">EXAMPLES</h1>
+<h2 id="examples">EXAMPLES</h2>
 <p>Here are some examples:</p>
 <dl>
 <dt>pbf</dt>
@@ -67,10 +53,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <dd>OSM change file, compressed with gzip.
 </dd>
 </dl>
-<h1 id="see-also">SEE ALSO</h1>
+<h2 id="see-also">SEE ALSO</h2>
 <ul>
 <li><a href="http://osmcode.org/osmium">Osmium website</a></li>
 <li><a href="http://osmcode.org/libosmium/manual/libosmium-manual.html">Libosmium manual</a></li>
 </ul>
-</body>
-</html>

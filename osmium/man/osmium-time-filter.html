@@ -1,33 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <meta name="author" content="Jochen Topf jochen@topf.org" />
-  <title>OSMIUM-TIME-FILTER(1)</title>
-  <style type="text/css">code{white-space: pre;}</style>
-</head>
-<body>
-<div id="header">
-<h1 class="title">OSMIUM-TIME-FILTER(1)</h1>
-<h2 class="author">Jochen Topf <script type="text/javascript">
-<!--
-h='&#116;&#x6f;&#112;&#102;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#106;&#x6f;&#x63;&#104;&#x65;&#110;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>&#106;&#x6f;&#x63;&#104;&#x65;&#110;&#32;&#x61;&#116;&#32;&#116;&#x6f;&#112;&#102;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></h2>
-</div>
-<h1 id="name">NAME</h1>
+---
+layout: default
+title: OSMIUM-TIME-FILTER(1) - Osmium Manpages
+---
+&uarr; <a href='..'>Osmium</a>
+<h1 class='title'>OSMIUM-TIME-FILTER(1)</h1>
+<h2 id="name">NAME</h2>
 <p>osmium-time-filter - Filter OSM data by time from a history file.</p>
-<h1 id="synopsis">SYNOPSIS</h1>
+<h2 id="synopsis">SYNOPSIS</h2>
 <p><strong>osmium time-filter</strong> [OPTIONS] <em>INPUT-FILE</em> [<em>TIME</em>]<br /><strong>osmium time-filter</strong> [OPTIONS] <em>INPUT-FILE</em> <em>FROM-TIME</em> <em>TO-TIME</em></p>
-<h1 id="description">DESCRIPTION</h1>
+<h2 id="description">DESCRIPTION</h2>
 <p>Copy all objects that were valid at the given <em>TIME</em> or in the time period between <em>FROM-TIME</em> (inclusive) and <em>TO-TIME</em> (not inclusive) from the input file into the output file. If no time is given, the current time is used.</p>
 <p>Usually the <em>INPUT-FILE</em> will be an OSM data file with history. If both <em>FROM-TIME</em> and <em>TO-TIME</em> are given, the result will also have history data, it will also include deleted versions of objects.</p>
 <p>If only a single point in time was given, the result will be a normal OSM file without history containing no deleted objects.</p>
 <p>The format for the timestamps is &quot;yyyy-mm-ddThh:mm::ssZ&quot;.</p>
-<h1 id="options">OPTIONS</h1>
+<h2 id="options">OPTIONS</h2>
 <dl>
 <dt>--generator</dt>
 <dd><p>The name and version of the program generating the output file. It will be added to the header of the output file. Default is &quot;<em>osmium/</em>&quot; and the version of osmium.</p>
@@ -48,17 +34,15 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <dd><p>Set verbose mode. The program will output information about what it is doing to <em>stderr</em>.</p>
 </dd>
 </dl>
-<h1 id="diagnostics">DIAGNOSTICS</h1>
+<h2 id="diagnostics">DIAGNOSTICS</h2>
 <p><strong>osmium time-filter</strong> exits with code 0 if everything went alright, it exits with code 2 if there was a problem with the command line arguments, and with exit code 1 if some other error occurred.</p>
-<h1 id="examples">EXAMPLES</h1>
+<h2 id="examples">EXAMPLES</h2>
 <p>Extract current planet file from history planet:</p>
 <pre><code>osmium time-filter -o planet.osm.pbf history-planet.osh.pbf</code></pre>
 <p>Extract planet data how it appeared on January 1 2008 from history planet:</p>
 <pre><code>osmium time-filter -o planet-20080101.osm.pbf history-planet.osh.pbf 2008-01-01T00:00:00Z</code></pre>
-<h1 id="see-also">SEE ALSO</h1>
+<h2 id="see-also">SEE ALSO</h2>
 <ul>
 <li><a href="http://osmcode.org/osmium">Osmium website</a></li>
 <li><a href="http://osmcode.org/libosmium/manual/libosmium-manual.html">Libosmium manual</a></li>
 </ul>
-</body>
-</html>
