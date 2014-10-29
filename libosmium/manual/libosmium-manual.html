@@ -58,7 +58,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><a href="#boxes"><span class="toc-section-number">3.6</span> Boxes</a></li>
 </ul></li>
 <li><a href="#osm-entities"><span class="toc-section-number">4</span> OSM Entities</a><ul>
-<li><a href="#objects"><span class="toc-section-number">4.1</span> Objects</a></li>
+<li><a href="#osm-objects"><span class="toc-section-number">4.1</span> OSM Objects</a></li>
 <li><a href="#nodes"><span class="toc-section-number">4.2</span> Nodes</a></li>
 <li><a href="#ways"><span class="toc-section-number">4.3</span> Ways</a></li>
 <li><a href="#relations"><span class="toc-section-number">4.4</span> Relations</a></li>
@@ -96,20 +96,24 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><a href="#storage-types"><span class="toc-section-number">9.1.2</span> Storage types</a></li>
 </ul></li>
 </ul></li>
+<li><a href="#exceptions"><span class="toc-section-number">10</span> Exceptions</a><ul>
+<li><a href="#list-of-osmium-exceptions"><span class="toc-section-number">10.1</span> List of Osmium Exceptions</a></li>
+<li><a href="#standard-exceptions-thrown-by-osmium"><span class="toc-section-number">10.2</span> Standard Exceptions thrown by Osmium</a></li>
+</ul></li>
 </ul>
 </div>
-<h1 id="introduction"><a href="#introduction"><span class="header-section-number">1</span> Introduction</a></h1>
+<h1 id="introduction"><span class="header-section-number">1</span> Introduction</h1>
 <p><em>Simple things should be simple and complex things should be possible.</em> - Alan Kay</p>
 <p>The OpenStreetMap project is growing at an enormous rate. Working with the OSM data becomes increasingly difficult, because there is just so much of it and because it gets more complex all the time.</p>
 <p>Osmium was developed as an answer to this challenge. After year of developing software to work with OSM data in many programming languages like Perl, Ruby, Java and even in XSLT, it became evident that something more was needed to efficiently work with these huge amounts of data. Processing speed was, of course, one big issue here, but the other one is available memory. Data processing tasks can be so much faster if their working set fits into memory, that it makes sense to think about this. Because Osmium is a C++ library it can make very efficient use of the main memory on your computer. Primitive objects such as integers and doubles, but also complex objects need only as much memory as is really necessary. There is not much management overhead needed in many cases, if the data structures are chosen carefully.</p>
 <p>Osmium has been in continuous development since it was borne in October 2010. And it has changed considerably over time. While the basic premise, to write a low-level efficient OSM library, is still true, it has become more and more powerful and at the same time easier to use. Osmium has been in production use nearly from day one, some parts of it have been ripped from earlier production code. Osmium is not an academic exercise, but it is used and it has shown its power many times. And while C++ might not be the easiest programming language to learn and Osmium might not be the easiest library to use, we try to make it as simple as possible to work with it, as long as this doesn't compromise efficiency too much.</p>
-<h2 id="header-only-library"><a href="#header-only-library"><span class="header-section-number">1.1</span> Header-only Library</a></h2>
+<h2 id="header-only-library"><span class="header-section-number">1.1</span> Header-only Library</h2>
 <p>Osmium is a header-only library, so there is nothing to compile to build it. Just include the header files you need.</p>
-<h2 id="the-osmium-namespace"><a href="#the-osmium-namespace"><span class="header-section-number">1.2</span> The <code>osmium</code> Namespace</a></h2>
+<h2 id="the-osmium-namespace"><span class="header-section-number">1.2</span> The <code>osmium</code> Namespace</h2>
 <p>Everything in the Osmium library is in the <code>osmium</code> namespace or in sub-namespaces. You'll likely encounter the <code>osmium::io</code> namespace for everything related to <a href="#input-and-output">Input and Output</a> and the <code>osmium::geom</code> namespace for geometry-related functionality, but there are some more. Do not directly use anything in any sub-namespace called <code>detail</code>. Those classes and functions are for internal use only.</p>
-<h2 id="c11"><a href="#c11"><span class="header-section-number">1.3</span> C++11</a></h2>
+<h2 id="c11"><span class="header-section-number">1.3</span> C++11</h2>
 <p>The current version of Osmium makes extensive use of the new facilities provided by the C++11 standard. It will only work with current compilers and libraries.</p>
-<h2 id="license"><a href="#license"><span class="header-section-number">1.4</span> License</a></h2>
+<h2 id="license"><span class="header-section-number">1.4</span> License</h2>
 <p>The Osmium Library is available under the very liberal Boost Software License:</p>
 <pre><code>Boost Software License - Version 1.0 - August 17th, 2003
 
@@ -135,19 +139,19 @@ FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.</code></pre>
 <p>This manual is available under the Creative Commons <a href="http://creativecommons.org/licenses/by-sa/4.0/">Attribution-ShareAlike License version 4.0</a>.</p>
-<h2 id="old-versions-of-osmium"><a href="#old-versions-of-osmium"><span class="header-section-number">1.5</span> Old Versions of Osmium</a></h2>
+<h2 id="old-versions-of-osmium"><span class="header-section-number">1.5</span> Old Versions of Osmium</h2>
 <p>If you are stuck with older compilers or need to develop using the older C++98 for some reason, you can have a look at the older Osmium version. But it is quite different from the current Osmium described in this manual.</p>
 <p>The old Osmium is available from <a href="https://github.com/joto/osmium">GitHub</a>.</p>
-<h1 id="compiling-programs-using-osmium"><a href="#compiling-programs-using-osmium"><span class="header-section-number">2</span> Compiling Programs Using Osmium</a></h1>
+<h1 id="compiling-programs-using-osmium"><span class="header-section-number">2</span> Compiling Programs Using Osmium</h1>
 <p>Osmium is a header-only library, so it does not need to be compiled by itself. But of course you will have to compile programs using Osmium. This chapter gives you some hints on how to best do this.</p>
-<h2 id="c11-1"><a href="#c11-1"><span class="header-section-number">2.1</span> C++11</a></h2>
+<h2 id="c11-1"><span class="header-section-number">2.1</span> C++11</h2>
 <p>Osmium uses modern standard C++11 and should compile everywhere without warnings when you have a recent enough compiler and standard library. It works with GCC 4.8 and clang 3.2 or newer. Some parts might work with GCC 4.7 or older versions of clang.</p>
 <p>You might have to set the C++ version using the compiler option</p>
 <pre><code>-std=c++11</code></pre>
-<h2 id="operating-systems"><a href="#operating-systems"><span class="header-section-number">2.2</span> Operating Systems</a></h2>
+<h2 id="operating-systems"><span class="header-section-number">2.2</span> Operating Systems</h2>
 <dl>
 <dt>Linux</dt>
-<dd><p>Osmium is developed on Linux and tested best on that system. Debian Jessie (testing) and current Ubuntu systems come with everything needed for Osmium. Debian wheezy (stable) and the last Ubuntu LTS release 12.04 don't have compilers current enough. If you are stuck on these systems, use a backported compiler.</p>
+<dd><p>Osmium is developed on Linux and tested best on that system. Debian Jessie (testing) and current Ubuntu systems come with everything needed for Osmium. Debian wheezy (stable) and the Ubuntu LTS release 12.04 don't have compilers current enough. If you are stuck on these systems, use a backported compiler.</p>
 </dd>
 <dt>Mac OSX</dt>
 <dd><p>Osmium also works well on Mac OSX with the exception of the parts that need the mremap system call that is not available on Mac OSX.</p>
@@ -156,41 +160,42 @@ DEALINGS IN THE SOFTWARE.</code></pre>
 <dd><p>Most of Osmium should work on Windows, but nobody has been actually testing it.</p>
 </dd>
 </dl>
-<h2 id="build-system"><a href="#build-system"><span class="header-section-number">2.3</span> Build System</a></h2>
+<h2 id="build-system"><span class="header-section-number">2.3</span> Build System</h2>
 <p>The example programs in the example directory use a simple Makefile to help compiling them. Osmium is simple enough that it doesn't need a large build systems like automake or cmake to compile programs using it. This means that it works with whatever build system you are using in your programs.</p>
-<h2 id="large-file-support"><a href="#large-file-support"><span class="header-section-number">2.4</span> Large File Support</a></h2>
+<h2 id="large-file-support"><span class="header-section-number">2.4</span> Large File Support</h2>
 <p>When working with OSM data you often have very large files with several gigabytes. This can lead to problems on 32bit systems. Use the options</p>
 <pre><code>-D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64</code></pre>
 <p>for the compiler to make sure that large files work.</p>
-<h2 id="include-what-you-need"><a href="#include-what-you-need"><span class="header-section-number">2.5</span> Include What You Need</a></h2>
+<h2 id="include-what-you-need"><span class="header-section-number">2.5</span> Include What You Need</h2>
 <p>Libosmium is a header-only library. You include those parts you need and ignore the rest. The library makes sure internal dependencies are followed, of course. Whatever you don't include doesn't bloat your program and it doesn't need execution time. And, what's more important, you do not have dependencies on external libraries that are not really needed for whatever you are doing.</p>
 <p>The full Osmium library has a frightening array of dependencies, but thats because its mission is to make OSM data usable with all those libraries. But if you don't need some part of Osmium, you also will not need those libraries.</p>
 <p>You will find information about which files to include in the different chapters of this manual. Generally for a class <code>osmium::foo::Bar</code>, there will be an include file called <code>&lt;osmium/foo/bar.hpp&gt;</code> that you need to include, but sometimes it is a bit more difficult.</p>
 <p>Do not directly include any header files in directories called &quot;detail&quot;. They are for internal use of the library only.</p>
-<h2 id="boost"><a href="#boost"><span class="header-section-number">2.6</span> Boost</a></h2>
+<h2 id="boost"><span class="header-section-number">2.6</span> Boost</h2>
 <p>Some parts of Osmium need some <a href="http://www.boost.org/">Boost</a> libraries. Libraries used are:</p>
 <ul>
 <li><a href="http://www.boost.org/libs/utility/operators.htm">Operators</a></li>
 <li><a href="http://www.boost.org/libs/iterator/doc/">Iterator</a></li>
 <li><a href="http://www.boost.org/doc/libs/1_55_0/libs/algorithm/string/">String Algorithms</a></li>
 </ul>
+<p>Osmium also needs some Boost unicode functions. Because they are rather new and not available everywhere, they are currently included with Osmium in <code>include/boost_unicode_iterator.hpp</code>.</p>
 <p>The Osmium unit tests use the <a href="http://www.boost.org/libs/test/">Boost Test library</a>.</p>
-<h2 id="ogr-support"><a href="#ogr-support"><span class="header-section-number">2.7</span> OGR Support</a></h2>
+<h2 id="ogr-support"><span class="header-section-number">2.7</span> OGR Support</h2>
 <p>Osmium can create OGR geometries from OSM data. To use this compile with what the command</p>
 <pre><code>gdal-config --cflags</code></pre>
 <p>returns and link with what</p>
 <pre><code>gdal-config --libs</code></pre>
 <p>returns.</p>
-<h1 id="basic-types"><a href="#basic-types"><span class="header-section-number">3</span> Basic Types</a></h1>
+<h1 id="basic-types"><span class="header-section-number">3</span> Basic Types</h1>
 <p>All the types and classes described in this chapter are value types, ie they are small and can be copied around cheaply.</p>
-<h2 id="ids"><a href="#ids"><span class="header-section-number">3.1</span> IDs</a></h2>
+<h2 id="ids"><span class="header-section-number">3.1</span> IDs</h2>
 <p>Typedef: <code>osmium::object_id_type</code></p>
 <p>Include: <code>&lt;osmium/osm/types.hpp&gt;</code></p>
 <p>For object IDs use the type <code>osmium::object_id_type</code>. It is a 64bit signed integer that can represent the more than 2 billion nodes we already have in OSM. While way and relation IDs could theoretically use a smaller ID type (signed 32 bit are currently enough), for consistency and to be future-proof, they will also use this type in most cases.</p>
 <p>OSM objects always have positive IDs. But some software (such as JOSM) uses negative IDs for objects that have not yet been uploaded to the main OSM database. To support these use cases, the <code>object_id_type</code> is a signed integer.</p>
 <p>Some parts of Osmium, notably the different index classes, can only work with positive IDs. In those cases the type <code>osmium::unsigned_object_id_type</code> is used. If you know that your data only contains positive IDs or only negative IDs, you can use the <code>positive_id()</code> member function on the <code>Object</code> class to get IDs of that type. It will return the absolute value of the ID.</p>
 <p>If your data contains a mix of positive and negative IDs, this simple approach will fail! In that case you have to use two indexes, one for the positive IDs and one for the negative IDs. The <code>osmium::handler::NodeLocationsForWay</code> class takes this approach.</p>
-<h2 id="other-primitive-types"><a href="#other-primitive-types"><span class="header-section-number">3.2</span> Other Primitive Types</a></h2>
+<h2 id="other-primitive-types"><span class="header-section-number">3.2</span> Other Primitive Types</h2>
 <p>Include: <code>&lt;osmium/osm/types.hpp&gt;</code></p>
 <p>There are several other typedefs:</p>
 <table>
@@ -220,13 +225,13 @@ DEALINGS IN THE SOFTWARE.</code></pre>
 </tbody>
 </table>
 <p>All these types are currently 32bit integers. Version numbers, changeset IDs and User IDs are always positive (they start out with 1). The number of changes can be 0 or larger.</p>
-<h2 id="locations"><a href="#locations"><span class="header-section-number">3.3</span> Locations</a></h2>
+<h2 id="locations"><span class="header-section-number">3.3</span> Locations</h2>
 <p>Class: <code>osmium::Location</code></p>
 <p>Include: <code>&lt;osmium/osm/location.hpp&gt;</code></p>
 <p>In Osmium all positions on Earth are stored in objects of the osmium::Location class. Coordinates are stored as 32 bit signed integers after multiplying the coordinates with <code>osmium::coordinate_precision</code> = 10,000,000. This means we can store coordinates with a resolution of better than one centimeter, good enough for OSM use. The main OSM database uses the same system. We do this to save memory, a 32 bit integer uses only 4 bytes, a double uses 8.</p>
 <p>Coordinates are not checked when they are set.</p>
 <p>To create a location:</p>
-<pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::Location location(<span class="fl">9.3</span>, <span class="fl">49.7</span>);</code></pre>
+<pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::Location location(<span class="fl">9.</span><span class="dv">3</span>, <span class="fl">49.</span><span class="dv">7</span>);</code></pre>
 <p>or using integers:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::Location location(<span class="dv">9300000000</span>, <span class="dv">49700000000</span>);</code></pre>
 <p>Make sure you are using the right number type or you will get very wrong coordinates.</p>
@@ -240,31 +245,32 @@ DEALINGS IN THE SOFTWARE.</code></pre>
 <p>The normal bounds for the longitude and latitude are -180 to 180 and -90 to 90, respectively. But in historic OSM data you can sometimes find locations outside these bounds. Call</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">location.valid()</code></pre>
 <p>to find out if a location is inside those bounds.</p>
-<h2 id="segments"><a href="#segments"><span class="header-section-number">3.4</span> Segments</a></h2>
+<p>The <code>lon()</code> and <code>lat()</code> getter calls will throw an exception if the location is invalid or undefined.</p>
+<h2 id="segments"><span class="header-section-number">3.4</span> Segments</h2>
 <p>Class: <code>osmium::Segment</code></p>
 <p>Include: <code>&lt;osmium/osm/segment.hpp&gt;</code></p>
 <p>Segments are the directed connection between two locations. They are not OSM objects but sometimes useful in algorithms.</p>
-<h2 id="undirected-segments"><a href="#undirected-segments"><span class="header-section-number">3.5</span> Undirected Segments</a></h2>
+<h2 id="undirected-segments"><span class="header-section-number">3.5</span> Undirected Segments</h2>
 <p>Class: <code>osmium::UndirectedSegment</code></p>
 <p>Include: <code>&lt;osmium/osm/undirected_segment.hpp&gt;</code></p>
 <p>Undirected Segments are connection between two locations. They are not OSM objects but sometimes useful in algorithms.</p>
-<h2 id="boxes"><a href="#boxes"><span class="header-section-number">3.6</span> Boxes</a></h2>
+<h2 id="boxes"><span class="header-section-number">3.6</span> Boxes</h2>
 <p>Class: <code>osmium::Box</code></p>
 <p>Include: <code>&lt;osmium/osm/box.hpp&gt;</code></p>
 <p>A box is a rectangle described by the minimum and maximum longitude and latitude. It is used, for instance, in the header of OSM files and in changesets to describe the bounding box.</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::Box box;
-box.extend(osmium::Location(<span class="fl">3.2</span>, <span class="fl">4.3</span>));
-box.extend({<span class="fl">4.5</span>, <span class="fl">7.2</span>});
-box.extend({<span class="fl">3.3</span>, <span class="fl">8.9</span>});
+box.extend(osmium::Location(<span class="fl">3.</span><span class="dv">2</span>, <span class="fl">4.</span><span class="dv">3</span>));
+box.extend({<span class="fl">4.</span><span class="dv">5</span>, <span class="fl">7.</span><span class="dv">2</span>});
+box.extend({<span class="fl">3.</span><span class="dv">3</span>, <span class="fl">8.</span><span class="dv">9</span>});
 std::cout &lt;&lt; box;  <span class="co">// (3.2,4.3,4.5,8.9)</span></code></pre>
-<h1 id="osm-entities"><a href="#osm-entities"><span class="header-section-number">4</span> OSM Entities</a></h1>
-<p>Osmium works with the four basic types of OSM entities: Nodes, Ways, and Relations (which are all <a href="#objects">Objects</a>) and Changesets.</p>
+<h1 id="osm-entities"><span class="header-section-number">4</span> OSM Entities</h1>
+<p>Osmium works with the four basic types of OSM entities: Nodes, Ways, and Relations (which are all <a href="#osm-objects">OSM Objects</a>) and Changesets. In addition Areas are supported, which are not native OSM objects, but they are almost treated like real OSM objects.</p>
 <p>These OSM entities can not be created like any normal C++ object, but they need a buffer to live in. See the next chapter for details. Accessing existing OSM entities on the other hand is easy and straightforward.</p>
-<h2 id="objects"><a href="#objects"><span class="header-section-number">4.1</span> Objects</a></h2>
-<p>Class: <code>osmium::Object</code></p>
+<h2 id="osm-objects"><span class="header-section-number">4.1</span> OSM Objects</h2>
+<p>Class: <code>osmium::OSMObject</code></p>
 <p>Include: <code>&lt;osmium/osm/object.hpp&gt;</code></p>
-<p>The <code>osmium::Object</code> class is the base class for nodes, ways, and relations. it has accessors for the usual OSM attributes:</p>
-<pre><code>osmium::Object&amp; obj = ...
+<p>The <code>osmium::OSMObject</code> class is the base class for nodes, ways, and relations. it has accessors for the usual OSM attributes:</p>
+<pre><code>osmium::OSMObject&amp; obj = ...
 std::cout &lt;&lt; &quot;id=&quot; &lt;&lt; obj.id()
           &lt;&lt; &quot; version=&quot; &lt;&lt; obj.version()
           &lt;&lt; &quot; timestamp=&quot; &lt;&lt; obj.timestamp()
@@ -275,9 +281,9 @@ std::cout &lt;&lt; &quot;id=&quot; &lt;&lt; obj.id()
 <p>The <code>changeset()</code> and <code>uid()</code> accessor functions return the IDs of the changeset that created this object version and the User ID of the user creating this version of the object, respectively. They do not link to an object of that type.</p>
 <p>The <code>visible</code> flag will always be true for normal OSM data, but for history data or change files it shows whether an object version has been deleted.</p>
 <p>In addition each object has a list of tags attached:</p>
-<pre><code>osmium::TagList&amp; tags = obj.tags();</code></pre>
+<pre><code>const osmium::TagList&amp; tags = obj.tags();</code></pre>
 <p>You can iterate over all tags:</p>
-<pre><code>for (osmium::Tag&amp; tag : obj.tags()) {
+<pre><code>for (const osmium::Tag&amp; tag : obj.tags()) {
     std::cout &lt;&lt; tag.key() &lt;&lt; &quot;=&quot; &lt;&lt; tag.value() &lt;&lt; &quot;\n&quot;;
 }</code></pre>
 <p>Or you can find specific tags:</p>
@@ -285,42 +291,42 @@ std::cout &lt;&lt; &quot;id=&quot; &lt;&lt; obj.id()
 if (highway &amp;&amp; !strcmp(highway, &quot;primary&quot;) {
     ...
 }</code></pre>
-<h2 id="nodes"><a href="#nodes"><span class="header-section-number">4.2</span> Nodes</a></h2>
+<h2 id="nodes"><span class="header-section-number">4.2</span> Nodes</h2>
 <p>Class: <code>osmium::Node</code></p>
 <p>Include: <code>&lt;osmium/osm/node.hpp&gt;</code></p>
-<p>A <code>Node</code> is a kind of <code>Object</code>. In addition to the things you can do with any Object, the Node has a Location.</p>
+<p>A <code>Node</code> is a kind of <code>OSMObject</code>. In addition to the things you can do with any OSMObject, the Node has a Location.</p>
 <pre><code>osmium::Node&amp; node = ...
 double longitude = node.location().lon();</code></pre>
-<h2 id="ways"><a href="#ways"><span class="header-section-number">4.3</span> Ways</a></h2>
+<h2 id="ways"><span class="header-section-number">4.3</span> Ways</h2>
 <p>Classes: <code>osmium::Way</code>, <code>osmium::WayNode</code>, <code>osmium::WayNodeList</code></p>
 <p>Include: <code>&lt;osmium/osm/way.hpp&gt;</code></p>
-<p>A <code>Way</code> is a kind of <code>Object</code>. In addition to the things you can do with any Object, a Way has a list of way nodes:</p>
+<p>A <code>Way</code> is a kind of <code>OSMObject</code>. In addition to the things you can do with any OSMObject, a Way has a list of node references:</p>
 <pre><code>osmium::Way&amp; way = ...
-for (osmium::WayNode&amp; wn : way.nodes()) {
-    std::cout &lt;&lt; &quot;ref=&quot; &lt;&lt; wn.ref() &lt;&lt; &quot; location=&quot; &lt;&lt; wn.location() &lt;&lt; &quot;\n&quot;;
+for (const osmium::NodeRef&amp; nr : way.nodes()) {
+    std::cout &lt;&lt; &quot;ref=&quot; &lt;&lt; nr.ref() &lt;&lt; &quot; location=&quot; &lt;&lt; nr.location() &lt;&lt; &quot;\n&quot;;
 }</code></pre>
-<h2 id="relations"><a href="#relations"><span class="header-section-number">4.4</span> Relations</a></h2>
+<h2 id="relations"><span class="header-section-number">4.4</span> Relations</h2>
 <p>Classes: <code>osmium::Relation</code>, <code>osmium::RelationMember</code>, <code>osmium::RelationMemberList</code></p>
 <p>Include: <code>&lt;osmium/osm/relation.hpp&gt;</code></p>
-<p>A <code>Relation</code> is a kind of <code>Object</code>. In addition to the things you can do with any Object, a Relation has a list of members:</p>
+<p>A <code>Relation</code> is a kind of <code>OSMObject</code>. In addition to the things you can do with any OSMObject, a Relation has a list of members:</p>
 <pre><code>osmium::Relation&amp; relation = ...
 osmium::RelationMemberList&amp; rml = way.members();
 for (osmium::RelationMember&amp; rm : rml) {
     std::cout &lt;&lt; rm.type() &lt;&lt; rm.ref() &lt;&lt; &quot; (role=&quot; &lt;&lt; rm.role() &lt;&lt; &quot;)\n&quot;;
 }</code></pre>
-<h2 id="areas"><a href="#areas"><span class="header-section-number">4.5</span> Areas</a></h2>
-<p><em>not yet implemented</em></p>
-<h2 id="changesets"><a href="#changesets"><span class="header-section-number">4.6</span> Changesets</a></h2>
+<h2 id="areas"><span class="header-section-number">4.5</span> Areas</h2>
+<p><em>not yet documented</em></p>
+<h2 id="changesets"><span class="header-section-number">4.6</span> Changesets</h2>
 <p>Class: <code>osmium:Changeset</code></p>
 <p>Include: <code>&lt;osmium/osm/changeset.hpp&gt;</code></p>
 <p>Changesets contain the metadata for a set of changes to OSM data.</p>
 <pre><code>osmium::Changeset</code></pre>
-<h1 id="buffers"><a href="#buffers"><span class="header-section-number">5</span> Buffers</a></h1>
+<h1 id="buffers"><span class="header-section-number">5</span> Buffers</h1>
 <p>OSM entities have to be stored somewhere in memory. They are complex objects containing arbitrary number of tags, relations can have any number of members etc. If we handled those objects like any normal C++ object, creating them would take lots of small memory allocations and many pointer indirections to get at all the parts of the data. Instead OSM entities are created inside so-called <em>buffers</em>. Buffers can have a fixed size or grow as needed. New objects can be added at the end, and they are stored inside those buffers in a reasonably space-efficient manner while still being accessible easily and quickly.</p>
 <p>Buffers can be moved around between different parts of your program and even between threads. The content of buffers can even be written to disk as it is and read back in and immediately used &quot;as is&quot; without any serializaton or de-serialization step needed.</p>
 <p>But all of this has one draw-back: It is slightly more complicated to create those objects and they can not just be instantiated on the stack.</p>
 <p>Buffers can not be copied, because it is unclear who would be responsible for the memory then. But they can be moved.</p>
-<h2 id="creating-a-buffer"><a href="#creating-a-buffer"><span class="header-section-number">5.1</span> Creating a Buffer</a></h2>
+<h2 id="creating-a-buffer"><span class="header-section-number">5.1</span> Creating a Buffer</h2>
 <p>Buffers exist in two different flavours, those with external memory management and those with internal memory management. If you already have some memory with data in it (for instance read from disk), you create a Buffer with external memory managment. It is your job then to free the memory once the buffer isn't used any more. If you don't have some memory space already, you can create a Buffer object and have it manage the memory internally. It will dynamically allocate memory and free it again after use.</p>
 <p>To create a buffer from existing memory you give the address and size to the constructor:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="dt">const</span> <span class="dt">int</span> buffer_size = <span class="dv">10240</span>;
@@ -333,13 +339,13 @@ osmium::memory::Buffer buffer(mem, buffer_size);</code></pre>
 osmium::memory::Buffer buffer(mem, buffer_size, num);</code></pre>
 <p>To create a buffer with internal memory-management you construct it with the number of bytes it should have initially and a flag that tells Osmium whether it should automatically grow the buffer if it is needed:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="dt">const</span> <span class="dt">int</span> buffer_size = <span class="dv">10240</span>;
-osmium::memory::Buffer buffer(buffer_size, <span class="kw">true</span>); <span class="co">// auto-grow</span>
-osmium::memory::Buffer buffer(buffer_size, <span class="kw">false</span>); <span class="co">// do not grow automatically</span></code></pre>
-<h2 id="adding-items-to-the-buffer"><a href="#adding-items-to-the-buffer"><span class="header-section-number">5.2</span> Adding Items to the Buffer</a></h2>
-<h2 id="handling-a-full-buffer"><a href="#handling-a-full-buffer"><span class="header-section-number">5.3</span> Handling a Full Buffer</a></h2>
+osmium::memory::Buffer buffer(buffer_size, osmium::memory::Buffer::auto_grow::yes);
+osmium::memory::Buffer buffer(buffer_size, osmium::memory::Buffer::auto_grow::no);</code></pre>
+<h2 id="adding-items-to-the-buffer"><span class="header-section-number">5.2</span> Adding Items to the Buffer</h2>
+<h2 id="handling-a-full-buffer"><span class="header-section-number">5.3</span> Handling a Full Buffer</h2>
 <p>If a buffer becomes full, there are three different things that can happen:</p>
-<p>If the buffer was created with <code>auto_grow=true</code>, it will reserve more memory on the heap and double its size. This will happen without the client code noticing, but it will invalidate any pointer pointing into the buffer. This is the same behaviour a <code>std::vector</code> has so it should be familiar to C++ programmers.</p>
-<p>If the buffer was created with <code>auto_grow=false</code> (or if it is a buffer with external memory management), the exception <code>osmium::memory::BufferIsFull</code> will be thrown. In this case you have to catch the exception, either grow the buffer or create a new one. If you grow the buffer you can keep going at the point where you left off. If you start a new one, the last object you were writing to the buffer when the exception was thrown was not committed and you have to write it again into the new buffer.</p>
+<p>If the buffer was created with <code>auto_grow::yes</code>, it will reserve more memory on the heap and double its size. This will happen without the client code noticing, but it will invalidate any pointer pointing into the buffer. This is the same behaviour a <code>std::vector</code> has so it should be familiar to C++ programmers.</p>
+<p>If the buffer was created with <code>auto_grow::no</code> (or if it is a buffer with external memory management), the exception <code>osmium::memory::BufferIsFull</code> will be thrown. In this case you have to catch the exception, either grow the buffer or create a new one. If you grow the buffer you can keep going at the point where you left off. If you start a new one, the last object you were writing to the buffer when the exception was thrown was not committed and you have to write it again into the new buffer.</p>
 <p>As a third option you can set a <em>callback</em> functor that wil be called when the buffer is full. The functor takes a reference to the buffer as argument and returns void:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="dt">void</span> full(osmium::memory::Buffer&amp; buffer) {
     std::cout &lt;&lt; <span class="st">&quot;Buffer is full</span><span class="ch">\n</span><span class="st">&quot;</span>;
@@ -347,9 +353,9 @@ osmium::memory::Buffer buffer(buffer_size, <span class="kw">false</span>); <span
 
 osmium::memory::Buffer buffer(buffer_size, <span class="kw">false</span>);
 buffer.set_full_callback(full);</code></pre>
-<h1 id="input-and-output"><a href="#input-and-output"><span class="header-section-number">6</span> Input and Output</a></h1>
+<h1 id="input-and-output"><span class="header-section-number">6</span> Input and Output</h1>
 <p>Most programs using OSM data will need to read from OSM files and/or write to OSM files. Osmium supports several different OSM file formats and has many different ways of accessing the data in convenient ways.</p>
-<h2 id="file-formats"><a href="#file-formats"><span class="header-section-number">6.1</span> File Formats</a></h2>
+<h2 id="file-formats"><span class="header-section-number">6.1</span> File Formats</h2>
 <p>Osmium supports the following formats:</p>
 <dl>
 <dt><strong>XML</strong></dt>
@@ -363,35 +369,35 @@ buffer.set_full_callback(full);</code></pre>
 </dd>
 </dl>
 <p>See <a href="#output-formats">Output Formats</a> for more details about these formats.</p>
-<h2 id="compression"><a href="#compression"><span class="header-section-number">6.2</span> Compression</a></h2>
+<h2 id="compression"><span class="header-section-number">6.2</span> Compression</h2>
 <p>Osmium supports compression and decompression of XML and OPL files internally using the GZIP and BZIP2 formats. If you want to use compression you have to include the right header files and link to the <code>libz</code> and <code>libbz2</code> libraries, respectively.</p>
-<h2 id="headers"><a href="#headers"><span class="header-section-number">6.3</span> Headers</a></h2>
+<h2 id="headers"><span class="header-section-number">6.3</span> Headers</h2>
 <p>Whenever you want to use Osmium to access OSM files you need to include the right header files and link your program to the right libraries. If you want to support all the different formats you add</p>
-<pre><code>#include &lt;osmmium/io/any_input.hpp&gt;</code></pre>
+<pre><code>#include &lt;osmium/io/any_input.hpp&gt;</code></pre>
 <p>and/or</p>
-<pre><code>#include &lt;osmmium/io/any_output.hpp&gt;</code></pre>
+<pre><code>#include &lt;osmium/io/any_output.hpp&gt;</code></pre>
 <p>to your C++ files. These headers will pull in all the file formats and all the compression types for input and output, respectively. Usually this is what you want to use. But if you are sure you don't need all formats or if you don't have all the libraries needed for all the formats, you can pick and choose formats and compression types.</p>
 <p>If you only need some file formats, you can include any combinations of the following headers:</p>
-<pre><code>#include &lt;osmmium/io/pbf_input.hpp&gt;
-#include &lt;osmmium/io/xml_input.hpp&gt;
+<pre><code>#include &lt;osmium/io/pbf_input.hpp&gt;
+#include &lt;osmium/io/xml_input.hpp&gt;
 
-#include &lt;osmmium/io/pbf_output.hpp&gt;
-#include &lt;osmmium/io/opl_output.hpp&gt;
-#include &lt;osmmium/io/xml_output.hpp&gt;</code></pre>
+#include &lt;osmium/io/pbf_output.hpp&gt;
+#include &lt;osmium/io/opl_output.hpp&gt;
+#include &lt;osmium/io/xml_output.hpp&gt;</code></pre>
 <p>If you want compression support, you have to add the includes for the different compression algorithms:</p>
-<pre><code>#include &lt;osmmium/io/gzip_compression.hpp&gt;
-#include &lt;osmmium/io/bzip2_compression.hpp&gt;</code></pre>
+<pre><code>#include &lt;osmium/io/gzip_compression.hpp&gt;
+#include &lt;osmium/io/bzip2_compression.hpp&gt;</code></pre>
 <p>Or, if you want both anyway, you can just use the shortcut:</p>
-<pre><code>#include &lt;osmmium/io/any_compression.hpp&gt;</code></pre>
-<h2 id="output-formats"><a href="#output-formats"><span class="header-section-number">6.4</span> Output Formats</a></h2>
-<h3 id="xml"><a href="#xml"><span class="header-section-number">6.4.1</span> XML</a></h3>
+<pre><code>#include &lt;osmium/io/any_compression.hpp&gt;</code></pre>
+<h2 id="output-formats"><span class="header-section-number">6.4</span> Output Formats</h2>
+<h3 id="xml"><span class="header-section-number">6.4.1</span> XML</h3>
 <p>There are several different XML formats in use in the OSM project. The main formats are the one used for planet files, extracts, and API responses (suffix <code>.osm</code>), the format used for change files (suffix <code>.osc</code>) and the history format (suffixes <code>.osm</code> or <code>.osh</code>).</p>
 <p>Some variants are also used, such as the JOSM format which is similiar to the normal OSM format but has some additions. Support for the features of these formats varies.</p>
 <p>When reading, the OSM change format (<code>.osc</code>) is detected automatically. When writing, you have to set it using the format specifier <code>osc</code> or the format parameter <code>xml_change_format=true</code>.</p>
 <p>For read support you need the expat parser library. Link with:</p>
 <pre><code>-lexpat</code></pre>
 <p>For write support no special library is needed.</p>
-<h3 id="pbf"><a href="#pbf"><span class="header-section-number">6.4.2</span> PBF</a></h3>
+<h3 id="pbf"><span class="header-section-number">6.4.2</span> PBF</h3>
 <p>The <a href="http://wiki.openstreetmap.org/wiki/PBF_Format">PBF</a> file format is based on the <a href="http://code.google.com/p/protobuf/">Google Protocol Buffers library</a>. PBF files are very space efficient and faster to use than XML files. PBF files can contain normal OSM data or OSM history data, but there is no equivalent to the XML .osc format.</p>
 <p>The OSM PBF format is defined in <a href="https://github.com/scrosby/OSM-binary">libosmpbf</a>, you'll probably have to compile and install this yourself before using it in Osmium.</p>
 <p>To build with PBF support, several libraries are needed: libprotobuf-lite contains the Protocol Buffers library itself which also needs libpthreads, for compression libz is needed. Those are all standard libraries that should be available on most systems.</p>
@@ -403,7 +409,7 @@ buffer.set_full_callback(full);</code></pre>
 <p>Osmium supports reading and writing of nodes in <em>DenseNodes</em> and non-<em>DenseNodes</em> formats. Default is <em>DenseNodes</em>, as this is much more space-efficient. Add the format parameter <code>pbf_dense_nodes=false</code> to disable <em>DenseNodes</em>.</p>
 <p>Osmium usually will compress PBF blocks using zlib. To disable this, use the format parameter <code>pbf_compression=none</code>.</p>
 <p>Usually PBF files contain all the metadata for objects such as changeset id, username, etc. To save some space you can disable writing of metatdata with the format parameter <code>pbf_add_metadata=false</code>.</p>
-<h3 id="opl-object-per-line-format"><a href="#opl-object-per-line-format"><span class="header-section-number">6.4.3</span> OPL (&quot;Object Per Line&quot;) Format</a></h3>
+<h3 id="opl-object-per-line-format"><span class="header-section-number">6.4.3</span> OPL (&quot;Object Per Line&quot;) Format</h3>
 <p><em>This format is preliminary, it might change. Please send feedback if you use this format!</em></p>
 <p>This format was created to allow easy access to and manipulation of OSM data with typical UNIX command line tools such as <code>grep</code>, <code>sed</code>, and <code>awk</code>. This can make some ad-hoc OSM data manipulation easy to do, but is probably not as fast as some specialized tool. But it beats grepping in XML files...</p>
 <p>OPL files are only about half the size of OSM XML files, but when compressed they are about the same size.</p>
@@ -502,8 +508,8 @@ MEMBERS:
 <p>Create statistics on number of nodes in ways:</p>
 <pre><code>egrep &#39;^w&#39; data.osm.opl | cut -d&#39; &#39; -f9 | tr -dc &#39;n\n&#39; | \
     awk &#39;{a[length]++} END {for(i=1;i&lt;=2000;++i) { print i, a[i] ? a[i] : 0 } }&#39;</code></pre>
-<h2 id="reading-and-writing-osm-files-with-osmium"><a href="#reading-and-writing-osm-files-with-osmium"><span class="header-section-number">6.5</span> Reading and Writing OSM Files with Osmium</a></h2>
-<h3 id="the-osmiumiofile-class"><a href="#the-osmiumiofile-class"><span class="header-section-number">6.5.1</span> The osmium::io::File class</a></h3>
+<h2 id="reading-and-writing-osm-files-with-osmium"><span class="header-section-number">6.5</span> Reading and Writing OSM Files with Osmium</h2>
+<h3 id="the-osmiumiofile-class"><span class="header-section-number">6.5.1</span> The osmium::io::File class</h3>
 <p>Before reading from or writing to an OSM file, you have to instantiate an object of class osmium::io::File. It encapsulates the file name as well as any information about the format of the file. In the simplest case the File class can derive the file format from the file name:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::File input_file(<span class="st">&quot;planet.osm.pbf&quot;</span>) <span class="co">// PBF format</span>
 osmium::io::File input_file(<span class="st">&quot;planet.osm.bz2&quot;</span>) <span class="co">// XML with bzip2 compression</span>
@@ -561,14 +567,14 @@ osmium::io::File output_file(<span class="st">&quot;&quot;</span>, <span class="
 <p>It is also possible to change the format after creating a File object using the accessor functions:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::File input_file(<span class="st">&quot;some_file.osm&quot;</span>);
 input_file.format(osmium::io::file_format_pbf);</code></pre>
-<h3 id="reading-a-file"><a href="#reading-a-file"><span class="header-section-number">6.5.2</span> Reading a File</a></h3>
+<h3 id="reading-a-file"><span class="header-section-number">6.5.2</span> Reading a File</h3>
 <p>After you have a File object you can instantiate a Reader object to open the file for reading:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::File input_file(<span class="st">&quot;input.osm.pbf&quot;</span>);
 osmium::io::Reader reader(input_file);</code></pre>
 <p>As a shortcut you can just give a file name to the Reader if you are relying on the automatic file format detection and don't want to do any special format handling:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::Reader reader(<span class="st">&quot;input.osm.pbf&quot;</span>);</code></pre>
 <p>Optionally you can add a second argument to the Reader constructor giving the types of OSM entities you are interested in. Sometimes you only need, say, the ways from the file, but not the nodes and relations. If you tell the Reader about it, it might be able to read the file more efficiently by skipping those parts you are not interested in:</p>
-<pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::Reader reader(<span class="st">&quot;input.osm.pbf&quot;</span>, osmium::osm_entity::flags::way);</code></pre>
+<pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::Reader reader(<span class="st">&quot;input.osm.pbf&quot;</span>, osmium::osm_entity_bits::way);</code></pre>
 <p>You can set the following flags:</p>
 <table>
 <thead>
@@ -579,27 +585,27 @@ osmium::io::Reader reader(input_file);</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>osmium::osm_entity::flags::nothing</code></td>
+<td align="left"><code>osmium::osm_entity_bits::nothing</code></td>
 <td align="left">Do not ready any entities at all (useful if you are only interested in the file header)</td>
 </tr>
 <tr class="even">
-<td align="left"><code>osmium::osm_entity::flags::node</code></td>
+<td align="left"><code>osmium::osm_entity_bits::node</code></td>
 <td align="left">Read nodes</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>osmium::osm_entity::flags::way</code></td>
+<td align="left"><code>osmium::osm_entity_bits::way</code></td>
 <td align="left">Read ways</td>
 </tr>
 <tr class="even">
-<td align="left"><code>osmium::osm_entity::flags::relation</code></td>
+<td align="left"><code>osmium::osm_entity_bits::relation</code></td>
 <td align="left">Read relations</td>
 </tr>
 <tr class="odd">
-<td align="left"><code>osmium::osm_entity::flags::changeset</code></td>
+<td align="left"><code>osmium::osm_entity_bits::changeset</code></td>
 <td align="left">Read changesets</td>
 </tr>
 <tr class="even">
-<td align="left"><code>osmium::osm_entity::flags::all</code></td>
+<td align="left"><code>osmium::osm_entity_bits::all</code></td>
 <td align="left">Read all of the above</td>
 </tr>
 </tbody>
@@ -615,7 +621,7 @@ osmium::io::Reader reader(input_file);</code></pre>
 <p>You can close the file at any time. It will also be automatically closed when the Reader object goes out of scope.</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">reader.close();</code></pre>
 <p>In most cases you do not want to work with the buffers, but with the OSM entities within them. See the <a href="#iterators">Iterators</a> chapter and the <a href="#visitors-and-handlers">Visitors and Handlers</a> chapter for more convenient methods of working with open files.</p>
-<h3 id="the-header"><a href="#the-header"><span class="header-section-number">6.5.3</span> The Header</a></h3>
+<h3 id="the-header"><span class="header-section-number">6.5.3</span> The Header</h3>
 <table>
 <thead>
 <tr class="header">
@@ -640,49 +646,84 @@ osmium::io::Reader reader(input_file);</code></pre>
 </tr>
 </tbody>
 </table>
-<h1 id="iterators"><a href="#iterators"><span class="header-section-number">7</span> Iterators</a></h1>
+<h1 id="iterators"><span class="header-section-number">7</span> Iterators</h1>
 <p>Every C++ programmer is familiar with iterators and their flexibility. There is no reason we couldn't take advantage of that and of the many algorithms supplied by the STL. So libosmium supports several different kinds of iterators to access OSM data. You can iterate over all OSM objects in a buffer, or over all objects from a data source (usually a file), or over a bunch of pointers to OSM objects, and there are output iterators to write to files, too. All these different iterators can be used consistently and easily from your code without having to know much about what's underneath. And because they work just like STL iterators do, you can use all the algorithms from the STL.</p>
 <p>Some of these iterators will keep track of underlying buffers and make sure the buffers and the data in them stay around as long as there is an iterator pointing to it. This adds some overhead but makes using the data much easier.</p>
-<h2 id="accessing-data-in-buffers"><a href="#accessing-data-in-buffers"><span class="header-section-number">7.1</span> Accessing Data in Buffers</a></h2>
+<h2 id="accessing-data-in-buffers"><span class="header-section-number">7.1</span> Accessing Data in Buffers</h2>
 <p>Buffers containing OSM entities support the usual <code>begin()</code>, <code>end()</code>, <code>cbegin()</code>, and <code>cend()</code> functions:</p>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::memory::Buffer buffer = ...;
 
-<span class="dt">auto</span> it = buffer.begin();
-<span class="dt">auto</span> end = buffer.end();
+<span class="kw">auto</span> it = buffer.begin();
+<span class="kw">auto</span> end = buffer.end();
 
 <span class="kw">for</span> (; it != end; ++it) {
     std::cout &lt;&lt; it-&gt;type() &lt;&lt; <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>;
 }</code></pre>
 <p>Of course you can also use the C++11 <code>for</code> loop:</p>
-<pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">for</span> (<span class="dt">auto</span> item : buffer) {
+<pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">for</span> (<span class="kw">auto</span>&amp; item : buffer) {
     ...
 }</code></pre>
-<h2 id="accessing-data-from-files"><a href="#accessing-data-from-files"><span class="header-section-number">7.2</span> Accessing Data from Files</a></h2>
+<h2 id="accessing-data-from-files"><span class="header-section-number">7.2</span> Accessing Data from Files</h2>
 <pre class="sourceCode cpp"><code class="sourceCode cpp">osmium::io::Reader reader(<span class="st">&quot;input.osm&quot;</span>);
 osmium::io::InputIterator&lt;osmium::io::Reader&gt; in(reader);
 osmium::io::InputIterator&lt;osmium::io::Reader&gt; end;</code></pre>
-<h1 id="visitors-and-handlers"><a href="#visitors-and-handlers"><span class="header-section-number">8</span> Visitors and Handlers</a></h1>
-<h1 id="indexes"><a href="#indexes"><span class="header-section-number">9</span> Indexes</a></h1>
+<h1 id="visitors-and-handlers"><span class="header-section-number">8</span> Visitors and Handlers</h1>
+<h1 id="indexes"><span class="header-section-number">9</span> Indexes</h1>
 <p>Osmium is built around the idea that a lot of the things you want to do with OSM data can be done one OSM object at the time without having all (or large parts of) the OSM data in memory or in some kind of database. But there are many things you can not do this way. You do need some kind of storage to hold the data and some indexes to access it efficiently. Osmium provides several class templates that implement several different types of indexes.</p>
-<h2 id="index-types"><a href="#index-types"><span class="header-section-number">9.1</span> Index Types</a></h2>
+<h2 id="index-types"><span class="header-section-number">9.1</span> Index Types</h2>
 <p>Osmium provides indexes modelled after the STL map and multimap classes, respectively. These classes are to be found in the osmium::index::map and osmium::index::multimap namespaces.</p>
-<h3 id="map-index"><a href="#map-index"><span class="header-section-number">9.1.1</span> Map Index</a></h3>
+<h3 id="map-index"><span class="header-section-number">9.1.1</span> Map Index</h3>
 <p>Often we need some small, fixed amount of data stored for each OSM object. Read and write access is by ID only. Typical use cases include...</p>
 <ul>
 <li>storage of node locations where for each node ID we store the longitude and latitude of that node.</li>
 <li>storing the offset of an OSM object in a buffer.</li>
 <li>a lookup table that gives you for each node ID all IDs of the way (or ways) that include this node.</li>
 </ul>
-<h3 id="storage-types"><a href="#storage-types"><span class="header-section-number">9.1.2</span> Storage types</a></h3>
+<h3 id="storage-types"><span class="header-section-number">9.1.2</span> Storage types</h3>
 <p>There are different strategies of storing this data efficiently and there are several sub-classes of the Map and Multimap classes that use different strategies. It is important that you understand the differences and use the class thats most appropriate for your case.</p>
 <p>The differences can be understood along different axes:</p>
 <p>First, the question is whether the ID space is dense or not. If you are using the full planet data or large portions (such as entire continents) thereof, your ID space is dense, ie most of the possible IDs are actually present in the index. If you are only using small extracts (even with whole countries in them), you ID space is sparse, ie most of the possible IDs are not present in the index. For dense indexes data is often best stored in a kind of array indexed by the ID. For sparse indexes there are several other possibilities.</p>
 <p>The second question is whether you have enought RAM to hold all the data in the index. Of course it is more efficient to keep the index in RAM, but if you don't have enough you need to use a disk-based index.</p>
 <pre><code>handler-example.cpp
     </code></pre>
-<h4 id="list-of-map-index-classes"><a href="#list-of-map-index-classes"><span class="header-section-number">9.1.2.1</span> List of map index classes</a></h4>
+<h4 id="list-of-map-index-classes"><span class="header-section-number">9.1.2.1</span> List of map index classes</h4>
 <p>see also: table in spreadsheet dummy based on vector: with stl vector, with mmap_anon, with mmap_file other: stl map, google sparsetable</p>
-<h4 id="list-of-multimap-index-classes"><a href="#list-of-multimap-index-classes"><span class="header-section-number">9.1.2.2</span> List of multimap index classes</a></h4>
+<h4 id="list-of-multimap-index-classes"><span class="header-section-number">9.1.2.2</span> List of multimap index classes</h4>
 <p>based on vector: with stl vector, with mmap_anon, with mmap_file other: stl multimap, hybrid</p>
+<h1 id="exceptions"><span class="header-section-number">10</span> Exceptions</h1>
+<p>Libosmium uses various C++ standard exceptions and some Osmium-specific exceptions to tell you about problems. All Osmium-specific exceptions are in the <code>osmium</code> namespace, they are all derived from one of the standard C++ exceptions, usually <code>std::runtime_error</code> or <code>std::system_error</code>.</p>
+<h2 id="list-of-osmium-exceptions"><span class="header-section-number">10.1</span> List of Osmium Exceptions</h2>
+<dl>
+<dt><code>osmium::io_error</code></dt>
+<dd><p>Some kind of input/output error. Derived classes describe the error in more detail.</p>
+</dd>
+<dt><code>osmium::xml_error</code> (derived from <code>io_error</code>)</dt>
+<dd><p>Some kind of XML parser error.</p>
+</dd>
+<dt><code>osmium::format_version_error</code> (derived from <code>io_error</code>)</dt>
+<dd><p>The OSM file format version was not understood. Osmium currently can only read version 0.6 files.</p>
+</dd>
+<dt><code>osmium::geometry_error</code></dt>
+<dd><p>Some kind of geometry error.</p>
+</dd>
+<dt><code>osmium::projection_error</code></dt>
+<dd><p>Thrown when a projection from one coordinate system into another fails in some way. Either the projection can't be initialized because of invalid parameters or the projection can't be calculated because the coordinates can't be transformed into the target coordinate system.</p>
+</dd>
+<dt><code>osmium::not_found</code></dt>
+<dd><p>This exception is thrown when a key is not found in an index.</p>
+</dd>
+</dl>
+<p><code>osmium::invalid_location</code></p>
+<dl>
+<dt><code>osmium::unknown_type</code></dt>
+<dd>Thrown by visitors when they encounter an unknown (or in this context unexpected) item type in a buffer. This should not happen in usual circumstances.
+</dd>
+</dl>
+<h2 id="standard-exceptions-thrown-by-osmium"><span class="header-section-number">10.2</span> Standard Exceptions thrown by Osmium</h2>
+<dl>
+<dt><code>std::invalid_argument</code></dt>
+<dd>Thrown by some Osmium functions.
+</dd>
+</dl>
 </body>
 </html>
