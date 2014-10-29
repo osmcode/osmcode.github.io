@@ -3,20 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>{{ page.title }} - osmcode</title>
-        <!--<link rel="stylesheet" href="/css/syntax.css">-->
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
-        <div class="osmcode">
-            <div class="header">
-                <a href="/">o&middot;s&middot;m&middot;c&middot;o&middot;d&middot;e</a>
-            </div>
+        <div id="menu">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/projects.html">PROJECTS &#x25be;</a>
+                    <ul>
+                        <li><a href="/libosmium/"><img src="/img/logo-libosmium-16x16.png" width="16" height="16" alt=""/> Osmium Library</a>
+                        <li><a href="/osmium/"><img src="/img/logo-osmium-16x16.png" width="16" height="16" alt=""/> Osmium Tool</a>
+                        <li><a href="/node-osmium/"><img src="/img/logo-node-osmium-16x16.png" width="16" height="16" alt=""/> Node Osmium</a>
+                        <li><a href="/pyosmium/"><img src="/img/logo-pyosmium-16x16.png" width="16" height="16" alt=""/> PyOsmium</a>
+                        <li><a href="/osmium-contrib/"><img src="/img/logo-osmium-contrib-16x16.png" width="16" height="16" alt=""/> Osmium Contrib</a>
+                        <li><a href="/osm-testdata/"><img src="/img/logo-osm-testdata-16x16.png" width="16" height="16" alt=""/> OSM Test Data</a>
+                    </ul>
+                </li>
+                <li><a href="/docs.html">DOCUMENTATION</a></li>
+<!--                <li><a href="/news.html">NEWS</a></li>-->
+                <li><a href="/contact.html">CONTACT</a></li>
+                <li><a class="github" href="https://github.com/osmcode"><img src="/img/github.png" width="16" height="16"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</a></li>
+            </ul>
         </div>
-        <div class="content">
+        <div id="content">
 {{ content }}
-        </div>
-        <div class="footer">
-            info@osmcode.org - <a href="https://github.com/osmcode/">github.com/osmcode</a>
         </div>
     </body>
 </html>

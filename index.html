@@ -1,45 +1,66 @@
 ---
-layout: home
+layout: default
 title: Home
 ---
-
-<div id="home">
-    <div class="boxes">
-        <div class="box ">
-            <a href="/libosmium/"><img src="/img/logo-libosmium.png" alt=""/></a>
-            <div class="innerbox">
-                <h2><a href="/libosmium/">Osmium Library</a></h2>
-                A fast and flexible C++ library for working with OSM data.
-            </div>
-        </div>
-        <div class="box onhome">
-            <a href="/osmium/"><img src="/img/logo-osmium.png" alt=""/></a>
-            <div class="innerbox">
-                <h2><a href="/osmium/">Osmium Tool</a></h2>
-                A multipurpose command line tool based on the
-                Osmium Library.
-            </div>
-        </div>
-        <div class="box">
-            <a href="/osmium-contrib/"><img src="/img/logo-osmium-contrib.png" alt=""/></a>
-            <div class="innerbox">
-                <h2><a href="/osmium-contrib/">Osmium Contrib</a></h2>
-                Various programs showing what you can do with the Osmium Library.
-            </div>
-        </div>
-        <div class="box">
-            <a href="/node-osmium/"><img src="/img/logo-node-osmium.png" alt=""/></a>
-            <div class="innerbox">
-                <h2><a href="/node-osmium/">Node-Osmium</a></h2>
-                Node.js bindings to Osmium Library.
-            </div>
-        </div>
-        <div class="box">
-            <a href="/osm-testdata/"><img src="/img/logo-test.png" alt=""/></a>
-            <div class="innerbox">
-                <h2><a href="/osm-testdata/">OSM Test Data</a></h2>
-                OpenStreetMap data to help test your software.
-            </div>
-        </div>
-    </div>
+<div id="osmcode">
+    <img src="/img/logo-osmcode-400x400.png" width="100" height="100"/>
+    <div class="title">Welcome to osmcode.org</div>
+    <div class="subtitle">Open Source Software for Working with OpenStreetMap Data</div>
 </div>
+
+<p>The <a href="https://www.openstreetmap.org/" class="extlink">OpenStreetMap
+project</a> has collected a huge amount of data about our planet. All this data
+is freely available to everybody. The tools on this site help you work with
+that data in many different ways. They are intended for developers and
+cartographers who want to use OSM data in their own projects.</p>
+
+<div class="leftcolumn">
+    <h1>Libraries</h1>
+
+    <div class="desc">
+        <img src="/img/logo-libosmium-32x32.png" width="32" height="32" alt=""/>
+        <h3><a href="/libosmium/">Osmium Library</a></h3>
+        A fast and flexible C++ library for working with OSM data. It
+        contains building blocks for many typical OSM data handling tasks,
+        such as reading and writing OSM files, or creating geometries from
+        nodes, ways, and multipolygon relations, and much more. It
+        is the basis for most of the software on this site.
+    </div>
+    <div class="desc">
+        <img src="/img/logo-node-osmium-32x32.png" width="32" height="32" alt=""/>
+        <h3><a href="/node-osmium/">Node Osmium</a></h3>
+        The Node.js bindings to Osmium Library bring its power to the
+        Javascript developer.
+    </div>
+    <div class="desc">
+        <img src="/img/logo-pyosmium-32x32.png" width="32" height="32" alt=""/>
+        <h3><a href="/pyosmium/">PyOsmium</a></h3>
+        With PyOsmium you can use the functionality of the Osmium Library
+        from Python.
+    </div>
+
+</div>
+
+<div class="rightcolumn">
+    <h1>Applications</h1>
+
+    <div class="desc">
+        <img src="/img/logo-osmium-32x32.png" width="32" height="32" alt=""/>
+        <h3><a href="/osmium/">Osmium Tool</a></h3>
+        A multipurpose command line tool based on the Osmium Library. It
+        can convert OSM files from one format to another, merge and apply
+        change files and more.
+    </div>
+    <div class="desc">
+        <img src="/img/logo-osmium-contrib-32x32.png" width="32" height="32" alt=""/>
+        <h3><a href="/osmium-contrib/">Osmium Contrib</a></h3>
+        Various programs showing what you can do with the Osmium Library.
+        These programs can be quite useful in their own right and they are
+        a great starting point for developers who want to explore Osmium.
+    </div>
+
+    <p>See the <a href="/projects.html">projects page</a> for a complete
+    list of projects on this site.</p>
+
+</div>
+

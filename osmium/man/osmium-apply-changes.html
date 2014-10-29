@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Jochen Topf jochen@topf.org" />
+  <title>OSMIUM-APPLY-CHANGES(1)</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">OSMIUM-APPLY-CHANGES(1)</h1>
+<h2 class="author">Jochen Topf <script type="text/javascript">
+<!--
+h='&#116;&#x6f;&#112;&#102;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#106;&#x6f;&#x63;&#104;&#x65;&#110;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#106;&#x6f;&#x63;&#104;&#x65;&#110;&#32;&#x61;&#116;&#32;&#116;&#x6f;&#112;&#102;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></h2>
+</div>
+<h1 id="name">NAME</h1>
+<p>osmium-apply-changes - Apply OSM change file(s) to OSM data file.</p>
+<h1 id="synopsis">SYNOPSIS</h1>
+<p><strong>osmium apply-changes</strong> [OPTIONS] <em>INPUT-FILE</em> <em>CHANGE-FILE...</em></p>
+<h1 id="description">DESCRIPTION</h1>
+<p>Merges the content of all change files given on the command line and applies those changes to the INPUT-FILE.</p>
+<p>Objects in change files are sorted by type, ID, and version, so it doesn't matter in what order the change files are given or in what order they contain the data.</p>
+<p><strong>Osmium apply</strong> keeps the contents of the change files in main memory, so the data has to fit in there!</p>
+<h1 id="options">OPTIONS</h1>
+<dl>
+<dt>--generator NAME</dt>
+<dd><p>The name and version of the program generating the output file. It will be added to the header of the output file. Default is &quot;<em>osmium/</em>&quot; and the version of osmium.</p>
+</dd>
+<dt>--input-format, -F FORMAT</dt>
+<dd><p>The format of the input files. Can be used to set the input format if it can't be autodetected from the file names. This will set the format for all input files, there is no way to set the format for some input files only. See <strong>osmium-file-formats</strong>(5) or the libosmium manual for details.</p>
+</dd>
+<dt>--output, -o FILE</dt>
+<dd><p>Name of the output file. Default is '-' (<em>stdout</em>).</p>
+</dd>
+<dt>--output-format, -f FORMAT</dt>
+<dd><p>The format of the output file. Can be used to set the output file format if it can't be autodetected from the output file name. See <strong>osmium-file-formats</strong>(5) or the libosmium manual for details.</p>
+</dd>
+<dt>--overwrite, -O</dt>
+<dd><p>Allow an existing output file to be overwritten. Normally <strong>osmium</strong> will refuse to write over an existing file.</p>
+</dd>
+<dt>--remove-deleted, -r</dt>
+<dd><p>Remove deleted objects from the output. If this is not set, deleted objects will be in the output with the visible flag set to false.</p>
+</dd>
+<dt>--simplify, -s</dt>
+<dd><p>Only write the last version of any object to the output.</p>
+</dd>
+<dt>--verbose, -v</dt>
+<dd><p>Set verbose mode. The program will output information about what it is doing to <em>stderr</em>.</p>
+</dd>
+</dl>
+<h1 id="diagnostics">DIAGNOSTICS</h1>
+<p><strong>osmium cat</strong> exits with code 0 if everything went alright, it exits with code 2 if there was a problem with the command line arguments, and with exit code 1 if some other error occurred.</p>
+<h1 id="examples">EXAMPLES</h1>
+<p>Apply change file 362.osc.gz to planet file:</p>
+<pre><code>osmium apply-changes -o new.osm.pbf planet.osm.pbf 362.osc.gz</code></pre>
+<h1 id="see-also">SEE ALSO</h1>
+<ul>
+<li><a href="http://osmcode.org/osmium">Osmium website</a></li>
+<li><a href="http://osmcode.org/libosmium/manual/libosmium-manual.html">Libosmium manual</a></li>
+</ul>
+</body>
+</html>

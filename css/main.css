@@ -5,7 +5,7 @@
 /*****************************************************************************/
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Droid Sans", sans-serif;
     background-color: #f0efe7;
     color: #202060;
     margin: 0;
@@ -16,105 +16,266 @@ a {
     color: #202060;
 }
 
+p {
+    margin-top: 8px;
+    text-align: justify;
+}
+
+h1,h2,h3,h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.1;
+}
+
+h1 {
+    border-bottom: 1px solid #202060;
+}
+
+h2 {
+    margin: 30px 0 5px 0;
+}
+
+h3 {
+    margin: 10px 0 4px 0;
+}
+
+
 /*****************************************************************************/
 /*
 /* Site
 /*
 /*****************************************************************************/
 
-.osmcode {
-    background-color: #202060;
-    margin: 0;
-    padding: 0;
-    color: #f0f0f0;
-    box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
-}
-
-.header {
+#content {
+    position: relative;
     margin: 0 auto;
-    padding: 2px 0;
-    max-width: 900px;
-    text-align: center;
-    color: #f0f0f0;
-    font-size: 120%;
+    max-width: 910px;
+    padding: 10px;
+    line-height: 1.4;
 }
 
-.header a {
+/*****************************************************************************/
+/*
+/* Menu
+/*
+/*****************************************************************************/
+
+#menu {
+    background-color: rgba(32, 32, 96, 0.5);
+    text-align: center;
+    font-size: 90%;
+}
+
+@media all and (min-width: 680px) and (min-device-width: 680px) {
+    #menu {
+        font-size: 100%;
+    }
+}
+
+#menu ul {
+    margin: 4px;
+    padding: 0 8px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+
+#menu ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#menu ul li {
+    float: left;
+}
+
+#menu ul li:hover > ul {
+    display: block;
+}
+
+#menu a {
+    color: #e0e0e0;
     text-decoration: none;
-    color: #f0f0f0;
-    text-shadow: 0 0 3px #ffffff;
+    text-shadow: 0 0 1px #a0a080;
+    padding: 4px 6px;
 }
 
-.large {
-    padding-top: 8px;
-    margin-bottom: 20px;
+@media all and (min-width: 800px) and (min-device-width: 800px) {
+    #menu a {
+        padding: 4px 20px;
+    }
 }
 
-.large a {
-    font-size: 200%;
+@media all and (min-width: 600px) and (min-device-width: 600px) {
+    #menu a {
+        padding: 4px 10px;
+        border-right: 1px solid #f0efe7;
+    }
 }
 
-.content {
-    margin: 0 auto;
-    max-width: 900px;
+#menu > ul > li:first-child > a {
+    border-left: 1px solid #f0efe7;
 }
 
-.footer {
-    text-align: center;
-    font-size: 80%;
+#menu > ul > li > a:hover {
+    color: #ffffff;
+}
+
+#menu ul ul {
+    display: none;
+    position: absolute;
+    margin: 3px 0 0 0px;
+    padding: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #8887a3;
+    box-shadow: 0 2px 1px 1px #f0efe7;
+    z-index: 1000;
+}
+
+#menu ul ul li {
+    float: none;
+    position: relative;
+    padding: 6px 0;
+    text-align: left;
+}
+
+#menu ul ul li a {
+    border-right: none;
+    color: #e0e0e0;
+    text-shadow: none;
+    padding: 0 10px;
+}
+
+#menu ul ul li a:hover {
+    color: #ffffff;
+}
+
+#menu img {
+    position: absolute;
+    top: 2px;
+}
+
+#menu ul ul li img {
+    position: relative;
+    top: 2px;
+}
+
+/*****************************************************************************/
+
+@media all and (min-width: 910px) and (min-device-width: 910px) {
+    div.leftcolumn {
+        position: absolute;
+        max-width: 420px;
+        float: left;
+    }
+
+    div.rightcolumn {
+        position: absolute;
+        max-width: 420px;
+        left: 480px;
+    }
+}
+
+/*****************************************************************************/
+
+div.impressum {
+    text-align: right;
+    font-size: 90%;
     border-top: 1px solid #c0c0c0;
-    margin: 10px auto 2px auto;
+    margin: 40px auto 2px auto;
     padding-top: 2px;
     max-width: 900px;
 }
 
 /*****************************************************************************/
 
-div.boxes {
-    min-height: 600px;
-    padding-left: 20px;
+div.desc {
+    margin: 30px 0 30px 40px;
 }
 
-div.boxes div.box {
-    position: relative;
-    float: left;
-    width: 360px;
-    margin: 40px 10px 10px 40px;
+div.desc img {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 4px;
 }
 
-div.box {
-    border: 1px solid #202060;
-    background-color: #ffffff;
-    margin: 40px 10px 10px 20px;
-    border-radius: 10px;
-    height: 140px;
-}
-
-div.box img {
-    position: relative;
-    top: -20px;
-    left: -20px;
-    width: 80px;
-    height: 80px;
-}
-
-div.box a {
-    color: #202060;
+div.desc a {
     text-decoration: none;
 }
 
-div.box a:hover {
+div.desc a:hover {
     text-decoration: underline;
 }
 
-div.innerbox {
-    position: relative;
-    top: -80px;
-    margin: 10px 10px 10px 80px;
+div.desc h1 {
+    margin: 0 0 0 40px;
+    padding: 6px 0 2px 0;
 }
 
-div.box h2 {
-    margin-top: 5px;
+div.desc p {
+    margin: 1px 0 0 40px;
+}
+
+/*****************************************************************************/
+
+#osmcode {
+    margin: 0 auto;
+    max-width: 900px;
+    padding-top: 20px;
+}
+
+#osmcode img {
+    position: absolute;
+    margin-left: 80px;
+}
+
+#osmcode div.title {
+    position: relative;
+    margin-left: 200px;
+    height: 100px;
+    padding-top: 10px;
+    font-size: 32px;
+}
+
+@media all and (min-width: 700px) and (min-device-width: 700px) {
+    #osmcode div.title {
+        font-size: 36px;
+    }
+}
+
+@media all and (min-width: 800px) and (min-device-width: 800px) {
+    #osmcode div.title {
+        font-size: 44px;
+    }
+}
+
+#osmcode div.subtitle {
+    position: relative;
+    margin-left: 205px;
+    top: -38px;
+}
+
+/*****************************************************************************/
+
+div.example-img {
+    background-color: #ffffff;
+    width: 400px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 #000000;
+}
+
+div.example-img img {
+    border: 1px solid #202020;
+    border-radius: 4px;
+}
+
+div.example-img div {
+    font-size: 90%;
+    line-height: 2ex;
 }
 
 /*****************************************************************************/

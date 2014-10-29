@@ -13,7 +13,7 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.0 r9654"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="osmcode-logos.svg"
    inkscape:export-filename="/home/sqrt/sw/osmcode/logo/osmcode-logos.png"
    inkscape:export-xdpi="53.990002"
@@ -24,26 +24,44 @@
        effect="spiro"
        id="path-effect4133"
        is_visible="true" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4033">
+      <g
+         id="g4035"
+         transform="matrix(-0.10398261,-0.32484293,0.48747917,-0.02959405,486.19352,862.91729)">
+        <path
+           d="M 100,0 C 100,55.228475 55.228475,100 0,100 -55.228475,100 -100,55.228475 -100,0 c 0,-55.228475 44.771525,-100 100,-100 55.228475,0 100,44.771525 100,100 z"
+           sodipodi:ry="100"
+           sodipodi:rx="100"
+           sodipodi:cy="0"
+           sodipodi:cx="0"
+           id="path4037"
+           style="fill:#202060;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           sodipodi:type="arc" />
+      </g>
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="127.85714"
-     inkscape:cy="542.97753"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="522.25348"
+     inkscape:cy="179.61579"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1005"
+     inkscape:window-height="994"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
-     inkscape:object-nodes="true" />
+     inkscape:object-nodes="true"
+     inkscape:snap-global="true" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -60,36 +78,33 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <g
-       id="osmium"
-       transform="translate(200,150)">
-      <path
-         d="M 100,0 A 100,100 0 1 1 -100,0 100,100 0 1 1 100,0 z"
-         sodipodi:ry="100"
-         sodipodi:rx="100"
-         sodipodi:cy="0"
-         sodipodi:cx="0"
-         id="path2991"
-         style="fill:#202060;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         sodipodi:type="arc" />
-      <flowRoot
-         style="font-size:130px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:FrobisherExtrabold;-inkscape-font-specification:FrobisherExtrabold"
-         id="flowRoot3815"
-         xml:space="preserve"
-         transform="translate(-20,-60)"><flowRegion
-           id="flowRegion3817"><rect
-             style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:FrobisherExtrabold;-inkscape-font-specification:FrobisherExtrabold"
-             y="0"
-             x="0"
-             height="200"
-             width="100"
-             id="rect3819" /></flowRegion><flowPara
-           id="flowPara3821">S</flowPara></flowRoot>    </g>
-    <g
+    <path
+       sodipodi:type="arc"
+       style="fill:#202060;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2991"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="100"
+       sodipodi:ry="100"
+       d="M 100,0 A 100,100 0 1 1 -100,0 100,100 0 1 1 100,0 z"
+       transform="translate(200,150)" />
+    <flowRoot
+       transform="translate(180,90)"
+       xml:space="preserve"
+       id="flowRoot3815"
+       style="font-size:130px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:FrobisherExtrabold;-inkscape-font-specification:FrobisherExtrabold"><flowRegion
+         id="flowRegion3817"><rect
+           id="rect3819"
+           width="100"
+           height="200"
+           x="0"
+           y="0"
+           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:FrobisherExtrabold;-inkscape-font-specification:FrobisherExtrabold" /></flowRegion><flowPara
+         id="flowPara3821">S</flowPara></flowRoot>    <g
        id="osmstats"
        transform="translate(500,150)">
       <path
-         d="M 100,0 A 100,100 0 1 1 -100,0 100,100 0 1 1 100,0 z"
+         d="M 100,0 C 100,55.228475 55.228475,100 0,100 -55.228475,100 -100,55.228475 -100,0 c 0,-55.228475 44.771525,-100 100,-100 55.228475,0 100,44.771525 100,100 z"
          sodipodi:ry="100"
          sodipodi:rx="100"
          sodipodi:cy="0"
@@ -130,39 +145,37 @@
            y="0" />
       </g>
     </g>
-    <g
-       id="node-osmium"
-       transform="translate(200,400)">
-      <path
-         d="M 100,0 A 100,100 0 1 1 -100,0 100,100 0 1 1 100,0 z"
-         sodipodi:ry="100"
-         sodipodi:rx="100"
-         sodipodi:cy="0"
-         sodipodi:cx="0"
-         id="path2991-9"
-         style="fill:#202060;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         sodipodi:type="arc" />
-      <path
-         d="m 60,0 -30,51.961524 -60,0 L -60,0 l 30,-51.961524 60,0 z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="true"
-         sodipodi:arg2="0"
-         sodipodi:arg1="0"
-         sodipodi:r2="60"
-         sodipodi:r1="60"
-         sodipodi:cy="0"
-         sodipodi:cx="0"
-         sodipodi:sides="6"
-         id="path3813"
-         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         sodipodi:type="star" />
-    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#202060;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2991-9"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:rx="100"
+       sodipodi:ry="100"
+       d="M 100,0 A 100,100 0 1 1 -100,0 100,100 0 1 1 100,0 z"
+       transform="translate(200,400)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path3813"
+       sodipodi:sides="6"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:r1="60"
+       sodipodi:r2="60"
+       sodipodi:arg1="0"
+       sodipodi:arg2="0"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 60,0 -30,51.961524 -60,0 L -60,0 l 30,-51.961524 60,0 z"
+       transform="translate(200,400)" />
     <g
        id="contrib"
        transform="translate(200,650)">
       <path
-         d="M 100,0 A 100,100 0 1 1 -100,0 100,100 0 1 1 100,0 z"
+         d="M 100,0 C 100,55.228475 55.228475,100 0,100 -55.228475,100 -100,55.228475 -100,0 c 0,-55.228475 44.771525,-100 100,-100 55.228475,0 100,44.771525 100,100 z"
          sodipodi:ry="100"
          sodipodi:rx="100"
          sodipodi:cy="0"
@@ -223,7 +236,7 @@
        id="osmcoastline"
        transform="translate(500,650)">
       <path
-         d="M 100,0 A 100,100 0 1 1 -100,0 100,100 0 1 1 100,0 z"
+         d="M 100,0 C 100,55.228475 55.228475,100 0,100 -55.228475,100 -100,55.228475 -100,0 c 0,-55.228475 44.771525,-100 100,-100 55.228475,0 100,44.771525 100,100 z"
          sodipodi:ry="100"
          sodipodi:rx="100"
          sodipodi:cy="0"
@@ -267,5 +280,73 @@
            id="tspan3029"
            sodipodi:role="line">#</tspan></text>
     </g>
-  </g>
+    <g
+       id="osmcode"
+       transform="translate(200,900)">
+      <path
+         d="M 100,0 C 100,55.228475 55.228475,100 0,100 -55.228475,100 -100,55.228475 -100,0 c 0,-55.228475 44.771525,-100 100,-100 55.228475,0 100,44.771525 100,100 z"
+         sodipodi:ry="100"
+         sodipodi:rx="100"
+         sodipodi:cy="0"
+         sodipodi:cx="0"
+         id="path2991-9-0-35"
+         style="fill:#202060;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:85.00000238%;letter-spacing:-1.41000009px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Impact;-inkscape-font-specification:Impact Bold"
+       x="502.3259"
+       y="899.03046"
+       id="text3067-0"
+       sodipodi:linespacing="85.000002%"><tspan
+         sodipodi:role="line"
+         x="502.3259"
+         y="899.03046"
+         id="tspan3071-7" /></text>
+    <g
+       id="g4039"
+       inkscape:export-xdpi="179.88757"
+       inkscape:export-ydpi="179.88757">
+      <g
+         transform="translate(500,900)"
+         id="extra">
+        <path
+           sodipodi:type="arc"
+           style="fill:#202060;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="path2991-9-0-35-8"
+           sodipodi:cx="0"
+           sodipodi:cy="0"
+           sodipodi:rx="100"
+           sodipodi:ry="100"
+           d="M 100,0 C 100,55.228475 55.228475,100 0,100 -55.228475,100 -100,55.228475 -100,0 c 0,-55.228475 44.771525,-100 100,-100 55.228475,0 100,44.771525 100,100 z" />
+      </g>
+      <path
+         clip-path="url(#clipPath4033)"
+         sodipodi:open="true"
+         transform="matrix(-0.18332274,2.0122657,-3.019729,-0.64412868,3194.9067,477.47924)"
+         sodipodi:end="9.4827704"
+         sodipodi:start="5.8133806"
+         d="M 515.12066,827.55221 A 54.598072,35.814102 0 1 1 411.93164,841.6899"
+         sodipodi:ry="35.814102"
+         sodipodi:rx="54.598072"
+         sodipodi:cy="843.76569"
+         sodipodi:cx="466.43793"
+         id="path3879"
+         style="fill:none;stroke:#ffffff;stroke-width:9.64072037;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+    </g>
+    <flowRoot
+       transform="matrix(1.7472017,0.52759226,-0.55481321,1.6614783,152.52571,772.86199)"
+       xml:space="preserve"
+       id="flowRoot3815-5"
+       style="font-size:130px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:FrobisherExtrabold;-inkscape-font-specification:FrobisherExtrabold"><flowRegion
+         id="flowRegion3817-6"><rect
+           id="rect3819-2"
+           width="100"
+           height="200"
+           x="0"
+           y="0"
+           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:FrobisherExtrabold;-inkscape-font-specification:FrobisherExtrabold" /></flowRegion><flowPara
+         id="flowPara3821-3">S</flowPara></flowRoot>  </g>
 </svg>
