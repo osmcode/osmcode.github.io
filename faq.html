@@ -1,0 +1,112 @@
+---
+layout: default
+title: Frequently Asked Questions (FAQ)
+---
+
+<p>&uarr; <a href="index.html">Documentation</a></p>
+
+<div class="desc">
+    <img src="/img/faq-64x64.png" width="64" height="64" alt=""/>
+    <h1>Frequently Asked Questions</h1>
+    <p>...and their answers</p>
+</div>
+
+<p><b>Sections:</b>
+<a href="#building">Building</a> &middot;
+<a href="#features">Features</a> &middot;
+<a href="#upgrading">Upgrading</a> &middot;
+<a href="#misc">Miscellaneous</a>
+</p>
+
+<h2 id="building">▶ Building</h2>
+
+<h3>Which operating systems are supported?</h3>
+
+<p>Libosmium and other related software on this site is developed on Linux
+and works well there. With tiny exceptions everything also works on Mac OS/X
+out of the box. Most software also works on Windows. A CMake configuration
+is supplied for most projects which works on all operating systems.</p>
+
+<h3>I can't find out how to build the Osmium Library?</h3>
+
+<p>The C++ Osmium Library is a header-only library. You dont' have to build
+it. Just install the header files and include them as needed from your code.</p>
+
+<h3>Which build system is used?</h3>
+
+<p>Originally simple hand-written Makefiles were used. To better support
+Windows we are currently in the process of switching to <a class="ext"
+href="http://www.cmake.org/">CMake</a>. In some cases both the Makefile and
+the CMake configuration is available.</p>
+
+
+<h2 id="features">▶ Features</h2>
+
+<h3>Can Osmium work with OSM history files? Change files? Changesets?</h3>
+
+<p>Yes. They are all supported. See the <a
+href="/libosmium/manual/libosmium-manual.html">manual</a> for details.</p>
+
+<h3>Can Osmium do Coordinate Transformations?</h3>
+
+<p>Yes. Osmium has builtin support for the OSM native format WGS84 (EPSG 4326)
+and Web Mercator (EPSG 3857). It can also use the <a
+href="http://proj.osgeo.org">PROJ.4</a> library to transform to about any
+coordinate reference system out there.</p>
+
+
+<h2 id="upgrading">▶ Upgrading</h2>
+
+<h3>What is the difference between "old" and "new" Osmium?</h3>
+
+<p>The "old" Osmium was developed from 2010 to 2013. With the experience
+gained and with the new possibilities of C++11 we started on the "new"
+Osmium in 2013, a more or less complete rewrite of the C++ Osmium Library.
+Today the "new" Osmium Library has all the functionality of the old one plus
+a lot more.</p>
+
+<p>The old Osmium is still available from <a
+href="https://github.com/joto/osmium">github.com/joto/osmium</a>, but it is in
+maintainance mode, ie no new functionality will be added.</p>
+
+<p>Unless you don't have a C++11 capable compiler, we recommend using
+the "new" osmium available from this web site.</p>
+
+
+<h3>Where is "osmjs"?</h3>
+
+<p>The "old" Osmium had a command line program called "osmjs" that allowed you
+to use the functionality of the Osmium C++ library from Javascript. This has
+been superseeded by the <a href="/node-osmium/">Node Osmium</a> NodeJS module.
+The NodeJS module allows you to use thousands of existing NodeJS modules out
+there in your program making this approach much more flexible.</p>
+
+<h2 id="misc">▶ Miscellaneous</h2>
+
+<h3>Wait, I am confused! Is Osmium a library or a program or what?</h3>
+
+<p>The core is a <a class="ext"
+href="http://en.wikipedia.org/wiki/Header-only">C++ header-only library</a>
+called "<a href="/libosmium/">Osmium Library</a>" or "libosmium", but sometimes
+just called "Osmium". Built on top of that are many programs with their own
+names, one is the command line multipurpose "<a href="/osmium/">Osmium
+Tool</a>" or short "Osmium". In addition there are bindings of the C++ library
+for Javascript ("<a href="/node-osmium/">Node Osmium</a>") and Python ("<a
+href="/pyosmium/">PyOsmium</a>").</p>
+
+<p>The <a class="ext" href="https://github.com/joto/osmium">old version</a> of
+the Osmium Library was also just called "Osmium".</p>
+
+<h3>I don't want to program in C++. Can I use Osmium from other languages?</h3>
+
+<p>Yes. There is the <a href="/node-osmium/">Node Osmium</a> NodeJS module for
+Javascript developers (written by Dane Springmeyer and Jochen Topf) and the
+<a href="/pyosmium/">PyOsmium</a> Python module (written by Sarah Hoffmann).
+Not all functionality available from C++ is available through those
+modules and you'll take a performance hit, but they are much easier to use
+for the average programmer.</p>
+
+<p>If you are interested in making Osmium available in other languages, come
+<a href="/contact.html">talk to us</a>.</p>
+
+
