@@ -258,6 +258,26 @@ div.desc p {
 
 /*****************************************************************************/
 
+table.build-status {
+    border-collapse: collapse;
+}
+
+table.build-status tr > th {
+    border-bottom: 1px solid #202060;
+}
+
+table.build-status tr th {
+    text-align: left;
+    vertical-align: top;
+    padding: 2px 10px 2px 10px;
+}
+
+table.build-status tr td {
+    padding: 2px 10px 2px 10px;
+}
+
+/*****************************************************************************/
+
 div.example-img {
     background-color: #ffffff;
     width: 400px;
