@@ -111,10 +111,9 @@ h3 {
         padding: 4px 10px;
         border-right: 1px solid #f0efe7;
     }
-}
-
-#menu > ul > li:first-child > a {
-    border-left: 1px solid #f0efe7;
+    #menu > ul > li:first-child > a {
+        border-left: 1px solid #f0efe7;
+    }
 }
 
 #menu > ul > li > a:hover {
@@ -159,6 +158,16 @@ h3 {
 #menu ul ul li img {
     position: relative;
     top: 2px;
+}
+
+span#githublink {
+    display: none;
+}
+
+@media all and (min-width: 500px) and (min-device-width: 500px) {
+    span#githublink {
+        display: inline;
+    }
 }
 
 /*****************************************************************************/
@@ -227,15 +236,28 @@ div.desc p {
 
 #osmcode img {
     position: absolute;
-    margin-left: 80px;
+    margin-left: 10px;
+}
+
+@media all and (min-width: 600px) and (min-device-width: 600px) {
+    #osmcode img {
+        margin-left: 80px;
+    }
 }
 
 #osmcode div.title {
     position: relative;
-    margin-left: 200px;
+    margin-left: 130px;
     height: 100px;
     padding-top: 10px;
     font-size: 32px;
+    line-height: 1.5ex;
+}
+
+@media all and (min-width: 600px) and (min-device-width: 600px) {
+    #osmcode div.title {
+        margin-left: 200px;
+    }
 }
 
 @media all and (min-width: 700px) and (min-device-width: 700px) {
@@ -252,8 +274,14 @@ div.desc p {
 
 #osmcode div.subtitle {
     position: relative;
-    margin-left: 205px;
+    margin-left: 135px;
     top: -38px;
+}
+
+@media all and (min-width: 600px) and (min-device-width: 600px) {
+    #osmcode div.subtitle {
+        margin-left: 205px;
+    }
 }
 
 /*****************************************************************************/
@@ -280,12 +308,17 @@ table.build-status tr td {
 
 div.example-img {
     background-color: #ffffff;
-    width: 400px;
     margin-top: 20px;
-    padding: 10px 15px;
+    min-width: 320px;
+    padding: 10px 10px;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 0 8px 0 #000000;
+}
+
+@media all and (min-width: 600px) and (min-device-width: 600px) {
+    width: 400px;
+    padding: 10px 15px;
 }
 
 div.example-img img {
