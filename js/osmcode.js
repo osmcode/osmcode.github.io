@@ -7,6 +7,7 @@ function update_doc_refs(project) {
         links.each(function() {
             var l = $(this).find('a');
             l.attr('href', url + l.attr('href'));
+            l.attr('target', '_blank');
             l.text(l.text().replace('/', ''));
         });
         ul.append(links);
