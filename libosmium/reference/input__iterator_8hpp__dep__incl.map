@@ -1,9 +1,0 @@
-<map id="include/osmium/io/input_iterator.hpp" name="include/osmium/io/input_iterator.hpp">
-<area shape="rect" id="node2" href="$diff__visitor_8hpp.html" title="include/osmium/diff\l_visitor.hpp" alt="" coords="25,95,160,136"/>
-<area shape="rect" id="node3" href="$reader__iterator_8hpp.html" title="include/osmium/io/reader\l_iterator.hpp" alt="" coords="184,95,351,136"/>
-<area shape="rect" id="node4" href="$visitor_8hpp.html" title="include/osmium/visitor.hpp" alt="" coords="179,184,356,211"/>
-<area shape="rect" id="node5" href="$disk__store_8hpp.html" title="include/osmium/handler\l/disk_store.hpp" alt="" coords="5,259,164,300"/>
-<area shape="rect" id="node6" href="$dump_8hpp.html" title="include/osmium/handler\l/dump.hpp" alt="" coords="188,259,347,300"/>
-<area shape="rect" id="node7" href="$collector_8hpp.html" title="include/osmium/relations\l/collector.hpp" alt="" coords="371,259,537,300"/>
-<area shape="rect" id="node8" href="$multipolygon__collector_8hpp.html" title="include/osmium/area\l/multipolygon_collector.hpp" alt="" coords="364,348,544,389"/>
-</map>

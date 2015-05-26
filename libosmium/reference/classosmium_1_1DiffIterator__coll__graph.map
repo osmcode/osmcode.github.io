@@ -1,7 +1,0 @@
-<map id="osmium::DiffIterator&lt; TBasicIterator &gt;" name="osmium::DiffIterator&lt; TBasicIterator &gt;">
-<area shape="rect" id="node3" href="$classosmium_1_1DiffObject.html" title="osmium::DiffObject" alt="" coords="961,85,1095,112"/>
-<area shape="rect" id="node4" href="$classosmium_1_1OSMObject.html" title="osmium::OSMObject" alt="" coords="697,85,841,112"/>
-<area shape="rect" id="node5" href="$classosmium_1_1OSMEntity.html" title="OSMEntity is the abstract base class for the OSMObject and Changeset classes. " alt="" coords="425,56,565,83"/>
-<area shape="rect" id="node6" href="$classosmium_1_1memory_1_1Item.html" title="osmium::memory::Item" alt="" coords="217,56,375,83"/>
-<area shape="rect" id="node8" href="$classosmium_1_1Timestamp.html" title="osmium::Timestamp" alt="" coords="424,107,565,133"/>
-</map>

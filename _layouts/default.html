@@ -5,6 +5,13 @@
         <meta charset="utf-8">
         <title>{{ page.title }} - osmcode</title>
         <link rel="stylesheet" href="/css/main.css">
+{% if page.js %}
+        <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="/js/osmcode.js"></script>
+        <script type="text/javascript">//<![CDATA[
+{{ page.js }}
+//]]></script>
+{% endif %}
     </head>
     <body>
         <div id="menu">

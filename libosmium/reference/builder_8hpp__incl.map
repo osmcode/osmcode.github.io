@@ -1,9 +1,0 @@
-<map id="include/osmium/builder/builder.hpp" name="include/osmium/builder/builder.hpp">
-<area shape="rect" id="node8" href="$buffer_8hpp.html" title="osmium/memory/buffer.hpp" alt="" coords="492,95,673,121"/>
-<area shape="rect" id="node15" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="263,259,436,285"/>
-<area shape="rect" id="node20" href="$types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="1015,95,1174,121"/>
-<area shape="rect" id="node22" href="$cast_8hpp.html" title="osmium/util/cast.hpp" alt="" coords="1370,177,1513,203"/>
-<area shape="rect" id="node16" href="$item__iterator_8hpp.html" title="osmium/memory/item\l_iterator.hpp" alt="" coords="698,169,846,211"/>
-<area shape="rect" id="node19" href="$entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="207,177,366,203"/>
-<area shape="rect" id="node18" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="823,259,1006,285"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classosmium_1_1io_1_1Decompressor.html" title="osmium::io::Decompressor" alt="" coords="5,107,184,133"/>
-<area shape="rect" id="node2" href="$classosmium_1_1io_1_1Bzip2BufferDecompressor.html" title="osmium::io::Bzip2BufferDecompressor" alt="" coords="232,5,479,32"/>
-<area shape="rect" id="node3" href="$classosmium_1_1io_1_1Bzip2Decompressor.html" title="osmium::io::Bzip2Decompressor" alt="" coords="249,56,461,83"/>
-<area shape="rect" id="node4" href="$classosmium_1_1io_1_1GzipBufferDecompressor.html" title="osmium::io::GzipBufferDecompressor" alt="" coords="235,107,476,133"/>
-<area shape="rect" id="node5" href="$classosmium_1_1io_1_1GzipDecompressor.html" title="osmium::io::GzipDecompressor" alt="" coords="252,157,459,184"/>
-<area shape="rect" id="node6" href="$classosmium_1_1io_1_1NoDecompressor.html" title="osmium::io::NoDecompressor" alt="" coords="257,208,453,235"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="osmium::Changeset" name="osmium::Changeset">
-<area shape="rect" id="node2" href="$classosmium_1_1OSMEntity.html" title="OSMEntity is the abstract base class for the OSMObject and Changeset classes. " alt="" coords="30,200,170,227"/>
-<area shape="rect" id="node3" href="$classosmium_1_1memory_1_1Item.html" title="osmium::memory::Item" alt="" coords="8,96,165,123"/>
-<area shape="rect" id="node5" href="$classosmium_1_1Box.html" title="osmium::Box" alt="" coords="197,200,296,227"/>
-<area shape="rect" id="node6" href="$classosmium_1_1Location.html" title="osmium::Location" alt="" coords="189,96,315,123"/>
-<area shape="rect" id="node7" href="$classosmium_1_1Timestamp.html" title="osmium::Timestamp" alt="" coords="320,200,461,227"/>
-</map>

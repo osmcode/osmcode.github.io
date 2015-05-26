@@ -1,7 +1,0 @@
-<map id="include/osmium/io/input_iterator.hpp" name="include/osmium/io/input_iterator.hpp">
-<area shape="rect" id="node7" href="$buffer_8hpp.html" title="osmium/memory/buffer.hpp" alt="" coords="499,95,681,121"/>
-<area shape="rect" id="node14" href="$item_8hpp.html" title="osmium/memory/item.hpp" alt="" coords="123,259,297,285"/>
-<area shape="rect" id="node16" href="$item__iterator_8hpp.html" title="osmium/memory/item\l_iterator.hpp" alt="" coords="572,169,720,211"/>
-<area shape="rect" id="node19" href="$entity_8hpp.html" title="osmium/osm/entity.hpp" alt="" coords="177,177,336,203"/>
-<area shape="rect" id="node18" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="555,259,737,285"/>
-</map>

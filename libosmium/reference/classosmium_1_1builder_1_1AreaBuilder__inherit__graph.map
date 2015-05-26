@@ -1,5 +1,0 @@
-<map id="osmium::builder::AreaBuilder" name="osmium::builder::AreaBuilder">
-<area shape="rect" id="node2" href="$classosmium_1_1builder_1_1OSMObjectBuilder.html" title="osmium::builder::OSMObject\lBuilder\&lt; osmium::Area \&gt;" alt="" coords="10,169,201,211"/>
-<area shape="rect" id="node3" href="$classosmium_1_1builder_1_1ObjectBuilder.html" title="osmium::builder::ObjectBuilder\l\&lt; osmium::Area \&gt;" alt="" coords="5,80,205,121"/>
-<area shape="rect" id="node4" href="$classosmium_1_1builder_1_1Builder.html" title="osmium::builder::Builder" alt="" coords="24,5,187,32"/>
-</map>

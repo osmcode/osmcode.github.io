@@ -1,7 +1,0 @@
-<map id="include/osmium/geom/projection.hpp" name="include/osmium/geom/projection.hpp">
-<area shape="rect" id="node5" href="$coordinates_8hpp.html" title="osmium/geom/coordinates.hpp" alt="" coords="361,95,561,121"/>
-<area shape="rect" id="node8" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="376,169,547,196"/>
-<area shape="rect" id="node18" href="$util_8hpp.html" title="osmium/geom/util.hpp" alt="" coords="150,169,301,196"/>
-<area shape="rect" id="node14" href="$double_8hpp.html" title="osmium/util/double.hpp" alt="" coords="821,244,977,271"/>
-<area shape="rect" id="node13" href="$compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="522,244,713,271"/>
-</map>

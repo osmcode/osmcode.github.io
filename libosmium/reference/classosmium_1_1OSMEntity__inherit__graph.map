@@ -1,9 +1,0 @@
-<map id="osmium::OSMEntity" name="osmium::OSMEntity">
-<area shape="rect" id="node4" href="$classosmium_1_1Changeset.html" title="An OSM Changeset, a group of changes made by a single user over a short period of time..." alt="" coords="21,244,159,271"/>
-<area shape="rect" id="node5" href="$classosmium_1_1OSMObject.html" title="osmium::OSMObject" alt="" coords="183,244,327,271"/>
-<area shape="rect" id="node2" href="$classosmium_1_1memory_1_1Item.html" title="osmium::memory::Item" alt="" coords="94,95,251,121"/>
-<area shape="rect" id="node6" href="$classosmium_1_1Area.html" title="osmium::Area" alt="" coords="5,319,108,345"/>
-<area shape="rect" id="node7" href="$classosmium_1_1Node.html" title="osmium::Node" alt="" coords="133,319,239,345"/>
-<area shape="rect" id="node8" href="$classosmium_1_1Relation.html" title="osmium::Relation" alt="" coords="264,319,388,345"/>
-<area shape="rect" id="node9" href="$classosmium_1_1Way.html" title="osmium::Way" alt="" coords="412,319,515,345"/>
-</map>

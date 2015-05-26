@@ -1,9 +1,0 @@
-<map id="include/osmium/area/problem_reporter_exception.hpp" name="include/osmium/area/problem_reporter_exception.hpp">
-<area shape="rect" id="node4" href="$problem__reporter__stream_8hpp.html" title="osmium/area/problem\l_reporter_stream.hpp" alt="" coords="297,95,444,136"/>
-<area shape="rect" id="node10" href="$location_8hpp.html" title="osmium/osm/location.hpp" alt="" coords="372,273,543,300"/>
-<area shape="rect" id="node19" href="$types_8hpp.html" title="osmium/osm/types.hpp" alt="" coords="567,273,726,300"/>
-<area shape="rect" id="node6" href="$problem__reporter_8hpp.html" title="osmium/area/problem\l_reporter.hpp" alt="" coords="297,184,444,225"/>
-<area shape="rect" id="node7" href="$item__type_8hpp.html" title="osmium/osm/item_type.hpp" alt="" coords="150,273,333,300"/>
-<area shape="rect" id="node14" href="$compatibility_8hpp.html" title="osmium/util/compatibility.hpp" alt="" coords="697,348,887,375"/>
-<area shape="rect" id="node15" href="$double_8hpp.html" title="osmium/util/double.hpp" alt="" coords="255,348,411,375"/>
-</map>
