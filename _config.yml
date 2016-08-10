@@ -1,3 +1,5 @@
 name: osmcode
 markdown: redcarpet
 highlighter: rouge
+gems:
+    - jekyll-redirect-from

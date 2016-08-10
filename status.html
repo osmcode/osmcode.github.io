@@ -1,71 +1,99 @@
 ---
 layout: default
 title: Status
+js: $(function() { update_releases(); update_master(); });
 ---
 
 <div class="desc">
-    <img src="/img/status-64x64.png" width="64" height="64" alt=""/>
+    <img src="/img/status-128x128.png" width="64" height="64" alt=""/>
     <h1>Status</h1>
-    <p>Development status of Osmium projects</p>
+    <p>Development status of osmcode projects</p>
 </div>
 
 <table class="build-status">
+    <thead>
     <tr>
-        <th>Project</th><th>Version</th><th>Linux/OSX (Travis)</th><th>Windows (Appveyor)</th>
+        <th>Project</th>
+        <th>Code on<br/>Github</th>
+        <th>Linux/OSX<br/>(<a href="https://travis-ci.org/">Travis</a>)</th>
+        <th>Windows<br/>(<a href="https://www.appveyor.com/">Appveyor</a>)</th>
+        <th>Latest release</th>
+        <th>Master<br/>Last commit</th>
     </tr>
-    <tr>
-        <td><a href="https://github.com/osmcode/libosmium">libosmium</a></td>
-        <td><a href="https://github.com/osmcode/libosmium/tree/master">master</a></td>
-        <td><a href="https://travis-ci.org/osmcode/libosmium"><img src="https://api.travis-ci.org/osmcode/libosmium.png"/></a> <a href="http://scribu.github.io/travis-stats/#osmcode/libosmium"><img src="/img/status-16x16.png"/></a></td>
-        <td><a href="https://ci.appveyor.com/project/Mapbox/libosmium"><img src="https://ci.appveyor.com/api/projects/status/mkbg6e6stdgq7c1b?svg=true"/></a></td>
-    </tr>
-    <tr>
+    </thead>
+    <tbody>
+    <tr id="project-osmium-tool">
+        <td><img src="/img/logo-osmium-tool.svg" width="16" height="16"/> <a href="/osmium">osmium-tool</a></td>
         <td><a href="https://github.com/osmcode/osmium-tool">osmium-tool</a></td>
-        <td><a href="https://github.com/osmcode/osmium-tool/tree/master">master</a></td>
-        <td><a href="https://travis-ci.org/osmcode/osmium-tool"><img src="https://api.travis-ci.org/osmcode/osmium-tool.png"/></a> <a href="http://scribu.github.io/travis-stats/#osmcode/osmium-tool"><img src="/img/status-16x16.png"/></a></td>
-        <td><a href="https://ci.appveyor.com/project/Mapbox/osmium-tool"><img src="https://ci.appveyor.com/api/projects/status/ttem4j2gxa64p3w8?svg=true"/></a></td>
+        <td><a href="https://travis-ci.org/osmcode/osmium-tool"><img class="badge" src="https://api.travis-ci.org/osmcode/osmium-tool.svg"/></a></td>
+        <td><a href="https://ci.appveyor.com/project/Mapbox/osmium-tool"><img class="badge" src="https://ci.appveyor.com/api/projects/status/ttem4j2gxa64p3w8?svg=true"/></a></td>
+        <td class="release"></td>
+        <td class="master"></td>
     </tr>
-    <tr>
+    <tr id="project-libosmium">
+        <td><img src="/img/logo-libosmium.svg" width="16" height="16"/> <a href="/libosmium">libosmium</a></td>
+        <td><a href="https://github.com/osmcode/libosmium">libosmium</a></td>
+        <td><a href="https://travis-ci.org/osmcode/libosmium"><img class="badge" src="https://api.travis-ci.org/osmcode/libosmium.svg"/></a></td>
+        <td><a href="https://ci.appveyor.com/project/Mapbox/libosmium"><img class="badge" src="https://ci.appveyor.com/api/projects/status/mkbg6e6stdgq7c1b?svg=true"/></a></td>
+        <td class="release"></td>
+        <td class="master"></td>
+    </tr>
+    <tr id="project-node-osmium">
+        <td><img src="/img/logo-node-osmium.svg" width="16" height="16"/> <a href="/node-osmium">node-osmium</a></td>
         <td><a href="https://github.com/osmcode/node-osmium">node-osmium</a></td>
-        <td><a href="https://github.com/osmcode/node-osmium/tree/master">master</a></td>
-        <td><a href="https://travis-ci.org/osmcode/node-osmium"><img src="https://api.travis-ci.org/osmcode/node-osmium.png"/></a> <a href="http://scribu.github.io/travis-stats/#osmcode/node-osmium"><img src="/img/status-16x16.png"/></a></td>
+        <td><a href="https://travis-ci.org/osmcode/node-osmium"><img class="badge" src="https://api.travis-ci.org/osmcode/node-osmium.svg"/></a></td>
         <td>-</td>
+        <td class="release"></td>
+        <td class="master"></td>
     </tr>
-    <tr>
+    <tr id="project-pyosmium">
+        <td><img src="/img/logo-pyosmium.svg" width="16" height="16"/> <a href="/pyosmium">pyosmium</a></td>
         <td><a href="https://github.com/osmcode/pyosmium">pyosmium</a></td>
-        <td><a href="https://github.com/osmcode/pyosmium/tree/master">master</a></td>
-        <td><a href="https://travis-ci.org/osmcode/pyosmium"><img src="https://api.travis-ci.org/osmcode/pyosmium.png"/></a> <a href="http://scribu.github.io/travis-stats/#osmcode/pyosmium"><img src="/img/status-16x16.png"/></a></td>
-        <td>- <!--<a href="https://ci.appveyor.com/project/Mapbox/pyosmium"><img src=""/></a>--></td>
+        <td><a href="https://travis-ci.org/osmcode/pyosmium"><img class="badge" src="https://api.travis-ci.org/osmcode/pyosmium.svg"/></a></td>
+        <td>-</td>
+        <td class="release"></td>
+        <td class="master"></td>
     </tr>
-    <tr>
-        <td><a href="https://github.com/osmcode/osm-gis-export">osm-gis-export</a></td>
-        <td><a href="https://github.com/osmcode/osm-gis-export/tree/master">master</a></td>
-        <td><a href="https://travis-ci.org/osmcode/osm-gis-export"><img src="https://api.travis-ci.org/osmcode/osm-gis-export.png"/></a> <a href="http://scribu.github.io/travis-stats/#osmcode/osm-gis-export"><img src="/img/status-16x16.png"/></a></td>
-        <td>- <!--<a href="https://ci.appveyor.com/project/Mapbox/osm-gis-export"><img src=""/></a>--></td>
-    </tr>
-    <tr>
-        <td><a href="https://github.com/osmcode/osmium-contrib">osmium-contrib</a></td>
-        <td><a href="https://github.com/osmcode/osmium-contrib/tree/master">master</a></td>
-        <td><a href="https://travis-ci.org/osmcode/osmium-contrib"><img src="https://api.travis-ci.org/osmcode/osmium-contrib.png"/></a> <a href="http://scribu.github.io/travis-stats/#osmcode/osmium-contrib"><img src="/img/status-16x16.png"/></a></td>
-        <td>- <!--<a href="https://ci.appveyor.com/project/Mapbox/osmium-contrib"><img src=""/></a>--></td>
-    </tr>
-    <tr>
+    <tr id="project-osm-area-tools">
+        <td><img src="/img/logo-osm-area-tools.svg" width="16" height="16"/> <a href="/osm-area-tools">osm-area-tools</a></td>
         <td><a href="https://github.com/osmcode/osm-area-tools">osm-area-tools</a></td>
-        <td><a href="https://github.com/osmcode/osm-area-tools/tree/master">master</a></td>
-        <td><a href="https://travis-ci.org/osmcode/osm-area-tools"><img src="https://api.travis-ci.org/osmcode/osm-area-tools.png"/></a> <a href="http://scribu.github.io/travis-stats/#osmcode/osm-area-tools"><img src="/img/status-16x16.png"/></a></td>
-        <td>- <!--<a href="https://ci.appveyor.com/project/Mapbox/osm-area-tools"><img src=""/></a>--></td>
+        <td><a href="https://travis-ci.org/osmcode/osm-area-tools"><img class="badge" src="https://api.travis-ci.org/osmcode/osm-area-tools.svg"/></a></td>
+        <td>-</td>
+        <td>-</td>
+        <td class="master"></td>
     </tr>
-    <tr>
-        <td><a href="https://github.com/osmcode/osmium-suite">osmium-suite</a></td>
-        <td><a href="https://github.com/osmcode/osmium-suite/tree/master">master</a></td>
-        <td><a href="https://travis-ci.org/osmcode/osmium-suite"><img src="https://api.travis-ci.org/osmcode/osmium-suite.png"/></a> <a href="http://scribu.github.io/travis-stats/#osmcode/osmium-suite"><img src="/img/status-16x16.png"/></a></td>
-        <td>- <!--<a href="https://ci.appveyor.com/project/Mapbox/osmium-suite"><img src=""/></a>--></td>
+    <tr id="project-osmcoastline">
+        <td><img src="/img/logo-osmcoastline.svg" width="16" height="16"/> <a href="/osmcoastline">osmcoastline</a></td>
+        <td><a href="https://github.com/osmcode/osmcoastline">osmcoastline</a></td>
+        <td><a href="https://travis-ci.org/osmcode/osmcoastline"><img class="badge" src="https://api.travis-ci.org/osmcode/osmcoastline.svg"/></a></td>
+        <td>-</td>
+        <td class="release"></td>
+        <td class="master"></td>
     </tr>
-    <tr>
+    <tr id="project-osm-gis-export">
+        <td><img src="/img/logo-osm-gis-export.svg" width="16" height="16"/> <a href="/osm-gis-export">osm-gis-export</a></td>
+        <td><a href="https://github.com/osmcode/osm-gis-export">osm-gis-export</a></td>
+        <td><a href="https://travis-ci.org/osmcode/osm-gis-export"><img class="badge" src="https://api.travis-ci.org/osmcode/osm-gis-export.svg"/></a></td>
+        <td>-</td>
+        <td>-</td>
+        <td class="master"></td>
+    </tr>
+    <tr id="project-osmium-contrib">
+        <td><img src="/img/logo-osmium-contrib.svg" width="16" height="16"/> <a href="/osmium-contrib">osmium-contrib</a></td>
+        <td><a href="https://github.com/osmcode/osmium-contrib">osmium-contrib</a></td>
+        <td><a href="https://travis-ci.org/osmcode/osmium-contrib"><img class="badge" src="https://api.travis-ci.org/osmcode/osmium-contrib.svg"/></a></td>
+        <td>-</td>
+        <td>-</td>
+        <td class="master"></td>
+    </tr>
+    <tr id="project-osm-testdata">
+        <td><img src="/img/logo-osm-testdata.svg" width="16" height="16"/> <a href="/osm-testdata">osm-testdata</a></td>
         <td><a href="https://github.com/osmcode/osm-testdata">osm-testdata</a></td>
-        <td><a href="https://github.com/osmcode/osm-testdata/tree/master">master</a></td>
-        <td><a href="https://travis-ci.org/osmcode/osm-testdata"><img src="https://api.travis-ci.org/osmcode/osm-testdata.png"/></a> <a href="http://scribu.github.io/travis-stats/#osmcode/osm-testdata"><img src="/img/status-16x16.png"/></a></td>
-        <td>- <!--<a href="https://ci.appveyor.com/project/Mapbox/osm-testdata"><img src=""/></a>--></td>
+        <td><a href="https://travis-ci.org/osmcode/osm-testdata"><img class="badge" src="https://api.travis-ci.org/osmcode/osm-testdata.svg"/></a></td>
+        <td>-</td>
+        <td>-</td>
+        <td class="master"></td>
     </tr>
+    </tbody>
 </table>
 

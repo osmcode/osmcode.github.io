@@ -34,3 +34,32 @@ function update_doc_refs(project) {
     });
 }
 
+function update_releases() {
+    $('tr:has(td.release)').each(function(index, tr) {
+        var project = tr.id.replace(/^project-/, '');
+        var url = 'https://api.github.com/repos/osmcode/' + project + '/releases/latest';
+        $.get(url, function(data) {
+            $('#project-' + project + ' td.release').html(
+                '<a href="' + data.html_url + '">' + data.tag_name.substr(1) + '</a>' + ' - ' + data.published_at.replace(/T.*/, '')
+            );
+        }).fail(function() {
+            $('#project-' + project + ' td.release').html('<i>not available</i>');
+        });
+    });
+}
+
+function update_master() {
+    $('tr:has(td.master)').each(function(index, tr) {
+        var project = tr.id.replace(/^project-/, '');
+        var url = 'https://api.github.com/repos/osmcode/' + project + '/commits?per_page=1';
+        $.get(url, function(data) {
+            var last_commit = data[0];
+            $('#project-' + project + ' td.master').html(
+                '<a href="' + last_commit.html_url + '" title="' + last_commit.sha + '">' + last_commit.commit.author.date.replace(/T.*/, '') + '</a>'
+            );
+        }).fail(function() {
+            $('#project-' + project + ' td.master').html('<i>not available</i>');
+        });
+    });
+}
+
