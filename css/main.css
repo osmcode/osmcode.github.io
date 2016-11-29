@@ -397,30 +397,6 @@ div.example-img div {
 }
 
 /*****************************************************************************/
-
-.book-title {
-    font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.1;
-    font-size: 220%;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px 0;
-}
-
-@media screen {
-    .toc {
-        position: fixed;
-        left: 20px;
-        top: 110px;
-    }
-}
-
-.toc ul {
-    list-style: none inside none;
-    padding-left: 0;
-}
-
-/*****************************************************************************/
 /*
 /* Posts
 /*

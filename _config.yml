@@ -1,5 +1,7 @@
 name: osmcode
 markdown: redcarpet
+redcarpet:
+    extensions: ["no_intra_emphasis", "tables"]
 highlighter: rouge
 gems:
     - jekyll-redirect-from

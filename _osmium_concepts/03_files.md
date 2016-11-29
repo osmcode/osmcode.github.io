@@ -4,12 +4,13 @@ title: 3. OSM Files
 
 # {{ page.title }}
 
-OSM uses several different *types* of files containing different
-types of data and it uses different *formats* to "encode" this data into bits
+OSM uses several different types of files containing different
+types of data and it uses different formats to "encode" this data into bits
 and bytes in the files.
 
 Most programs using OSM data will need to read OSM files and/or write to
 OSM files. Osmium supports most common types and formats.
+
 
 ## File types
 
@@ -59,26 +60,38 @@ so and all other objects are either marked as `<create>` if their version is
 You can also see a change file as a *partial history file* with a strange
 format.
 
+And then there are *changeset files*. They don't contain OSM objects, but
+changesets. Some changeset files contain the discussion comments together
+with the changesets, some files don't have the comments (the `num_comments`
+attribute is always set, though). Changeset files can be combined with OSM
+data or history files into one. So there can be one file that contains both
+the OSM objects and the changesets.
+
+Don't mix up "change files" and "changeset files", those are completely
+different concepts. The "change files" contain the new versions of OSM
+objects and describe the changes that way. The "changeset files" contain
+changesets containing the change metadata.
+
 While Osmium itself is mostly file type agnostic, applications built on top
 of Osmium usually only handle specific types of files for their use cases.
 
 
 ## File formats
 
-Osmium supports several different OSM file formats. File formats are about
-the way the content is encoded in bits and bits on the wire.
+Osmium supports several different OSM file formats. File formats describe
+the way the content is encoded in bits and bytes on the wire.
 
 **XML**
 :   The original XML-based OSM format. This format is rather verbose and
     working with it is slow, but it is still used often and in some
     cases there is no alternative. The main OSM database API also returns
     its data in this format. More information about this format on the
-    [OSM Wiki](http://wiki.openstreetmap.org/wiki/OSM_XML).
+    [OSM Wiki](https://wiki.openstreetmap.org/wiki/OSM_XML).
 
 **PBF**
-:   The binary format based on the Protobuf library. This is the most compact
-    format. More information on the
-    [OSM Wiki](http://wiki.openstreetmap.org/wiki/PBF_Format).
+:   The binary format based on the Protocol Buffers encoding. This is the
+    most compact format. More information on the
+    [OSM Wiki](https://wiki.openstreetmap.org/wiki/PBF_Format).
 
 **O5M**/**O5C**
 :   This binary format is simpler than the PBF format but not used as widely.
@@ -100,7 +113,14 @@ the way the content is encoded in bits and bits on the wire.
 
 See below for more detailed descriptions.
 
+
 ## Compression
+
+Files in the text-based formats (XML, OPL, Debug) can optionally be compressed
+using `gzip` or `bzip2`. Osmium will handle this internally. Just use the
+right file name suffix (`.osm.gz`, or `.opl.bz2` for instance) for this to
+work.
+
 
 ## Ordering of objects in files
 
@@ -147,24 +167,26 @@ you can set header fields when writing a file.
 
 ## Accessing Files
 
-Usally Osmium-based programs will allow you to tell them the _name_ of an
+Usually Osmium-based programs will allow you to tell them the _name_ of an
 input or output file and, optionally a _format description_. Osmium detects
 the format of a file from the file name suffix, so usually you do not have
-to set the format manually.
+to set the format explicitly.
 
 Osmium knows about the following suffixes:
 
-Format  Suffix    Description
-------- -------   ------------
-XML     .osm      XML data file, but can also be one history file
-XML     .osh      XML history file
-XML     .osc      XML change file
-PBF     .pbf      PBF
-OPL     .opl      OPL
-DEBUG   .debug    DEBUG
+| Format | Suffix | Description
+| ------ | ------ | ------------
+| XML    | .osm   | XML data or changeset file, can also be a history file
+| XML    | .osh   | XML history file
+| XML    | .osc   | XML change file
+| PBF    | .pbf   | PBF
+| OPL    | .opl   | OPL
+| O5M    | .o5m   | o5m data file
+| O5C    | .o5m   | o5c change file
+| DEBUG  | .debug | DEBUG
 
-You can stack formats: `.osm.pbf` is the same as `.pbf`, `.osh.pbf` is a
-history file in PBF format.
+You can stack formats: For example `.osm.pbf` is the same as `.pbf`, `.osh.pbf`
+is a history file in PBF format.
 
 The change file format (`.osc`) is only available in the XML version, use
 `.osh` instead for other formats.
@@ -173,8 +195,8 @@ Osmium supports compression and decompression of XML, OPL, and DEBUG files
 internally using the GZIP and BZIP2 formats. As usual, these files have an
 additional suffix `.gz`, or `.bz2`.
 
-So a typical PBF file will be named `planet.pbf`, a packed history file could
-be named `history.osh.bz2`.
+So a typical PBF file will be named `planet.pbf` or `planet.osm.pbf`, a
+packed history file in XML format could be named `history.osh.bz2`.
 
 If the file name does not end in the suffix needed for autodetection, you
 have to supply a format string to Osmium describing the format. Just use
@@ -187,28 +209,31 @@ STDIN or STDOUT use an empty filename or a single hyphen (`-`).
 
 File name: `-`, Format: `.osm.pbf`
 
+
 ## File Format Options
 
 Some file formats allow different options to be set. Options follow in a
 comma-separated list after the file name format. So, for instance, the PBF
 format allows two different ways of writing nodes to the file, by default
-the _dense_ format is used, but you can disable it like this:
+the *dense* format is used, but you can disable it like this:
 
 File name: `foo.pbf`, Format: `.pbf,pbf_dense_nodes=false`
 
-Note that, if a format is given, it always must start with the format
+Note that, if a format is given, it must always start with the format
 description, even if the file name has the correct suffix.
 
 Here is a list of optional settings currently supported:
 
-Format  Option             Default  Description
-------- -------            -------- ------------
-PBF     pbf_dense_nodes    true     Use DenseNodes (more space efficient)
-PBF     pbf_compression    gzip     Compress blocks using gzip (use "none" to disable)
-XML     xml_change_format  false    Set change format, can also be set by using `osc` instead of `osm` suffix
-XML     force_visible_flag false    Write out `visible` flag on each object, also set if `osh` instead of `osm` suffix used
-all     add_metadata       true     Add metadata (version, timestamp, etc. to objects)
-
+| Format        | Option               | Default | Description
+| ------        | ------               | ------- | -----------
+| PBF           | `pbf_dense_nodes`    | true    | Use DenseNodes (more space efficient)
+| PBF           | `pbf_compression`    | gzip    | Compress blocks using gzip (use "none" to disable)
+| XML           | `xml_change_format`  | false   | Set change format, can also be set by using `osc` instead of `osm` suffix
+| XML           | `force_visible_flag` | false   | Write out `visible` flag on each object, also set if `osh` instead of `osm` suffix used
+| *all*         | `add_metadata`       | true    | Add metadata (version, timestamp, etc. to objects)
+| PBF, XML, OPL | `locations_on_ways`  | false   | Add node locations to way nodes (libosmium-specific extension)
+| DEBUG         | `use_color`          | false   | Output with ANSI colors
+| DEBUG         | `add_crc32`          | false   | Add CRC32 checksum to all objects
 
 ## XML
 
@@ -228,8 +253,8 @@ parameter `xml_change_format=true`.
 
 ### PBF
 
-The [PBF](http://wiki.openstreetmap.org/wiki/PBF_Format) file format is based
-on the [Google Protocol Buffers library](http://code.google.com/p/protobuf/).
+The [PBF](https://wiki.openstreetmap.org/wiki/PBF_Format) file format is based
+on the [Google Protocol Buffers](https://developers.google.com/protocol-buffers/).
 PBF files are very space efficient and faster to use than XML files. PBF files
 can contain normal OSM data or OSM history data, but there is no equivalent to
 the XML .osc format.
@@ -239,7 +264,8 @@ formats. Default is *DenseNodes*, as this is much more space-efficient. Add the
 format parameter `pbf_dense_nodes=false` to disable *DenseNodes*.
 
 Osmium usually will compress PBF blocks using zlib. To disable this, use the
-format parameter `pbf_compression=none`.
+format parameter `pbf_compression=none`. This makes reading and writing faster,
+but the resulting files are larger.
 
 PBF files contain a string table in each data block. Some programs sort this
 string table for slightly better compression. Osmium does not do this to make
@@ -249,7 +275,23 @@ Usually PBF files contain all the metadata for objects such as changeset id,
 username, etc. To save some space you can disable writing of metatdata with the
 format option `add_metadata=false`.
 
+
 ### O5M/O5C Format
+
+The [o5m and o5c formats](https://wiki.openstreetmap.org/wiki/O5m) were
+invented and are mainly used by the
+[osmconvert](https://wiki.openstreetmap.org/wiki/Osmconvert),
+[osmfilter](https://wiki.openstreetmap.org/wiki/Osmfilter), and
+[osmupdate](https://wiki.openstreetmap.org/wiki/Osmupdate) tools. The two
+versions are for data files (.o5m) and change files (.o5c). History files
+are not supported.
+
+Osmium can read those files to be compatible with other tools, but it can't
+write the file format.
+
+O5M/O5C files are larger than PBF files (unless you compress them again, which
+is possible, but makes them slower to read and write of course).
+
 
 ### OPL ("Object Per Line") Format
 
@@ -257,6 +299,25 @@ See the [OPL File Format Manual](http://docs.osmcode.org/opl-file-format-manual/
 
 
 ### DEBUG Format
+
+The DEBUG format is only used for displaying the data to the user in a way that
+is readable to a human. It can not be read programmatically.
+
+
+## I/O Multithreading
+
+Osmium uses multithreading behind the scenes to speed up reading and writing
+files. This is something the user usually doesn't have to be concerned with.
+It doesn't matter if you use the command line tools or the library, for the
+user it looks like the file is simply read sequentially. But internally Osmium
+does some magic to speed things up. This works better for some file types than
+for others and it might influence your choice of file types. Try different file
+types to get an idea of their relative speeds. Generally XML can't be
+parallelized and is slow (reading and writing), PBF can be parallelized well
+and especially reading with many CPUs is very fast. O5M can not be parallelized
+but is fast even on a single CPU. OPL can be parallelized and is reasonably
+fast.
+
 
 ## Which format should I use?
 
@@ -278,14 +339,28 @@ But sometimes you can decide. Here are some guidelines:
 * The OSM API uses the XML format, so if you interact with that API, you'll
   want to use XML. Also OSM change files only come in XML format, so most
   software can only use them in that format.
-* O5M files are about the same size as PBF files, but they are slower to read
-  than PBF, because they can only be read in a single thread.
+* O5M files are about the same size as PBF files or slightly larger, but they
+  are slower to read than PBF, because they can only be read in a single thread.
+  (If you have multiple CPUs.)
 * OPL files are reasonably fast to read or write, but they are much bigger than
   files in one of the binary formats. You can use compression, but that makes
   reading and writing slower and you loose the advantage that you can easily
   read the contents. Use OPL if you want to filter or manipulate the OSM data
   with scripting languages or command line tools.
 * The debug format is nice for a quick glance at the contents of a file.
+
+
+## URLs
+
+If a file name looks like a URL (i.e. if it starts with `http:` or `https:`),
+Osmium will fork and execute `curl` to get the file for you. This happens
+transparently and will work for all programs using Osmium.
+
+On Windows this feature is not available. You need to have
+[curl](https://curl.haxx.se/) installed on your system.
+
+Note that if there is an error during download, Osmium might not be able to
+detect it. So use caution if you use this feature.
 
 
 ## Seeing what's in an OSM file
@@ -301,8 +376,9 @@ Use the `-e` option to get more information about the file contents:
 
     osmium fileinfo -e OSMFILE
 
-If you want to look at the actual contents, the `cat` command can convert the
-file into the `debug` format and you can pipe the result into `less`:
+If you want to look at the actual contents, use the `show` command:
 
-    osmium cat OSMFILE -f debug | less
+    osmium show OSMFILE
+
+It will convert the file to the DEBUG format and pipe the result into `less`.
 
