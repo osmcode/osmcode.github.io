@@ -3,3 +3,5 @@ markdown: redcarpet
 highlighter: rouge
 gems:
     - jekyll-redirect-from
+collections:
+    - osmium_concepts
