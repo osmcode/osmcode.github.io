@@ -59,6 +59,12 @@ h3 {
 /*
 /*****************************************************************************/
 
+@media print {
+    #menu {
+        display: none;
+    }
+}
+
 #menu {
     background-color: rgba(32, 32, 96, 0.5);
     text-align: center;
@@ -401,10 +407,12 @@ div.example-img div {
     margin: 20px 0;
 }
 
-.toc {
-    position: fixed;
-    left: 20px;
-    top: 110px;
+@media screen {
+    .toc {
+        position: fixed;
+        left: 20px;
+        top: 110px;
+    }
 }
 
 .toc ul {
