@@ -1,8 +1,8 @@
 ---
-title: OSM Entities
+title: 2. OSM Entities
 ---
 
-# OSM Entities
+# {{ page.title }}
 
 Osmium can handle the four basic types of OSM entities: *Nodes*, *Ways*, and
 *Relations* (which are collectively known as *OSM Objects*) and it can handle

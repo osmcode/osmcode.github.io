@@ -1,8 +1,8 @@
 ---
-title: Introduction
+title: 1. Introduction
 ---
 
-# Introduction
+# {{ page.title }}
 
 *"Simple things should be simple and complex things should be possible."* - Alan Kay
 

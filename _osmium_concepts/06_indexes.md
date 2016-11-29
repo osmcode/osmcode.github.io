@@ -1,8 +1,8 @@
 ---
-title: Indexes
+title: 6. Indexes
 ---
 
-# Indexes
+# {{ page.title }}
 
 Osmium is built around the idea that a lot of the things you want to do with
 OSM data can be done one OSM object at the time without having all (or large
