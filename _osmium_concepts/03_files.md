@@ -104,7 +104,7 @@ the way the content is encoded in bits and bytes on the wire.
 :   A simple format similar to CSV-files with one OSM entity per line. This
     format is intended for easy use with standard UNIX command line tools such
     as `grep`, `cut`, and `awk`. See the [OPL File Format
-    Manual](http://docs.osmcode.org/opl-file-format-manual/) for details.
+    Manual](/opl-file-format/) for details.
 
 **DEBUG**
 :   A nicely formatted text-based format that is easier to read for a human
@@ -295,7 +295,7 @@ is possible, but makes them slower to read and write of course).
 
 ### OPL ("Object Per Line") Format
 
-See the [OPL File Format Manual](http://docs.osmcode.org/opl-file-format-manual/).
+See the [OPL File Format Manual](/opl-file-format/).
 
 
 ### DEBUG Format

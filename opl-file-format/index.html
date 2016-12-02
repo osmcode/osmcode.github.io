@@ -1,0 +1,19 @@
+---
+layout: manual
+title: OPL File Format
+---
+
+<div class="book-title">{{ page.title }}</div>
+
+<div class="toc">
+  <p><b>Table of Contents</b></p>
+  <ul>
+{% for oc in site.opl_file_format %}<li><a href="#{{ oc.title | slugify }}">{{ oc.title }}</a></li>
+{% endfor %}
+  </ul>
+</div>
+
+{% for oc in site.opl_file_format %}
+  <a id="{{ oc.title | slugify }}"/>
+{{ oc.content }}
+{% endfor %}
