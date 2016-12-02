@@ -25,7 +25,7 @@ title: Frequently Asked Questions (FAQ)
 <p>Libosmium and other related software on this site is developed on Linux
 and works well there. With tiny exceptions everything also works on Mac OS/X
 out of the box. Most software also works on Windows. A CMake configuration
-is supplied for most projects which works on all operating systems.</p>
+which should work on all operating systems is supplied for all projects.</p>
 
 <h3>I can't find out how to build the Osmium Library?</h3>
 
@@ -34,10 +34,7 @@ it. Just install the header files and include them as needed from your code.</p>
 
 <h3>Which build system is used?</h3>
 
-<p>Originally simple hand-written Makefiles were used. To better support
-Windows we are currently in the process of switching to <a class="ext"
-href="http://www.cmake.org/">CMake</a>. In some cases both the Makefile and
-the CMake configuration is available.</p>
+<p>We are using <a fhref="http://www.cmake.org/">CMake</a>.</p>
 
 
 <h2 id="features">▶ Features</h2>
@@ -89,7 +86,7 @@ there in your program making this approach much more flexible.</p>
 href="http://en.wikipedia.org/wiki/Header-only">C++ header-only library</a>
 called "<a href="/libosmium/">Osmium Library</a>" or "libosmium", but sometimes
 just called "Osmium". Built on top of that are many programs with their own
-names, one is the command line multipurpose "<a href="/osmium/">Osmium
+names, one is the command line multipurpose "<a href="/osmium-tool/">Osmium
 Tool</a>" or short "Osmium". In addition there are bindings of the C++ library
 for Javascript ("<a href="/node-osmium/">Node Osmium</a>") and Python ("<a
 href="/pyosmium/">PyOsmium</a>").</p>

@@ -366,7 +366,7 @@ detect it. So use caution if you use this feature.
 ## Seeing what's in an OSM file
 
 If you have an OSM file and want to take a quick look at its content, the
-[osmium command line tool](http://osmcode.org/osmium) is your friend.
+[osmium command line tool](http://osmcode.org/osmium-tool/) is your friend.
 
 Use the `fileinfo` command to get an overview of the file including the header:
 
