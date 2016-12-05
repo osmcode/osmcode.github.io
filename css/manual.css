@@ -9,16 +9,20 @@
 }
 
 @media screen {
-    .toc {
-        position: fixed;
-        left: 20px;
-        top: 110px;
+    @media all and (min-width: 1280px) and (min-device-width: 1280px) {
+        .toc {
+            position: fixed;
+            left: 20px;
+            top: 110px;
+            max-width: 160px;
+        }
     }
 }
 
 .toc ul {
     list-style: none inside none;
-    padding-left: 0;
+    padding-left: 20px;
+    text-indent: -20px;
 }
 
 table {
