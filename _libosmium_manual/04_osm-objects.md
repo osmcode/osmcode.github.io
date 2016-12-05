@@ -1,8 +1,7 @@
 ---
-title: 4. OSM Entities
+chapter: 4
+title: OSM Entities
 ---
-
-# {{ page.title }}
 
 Osmium works with the four basic types of OSM entities: Nodes, Ways, and
 Relations (which are all [OSM Objects]) and Changesets. In addition Areas

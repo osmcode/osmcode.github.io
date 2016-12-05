@@ -1,8 +1,7 @@
 ---
-title: 14. Run-time Configuration
+chapter: 14
+title: Run-time Configuration
 ---
-
-# {{ page.title }}
 
 Osmium reads some settings from environment variables. This allows you to set
 configuration options for the library at run-time without any support from the

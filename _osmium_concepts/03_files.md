@@ -1,8 +1,7 @@
 ---
-title: 3. OSM Files
+chapter: 3
+title: OSM Files
 ---
-
-# {{ page.title }}
 
 OSM uses several different types of files containing different
 types of data and it uses different formats to "encode" this data into bits

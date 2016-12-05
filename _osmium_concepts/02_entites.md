@@ -1,8 +1,7 @@
 ---
-title: 2. OSM Entities
+chapter: 2
+title: OSM Entities
 ---
-
-# {{ page.title }}
 
 When working with OSM data you will always encounter the three basic types
 of objects: *Nodes*, *Ways*, and *Relations* (in Osmium collectively known

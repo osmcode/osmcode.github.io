@@ -1,8 +1,7 @@
 ---
-title: 1. Introduction
+chapter: 1
+title: Introduction
 ---
-
-# {{ page.title }}
 
 The OpenStreetMap project is growing at an enormous rate. Working
 with the OSM data becomes increasingly difficult, because there

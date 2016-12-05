@@ -1,6 +1,5 @@
 ---
-title: 7. Areas
+chapter: 7
+title: Areas
 ---
-
-# {{ page.title }}
 

@@ -1,6 +1,5 @@
 ---
-title: 4. Buffers
+chapter: 4
+title: Buffers
 ---
-
-# {{ page.title }}
 

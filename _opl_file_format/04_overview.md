@@ -1,8 +1,7 @@
 ---
-title: 4. Format Overview
+chapter: 4
+title: Format Overview
 ---
-
-# {{ page.title }}
 
 _Some lines have been broken in this description for easier reading, in the
 file format they are not._

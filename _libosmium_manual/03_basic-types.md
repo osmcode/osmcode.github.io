@@ -1,8 +1,7 @@
 ---
-title: 3. Basic Types
+chapter: 3
+title: Basic Types
 ---
-
-# {{ page.title }}
 
 All the types and classes described in this chapter are value types, ie they
 are small and can be copied around cheaply.

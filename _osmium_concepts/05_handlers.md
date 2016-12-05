@@ -1,6 +1,5 @@
 ---
-title: 5. Handlers
+chapter: 5
+title: Handlers
 ---
-
-# {{ page.title }}
 

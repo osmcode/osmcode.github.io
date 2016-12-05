@@ -1,6 +1,5 @@
 ---
-title: 11. Storage
+chapter: 11
+title: Storage
 ---
-
-# {{ page.title }}
 

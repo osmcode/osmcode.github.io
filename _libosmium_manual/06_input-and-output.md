@@ -1,8 +1,7 @@
 ---
-title: 6. Input and Output
+chapter: 6
+title: Input and Output
 ---
-
-# {{ page.title }}
 
 Libosmium can read several different OSM file formats.
 

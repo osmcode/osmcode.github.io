@@ -1,8 +1,7 @@
 ---
-title: 8. Handlers
+chapter: 8
+title: Handlers
 ---
-
-# {{ page.title }}
 
 If you process OSM data with libosmium to do something (e.g. convert to a different format,
 import into a database, build a routing graph), you will usually create one or more *handlers*.

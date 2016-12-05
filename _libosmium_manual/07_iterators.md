@@ -1,8 +1,7 @@
 ---
-title: 7. Iterators
+chapter: 7
+title: Iterators
 ---
-
-# {{ page.title }}
 
 Every C++ programmer is familiar with iterators and their flexibility. There is
 no reason we couldn't take advantage of that and of the many algorithms

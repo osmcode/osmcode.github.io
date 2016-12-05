@@ -1,8 +1,7 @@
 ---
-title: 9. Collectors
+chapter: 9
+title: Collectors
 ---
-
-# {{ page.title }}
 
 If you write your own handler and get a relation callback, you cannot
 directly access the members of the relation. The only information you can

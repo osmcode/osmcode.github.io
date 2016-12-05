@@ -1,8 +1,7 @@
 ---
-title: 10. Creating Geometries
+chapter: 10
+title: Creating Geometries
 ---
-
-# {{ page.title }}
 
 OSM objects describe *where* something is and *what* it is. The *what* is
 described by the tags, the *where*, the "geometry" is "encoded" in the

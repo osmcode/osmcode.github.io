@@ -1,8 +1,7 @@
 ---
-title: 2. Compiling Programs Using Osmium
+chapter: 2
+title: Compiling Programs Using Osmium
 ---
-
-# {{ page.title }}
 
 Osmium is a header-only library, so it does not need to be compiled by
 itself. But of course you will have to compile programs using Osmium.

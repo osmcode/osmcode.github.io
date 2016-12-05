@@ -1,8 +1,7 @@
 ---
-title: 1. Introduction
+chapter: 1
+title: Introduction
 ---
-
-# {{ page.title }}
 
 *This format is preliminary, it might change. Please send feedback if you use
 this format!*

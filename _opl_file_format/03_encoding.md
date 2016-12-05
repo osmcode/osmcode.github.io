@@ -1,8 +1,7 @@
 ---
-title: 3. Encoding
+chapter: 3
+title: Encoding
 ---
-
-# {{ page.title }}
 
 ## Numbers
 

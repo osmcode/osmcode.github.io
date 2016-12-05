@@ -1,8 +1,7 @@
 ---
-title: 13. Handling of invalid data
+chapter: 13
+title: Handling of invalid data
 ---
-
-# {{ page.title }}
 
 Libosmium can, to a certain extend, handle data that is invalid in the sense
 that it is not allowed in the OSM database or even might be nonsensical, for

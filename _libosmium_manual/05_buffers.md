@@ -1,8 +1,7 @@
 ---
-title: 5. Buffers
+chapter: 5
+title: Buffers
 ---
-
-# {{ page.title }}
 
 OSM entities have to be stored somewhere in memory. They are complex objects
 containing arbitrary number of tags, relations can have any number of members

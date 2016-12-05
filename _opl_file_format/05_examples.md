@@ -1,8 +1,7 @@
 ---
-title: 5. Usage Examples
+chapter: 5
+title: Usage Examples
 ---
-
-# {{ page.title }}
 
 Here are some examples how the OPL format can be used to easily get some data
 out of an OSM file.

@@ -1,8 +1,7 @@
 ---
-title: 12. Exceptions
+chapter: 12
+title: Exceptions
 ---
-
-# {{ page.title }}
 
 Libosmium uses various C++ standard exceptions and some Osmium-specific
 exceptions to tell you about problems. All Osmium-specific exceptions are in

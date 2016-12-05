@@ -1,8 +1,7 @@
 ---
-title: 2. File Format
+chapter: 2
+title: File Format
 ---
-
-# {{ page.title }}
 
 Each line of the file contains one OSM object (a node, way, or relation) or an
 OSM changeset. Lines end in a newline character.

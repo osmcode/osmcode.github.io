@@ -3,17 +3,19 @@ layout: manual
 title: Osmium Concepts Manual
 ---
 
+<p><a href="/docs.html">&larr; Documentation</a></p>
+
 <div class="book-title">{{ page.title }}</div>
 
 <div class="toc">
   <p><b>Table of Contents</b></p>
   <ul>
-{% for oc in site.osmium_concepts %}<li><a href="#{{ oc.title | slugify }}">{{ oc.title }}</a></li>
+{% for oc in site.osmium_concepts %}<li><a href="#{{ oc.title | slugify }}">{{ oc.chapter }}. {{ oc.title }}</a></li>
 {% endfor %}
   </ul>
 </div>
 
 {% for oc in site.osmium_concepts %}
-  <a id="{{ oc.title | slugify }}"/>
+  <h1 id="{{ oc.title | slugify }}">{{ oc.chapter }}. {{ oc.title }}</h1>
 {{ oc.content }}
 {% endfor %}
