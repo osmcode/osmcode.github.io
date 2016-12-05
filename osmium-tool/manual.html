@@ -1,0 +1,21 @@
+---
+layout: manual
+title: Osmium Tool Manual
+---
+
+<p><a href="index.html">&larr; Osmium Tool</a></p>
+
+<div class="book-title">{{ page.title }}</div>
+
+<div class="toc">
+  <p><b>Table of Contents</b></p>
+  <ul>
+{% for oc in site.osmium_tool_manual %}<li><a href="#{{ oc.title | slugify }}">{{ oc.chapter }}. {{ oc.title }}</a></li>
+{% endfor %}
+  </ul>
+</div>
+
+{% for oc in site.osmium_tool_manual %}
+  <h1 id="{{ oc.title | slugify }}">{{ oc.chapter }}. {{ oc.title }}</h1>
+{{ oc.content }}
+{% endfor %}

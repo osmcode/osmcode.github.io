@@ -10,3 +10,4 @@ collections:
     - libosmium_manual
     - opl_file_format
     - osmium_concepts
+    - osmium_tool_manual
