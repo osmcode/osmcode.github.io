@@ -1,0 +1,19 @@
+---
+layout: manual
+title: File Formats Manual
+---
+
+<div class="book-title">{{ page.title }}</div>
+
+<div class="toc">
+  <p><b>Table of Contents</b></p>
+  <ul>
+{% for oc in site.file_formats_manual %}<li><a href="#{{ oc.title | slugify }}">{{ oc.chapter }}. {{ oc.title }}</a></li>
+{% endfor %}
+  </ul>
+</div>
+
+{% for oc in site.file_formats_manual %}
+  <h1 id="{{ oc.title | slugify }}">{{ oc.chapter }}. {{ oc.title }}</h1>
+{{ oc.content }}
+{% endfor %}

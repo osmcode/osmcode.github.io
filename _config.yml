@@ -6,6 +6,7 @@ highlighter: rouge
 gems:
     - jekyll-redirect-from
 collections:
+    - file_formats_manual
     - libosmium_manual
     - opl_file_format
     - osmium_concepts
