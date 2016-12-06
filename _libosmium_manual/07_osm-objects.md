@@ -1,5 +1,5 @@
 ---
-chapter: 4
+chapter: 7
 title: OSM Entities
 ---
 
@@ -21,14 +21,16 @@ Include: `<osmium/osm/object.hpp>`
 The `osmium::OSMObject` class is the base class for nodes, ways, and relations.
 it has accessors for the usual OSM attributes:
 
-    osmium::OSMObject& obj = ...
-    std::cout << "id=" << obj.id()
-              << " version=" << obj.version()
-              << " timestamp=" << obj.timestamp()
-              << " visible=" << (obj.visible() ? "true" : "false"
-              << " changeset=" << obj.changeset()
-              << " uid=" << obj.uid()
-              << " user=" << obj.user() << "\n";
+``` c++
+osmium::OSMObject& obj = ...;
+std::cout << "id=" << obj.id()
+          << " version=" << obj.version()
+          << " timestamp=" << obj.timestamp()
+          << " visible=" << (obj.visible() ? "true" : "false"
+          << " changeset=" << obj.changeset()
+          << " uid=" << obj.uid()
+          << " user=" << obj.user() << "\n";
+```
 
 The `changeset()` and `uid()` accessor functions return the IDs of the changeset
 that created this object version and the User ID of the user creating this version
@@ -39,21 +41,26 @@ or change files it shows whether an object version has been deleted.
 
 In addition each object has a list of tags attached:
 
-    const osmium::TagList& tags = obj.tags();
+``` c++
+const osmium::TagList& tags = obj.tags();
+```
 
 You can iterate over all tags:
 
-    for (const osmium::Tag& tag : obj.tags()) {
-        std::cout << tag.key() << "=" << tag.value() << "\n";
-    }
+``` c++
+for (const auto& tag : obj.tags()) {
+    std::cout << tag.key() << '=' << tag.value() << '\n';
+}
+```
 
 Or you can find specific tags:
 
-    const char* highway = obj.tags().get_value_by_key("highway");
-    if (highway && !strcmp(highway, "primary") {
-        ...
-    }
-
+``` c++
+const char* highway = obj.tags().get_value_by_key("highway");
+if (highway && !std::strcmp(highway, "primary") {
+    ...
+}
+```
 
 ## Nodes
 
@@ -64,8 +71,10 @@ Include: `<osmium/osm/node.hpp>`
 A `Node` is a kind of `OSMObject`. In addition to the things you can do with any
 OSMObject, the Node has a Location.
 
-    osmium::Node& node = ...
-    double longitude = node.location().lon();
+``` c++
+const osmium::Node& node = ...;
+double longitude = node.location().lon();
+```
 
 ## Ways
 
@@ -76,10 +85,12 @@ Include: `<osmium/osm/way.hpp>`
 A `Way` is a kind of `OSMObject`. In addition to the things you can do with any
 OSMObject, a Way has a list of node references:
 
-    osmium::Way& way = ...
-    for (const osmium::NodeRef& nr : way.nodes()) {
-        std::cout << "ref=" << nr.ref() << " location=" << nr.location() << "\n";
-    }
+``` c++
+const osmium::Way& way = ...;
+for (const osmium::NodeRef& nr : way.nodes()) {
+    std::cout << "ref=" << nr.ref() << " location=" << nr.location() << '\n';
+}
+```
 
 ## Relations
 
@@ -90,11 +101,13 @@ Include: `<osmium/osm/relation.hpp>`
 A `Relation` is a kind of `OSMObject`. In addition to the things you can do with any
 OSMObject, a Relation has a list of members:
 
-    osmium::Relation& relation = ...
-    osmium::RelationMemberList& rml = way.members();
-    for (osmium::RelationMember& rm : rml) {
-        std::cout << rm.type() << rm.ref() << " (role=" << rm.role() << ")\n";
-    }
+``` c++
+const osmium::Relation& relation = ...;
+const osmium::RelationMemberList& rml = way.members();
+for (const osmium::RelationMember& rm : rml) {
+    std::cout << rm.type() << rm.ref() << " (role=" << rm.role() << ")\n";
+}
+```
 
 ## Areas
 

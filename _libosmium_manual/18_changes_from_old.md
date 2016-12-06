@@ -1,5 +1,5 @@
 ---
-chapter: 15
+chapter: 18
 title: Changes from old versions of Osmium
 ---
 

@@ -1,5 +1,5 @@
 ---
-chapter: 5
+chapter: 8
 title: Buffers
 ---
 
@@ -36,39 +36,39 @@ allocate memory and free it again after use.
 To create a buffer from existing memory you give the address and size to the
 constructor:
 
-~~~{.cpp}
+``` c++
 const int buffer_size = 10240;
 void* mem = malloc(buffer_size);
-osmium::memory::Buffer buffer(mem, buffer_size);
-~~~
+osmium::memory::Buffer buffer{mem, buffer_size};
+```
 
 This will create an empty buffer with `buffer_size` bytes available for use.
 
 If the new buffer already contains some data, you can add the number of bytes
 already in use as a third parameter to the constructor:
 
-~~~{.cpp}
+``` c++
 void* mem = malloc(buffer_size);
 int num = read(0, mem, buffer_size);
-osmium::memory::Buffer buffer(mem, buffer_size, num);
-~~~
+osmium::memory::Buffer buffer{mem, buffer_size, num};
+```
 
 To create a buffer with internal memory-management you construct it with the
 number of bytes it should have initially and a flag that tells Osmium whether
 it should automatically grow the buffer if it is needed:
 
-~~~{.cpp}
+``` c++
 const int buffer_size = 10240;
 osmium::memory::Buffer buffer{buffer_size, osmium::memory::Buffer::auto_grow::yes};
 osmium::memory::Buffer buffer{buffer_size, osmium::memory::Buffer::auto_grow::no};
-~~~
+```
 
 ## Adding Items to the Buffer
 
 You cannot create OSM objects on the stack, they always have to be stored in
 buffers. To create OSM objects special "builder" classes are used:
 
-~~~{.cpp}
+``` c++
 void add_tags(osmium::memory::Buffer& buffer, osmium::builder::Builder* builder) {
     osmium::builder::TagListBuilder tl_builder{buffer, builder};
     tl_builder.add_tag("amenity", "restaurant");
@@ -90,7 +90,7 @@ osmium::memory::Buffer node_buffer{buffer_size, osmium::memory::Buffer::auto_gro
 }
 node_buffer.commit();
 // do something with the buffer (e.g. write to file)
-~~~
+```
 
 Building OSM entities and adding them to a buffer has some pitfalls. A buffer has to be
 aligned (padding with zeros) before committing. If you try to commit a buffer which is
@@ -104,7 +104,7 @@ references of a way, members of a relation), you need additional builders for
 these reference lists. The destructor of one of these builders has to be called
 before another builder writes data to the buffer.
 
-~~~{.cpp}
+``` c++
 void build_way(osmium::memory::Buffer& buffer) {
     osmium::builder::WayBuilder way_builder{buffer};
     way_builder.object().set_id(1);
@@ -122,7 +122,7 @@ const int buffer_size = 10240;
 osmium::memory::Buffer way_buffer{buffer_size, osmium::memory::Buffer::auto_grow::yes};
 build_way(way_buffer);
 way_buffer.commit();
-~~~
+```
 
 This will create only a way, the nodes have to be created separately.
 
@@ -153,13 +153,13 @@ As a third option you can set a *callback* functor that wil be called when
 the buffer is full. The functor takes a reference to the buffer as argument
 and returns void:
 
-~~~{.cpp}
+``` c++
 void full(osmium::memory::Buffer& buffer) {
     std::cout << "Buffer is full\n";
 }
 
 osmium::memory::Buffer buffer{buffer_size, false};
 buffer.set_full_callback(full);
-~~~
+```
 
 

@@ -1,5 +1,5 @@
 ---
-chapter: 3
+chapter: 6
 title: Basic Types
 ---
 
@@ -42,12 +42,12 @@ Include: `<osmium/osm/types.hpp>`
 
 There are several other typedefs:
 
-Type                  Description
------                 ------------
-`object_version_type` type for OSM object version number
-`changeset_id_type`   type for OSM changeset IDs
-`user_id_type`        type for OSM user IDs
-`num_changes_type`    type for changeset num_changes
+| Type                  | Description
+| -----                 | ------------
+| `object_version_type` | type for OSM object version number
+| `changeset_id_type`   | type for OSM changeset IDs
+| `user_id_type`        | type for OSM user IDs
+| `num_changes_type`    | type for number of changes in a changeset
 
 All these types are currently 32bit integers. Version numbers, changeset
 IDs and User IDs are always positive (they start out with 1). The number
@@ -72,15 +72,15 @@ Coordinates are not checked when they are set.
 
 To create a location:
 
-~~~ {.cpp}
-osmium::Location location(9.3, 49.7);
-~~~
+``` c++
+osmium::Location location{9.3, 49.7};
+```
 
 or using integers:
 
-~~~ {.cpp}
-osmium::Location location(9300000000, 49700000000);
-~~~
+``` c++
+osmium::Location location{9300000000, 49700000000};
+```
 
 Make sure you are using the right number type or you will get very
 wrong coordinates.
@@ -88,18 +88,18 @@ wrong coordinates.
 You can also create an undefined location. This is used for
 instance for coordinates in ways that are not set yet:
 
-~~~ {.cpp}
-osmium::Location location();
-~~~
+``` c++
+osmium::Location location{};
+```
 
 In a boolean context an undefined location returns false, a defined
 true. So you can write something like:
 
-~~~ {.cpp}
+``` c++
 if (location) {
     ...defined location here...
 }
-~~~
+```
 
 You can get and set the coordinates using the internal (integer)
 format with the `x()` and `y()` member functions and the external (double)
@@ -109,9 +109,9 @@ The normal bounds for the longitude and latitude are -180 to 180 and -90 to 90,
 respectively. But in historic OSM data you can sometimes find locations outside
 these bounds. Call
 
-~~~ {.cpp}
+```
 location.valid()
-~~~
+```
 
 to find out if a location is inside those bounds.
 
@@ -146,11 +146,11 @@ A box is a rectangle described by the minimum and maximum longitude and
 latitude. It is used, for instance, in the header of OSM files and in
 changesets to describe the bounding box.
 
-~~~ {.cpp}
+``` c++
 osmium::Box box;
-box.extend(osmium::Location(3.2, 4.3));
+box.extend(osmium::Location{3.2, 4.3});
 box.extend({4.5, 7.2});
 box.extend({3.3, 8.9});
 std::cout << box;  // (3.2,4.3,4.5,8.9)
-~~~
+```
 

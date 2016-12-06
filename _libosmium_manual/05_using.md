@@ -91,25 +91,33 @@ The Proj.4 library is only needed when you want to project OSM locations into ar
 
 If you are using CMake to configure your project, copy the file [FindOsmium.cmake](https://github.com/osmcode/libosmium/blob/master/cmake/FindOsmium.cmake) to your project:
 
-    cd your-project
-    mkdir -p cmake
-    cd cmake
-    wget https://github.com/osmcode/libosmium/raw/master/cmake/FindOsmium.cmake
+``` sh
+cd your-project
+mkdir -p cmake
+cd cmake
+wget https://github.com/osmcode/libosmium/raw/master/cmake/FindOsmium.cmake
+```
 
 and include it in your `CMakeLists.txt`:
 
-    list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
-    find_package(Osmium REQUIRED)
+``` cmake
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
+find_package(Osmium REQUIRED)
+```
 
 This will tell CMake to find the Libosmium includes on the build system during the configuration. You can check whether this was successful with something like:
 
-    if(NOT OSMIUM_FOUND)
-        message(WARNING "Libosmium not found!\n")
-    endif()
+``` cmake
+if(NOT OSMIUM_FOUND)
+    message(WARNING "Libosmium not found!\n")
+endif()
+```
 
 You can add an optional list of components that should be found also. For example to look for the `io` and `gdal` components you extend the `find_package` command like this:
 
-    find_package(Osmium REQUIRED COMPONENTS io gdal)
+``` cmake
+find_package(Osmium REQUIRED COMPONENTS io gdal)
+```
 
 `FindOsmium` knows about the following components:
 
@@ -123,7 +131,9 @@ You can add an optional list of components that should be found also. For exampl
 
 After that add the include directories:
 
-    include_directories(${OSMIUM_INCLUDE_DIRS})
+``` cmake
+include_directories(${OSMIUM_INCLUDE_DIRS})
+```
 
 You can look at the CMake configuration in the [Osmium Tool](https://github.com/osmcode/osmium-tool) and [Osmium Contrib](https://github.com/osmcode/osmium-contrib) repositories for some working examples.
 
@@ -135,4 +145,7 @@ See the [Libosmium manual](http://osmcode.org/libosmium/manual/libosmium-manual.
 
 ## Sample Compilation String
 
-`g++ osm_processor.cpp --std=c++11 -lprotobuf-lite -lpthread -lz -lexpat -losmpbf -lbz2`
+``` sh
+g++ osm_processor.cpp --std=c++11 -lprotobuf-lite -lpthread -lz -lexpat -losmpbf -lbz2
+```
+

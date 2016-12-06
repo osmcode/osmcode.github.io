@@ -1,5 +1,5 @@
 ---
-chapter: 9
+chapter: 12
 title: Collectors
 ---
 
@@ -33,7 +33,7 @@ callback function and called once a relation and all its members are complete.
 You can do there with the relation what ever you want to do. The following
 example shows how to access the relation, its members and their tags and references.
 
-~~~{.cpp}
+``` c++
 void MyRelCollector::complete_relation(osmium::relations::RelationMeta& relation_meta) {
     const osmium::Relation& relation = this->get_relation(relation_meta);
     std::cout << "Working on relation "
@@ -79,7 +79,7 @@ void MyRelCollector::complete_relation(osmium::relations::RelationMeta& relation
         }
     }
 }
-~~~
+```
 
 
 ## Incomplete Relations
@@ -92,7 +92,7 @@ If you still want to work with these relations, you can add a method to your
 collector which handles these relations after everything has been finished.
 You have to call this method manually.
 
-~~~{.cpp}
+``` c++
 void MyRelCollector::handle_incomplete_relations() {
     for (auto* relation : this->get_incomplete_relations()) {
         for (const auto& member : relation.members()) {
@@ -104,7 +104,7 @@ void MyRelCollector::handle_incomplete_relations() {
         }
     }
 }
-~~~
+```
 
 The example above avoids a common pitfall when working with incomplete
 relations. Instead of using

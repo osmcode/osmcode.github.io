@@ -1,5 +1,5 @@
 ---
-chapter: 7
+chapter: 10
 title: Iterators
 ---
 
@@ -22,7 +22,7 @@ pointing to it. This adds some overhead but makes using the data much easier.
 Buffers containing OSM entities support the usual `begin()`, `end()`, `cbegin()`,
 and `cend()` functions:
 
-~~~{.cpp}
+``` c++
 osmium::memory::Buffer buffer = ...;
 
 auto it = buffer.begin();
@@ -31,24 +31,22 @@ auto end = buffer.end();
 for (; it != end; ++it) {
     std::cout << it->type() << "\n";
 }
-~~~
+```
 
 Of course you can also use the C++11 `for` loop:
 
-~~~{.cpp}
+``` c++
 for (auto& item : buffer) {
     ...
 }
-~~~
+```
 
 
 ## Accessing Data from Files
 
-~~~{.cpp}
+``` c++
 osmium::io::Reader reader{"input.osm"};
-osmium::io::InputIterator<osmium::io::Reader> in(reader);
+osmium::io::InputIterator<osmium::io::Reader> in{reader};
 osmium::io::InputIterator<osmium::io::Reader> end;
-~~~
-
-
+```
 

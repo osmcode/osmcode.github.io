@@ -1,5 +1,5 @@
 ---
-chapter: 14
+chapter: 17
 title: Run-time Configuration
 ---
 
@@ -9,7 +9,7 @@ application using the library. Setting these variables is usually not needed
 in normal operations but could be useful when debugging or tweaking
 performance.
 
-## OSMIUM_POOL_THREADS
+## `OSMIUM_POOL_THREADS`
 
 The number of threads in the thread pool used for certain input/output
 operations.
@@ -20,7 +20,7 @@ all cases the minimum number of threads in the pool is 1.
 
 Default: -2
 
-## OSMIUM_USE_POOL_THREADS_FOR_PBF_PARSING
+## `OSMIUM_USE_POOL_THREADS_FOR_PBF_PARSING`
 
 Normally PBF parsing will use the thread pool. You can disable this by setting
 this variable to `false`.

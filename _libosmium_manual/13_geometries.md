@@ -1,5 +1,5 @@
 ---
-chapter: 10
+chapter: 13
 title: Creating Geometries
 ---
 
@@ -24,11 +24,13 @@ of them.
 As an introductory example, we'll look at how a point geometry can be created
 from a node.
 
-    #include <osmium/geom/factory.hpp>
-    const osmium::Node& node; // got this from somewhere
+``` c++
+#include <osmium/geom/factory.hpp>
+const osmium::Node& node = ...; // got this from somewhere
 
-    osmium::geom::WKTFactory<> factory;
-    std::string wkt = factory.create_point(node);
+osmium::geom::WKTFactory<> factory;
+std::string wkt = factory.create_point(node);
+```
 
 First you need a geometry factory. Those factories know how to convert OSM
 objects into different kinds of geometry represantations. The `WKTFactory`
@@ -66,31 +68,36 @@ Libosmium supports the following factories for different geometry formats:
 text based format with geometries that look like `POINT(2.2452, 41.3124)` or
 `LINESTRING(1.1554 2.5215, 1.1453 2.5663)`. They can be created like this:
 
-    #include <include/osmium/geom/wkt.hpp>
-
-    osmium::geom::WKTFactory<> factory;
+``` c++
+#include <include/osmium/geom/wkt.hpp>
+osmium::geom::WKTFactory<> factory;
+```
 
 The factory constructor takes an optional integer argument with the precision
 (number of digits after the decimal point), the default is 7, which is enough
 for OSM.
 
-    osmium::geom::WKTFactory<> factory{3}; // three digits after decimal point
+``` c++
+osmium::geom::WKTFactory<> factory{3}; // three digits after decimal point
+```
 
 All creation functions return a `std::string`:
 
-    std::string point = factory.create_point(node);
-    std::string line  = factory.create_linestring(way);
-    ...
-
+``` c++
+std::string point = factory.create_point(node);
+std::string line  = factory.create_linestring(way);
+...
+```
 
 ### WKB
 
 [Well-known binary](https://en.wikipedia.org/wiki/Well-known_binary) is a
 simple binary format. Create the factory like this:
 
-    #include <include/osmium/geom/wkb.hpp>
-
-    osmium::geom::WKBFactory<> factory;
+``` c++
+#include <include/osmium/geom/wkb.hpp>
+osmium::geom::WKBFactory<> factory;
+```
 
 The factory constructor takes two optional arguments. The first decides
 whether you want WKB (`wkb_type::wkb`, default) or Extended WKB (EWKB,
@@ -99,14 +106,18 @@ whether you want WKB (`wkb_type::wkb`, default) or Extended WKB (EWKB,
 
 To create extended WKB in hex format as used by PostGIS for example:
 
-    osmium::geom::WKBFactory<> factory{osmium::geom::wkb_type::ewkb,
-                                       osmium::geom::out_type::hex};
+``` c++
+osmium::geom::WKBFactory<> factory{osmium::geom::wkb_type::ewkb,
+                                   osmium::geom::out_type::hex};
+```
 
 All creation functions return a `std::string`:
 
-    std::string point = factory.create_point(node);
-    std::string line  = factory.create_linestring(way);
-    ...
+``` c++
+std::string point = factory.create_point(node);
+std::string line  = factory.create_linestring(way);
+...
+```
 
 
 ### GEOS
@@ -118,20 +129,25 @@ by opening an issue on the Github repository.*
 [GEOS](http://trac.osgeo.org/geos/) is an Open Source library with powerful
 operations to work with and modify geometries. To use it from libsomium:
 
-    #include <include/osmium/geom/geos.hpp>
-
-    osmium::geom::GEOSFactory<> factory;
+``` c++
+#include <include/osmium/geom/geos.hpp>
+osmium::geom::GEOSFactory<> factory;
+```
 
 You can also set the SRID used by GEOS (default is -1, unset):
 
-    osmium::geom::GEOSFactory<> factory{4326};
+``` c++
+osmium::geom::GEOSFactory<> factory{4326};
+```
 
 If this is not flexible enough for your case, you can also create a GEOS
 factory yourself and then the libosmium factory from it:
 
-    geos::geom::PrecisionModel geos_pm;
-    geos::geom::GeometryFactory geos_factory{&pm, 4326};
-    osmium::geom::GEOSFactory<> factory{geos_factory};
+``` c++
+geos::geom::PrecisionModel geos_pm;
+geos::geom::GeometryFactory geos_factory{&pm, 4326};
+osmium::geom::GEOSFactory<> factory{geos_factory};
+```
 
 Note: GEOS keeps a pointer to the factory it was created from in each geometry.
 You have to make sure the factory is not destroyed before all the geometries
@@ -139,10 +155,11 @@ created from it have been destroyed!
 
 All creation functions return a `unique_ptr` to the GEOS geometry:
 
-    std::unique_ptr<geos::geom::Point> point = factory.create_point(node);
-    std::unique_ptr<geos::geom::LineString> line = factory.create_linestring(way);
-    ...
-
+``` c++
+std::unique_ptr<geos::geom::Point> point = factory.create_point(node);
+std::unique_ptr<geos::geom::LineString> line = factory.create_linestring(way);
+...
+```
 
 ### GDAL/OGR
 
@@ -151,18 +168,20 @@ Source GIS tools use it in one form or another to read or write geometries
 from/to files or databases in dozens of different formats (Shapfiles,
 Spatialite, PostGIS, etc.) You can use it from libosmium, too:
 
-    #include <include/osmium/geom/ogr.hpp>
-
-    osmium::geom::OGRFactory<> factory;
+``` c++
+#include <include/osmium/geom/ogr.hpp>
+osmium::geom::OGRFactory<> factory;
+```
 
 The factory constructor doesn't take any special arguments.
 
 All creation functions return a `unique_ptr` to the OGR geometry:
 
-    std::unique_ptr<OGRPoint> point = factory.create_point(node);
-    std::unique_ptr<OGRLineString> line = factory.create_linestring(way);
-    ...
-
+``` c++
+std::unique_ptr<OGRPoint> point = factory.create_point(node);
+std::unique_ptr<OGRLineString> line = factory.create_linestring(way);
+...
+```
 
 ### GeoJSON
 
@@ -178,22 +197,26 @@ the *geometry* portion of the JSON structure for you. You have to add the
 The GeoJSONFactory takes an optional precision as argument like the WKT
 constructor:
 
-    #include <include/osmium/geom/geojson.hpp>
+``` c++
+#include <include/osmium/geom/geojson.hpp>
 
-    osmium::geom::GeoJSONFactory<> factory{6};
-    std::string point = factory.create_point(node);
+osmium::geom::GeoJSONFactory<> factory{6};
+std::string point = factory.create_point(node);
+```
 
 The RapidGeoJSONFactory takes a form of `rapidjson::Writer` as argument. Here
 is an example:
 
-    #include <rapidjson/writer.h>
-    #include <rapidjson/stringbuffer.h>
-    #include <include/osmium/geom/rapid_geojson.hpp>
+``` c++
+#include <rapidjson/writer.h>
+#include <rapidjson/stringbuffer.h>
+#include <include/osmium/geom/rapid_geojson.hpp>
 
-    typedef rapidjson::Writer<rapidjson::StringBuffer> writer_type;
-    rapidjson::StringBuffer stream;
-    writer_type writer{stream};
-    osmium::geom::RapidGeoJSONFactory<writer_type> factory{writer};
+typedef rapidjson::Writer<rapidjson::StringBuffer> writer_type;
+rapidjson::StringBuffer stream;
+writer_type writer{stream};
+osmium::geom::RapidGeoJSONFactory<writer_type> factory{writer};
+```
 
 Please see the RapidJSON documentation for details about the `Writer` class.
 
@@ -204,26 +227,33 @@ Before creating the geometries, libosmium can convert the coordinates from the
 OSM objects into different coordinate systems using a *projection*. This
 projection is given as a template parameter to the factory constructor:
 
-    osmium::geom::WKTFactory<> factory; // default identity projection (EPSG 4326)
+``` c++
+osmium::geom::WKTFactory<> factory; // default identity projection (EPSG 4326)
+```
 
 or
 
-    osmium::geom::WKTFactory<osmium::geom::IdentityProjection> factory; // same
+``` c++
+osmium::geom::WKTFactory<osmium::geom::IdentityProjection> factory; // same
+```
 
 Often used is the Web Mercator projection (EPSG 3857):
 
-    #include <osmium/geom/mercator_projection.hpp>
-
-    osmium::geom::WKTFactory<osmium::geom::MercatorProjection> factory;
+``` c++
+#include <osmium/geom/mercator_projection.hpp>
+osmium::geom::WKTFactory<osmium::geom::MercatorProjection> factory;
+```
 
 The identity and Mercator projection are handled internally in libosmium. But
 you can also use any projection implemented by the
 [Proj.4](http://trac.osgeo.org/proj/) library:
 
-    #include <osmium/geom/projection.hpp>
+``` c++
+#include <osmium/geom/projection.hpp>
 
-    osmium::geom::Projection projection{"+init=epsg:31467"}; // Gauss-Krueger GK3
-    osmium::geom::WKTFactory<osmium::geom::Projection> factory{projection};
+osmium::geom::Projection projection{"+init=epsg:31467"}; // Gauss-Krueger GK3
+osmium::geom::WKTFactory<osmium::geom::Projection> factory{projection};
+```
 
 You need to link with `-lproj` if you use this library. See the documentation
 of the Proj.4 library on the different ways to initialize a projection using
@@ -253,8 +283,10 @@ the really logic is in the provided GeometryFactory parent class.
 
 Then all you need is define the partial specialization
 
-    template <class TProjection = IdentityProjection>
-    using SomeFormatFactory = GeometryFactory<SomeFormatFactoryImpl, TProjection>;
+``` c++
+template <class TProjection = IdentityProjection>
+using SomeFormatFactory = GeometryFactory<SomeFormatFactoryImpl, TProjection>;
+```
 
 and you are done.
 
