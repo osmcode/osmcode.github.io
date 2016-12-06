@@ -16,10 +16,6 @@ bigger.
 In addition to the programs listed here, you'll need a C++ compiler which
 supports C++11. Clang 3.4 or later and GCC 4.8 or later are known to work.
 
-You might have to set the C++ version using the compiler option
-
-    -std=c++11
-
 
 ## Installing dependencies on Linux
 
@@ -210,8 +206,8 @@ returns.
 
 [GEOS](http://trac.osgeo.org/geos/) is needed if you want to convert OSM
 geometries into GEOS geometries. The GEOS support is deprecated and works only
-until GEOS 3.5. For details see
-https://github.com/osmcode/libosmium/commit/3424a7400d70d3b9c5b27b7f704eee2c1725450d.
+until GEOS 3.5. For details see [this
+commit](https://github.com/osmcode/libosmium/commit/3424a7400d70d3b9c5b27b7f704eee2c1725450d).
 
 * Debian/Ubuntu: `libgeos++-dev`
 * openSUSE: `libgeos-devel`

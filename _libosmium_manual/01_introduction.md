@@ -49,12 +49,6 @@ for geometry-related functionality, but there are some more. Do
 not directly use anything in any sub-namespace called `detail`. Those
 classes and functions are for internal use only.
 
-## C++11
-
-The current version of Osmium makes extensive use of the new facilities
-provided by the C++11 standard. It will only work with current compilers and
-libraries.
-
 ## License
 
 The Osmium Library is available under the very liberal Boost Software License:
@@ -85,13 +79,4 @@ The Osmium Library is available under the very liberal Boost Software License:
 
 This manual is available under the Creative Commons [Attribution-ShareAlike
 License version 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
-
-## Old Versions of Osmium
-
-If you are stuck with older compilers or need to develop
-using the older C++98 for some reason, you can have a look
-at the older Osmium version. But it is quite different from
-the current Osmium described in this manual.
-
-The old Osmium is available from [GitHub](https://github.com/joto/osmium).
 

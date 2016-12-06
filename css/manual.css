@@ -26,9 +26,10 @@
 }
 
 table {
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     border-radius: 4px;
     border-collapse: collapse;
+    border: 1px solid #e4e4e4;
 }
 
 table tr > th {
@@ -37,10 +38,11 @@ table tr > th {
 
 table th, table td {
     padding: 2px 8px;
+    vertical-align: top;
 }
 
-pre.codehilite {
-    background-color: #ffffff;
+pre.codehilite, pre.highlight {
+    background-color: #f8f8f8;
     border-radius: 4px;
     border: 1px solid #e4e4e4;
     padding: 2px 8px;

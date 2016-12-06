@@ -12,31 +12,41 @@ see below.
 Tests should never fail. If they do fail in your environment, please report
 this as a bug. Some tests will be disabled on some platforms if they are
 testing functionality thats not available on that platform. Some tests will be
-disabled on your host if you don't have the needed [[dependencies|Libosmium
-dependencies]] installed.
+disabled on your host if you don't have the needed
+[dependencies](#dependencies) installed.
 
 
 ## Running the tests
 
-To run the tests, build the project es described in [[Building Libosmium]] and
-then run
+To run the tests, build the project es described in the [Building
+Libosmium](building-libosmium) chapter and then run
 
-    ctest
+``` sh
+ctest
+```
 
 which will run all the configured tests. You can run all tests matching a
 pattern with something like
 
-    ctest -R 'io_.*'
+``` sh
+ctest -R 'io_.*'
+```
 
 or exclude tests from being run with something like
 
-    ctest -E io_test_reader
+``` sh
+ctest -E io_test_reader
+```
 
 If there is some problem you can enable verbose mode:
 
-    ctest -V
+``` sh
+ctest -V
+```
 
-See the CTest documentation for more details.
+See the [CTest
+documentation](https://cmake.org/cmake/help/latest/manual/ctest.1.html) for
+more details.
 
 
 ## Labels
@@ -49,11 +59,15 @@ or `slow`. Fast tests don't take a noticable amount of time, slow tests do.
 You can run all tests with labels matching a regular expression with `-L`. So
 to run only fast tests use
 
-    ctest -L fast
+``` sh
+ctest -L fast
+```
 
 You can use
 
-    ctest --print-labels
+``` sh
+ctest --print-labels
+```
 
 to see all available labels.
 
@@ -80,7 +94,9 @@ with `BUILD_DATA_TESTS`, but you have to install the test data for them to
 work. In the same directory you installed Libosmium in, clone the osm-testdata
 repository:
 
-    git clone https://github.com/osmcode/osm-testdata
+``` sh
+git clone https://github.com/osmcode/osm-testdata
+```
 
 If you have put the test data somewhere else, you can use the `OSM_TESTDATA`
 variable in CMake to point to that directory.
@@ -89,16 +105,4 @@ The `testdata-multipolygon` test needs
 [Spatialite](http://www.gaia-gis.it/gaia-sins/index.html) and
 [Ruby](https://www.ruby-lang.org/) with the `json` gem installed. Those
 dependencies are currently not checked for in the CMake configuration.
-
-
-## Testing with Valgrind
-
-You can run tests under the [Valgrind](http://valgrind.org/) memory checker
-with
-
-    ctest -D ExperimentalMemCheck
-
-Note that this is much slower than normal tests and will probably report some
-false positives.
-
 

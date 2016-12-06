@@ -15,7 +15,7 @@ paying for something you don't use.
 
 Before you do anything else we recommend you at least skim the [Libosmium
 concepts manual](http://docs.osmcode.org/osmium-concepts-manual/) and this
-manual This will give you an overview of what's where and how Libosmium works.
+manual. This will give you an overview of what's where and how Libosmium works.
 
 
 ## Read the API reference
@@ -32,14 +32,14 @@ your convenience.
 
 ## Libraries needed for specific functionality
 
-Also see the [[Libosmium dependencies]].
+Also see the [dependencies chapter](#dependencies).
 
 
 ### XML input
 
 For XML input you need the Expat XML parser, for XML output no special XML library is needed. In any case you need threading enabled. If you want to read or write compressed XML files you need ZLib and BZ2lib.
 
-* Dependencies: [[Expat|Libosmium-dependencies#expat]], [[Zlib|Libosmium-dependencies#zlib]], [[BZ2lib|Libosmium-dependencies#bz2lib]]
+* Dependencies: Expat, Zlib, BZ2lib
 * Link with: `libexpat`, enable multithreading
 * Classes: `osmium::io::Reader`, `osmium::io::Writer`
 * Include files: `osmium/io/any_input.hpp`, `osmium/io/any_output.hpp`, `osmium/io/xml_input.hpp`, `osmium/io/xml_output.hpp`, `osmium/io/any_compression.hpp`, `osmium/io/gzip_compression.hpp`, `osmium/io/bzip2_compression.hpp`
@@ -50,14 +50,14 @@ For PBF input and output you need several libraries and threading enabled.
 
 For version 2.3.0 and above you don't need much:
 
-* Dependencies: [[Zlib|Libosmium-dependencies#zlib]]
+* Dependencies: Zlib
 * Link with: `libz`, `ws2_32` (Windows only), enable multithreading
 * Classes: `osmium::io::Reader`, `osmium::io::Writer`
 * Include files: `osmium/io/any_input.hpp`, `osmium/io/any_output.hpp`, `osmium/io/pbf_input.hpp`, `osmium/io/pbf_output.hpp`
 
-For versions up to 2.2 you need some more libraties:
+For versions up to 2.2 you need some more libraries:
 
-* Dependencies: [[Google Protocol Buffers|Libosmium-dependencies#google-protocol-buffers]], [[OSMPBF|Libosmium-dependencies#osmpbf]], [[Zlib|Libosmium-dependencies#zlib]]
+* Dependencies: Google Protocol Buffers, OSMPBF, Zlib
 * Link with: `libprotobuf-lite`, `libosmpbf`, `libz`, `ws2_32` (Windows only), enable multithreading
 * Classes: `osmium::io::Reader`, `osmium::io::Writer`
 * Include files: `osmium/io/any_input.hpp`, `osmium/io/any_output.hpp`, `osmium/io/pbf_input.hpp`, `osmium/io/pbf_output.hpp`
@@ -70,17 +70,13 @@ The GDAL/OGR library is needed when you want to convert OSM geometries into OGR 
 * Classes: `osmium::geom::OGRFactory`
 * Include files: `osmium/geom/ogr.hpp`, `osmium/area/problem_reporter_ogr.hpp`
 
-### GEOS
-
-The GEOS library is only needed when you want to convert OSM geometries into GEOS geometries.
-
-* Link with: `libgeos`
-* Classes: `osmium::geom::GEOSFactory`
-* Include files: `osmium/geom/geos.hpp`
 
 ### Proj.4
 
-The Proj.4 library is only needed when you want to project OSM locations into arbitrary coordinate reference systems. If you only want to convert to Web Mercator, use `osmium::geom::MercatorProjection` instead and you don't need an extra library.
+The Proj.4 library is only needed when you want to project OSM locations into
+arbitrary coordinate reference systems. If you only want to convert to Web
+Mercator, use `osmium::geom::MercatorProjection` instead and you don't need an
+extra library.
 
 * Link with: `libproj`
 * Classes: `osmium::geom::Projection`
@@ -89,7 +85,9 @@ The Proj.4 library is only needed when you want to project OSM locations into ar
 
 ## CMake configuration
 
-If you are using CMake to configure your project, copy the file [FindOsmium.cmake](https://github.com/osmcode/libosmium/blob/master/cmake/FindOsmium.cmake) to your project:
+If you are using CMake to configure your project, copy the file
+[FindOsmium.cmake](https://github.com/osmcode/libosmium/blob/master/cmake/FindOsmium.cmake)
+to your project:
 
 ``` sh
 cd your-project
@@ -124,7 +122,6 @@ find_package(Osmium REQUIRED COMPONENTS io gdal)
 * `pbf`        - include libraries needed for PBF input and output
 * `xml`        - include libraries needed for XML input and output
 * `io`         - include libraries needed for any type of input/output
-* `geos`       - include if you want to use any of the GEOS functions
 * `gdal`       - include if you want to use any of the OGR functions
 * `proj`       - include if you want to use any of the Proj.4 functions
 * `sparsehash` - include if you use the sparsehash index map (`sparse_mem_table`)
@@ -135,17 +132,35 @@ After that add the include directories:
 include_directories(${OSMIUM_INCLUDE_DIRS})
 ```
 
-You can look at the CMake configuration in the [Osmium Tool](https://github.com/osmcode/osmium-tool) and [Osmium Contrib](https://github.com/osmcode/osmium-contrib) repositories for some working examples.
+You can look at the CMake configuration in the [Osmium
+Tool](https://github.com/osmcode/osmium-tool) and [Osmium
+Contrib](https://github.com/osmcode/osmium-contrib) repositories for some
+working examples.
 
-Note that you should occasionally check whether you still have a current version of `FindOsmium.cmake` and update if necessary.
+Note that you should occasionally check whether you still have a current
+version of `FindOsmium.cmake` and update if necessary.
 
 ## Compiler options
 
-See the [Libosmium manual](http://osmcode.org/libosmium/manual/libosmium-manual.html).
+You might have to set the C++ version using the compiler option
+
+```
+-std=c++11
+```
+
+When working with OSM data you often have very large files with several
+gigabytes. This can lead to problems on 32bit systems. Use the options
+
+```
+-D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+```
+
+for the compiler to make sure that large files work.
+
 
 ## Sample Compilation String
 
 ``` sh
-g++ osm_processor.cpp --std=c++11 -lprotobuf-lite -lpthread -lz -lexpat -losmpbf -lbz2
+g++ osm_processor.cpp --std=c++11 -lpthread -lz -lexpat -lbz2
 ```
 
