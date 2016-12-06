@@ -35,8 +35,8 @@ You can install all important dependencies with:
 and all extra dependencies with:
 
     sudo apt-get install libsparsehash-dev \
-        libboost-dev libboost-program-options-dev \
-        libgdal-dev libgeos++-dev libproj-dev \
+        libboost-dev \
+        libgdal-dev libproj-dev \
         doxygen graphviz
 
 ### Arch Linux
@@ -48,7 +48,7 @@ You can install all important dependencies with:
 
 and all extra dependencies with:
 
-    sudo pacman -Suy sparsehash boost gdal geos \
+    sudo pacman -Suy sparsehash boost gdal \
                       proj doxygen
 
 
