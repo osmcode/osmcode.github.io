@@ -6,7 +6,7 @@ title: Dependencies
 Different parts of Libosmium have different dependencies. You do not need to
 install all of them, just those that you need for whatever you are doing with
 Libosmium. But for a beginner it is not always easy to see which dependencies
-are needed and which aren't. This documentation differentiates between
+are needed and which aren't. This manual differentiates between
 _important_ dependencies and _extra_ dependencies to help you out. You should
 at least install the important dependencies when starting to experiment with
 Libosmium, but feel free to install all dependencies. Whatever is not needed
@@ -23,29 +23,31 @@ supports C++11. Clang 3.4 or later and GCC 4.8 or later are known to work.
 
 You can install all important dependencies with:
 
-    sudo apt-get install \
-        cmake cmake-curses-gui make \
-        libexpat1-dev \
-        zlib1g-dev libbz2-dev
+``` sh
+sudo apt-get install cmake cmake-curses-gui make \
+    libexpat1-dev zlib1g-dev libbz2-dev
+```
 
 and all extra dependencies with:
 
-    sudo apt-get install libsparsehash-dev \
-        libboost-dev \
-        libgdal-dev libproj-dev \
-        doxygen graphviz
+``` sh
+sudo apt-get install libsparsehash-dev libboost-dev \
+    libgdal-dev libproj-dev doxygen graphviz
+```
 
 ### Arch Linux
 
 You can install all important dependencies with:
 
-    sudo pacman -Suy protobuf boost-libs zlib \
-                      expat cmake make bzip2
+``` sh
+sudo pacman -Suy protobuf boost-libs zlib expat cmake make bzip2
+```
 
 and all extra dependencies with:
 
-    sudo pacman -Suy sparsehash boost gdal \
-                      proj doxygen
+``` sh
+sudo pacman -Suy sparsehash boost gdal proj doxygen
+```
 
 
 ## _Important_ dependencies
@@ -190,14 +192,17 @@ into OGR geometries.
 * Fedora: `gdal-devel`
 * CentOS: `gdal-devel`
 
-Osmium can create OGR geometries from OSM data. To use this compile with what
-the command
+To use, compile with what the command
 
-    gdal-config --cflags
+``` sh
+gdal-config --cflags
+```
 
 returns and link with what
 
-    gdal-config --libs
+``` sh
+gdal-config --libs
+```
 
 returns.
 

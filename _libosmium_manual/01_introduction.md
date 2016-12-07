@@ -3,80 +3,82 @@ chapter: 1
 title: Introduction
 ---
 
-The OpenStreetMap project is growing at an enormous rate. Working
-with the OSM data becomes increasingly difficult, because there
-is just so much of it and because it gets more complex all the
-time.
+The OpenStreetMap project is growing at an enormous rate. Working with the OSM
+data becomes increasingly difficult, because there is just so much of it and
+because it gets more complex all the time.
 
-Osmium was developed as an answer to this challenge. After years
-of developing software to work with OSM data in many programming
-languages like Perl, Ruby, Java and even in XSLT, it became
-evident that something more was needed to efficiently work with
-these huge amounts of data. Processing speed was, of course, one
-big issue here, but the other one is available memory. Data
-processing tasks can be so much faster if their working set fits
-into memory, that it makes sense to think about this. Because
-Osmium is a C++ library it can make very efficient use of the
-main memory on your computer. Primitive objects such as integers
-and doubles, but also complex objects need only as much memory
-as is really necessary. There is not much management overhead
-needed in many cases, if the data structures are chosen carefully.
+Osmium was developed as an answer to this challenge. After years of developing
+software to work with OSM data in many programming languages like Perl, Ruby,
+Java and even in XSLT, it became evident that something more was needed to
+efficiently work with these huge amounts of data. Processing speed was, of
+course, one big issue here, but the other one is available memory. Data
+processing tasks can be so much faster if their working set fits into memory,
+that it makes sense to think about this. Because Osmium is a C++ library it can
+make very efficient use of the main memory on your computer. Primitive objects
+such as integers and doubles, but also complex objects need only as much memory
+as is really necessary. There isn't a lot of management overhead needed in many
+cases, if the data structures are chosen carefully.
 
-Osmium has been in continuous development since it was borne in
-October 2010. And it has changed considerably over time. While
-the basic premise, to write a low-level efficient OSM library,
-is still true, it has become more and more powerful and at the
-same time easier to use. Osmium has been in production use nearly
-from day one, some parts of it have been ripped from earlier
-production code. Osmium is not an academic exercise, but it is
-used and it has shown its power many times. And while C++ might
-not be the easiest programming language to learn and Osmium
-might not be the easiest library to use, we try to make it as
-simple as possible to work with it, as long as this doesn't
-compromise efficiency too much.
-        
+Osmium has been in continuous development since it was borne in October 2010.
+And it has changed considerably over time. While the basic premise, to write a
+low-level efficient OSM library, is still true, it has become more and more
+powerful and at the same time easier to use. Osmium has been in production use
+nearly from day one, some parts of it have been ripped from earlier production
+code. Osmium is not an academic exercise, but it is used and it has shown its
+power many times. And while C++ might not be the easiest programming language
+to learn and Osmium might not be the easiest library to use, we try to make it
+as simple as possible to work with it, as long as this doesn't compromise
+efficiency too much.
+
+
 ## Header-only Library
 
-Osmium is a header-only library, so there is nothing to compile
-to build it. Just include the header files you need.
+Osmium is a header-only library, so there is nothing to compile to build it.
+Just include the header files you need.
+
 
 ## The `osmium` Namespace
 
-Everything in the Osmium library is in the `osmium` namespace or
-in sub-namespaces. You'll likely encounter the `osmium::io` namespace
-for everything related to [Input and Output] and the `osmium::geom` namespace
-for geometry-related functionality, but there are some more. Do
-not directly use anything in any sub-namespace called `detail`. Those
+Everything in the Osmium library is in the `osmium` namespace or in
+sub-namespaces. You'll likely encounter the `osmium::io` namespace for
+everything related to file input and output and the `osmium::geom` namespace
+for geometry-related functionality, but there are some more.
+
+Do not directly use anything in any sub-namespace called `detail`. Those
 classes and functions are for internal use only.
+
+Code in any `experimental` sub-namespace is experimental and might be removed
+or changed without notice.
+
 
 ## License
 
-The Osmium Library is available under the very liberal Boost Software License:
-
-    Boost Software License - Version 1.0 - August 17th, 2003
-
-    Permission is hereby granted, free of charge, to any person or organization
-    obtaining a copy of the software and accompanying documentation covered by
-    this license (the "Software") to use, reproduce, display, distribute,
-    execute, and transmit the Software, and to prepare derivative works of the
-    Software, and to permit third-parties to whom the Software is furnished to
-    do so, all subject to the following:
-
-    The copyright notices in the Software and this entire statement, including
-    the above license grant, this restriction and the following disclaimer,
-    must be included in all copies of the Software, in whole or in part, and
-    all derivative works of the Software, unless such copies or derivative
-    works are solely in the form of machine-executable object code generated by
-    a source language processor.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
-    SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
-    FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
-    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-    DEALINGS IN THE SOFTWARE.
-
 This manual is available under the Creative Commons [Attribution-ShareAlike
 License version 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
+
+The Osmium Library is available under the very liberal Boost Software License:
+
+Boost Software License - Version 1.0 - August 17th, 2003
+
+Permission is hereby granted, free of charge, to any person or organization
+obtaining a copy of the software and accompanying documentation covered by
+this license (the "Software") to use, reproduce, display, distribute,
+execute, and transmit the Software, and to prepare derivative works of the
+Software, and to permit third-parties to whom the Software is furnished to
+do so, all subject to the following:
+
+The copyright notices in the Software and this entire statement, including
+the above license grant, this restriction and the following disclaimer,
+must be included in all copies of the Software, in whole or in part, and
+all derivative works of the Software, unless such copies or derivative
+works are solely in the form of machine-executable object code generated by
+a source language processor.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
 

@@ -129,8 +129,8 @@ You need a rather new Visual C++ compiler for this to work. Visual C++ 2013
 (a.k.a 12.0) is __not__ supported. You'll need 2014 CTP or the 2015 Preview.
 This is due to the limited C++11 support in earlier versions of Visual C++.
 
-The easiest way on Windows is to use `windows-builds` repository
-(https://github.com/mapbox/windows-builds).
+The easiest way on Windows is to use the
+[windows-builds](https://github.com/mapbox/windows-builds) repository.
 
 When the pre-requisites (Visual Studio 2014/2015, git) are in place, it should
 not take more than these steps to compile libosmium:
@@ -143,6 +143,20 @@ scripts\build_libosmium_deps
 scripts\package_libosmium_deps
 scripts\build_libosmium vs
 ```
+
+## Building on 32bit architectures
+
+Osmium works well on 64 bit machines, but on 32 bit machines there are some
+problems. Be aware that not everything will work on 32 bit architectures.
+This is mostly due to the 64 bit needed for node IDs. Also Osmium hasn't been
+tested well on 32 bit systems. Here are some issues you might run into:
+
+* Google Sparsehash does not work on 32 bit machines in our use case.
+* The `mmap` system call is called with a `size_t` argument, so it can't
+  give you more than 4GByte of memory on 32 bit systems. This might be a
+  problem.
+
+Please report any issues you have and we might be able to solve them.
 
 
 ## Building the reference documentation
@@ -157,6 +171,22 @@ make doc
 ```
 
 to create the reference documentation.
+
+
+## Installing Libosmium
+
+Call `make install` in the build directory to install the library. By default,
+this will install the Osmium include files into `/usr/local/include/`.
+
+The following external (header-only) libraries are included in the libosmium
+repository:
+* [gdalcpp](https://github.com/joto/gdalcpp)
+* [protozero](https://github.com/mapbox/protozero)
+* [utfcpp](http://utfcpp.sourceforge.net/)
+
+If you want (some of) those libraries to be installed along with libosmium
+itself when calling `make install`, you have to use the CMake options
+`INSTALL_GDALCPP`, `INSTALL_PROTOZERO`, and/or `INSTALL_UTFCPP`.
 
 
 ## If something didn't work

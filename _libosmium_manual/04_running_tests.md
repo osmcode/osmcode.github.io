@@ -6,8 +6,8 @@ title: Running tests
 Libosmium uses the [Catch](https://github.com/philsquared/Catch/) unit testing
 framework and CTest which is part of the [CMake](http://www.cmake.org/) suite.
 
-There are two kinds of tests: _unit tests_ and _data tests_. For the details
-see below.
+There are three kinds of tests: _unit tests_, _data tests_, and _example
+tests_. For the details see below.
 
 Tests should never fail. If they do fail in your environment, please report
 this as a bug. Some tests will be disabled on some platforms if they are
@@ -105,4 +105,11 @@ The `testdata-multipolygon` test needs
 [Spatialite](http://www.gaia-gis.it/gaia-sins/index.html) and
 [Ruby](https://www.ruby-lang.org/) with the `json` gem installed. Those
 dependencies are currently not checked for in the CMake configuration.
+
+
+## Example tests
+
+Some example programs come with tests. Those tests are under `test/examples`.
+They run the example programs with some arguments to check basic functionality.
+Currently these tests are very rudimentary.
 

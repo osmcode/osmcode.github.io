@@ -11,7 +11,7 @@ only bringing in some specific classes and functions. This way you are not
 paying for something you don't use.
 
 
-## Read the manual
+## Read the manuals
 
 Before you do anything else we recommend you at least skim the [Libosmium
 concepts manual](http://docs.osmcode.org/osmium-concepts-manual/) and this
@@ -28,6 +28,76 @@ Libosmium uses several other libraries for many of its functions and you have
 to figure out which libraries to link with when you include specific Libosmium
 header files. This is documented in the reference and there is a list below for
 your convenience.
+
+
+## CMake configuration
+
+If you are using CMake to configure your project, using Libosmium is very
+easy, because complete configuration is available. Copy the file
+[FindOsmium.cmake](https://github.com/osmcode/libosmium/blob/master/cmake/FindOsmium.cmake)
+to your project:
+
+``` sh
+cd your-project
+mkdir -p cmake
+cd cmake
+wget https://github.com/osmcode/libosmium/raw/master/cmake/FindOsmium.cmake
+```
+
+and include it in your `CMakeLists.txt`:
+
+``` cmake
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
+find_package(Osmium REQUIRED)
+```
+
+This will tell CMake to find the Libosmium includes on the build system during
+the configuration. You can check whether this was successful with something
+like:
+
+``` cmake
+if(NOT OSMIUM_FOUND)
+    message(WARNING "Libosmium not found!\n")
+endif()
+```
+
+If your code doesn't work with older version of Libosmium, you can tell CMake
+the minimum version number:
+
+``` cmake
+find_package(Osmium 2.10.2 REQUIRED)
+```
+
+You can add an optional list of components that should be found also. For
+example to look for the `io` and `gdal` components you extend the
+`find_package` command like this:
+
+``` cmake
+find_package(Osmium REQUIRED COMPONENTS io gdal)
+```
+
+`FindOsmium` knows about the following components:
+
+* `pbf`        - include libraries needed for PBF input and output
+* `xml`        - include libraries needed for XML input and output
+* `io`         - include libraries needed for any type of input/output
+* `gdal`       - include if you want to use any of the OGR functions
+* `proj`       - include if you want to use any of the Proj.4 functions
+* `sparsehash` - include if you use the sparsehash index map (`sparse_mem_table`)
+
+After that add the include directories:
+
+``` cmake
+include_directories(${OSMIUM_INCLUDE_DIRS})
+```
+
+You can look at the CMake configuration in the [Osmium
+Tool](https://github.com/osmcode/osmium-tool) and [Osmium
+Contrib](https://github.com/osmcode/osmium-contrib) repositories for some
+working examples.
+
+Note that you should occasionally check whether you still have a current
+version of `FindOsmium.cmake` and update if necessary.
 
 
 ## Libraries needed for specific functionality
@@ -82,63 +152,6 @@ extra library.
 * Classes: `osmium::geom::Projection`
 * Include files: `osmium/geom/projection.hpp`
 
-
-## CMake configuration
-
-If you are using CMake to configure your project, copy the file
-[FindOsmium.cmake](https://github.com/osmcode/libosmium/blob/master/cmake/FindOsmium.cmake)
-to your project:
-
-``` sh
-cd your-project
-mkdir -p cmake
-cd cmake
-wget https://github.com/osmcode/libosmium/raw/master/cmake/FindOsmium.cmake
-```
-
-and include it in your `CMakeLists.txt`:
-
-``` cmake
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
-find_package(Osmium REQUIRED)
-```
-
-This will tell CMake to find the Libosmium includes on the build system during the configuration. You can check whether this was successful with something like:
-
-``` cmake
-if(NOT OSMIUM_FOUND)
-    message(WARNING "Libosmium not found!\n")
-endif()
-```
-
-You can add an optional list of components that should be found also. For example to look for the `io` and `gdal` components you extend the `find_package` command like this:
-
-``` cmake
-find_package(Osmium REQUIRED COMPONENTS io gdal)
-```
-
-`FindOsmium` knows about the following components:
-
-* `pbf`        - include libraries needed for PBF input and output
-* `xml`        - include libraries needed for XML input and output
-* `io`         - include libraries needed for any type of input/output
-* `gdal`       - include if you want to use any of the OGR functions
-* `proj`       - include if you want to use any of the Proj.4 functions
-* `sparsehash` - include if you use the sparsehash index map (`sparse_mem_table`)
-
-After that add the include directories:
-
-``` cmake
-include_directories(${OSMIUM_INCLUDE_DIRS})
-```
-
-You can look at the CMake configuration in the [Osmium
-Tool](https://github.com/osmcode/osmium-tool) and [Osmium
-Contrib](https://github.com/osmcode/osmium-contrib) repositories for some
-working examples.
-
-Note that you should occasionally check whether you still have a current
-version of `FindOsmium.cmake` and update if necessary.
 
 ## Compiler options
 
