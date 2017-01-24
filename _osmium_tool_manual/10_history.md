@@ -1,5 +1,5 @@
 ---
-chapter: 9
+chapter: 10
 title: Working with History files
 ---
 
@@ -14,8 +14,9 @@ work with history data. The same is true for some Osmium subcommands. But
 wherever it is possible and makes sense, Osmium also supports history files.
 Often they will just work, sometimes you need special command line options.
 
-Commands that "just work" are `cat`, `fileinfo`, `show`, `sort`. The will do
-what you expect.
+Commands that "just work" are `cat`, `fileinfo`, `show`, `sort`. They will do
+what you expect. The `apply-changes` and `extract` commands have an option
+`--with-history` that makes them work with history files.
 
 One command is only useful for history files: `time-filter`. It is used to
 filter objects from a history file based on time. To get all objects visible
