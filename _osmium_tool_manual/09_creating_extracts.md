@@ -163,8 +163,8 @@ your region will be in the extract completely. But a boundary for instance
 will not be, otherwise you might get a huge boundary around a whole country in
 your extract when all you wanted was a small area at the border. You can change
 this behaviour with the `-S` or `--option` option. If you want all relation
-types, use `-S all`, if you only want particular types, specify them like
-this: `-S multipolygon,route`.
+types, use `-S types=any`, if you only want particular types, specify them like
+this: `-S types=multipolygon,route`.
 
 For the *smart* strategy the input file is read three times.
 
