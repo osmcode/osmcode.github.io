@@ -44,7 +44,12 @@ or `<delete>`. When reading change files, Osmium gives you normal OSM objects
 and sets the `visible` flag to *false* for objects in `<delete>` sections.
 When writing out OSM objects into change files, deleted objects are marked
 so and all other objects are either marked as `<create>` if their version is
-1 or `<modify>` if their version is greater than 1.
+1 or `<modify>` if their version is greater than 1. (This is technically
+correct, because in OSM all objects are created at version 1 and all other
+versions are necessarily modifications of this first version. Other software
+interprets the details differently and uses create/modify in slightly different
+circumstances. Any software using change files must handle both cases
+(create/modify) anyway, so this shouldn't make a difference.)
 
 You can also see a change file as a *partial history file* with a strange
 format.
