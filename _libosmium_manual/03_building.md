@@ -180,6 +180,7 @@ this will install the Osmium include files into `/usr/local/include/`.
 
 The following external (header-only) libraries are included in the libosmium
 repository:
+
 * [gdalcpp](https://github.com/joto/gdalcpp)
 * [protozero](https://github.com/mapbox/protozero)
 * [utfcpp](http://utfcpp.sourceforge.net/)
