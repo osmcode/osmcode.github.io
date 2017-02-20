@@ -14,13 +14,13 @@ paying for something you don't use.
 ## Read the manuals
 
 Before you do anything else we recommend you at least skim the [Libosmium
-concepts manual](http://docs.osmcode.org/osmium-concepts-manual/) and this
+concepts manual](http://osmcode.org/osmium-concepts/) and this
 manual. This will give you an overview of what's where and how Libosmium works.
 
 
 ## Read the API reference
 
-The [API reference](http://osmcode.org/libosmium/reference/) contains a
+The [API reference](http://docs.osmcode.org/libosmium/) contains a
 documentation of every class and function in Libosmium. It will tell you which
 `#include` directive you need where.
 
