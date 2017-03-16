@@ -19,8 +19,8 @@ file:
 
 You can give as many change files as you want on the command line and in any
 order. All changes will be read into memory and sorted before they are applied
-to the data file. If you a lot of change files, it might be better to apply
-them one bunch at a time so this will not use too much memory.
+to the data file. If you have a lot of change files, it might be better to
+apply them one bunch at a time so this will not use too much memory.
 
 The same command also works with history files:
 
@@ -37,8 +37,8 @@ history mode with a command line option:
 Sometimes you don't want to apply changes to an OSM file, but to a database
 or so. For instance when you are upgrading a `osm2pgsql` rendering database.
 If you have a lot of change files, it is often better to merge them into one
-larger change file and then apply that one using `osm2pgsql`. Merging is done
-with
+larger change file and then use that one to do the database import. Merging is
+done with
 
     osmium merge-changes --simplify ch456.osc.gz ch457.osc.gz \
         -o merged-changes.osc.gz
@@ -52,4 +52,20 @@ This is done with `derive-changes`:
 
     osmium derive-changes yesterday.osm.pbf today.osm.pbf \
         -o changes-since-yesterday.osc
+
+There is another command that, on the surface, appears to be similar to
+`derive-changes` but serves a totally different purpose, the `diff` command.
+The `diff` commands allow you to see the difference between any two OSM files
+in various formats. It compares all details of all OSM objects, so it will,
+for instance, detect if there is an object with the same type, id, and version,
+but different timestamp. This is different from the `derive-changes` command
+which will only look at the object type, id, and version to do its work.
+
+The difference in behaviour comes from the different intended uses. The
+`derive-changes` command is only used to, well, derive a change file from
+two OSM files. Those OSM files must be snapshots of the OSM database or some
+extracts from different points in time. The `diff` command, on the other hand,
+can be used to check *any* two OSM files. This is useful for instance for
+developers who want to compare the output of two different versions of the
+same program creating some kind of OSM file.
 
