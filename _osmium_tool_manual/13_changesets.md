@@ -1,6 +1,6 @@
 ---
-chapter: 12
-title: Working with Changesets
+chapter: 13
+title: Working with changesets
 ---
 
 Osmium can not only handle OSM objects (nodes, ways, and relations), but also

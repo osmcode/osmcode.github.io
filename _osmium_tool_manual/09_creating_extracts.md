@@ -1,6 +1,6 @@
 ---
 chapter: 9
-title: Creating Extracts
+title: Creating geographic extracts
 ---
 
 There is often the need to create a geographical extract of OSM data that only

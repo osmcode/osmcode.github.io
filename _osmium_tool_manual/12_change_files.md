@@ -1,6 +1,6 @@
 ---
-chapter: 11
-title: Working with Change files
+chapter: 12
+title: Working with change files
 ---
 
 While OSM data files contain the OSM data of a specific point in time and

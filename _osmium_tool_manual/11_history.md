@@ -1,6 +1,6 @@
 ---
-chapter: 10
-title: Working with History files
+chapter: 11
+title: Working with history files
 ---
 
 Osmium can not only work with normal OSM data files, but also with history
