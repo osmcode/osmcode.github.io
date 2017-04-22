@@ -54,7 +54,7 @@ sudo pacman -Suy sparsehash boost gdal proj doxygen
 
 ### CMake and Make
 
-To build the tests, examples, etc. you need the [CMake](http://www.cmake.org/)
+To build the tests, examples, etc. you need the [CMake](https://cmake.org/)
 build system. Programs using Libosmium can, of course, be built with any build
 system you like, but the Libosmium repository as well as many projects based on
 Libosmium use it.
@@ -72,9 +72,9 @@ CMake usually generates a Makefile for Make, which you will also need.
 
 _Not needed any more from version 2.3.0 onwards_
 
-[Google Protocol Buffers](http://code.google.com/p/protobuf/) in at least
-version 2.4.0 is needed for reading and writing [OSM PBF
-files](http://wiki.openstreetmap.org/wiki/PBF_Format).
+[Google Protocol Buffers](https://developers.google.com/protocol-buffers/) in
+at least version 2.4.0 is needed for reading and writing [OSM PBF
+files](https://wiki.openstreetmap.org/wiki/PBF_Format).
 
 * Debian/Ubuntu: `libprotobuf-dev`, `protobuf-compiler`
 * openSUSE: `protobuf-devel`
@@ -86,7 +86,7 @@ _Not needed any more from version 2.3.0 onwards_
 
 The [OSMPBF library](https://github.com/scrosby/OSM-binary) is needed for
 reading and writing [OSM PBF
-files](http://wiki.openstreetmap.org/wiki/PBF_Format).
+files](https://wiki.openstreetmap.org/wiki/PBF_Format).
 
 * Debian/Ubuntu: `libosmpbf-dev` (The package in Ubuntu 14.04 and older is too old, install from source instead.)
 * Homebrew: `osm-pbf`
@@ -95,7 +95,7 @@ files](http://wiki.openstreetmap.org/wiki/PBF_Format).
 
 The [Protozero header only library](https://github.com/mapbox/protozero) is
 needed for reading and writing [OSM PBF
-files](http://wiki.openstreetmap.org/wiki/PBF_Format). A copy of this library
+files](https://wiki.openstreetmap.org/wiki/PBF_Format). A copy of this library
 is included in the libosmium repository but not installed by default. Either
 use the packages of your distribution, install it from Github, or use the
 `INSTALL_PROTOZERO` option of the libosmium CMake configuration to install the
@@ -235,7 +235,7 @@ project OSM coordinates into spatial reference systems other than Web Mercator
 The Libosmium API documentation can be built using
 [Doxygen](http://www.stack.nl/~dimitri/doxygen/). Usually you do not need to do
 this, because the API reference is available
-[online](http://osmcode.org/libosmium/reference). If you want to build it
+[online](http://docs.osmcode.org/libosmium/latest/). If you want to build it
 yourself, you need [Graphviz](http://www.graphviz.org/) in addition to Doxygen.
 
 * Debian/Ubuntu: `doxygen`, `graphviz`

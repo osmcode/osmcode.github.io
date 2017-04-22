@@ -12,7 +12,7 @@ Before building you need to install all the [dependencies](#dependencies).
 
 ## CMake
 
-Libosmium uses the [CMake](http://www.cmake.org/) configuration system
+Libosmium uses the [CMake](https://cmake.org/) configuration system
 available on all major platforms. CMake will generate a configuration for a
 build system of your choice. On Linux and Mac OS/X this is usually GNU Make, on
 Windows Nmake or MSBuild.
@@ -120,7 +120,7 @@ to complete the build.
 
 For Mac users: If you have clang 3.2 or newer, use the system compiler. If not
 you have to build the compiler yourself. See the instructions on
-http://clang.llvm.org/ .
+https://clang.llvm.org/ .
 
 
 ## Building on Windows

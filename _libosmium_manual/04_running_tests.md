@@ -4,7 +4,7 @@ title: Running tests
 ---
 
 Libosmium uses the [Catch](https://github.com/philsquared/Catch/) unit testing
-framework and CTest which is part of the [CMake](http://www.cmake.org/) suite.
+framework and CTest which is part of the [CMake](https://cmake.org/) suite.
 
 There are three kinds of tests: _unit tests_, _data tests_, and _example
 tests_. For the details see below.
@@ -19,7 +19,7 @@ disabled on your host if you don't have the needed
 ## Running the tests
 
 To run the tests, build the project es described in the [Building
-Libosmium](building-libosmium) chapter and then run
+Libosmium](#building-libosmium) chapter and then run
 
 ``` sh
 ctest
