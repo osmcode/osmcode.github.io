@@ -54,7 +54,7 @@ or changed without notice.
 ## License
 
 This manual is available under the Creative Commons [Attribution-ShareAlike
-License version 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
+License version 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 The Osmium Library is available under the very liberal Boost Software License:
 

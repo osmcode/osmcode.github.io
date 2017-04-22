@@ -22,7 +22,7 @@ Packages called `osmium-tool` are available for Debian and Ubuntu systems.
 library.) Depending on your system, the packages might be rather old. Debian
 unstable and testing are tracking the development of Osmium closely. For
 Jessie those new packages are available in the
-[backports repository](http://backports.debian.org/Instructions/).
+[backports repository](https://backports.debian.org/Instructions/).
 
 
 ### Fedora

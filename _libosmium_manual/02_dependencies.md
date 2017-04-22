@@ -222,7 +222,7 @@ commit](https://github.com/osmcode/libosmium/commit/3424a7400d70d3b9c5b27b7f704e
 
 ### Proj.4
 
-The [Proj.4](http://trac.osgeo.org/proj/) library is needed if you want to
+The [Proj.4](http://proj4.org/) library is needed if you want to
 project OSM coordinates into spatial reference systems other than Web Mercator
 (EPSG 3857, often named Google Mercator).
 

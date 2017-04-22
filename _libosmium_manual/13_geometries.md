@@ -246,7 +246,7 @@ osmium::geom::WKTFactory<osmium::geom::MercatorProjection> factory;
 
 The identity and Mercator projection are handled internally in libosmium. But
 you can also use any projection implemented by the
-[Proj.4](http://trac.osgeo.org/proj/) library:
+[Proj.4](http://proj4.org/) library:
 
 ``` c++
 #include <osmium/geom/projection.hpp>

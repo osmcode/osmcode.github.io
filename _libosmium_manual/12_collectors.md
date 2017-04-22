@@ -128,6 +128,5 @@ There are lots of examples how to use a `MultipolygonCollector`, e.g.
 
 * [osmium_area_test.cpp](https://github.com/osmcode/libosmium/blob/master/examples/osmium_area_test.cpp)
 at Osmium examples
-* [amenity_list.cpp](https://github.com/osmcode/osmium-contrib/blob/master/amenity_list/amenity_list.cpp)
-at osmium-contib
+* [OSM Area Tools](https://github.com/osmcode/osm-area-tools)
 

@@ -6,7 +6,7 @@ title: Changes from old versions of Osmium
 This version has some substantial changes from he "old Osmium" available from
 https://github.com/joto/osmium and users of the "old Osmium" will have to
 rewrite their code. Use the examples provided in the "example" directory or in
-the [osmium-contrib](http://github.com/osmcode/osmium-contrib) repository to
+the [osmium-contrib](https://github.com/osmcode/osmium-contrib) repository to
 get an idea what needs changing. These examples are often similar to the
 examples provided with the old Osmium so they should give you an idea how your
 code has to change.
