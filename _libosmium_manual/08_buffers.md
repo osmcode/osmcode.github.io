@@ -3,18 +3,21 @@ chapter: 8
 title: Buffers
 ---
 
+Include: `<osmium/memory/buffer.hpp>`
+
 OSM entities have to be stored somewhere in memory. They are complex objects
 containing arbitrary number of tags, relations can have any number of members
 etc. If we handled those objects like any normal C++ object, creating them
 would take lots of small memory allocations and many pointer indirections to
 get at all the parts of the data. Instead OSM entities are created inside
-so-called *buffers*. Buffers can have a fixed size or grow as needed. New objects
-can be added at the end, and they are stored inside those buffers in a reasonably
-space-efficient manner while still being accessible easily and quickly.
+so-called *buffers*. Buffers can have a fixed size or grow as needed. New
+objects can be added at the end, and they are stored inside those buffers in a
+reasonably space-efficient manner while still being accessible easily and
+quickly.
 
 Buffers can be moved around between different parts of your program and even
 between threads. The content of buffers can even be written to disk as it is
-and read back in and immediately used "as is" without any serializaton or
+and read back in and immediately used "as is" without any serialization or
 de-serialization step needed.
 
 But all of this has one draw-back: It is slightly more complicated to create
@@ -27,7 +30,7 @@ the memory then. But they can be moved.
 
 Buffers exist in two different flavours, those with external memory management
 and those with internal memory management. If you already have some memory with
-data in it (for instance read from disk), you create a Buffer with external
+data in it (for instance read from disk), you create a buffer with external
 memory managment. It is your job then to free the memory once the buffer isn't
 used any more. If you don't have some memory space already, you can create a
 Buffer object and have it manage the memory internally. It will dynamically
@@ -133,33 +136,55 @@ instance of `RelationBuilder` has to go out of scope before the
 
 ## Handling a Full Buffer
 
-If a buffer becomes full, there are three different things that can happen:
+If a buffer becomes full, there are two different things that can happen:
 
 If the buffer was created with `auto_grow::yes`, it will reserve more memory
 on the heap and double its size. This will happen without the client code
 noticing, but it will invalidate any pointer pointing into the buffer. This
-is the same behaviour a `std::vector` has so it should be familiar to C++
+is similar behaviour as a `std::vector` so it should be familiar to C++
 programmers.
 
 If the buffer was created with `auto_grow::no` (or if it is a buffer with
-external memory management), the exception `osmium::memory::BufferIsFull` will
-be thrown. In this case you have to catch the exception, either grow the buffer
-or create a new one. If you grow the buffer you can keep going at the point
-where you left off. If you start a new one, the last object you were writing to
-the buffer when the exception was thrown was not committed and you have to
-write it again into the new buffer.
+external memory management), the exception `osmium::BufferIsFull` will be
+thrown. In this case you have to catch the exception, either grow the buffer or
+create a new one. If you grow the buffer you can keep going at the point where
+you left off. If you start a new one, the last object you were writing to the
+buffer when the exception was thrown was not committed and you have to write it
+again into the new buffer.
 
-As a third option you can set a *callback* functor that wil be called when
-the buffer is full. The functor takes a reference to the buffer as argument
-and returns void:
+## The `CallbackBuffer` Class
 
-``` c++
-void full(osmium::memory::Buffer& buffer) {
-    std::cout << "Buffer is full\n";
+Include: `<osmium/memory/callback_buffer.hpp>`
+
+The `CallbackBuffer` is a small wrapper class around the `Buffer` class. It
+tries to keep the size of the internal buffer beneath a maximum buffer size
+specified in the constructor. If the buffer is "full" a callback is called.
+
+```c++
+// Initialize a callback buffer with default size (1MB) and default max
+// size (800kB). You can change those numbers by giving them to the constructor.
+CallbackBuffer cb;
+
+// Set a callback that knows what to do with the buffer, for instance it can
+// write it out to disk.
+cb.set_callback([&](osmium::memory::Buffer&& buffer) {
+    ...handle buffer...
 }
 
-osmium::memory::Buffer buffer{buffer_size, false};
-buffer.set_full_callback(full);
+// Add objects to your buffer, for instance like this:
+osmium::builder::add_node(cb.buffer(), _id(9), ...);
+
+// Call `possibly_flush()` after each object added to the buffer to check
+// the size and possibly call the callback.
+cb.possibly_flush();
+
+// ...
+
+// Force a flush of the buffer when you are finished adding data to the buffer.
+cb.flush();
 ```
 
+Note that the buffer can grow beyond the initial buffer size if needed. This
+can happen if a new object doesn't fit into the rest of the buffer available or
+if no callback function is set (yet).
 
