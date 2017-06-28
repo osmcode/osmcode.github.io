@@ -275,7 +275,7 @@ underlying `Relation` using `operator*()` and `operator->()`.
 ## MultipolygonManager and MultipolygonManagerLegacy
 
 [Multipolygons](https://wiki.openstreetmap.org/wiki/Relation:multipolygon) are
-a type of relations at OpenStreetMap (they are tagged with
+a type of relation at OpenStreetMap (they are tagged with
 `type=multipolygon`) to model areas with inner rings and areas with multiple
 outer rings. Osmium provides a relations manager for multipolygons and
 [boundary](https://wiki.openstreetmap.org/wiki/Relation:boundary) relations
