@@ -100,6 +100,9 @@ persistent storage.
 
 `dense_file_array`: Use for large OSM files if you don't have enough memory.
 
+`flex_mem`: Automatically uses a sparse or dense index based on the input data.
+Good as a default value. Works a bit like `sparse_mmap_array` for small input
+data and `dense_mmap_array` for large inputs.
 
 #### List of multimap index classes
 
