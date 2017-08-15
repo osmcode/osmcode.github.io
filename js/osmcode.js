@@ -34,13 +34,21 @@ function update_doc_refs(project) {
     });
 }
 
+function version_compare(a, b) {
+    return a.replace(/\d+/g, n => +n+100000).localeCompare(b.replace(/\d+/g, n => +n+100000));
+}
+
 function update_releases() {
     $('tr:has(td.release)').each(function(index, tr) {
         var project = tr.id.replace(/^project-/, '');
-        var url = 'https://api.github.com/repos/osmcode/' + project + '/releases/latest';
+        var url = 'https://api.github.com/repos/osmcode/' + project + '/releases';
         $.get(url, function(data) {
+            data = data.sort(function(a, b) {
+                return version_compare(b.tag_name, a.tag_name);
+            })[0]
             $('#project-' + project + ' td.release').html(
-                '<a href="' + data.html_url + '">' + data.tag_name.substr(1) + '</a>' + ' - ' + data.published_at.replace(/T.*/, '')
+                data.published_at.replace(/T.*/, '') + ' - ' +
+                '<a href="' + data.html_url + '">' + data.tag_name.substr(1) + '</a>'
             );
         }).fail(function() {
             $('#project-' + project + ' td.release').html('<i>not available</i>');
