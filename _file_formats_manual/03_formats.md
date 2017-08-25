@@ -38,6 +38,10 @@ later chapters will go into more details.
     than the XML or OPL formats. As the name implies this is intended for
     debugging. The format can only be written by Osmium, not read.
 
+**BLACKHOLE**
+:   A "dummy" format that throws away all data. Can only be written to, not
+    read from.
+
 See below for more detailed descriptions.
 
 
