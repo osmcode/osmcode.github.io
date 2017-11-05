@@ -117,7 +117,7 @@ CMake configuration to install the bundled version.
 
 ### Expat
 
-[Expat](http://expat.sourceforge.net/) is needed for parsing OSM XML files.
+[Expat](http://www.libexpat.org/) is needed for parsing OSM XML files.
 
 * Debian/Ubuntu: `libexpat1-dev`
 * openSUSE: `libexpat-devel`

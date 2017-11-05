@@ -190,7 +190,7 @@ in JSON.
 
 Libosmium has two different GeoJSON factories. One creates normal
 `std::string`s with the JSON data. The other uses the
-[RapidJSON](https://github.com/miloyip/rapidjson) library. Both only create
+[RapidJSON](https://github.com/Tencent/rapidjson) library. Both only create
 the *geometry* portion of the JSON structure for you. You have to add the
 *feature* structure with the properties yourself as needed for your use case.
 
