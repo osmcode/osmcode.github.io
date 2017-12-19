@@ -81,7 +81,6 @@ To build with PBF support you have to compile with threads and need `libz`:
 Note that in older versions of `libosmium` you needed to link with the
 `protobuf` and `osmpbf` libraries. They are not used any more. Instead the
 [protozero](https://github.com/mapbox/protozero) header-only library is used.
-This library is included in the libosmium repository.
 
 
 ## Reading and Writing OSM Files with Osmium

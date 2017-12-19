@@ -182,12 +182,16 @@ The following external (header-only) libraries are included in the libosmium
 repository:
 
 * [gdalcpp](https://github.com/joto/gdalcpp)
-* [protozero](https://github.com/mapbox/protozero)
 * [utfcpp](http://utfcpp.sourceforge.net/)
 
 If you want (some of) those libraries to be installed along with libosmium
 itself when calling `make install`, you have to use the CMake options
-`INSTALL_GDALCPP`, `INSTALL_PROTOZERO`, and/or `INSTALL_UTFCPP`.
+`INSTALL_GDALCPP` and/or `INSTALL_UTFCPP`.
+
+(Libosmium versions 2.13 and before also included the
+[protozero](https://github.com/mapbox/protozero) which could be included
+with `INSTALL_PROTOZERO`. Newer versions of libosmium don't include this any
+more.)
 
 
 ## If something didn't work
