@@ -13,41 +13,28 @@ Libosmium, but feel free to install all dependencies. Whatever is not needed
 will not be used anway, it will not slow down your program or make the binaries
 bigger.
 
+On Linux systems most of these libraries are available through your package
+manager, see the list below for the names of the packages. But make sure to
+check the versions. If the packaged version available is not new enough, you'll
+have to install from source. Most likely this is the case for Protozero and
+Libosmium.
+
+On macOS many of the libraries above will be available through Homebrew.
+
+When building Libosmium tests and examples, CMake will automatically look for
+these libraries in the usual places on your system. In addition it will look
+for the Libosmium and Protozero libraries in the same directory where the
+Libosmium repository is. So if you are building from the Git repository and
+want to use the newest Libosmium and Protozero, clone both into the same
+directory:
+
+    mkdir work
+    cd work
+    git clone https://github.com/mapbox/protozero
+    git clone https://github.com/osmcode/libosmium
+
 In addition to the programs listed here, you'll need a C++ compiler which
 supports C++11. Clang 3.4 or later and GCC 4.8 or later are known to work.
-
-
-## Installing dependencies on Linux
-
-### Debian/Ubuntu
-
-You can install all important dependencies with:
-
-``` sh
-sudo apt-get install cmake cmake-curses-gui make \
-    libexpat1-dev zlib1g-dev libbz2-dev
-```
-
-and all extra dependencies with:
-
-``` sh
-sudo apt-get install libsparsehash-dev libboost-dev \
-    libgdal-dev libproj-dev doxygen graphviz
-```
-
-### Arch Linux
-
-You can install all important dependencies with:
-
-``` sh
-sudo pacman -Suy protobuf boost-libs zlib expat cmake make bzip2
-```
-
-and all extra dependencies with:
-
-``` sh
-sudo pacman -Suy sparsehash boost gdal proj doxygen
-```
 
 
 ## _Important_ dependencies
@@ -65,8 +52,7 @@ recommended that you install this also.
 CMake usually generates a Makefile for Make, which you will also need.
 
 * Debian/Ubuntu: `cmake`, `cmake-curses-gui`, `make`
-* Fedora: `cmake`
-* CentOS: `cmake`
+* Fedora/CentOS: `cmake`, `make`
 
 ### Google Protocol Buffers (until version 2.2)
 
@@ -91,18 +77,20 @@ files](https://wiki.openstreetmap.org/wiki/PBF_Format).
 * Debian/Ubuntu: `libosmpbf-dev` (The package in Ubuntu 14.04 and older is too old, install from source instead.)
 * Homebrew: `osm-pbf`
 
-### Protozero (since version 2.3.0)
+### Protozero >= 1.5.1 (since libosmium version 2.3.0)
 
 The [Protozero header only library](https://github.com/mapbox/protozero) is
 needed for reading and writing [OSM PBF
 files](https://wiki.openstreetmap.org/wiki/PBF_Format).
+
+You need at least version 1.5.1.
 
 Up to version 2.13 a copy of this library was included in the libosmium
 repository. For newer version you need to install either a packaged version or
 a version from the git repository.
 
 * Debian/Ubuntu: `libprotozero-dev`
-* Fedora: `protozero-devel`
+* Fedora/CentOS: `protozero-devel`
 
 ### Utfcpp
 
@@ -113,17 +101,16 @@ install it from the source, or use the `INSTALL_UTFCPP` option of the libosmium
 CMake configuration to install the bundled version.
 
 * Debian/Ubuntu: `libutfcpp-dev`
-* Fedora: `utf8cpp-devel`
+* Fedora/CentOS: `utf8cpp-devel`
 
 ### Expat
 
 [Expat](http://www.libexpat.org/) is needed for parsing OSM XML files.
 
 * Debian/Ubuntu: `libexpat1-dev`
+* Fedora/CentOS: `expat-devel`
 * openSUSE: `libexpat-devel`
 * Homebrew: `expat`
-* Fedora: `expat-devel`
-* CentOS: `expat-devel`
 
 ### ZLib
 
@@ -131,9 +118,8 @@ CMake configuration to install the bundled version.
 and for GZip support when reading and writing XML files.
 
 * Debian/Ubuntu: `zlib1g-dev`
+* Fedora/CentOS: `zlib-devel`
 * openSUSE: `zlib-devel`
-* Fedora: `zlib-devel`
-* CentOS: `zlib-devel`
 
 ### bz2lib
 
@@ -141,10 +127,9 @@ and for GZip support when reading and writing XML files.
 writing OSM XML files.
 
 * Debian/Ubuntu: `libbz2-dev`
-* Fedora: `bzip2-devel`
-* CentOS: `bzip2-devel`
+* Fedora/CentOS: `bzip2-devel`
 
-### Boost
+### Boost >= 1.55
 
 [Boost](http://www.boost.org/) Iterator is used for Tag filters, and for the
 Object Pointer Collection. The CRC32 checksum implementatation from boost is
@@ -154,10 +139,9 @@ needed for caclcuation checksums over OSM objects. Libosmium versions before
 You need at least Boost version 1.55.
 
 * Debian/Ubuntu: `libboost-dev`
+* Fedora/CentOS: `boost-devel`
 * openSUSE: `boost-devel`
 * Homebrew: `boost`
-* Fedora: `boost-devel`
-* CentOS: `boost-devel`
 
 ## _Extra_ dependencies
 
@@ -167,10 +151,9 @@ Google Sparsehash (http://code.google.com/p/google-sparsehash/) is needed for
 the `sparse-mem-table` index map, often used as a node location store.
 
 * Debian/Ubuntu: `libsparsehash-dev`
+* Fedora/CentOS: `sparsehash-devel`
 * openSUSE: `sparsehash`
 * Homebrew: `google-sparsehash`
-* Fedora: `sparsehash-devel`
-* CentOS: `sparsehash-devel`
 
 ### Boost Program Options (until version 2.7.2)
 
@@ -179,7 +162,7 @@ Options](http://www.boost.org/doc/libs/1_54_0/doc/html/program_options.html) is
 needed for parsing command line options in some examples.
 
 * Debian/Ubuntu: `libboost-program-options-dev`
-* CentOS: `boost-program-options`
+* Fedora/CentOS: `boost-program-options`
 
 ### GDAL/OGR
 
@@ -187,10 +170,9 @@ needed for parsing command line options in some examples.
 into OGR geometries.
 
 * Debian/Ubuntu: `libgdal-dev`
+* Fedora/CentOS: `gdal-devel`
 * openSUSE: `libgdal-devel`
 * Homebrew: `gdal`
-* Fedora: `gdal-devel`
-* CentOS: `gdal-devel`
 
 To use, compile with what the command
 
@@ -215,10 +197,9 @@ until GEOS 3.5. For details see [this
 commit](https://github.com/osmcode/libosmium/commit/3424a7400d70d3b9c5b27b7f704eee2c1725450d).
 
 * Debian/Ubuntu: `libgeos++-dev`
+* Fedora/CentOS: `geos-devel`
 * openSUSE: `libgeos-devel`
 * Homebrew: `geos`
-* Fedora: `geos-devel`
-* CentOS: `geos-devel`
 
 ### Proj.4
 
@@ -227,8 +208,7 @@ project OSM coordinates into spatial reference systems other than Web Mercator
 (EPSG 3857, often named Google Mercator).
 
 * Debian/Ubuntu: `libproj-dev`
-* Fedora: `proj-devel`, `proj-epsg`
-* CentOS: `proj-devel`, `proj-epsg`
+* Fedora/CentOS: `proj-devel`, `proj-epsg`
 
 ### Doxygen
 
@@ -239,6 +219,123 @@ this, because the API reference is available
 yourself, you need [Graphviz](http://www.graphviz.org/) in addition to Doxygen.
 
 * Debian/Ubuntu: `doxygen`, `graphviz`
-* Fedora: `doxygen`, `graphviz`, `xmlstarlet`
-* CentOS: `doxygen`
+* Fedora/CentOS: `doxygen`, `graphviz`, `xmlstarlet`
+
+
+## Installing dependencies on some Linux systems
+
+### Debian Jessie
+
+You can install all dependencies with:
+
+``` sh
+apt-get install -q -y \
+    cmake \
+    doxygen \
+    g++ \
+    git \
+    graphviz \
+    libboost-dev \
+    libbz2-dev \
+    libexpat1-dev \
+    libgdal-dev \
+    libgeos++-dev \
+    libproj-dev \
+    libsparsehash-dev \
+    make \
+    ruby \
+    ruby-json \
+    spatialite-bin \
+    zlib1g-dev
+```
+
+### Ubuntu Trusty (14.04)
+
+You can install all dependencies with:
+
+``` sh
+apt-get install -q -y \
+    cmake \
+    doxygen \
+    g++ \
+    git \
+    graphviz \
+    libboost-dev \
+    libbz2-dev \
+    libexpat1-dev \
+    libgdal-dev \
+    libgeos++-dev \
+    libproj-dev \
+    libsparsehash-dev \
+    make \
+    ruby \
+    ruby-json \
+    spatialite-bin \
+    zlib1g-dev
+```
+
+### Ubuntu Xenial (16.04)
+
+You can install all dependencies with:
+
+``` sh
+apt-get install -q -y \
+    cmake \
+    doxygen \
+    g++ \
+    git \
+    graphviz \
+    libboost-dev \
+    libbz2-dev \
+    libexpat1-dev \
+    libgdal-dev \
+    libgeos++-dev \
+    libproj-dev \
+    libsparsehash-dev \
+    make \
+    ruby \
+    ruby-json \
+    spatialite-bin \
+    zlib1g-dev
+```
+
+### Fedora 26
+
+You can install all dependencies with:
+
+``` sh
+dnf install --quiet --assumeyes \
+    boost-devel \
+    bzip2-devel \
+    cmake \
+    doxygen \
+    expat-devel \
+    gcc-c++ \
+    gdal-devel \
+    geos-devel \
+    git \
+    graphviz \
+    make \
+    proj-devel \
+    proj-epsg \
+    ruby \
+    rubygem-json \
+    sparsehash-devel \
+    spatialite-tools \
+    zlib-devel
+```
+
+### Arch Linux
+
+You can install all important dependencies with:
+
+``` sh
+sudo pacman -Suy protobuf boost-libs zlib expat cmake make bzip2
+```
+
+and all extra dependencies with:
+
+``` sh
+sudo pacman -Suy sparsehash boost gdal proj doxygen
+```
 
