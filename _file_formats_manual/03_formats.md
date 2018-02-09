@@ -162,8 +162,37 @@ Here is a list of optional settings currently supported:
 | PBF           | `pbf_compression`    | gzip    | Compress blocks using gzip (use "none" to disable)
 | XML           | `xml_change_format`  | false   | Set change format, can also be set by using `osc` instead of `osm` suffix
 | XML           | `force_visible_flag` | false   | Write out `visible` flag on each object, also set if `osh` instead of `osm` suffix used
-| *all*         | `add_metadata`       | true    | Add metadata (version, timestamp, etc. to objects)
+| *all*         | `add_metadata`       | true    | *see below*
 | PBF, XML, OPL | `locations_on_ways`  | false   | Add node locations to way nodes (libosmium-specific extension)
 | DEBUG         | `use_color`          | false   | Output with ANSI colors
 | DEBUG         | `add_crc32`          | false   | Add CRC32 checksum to all objects
+
+### Writing metadata on OSM objects (`add_metadata`)
+
+There are several metadata attributes on OSM objects:
+* id
+* version
+* timestamp
+* changeset
+* uid
+* user
+
+Usually all these attributes are written out to a file, but you can decide
+which attributes you want and which you want to leave out. The `id` attribute
+will always be added.
+
+You can set the file format option to these values:
+
+* `true`, `yes`, `all`: Add all attributes. This is the default.
+* `false`, `no`, `none`: Only add `id` attribute
+* A list of one or more attributes separated by `+` (plus sign): Only add
+  those attribute (and the `id` attribute) (Example:
+  `add_metadata=version+timestamp`).
+
+*Note: In libosmium versions up to 2.13.x it was only possible to set this
+option to `true` or `false`. Adding only some attributes to OSM files but not
+others was not possible.*
+
+*Note that some programs reading OSM files might not work correctly if no or
+only some of the attributes are present.*
 
