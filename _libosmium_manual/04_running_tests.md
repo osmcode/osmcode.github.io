@@ -91,12 +91,7 @@ options.
 
 Data tests need external OSM test data to run. They are enabled or disabled
 with `BUILD_DATA_TESTS`, but you have to install the test data for them to
-work. In the same directory you installed Libosmium in, clone the osm-testdata
-repository:
-
-``` sh
-git clone https://github.com/osmcode/osm-testdata
-```
+work. For this call `git submodule update --init` in the libosmium repository.
 
 If you have put the test data somewhere else, you can use the `OSM_TESTDATA`
 variable in CMake to point to that directory.
@@ -106,6 +101,13 @@ The `testdata-multipolygon` test needs
 [Ruby](https://www.ruby-lang.org/) with the `json` gem installed. Those
 dependencies are currently not checked for in the CMake configuration.
 
+*Note that older versions of libosmium don't have the test data installed as a
+submodule, but expect it to be in the same directory you installed Libosmium
+in. To do this clone the osm-testdata repository:*
+
+``` sh
+git clone https://github.com/osmcode/osm-testdata
+```
 
 ## Example tests
 
