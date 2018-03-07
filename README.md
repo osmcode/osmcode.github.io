@@ -5,7 +5,7 @@ This is the source code of the web site http://osmcode.org/ .
 
 ## Building
 
-To build this site you need [Jekyll](http://jekyllrb.com/).
+To build this site you need [Jekyll](https://jekyllrb.com/).
 
 Call ```jekyll build``` in the main directory to build this site.
 

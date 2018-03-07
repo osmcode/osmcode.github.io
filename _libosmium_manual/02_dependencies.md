@@ -105,7 +105,7 @@ CMake configuration to install the bundled version.
 
 ### Expat
 
-[Expat](http://www.libexpat.org/) is needed for parsing OSM XML files.
+[Expat](https://libexpat.github.io/) is needed for parsing OSM XML files.
 
 * Debian/Ubuntu: `libexpat1-dev`
 * Fedora/CentOS: `expat-devel`
@@ -114,7 +114,7 @@ CMake configuration to install the bundled version.
 
 ### ZLib
 
-[zlib](http://www.zlib.net/) is needed for reading and writing OSM PBF files
+[zlib](https://www.zlib.net/) is needed for reading and writing OSM PBF files
 and for GZip support when reading and writing XML files.
 
 * Debian/Ubuntu: `zlib1g-dev`
@@ -147,7 +147,7 @@ You need at least Boost version 1.55.
 
 ### Google Sparsehash
 
-Google Sparsehash (http://code.google.com/p/google-sparsehash/) is needed for
+Google Sparsehash (https://github.com/sparsehash/sparsehash) is needed for
 the `sparse-mem-table` index map, often used as a node location store.
 
 * Debian/Ubuntu: `libsparsehash-dev`
@@ -213,10 +213,10 @@ project OSM coordinates into spatial reference systems other than Web Mercator
 ### Doxygen
 
 The Libosmium API documentation can be built using
-[Doxygen](http://www.stack.nl/~dimitri/doxygen/). Usually you do not need to do
+[Doxygen](http://www.doxygen.org/). Usually you do not need to do
 this, because the API reference is available
 [online](http://docs.osmcode.org/libosmium/latest/). If you want to build it
-yourself, you need [Graphviz](http://www.graphviz.org/) in addition to Doxygen.
+yourself, you need [Graphviz](https://www.graphviz.org/) in addition to Doxygen.
 
 * Debian/Ubuntu: `doxygen`, `graphviz`
 * Fedora/CentOS: `doxygen`, `graphviz`, `xmlstarlet`
