@@ -53,6 +53,7 @@ CMake usually generates a Makefile for Make, which you will also need.
 
 * Debian/Ubuntu: `cmake`, `cmake-curses-gui`, `make`
 * Fedora/CentOS: `cmake`, `make`
+* openSUSE: `cmake`, `make`
 
 ### Google Protocol Buffers (until version 2.2)
 
@@ -102,6 +103,7 @@ CMake configuration to install the bundled version.
 
 * Debian/Ubuntu: `libutfcpp-dev`
 * Fedora/CentOS: `utf8cpp-devel`
+* openSUSE: `utfcpp`
 
 ### Expat
 
@@ -128,6 +130,7 @@ writing OSM XML files.
 
 * Debian/Ubuntu: `libbz2-dev`
 * Fedora/CentOS: `bzip2-devel`
+* openSUSE: `libbz2-devel`
 
 ### Boost >= 1.55
 
@@ -152,7 +155,7 @@ the `sparse-mem-table` index map, often used as a node location store.
 
 * Debian/Ubuntu: `libsparsehash-dev`
 * Fedora/CentOS: `sparsehash-devel`
-* openSUSE: `sparsehash`
+* openSUSE: `sparsehash-devel`
 * Homebrew: `google-sparsehash`
 
 ### Boost Program Options (until version 2.7.2)
@@ -163,6 +166,7 @@ needed for parsing command line options in some examples.
 
 * Debian/Ubuntu: `libboost-program-options-dev`
 * Fedora/CentOS: `boost-program-options`
+* openSUSE: `boost-devel`
 
 ### GDAL/OGR
 
@@ -171,7 +175,7 @@ into OGR geometries.
 
 * Debian/Ubuntu: `libgdal-dev`
 * Fedora/CentOS: `gdal-devel`
-* openSUSE: `libgdal-devel`
+* openSUSE: `gdal-devel`
 * Homebrew: `gdal`
 
 To use, compile with what the command
@@ -198,7 +202,7 @@ commit](https://github.com/osmcode/libosmium/commit/3424a7400d70d3b9c5b27b7f704e
 
 * Debian/Ubuntu: `libgeos++-dev`
 * Fedora/CentOS: `geos-devel`
-* openSUSE: `libgeos-devel`
+* openSUSE: `geos-devel`
 * Homebrew: `geos`
 
 ### Proj.4
@@ -209,6 +213,7 @@ project OSM coordinates into spatial reference systems other than Web Mercator
 
 * Debian/Ubuntu: `libproj-dev`
 * Fedora/CentOS: `proj-devel`, `proj-epsg`
+* openSUSE: `libproj-devel`, `proj`
 
 ### Doxygen
 
@@ -220,6 +225,7 @@ yourself, you need [Graphviz](https://www.graphviz.org/) in addition to Doxygen.
 
 * Debian/Ubuntu: `doxygen`, `graphviz`
 * Fedora/CentOS: `doxygen`, `graphviz`, `xmlstarlet`
+* openSUSE: `doxygen`, `graphviz`
 
 
 ## Installing dependencies on some Linux systems
@@ -322,6 +328,29 @@ dnf install --quiet --assumeyes \
     rubygem-json \
     sparsehash-devel \
     spatialite-tools \
+    zlib-devel
+```
+
+### openSUSE 42
+
+You can install all dependencies with:
+
+``` sh
+zypper --non-interactive --no-color install \
+    boost_1_61-devel \
+    cmake \
+    doxygen \
+    gcc6-c++ \
+    gdal-devel \
+    geos-devel \
+    graphviz \
+    libbz2-devel \
+    libexpat-devel \
+    libproj-devel \
+    proj \
+    ruby2.3 \
+    ruby2.3-rubygem-json \
+    sparsehash-devel \
     zlib-devel
 ```
 
