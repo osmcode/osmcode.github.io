@@ -126,7 +126,7 @@ std::string line  = factory.create_linestring(way);
 GEOS 3.5. If you want to use it beyond that contact the libosmium developers
 by opening an issue on the Github repository.*
 
-[GEOS](http://trac.osgeo.org/geos/) is an Open Source library with powerful
+[GEOS](https://trac.osgeo.org/geos/) is an Open Source library with powerful
 operations to work with and modify geometries. To use it from libsomium:
 
 ``` c++
@@ -246,7 +246,7 @@ osmium::geom::WKTFactory<osmium::geom::MercatorProjection> factory;
 
 The identity and Mercator projection are handled internally in libosmium. But
 you can also use any projection implemented by the
-[Proj.4](http://proj4.org/) library:
+[Proj.4](https://proj4.org/) library:
 
 ``` c++
 #include <osmium/geom/projection.hpp>
