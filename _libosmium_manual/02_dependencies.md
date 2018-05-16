@@ -134,7 +134,7 @@ writing OSM XML files.
 
 ### Boost >= 1.55
 
-[Boost](http://www.boost.org/) Iterator is used for Tag filters, and for the
+[Boost](https://www.boost.org/) Iterator is used for Tag filters, and for the
 Object Pointer Collection. The CRC32 checksum implementatation from boost is
 needed for caclcuation checksums over OSM objects. Libosmium versions before
 2.6.1 also needed Boost for writing PBF files.
@@ -161,7 +161,7 @@ the `sparse-mem-table` index map, often used as a node location store.
 ### Boost Program Options (until version 2.7.2)
 
 [Boost Program
-Options](http://www.boost.org/doc/libs/1_54_0/doc/html/program_options.html) is
+Options](https://www.boost.org/doc/libs/1_67_0/doc/html/program_options.html) is
 needed for parsing command line options in some examples.
 
 * Debian/Ubuntu: `libboost-program-options-dev`
@@ -207,7 +207,7 @@ commit](https://github.com/osmcode/libosmium/commit/3424a7400d70d3b9c5b27b7f704e
 
 ### Proj.4
 
-The [Proj.4](http://proj4.org/) library is needed if you want to
+The [Proj.4](https://proj4.org/) library is needed if you want to
 project OSM coordinates into spatial reference systems other than Web Mercator
 (EPSG 3857, often named Google Mercator).
 

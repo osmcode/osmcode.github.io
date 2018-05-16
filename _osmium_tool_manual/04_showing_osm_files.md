@@ -28,7 +28,7 @@ This will show you something like the following:
         (9.47108,47.0477,9.63622,47.2713)
       With history: no
       Options:
-        generator=Osmium (http://wiki.openstreetmap.org/wiki/Osmium)
+        generator=Osmium/1.8.0
         osmosis_replication_timestamp=2016-04-12T19:14:02Z
         pbf_dense_nodes=true
         timestamp=2016-04-12T19:14:02Z
@@ -52,7 +52,7 @@ gives you a lot more information:
         (9.47108,47.0477,9.63622,47.2713)
       With history: no
       Options:
-        generator=Osmium (http://wiki.openstreetmap.org/wiki/Osmium)
+        generator=Osmium/1.8.0
         osmosis_replication_timestamp=2016-04-12T19:14:02Z
         pbf_dense_nodes=true
         timestamp=2016-04-12T19:14:02Z

@@ -6,7 +6,7 @@ title: Working with history files
 Osmium can not only work with normal OSM data files, but also with history
 files. History files look more or less like normal OSM data files, but they
 can contain several versions of the same object. The [full history planet
-dump](http://planet.osm.org/planet/full-history/) contains all versions of all
+dump](https://planet.osm.org/planet/full-history/) contains all versions of all
 objects that ever existed in the OSM data.
 
 Most programs using OSM data expect object IDs to be unique, so they can not

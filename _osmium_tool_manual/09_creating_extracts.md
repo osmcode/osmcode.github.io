@@ -33,11 +33,11 @@ Osmium can also read an OSM file with a (multi)polygon in it that specifies
 the area to cut out. If you know the relation ID of such a multipolygon, you
 can download it from the OSM server using a URL such as this:
 
-    http://www.openstreetmap.org/api/0.6/relation/RELATION-ID/full
+    https://www.openstreetmap.org/api/0.6/relation/RELATION-ID/full
 
 For Paris this could be
 
-    http://www.openstreetmap.org/api/0.6/relation/7444/full
+    https://www.openstreetmap.org/api/0.6/relation/7444/full
 
 This works well for smaller multipolygons (such as city boundaries), but for
 very large multipolygons (such as a whole country) chances are you'll get a

@@ -3,8 +3,9 @@ chapter: 4
 title: Running tests
 ---
 
-Libosmium uses the [Catch](https://github.com/philsquared/Catch/) unit testing
-framework and CTest which is part of the [CMake](https://cmake.org/) suite.
+Libosmium uses version 1 of the [Catch](https://github.com/catchorg/Catch2)
+unit testing framework and CTest which is part of the
+[CMake](https://cmake.org/) suite.
 
 There are three kinds of tests: _unit tests_, _data tests_, and _example
 tests_. For the details see below.
