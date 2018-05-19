@@ -21,7 +21,7 @@ changesets by user "Einstein", for instance, you'd use this command:
     osmium changeset-filter -u Einstein changesets.osm.bz2 -o einstein.osm.bz2
 
 Have a look in the
-[man page](http://docs.osmcode.org/osmium/latest/osmium-changeset-filter.html)
+[man page](https://docs.osmcode.org/osmium/latest/osmium-changeset-filter.html)
 to see the other options available. You can also combine several of them to
 only get those changesets matching all criteria.
 

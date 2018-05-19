@@ -94,7 +94,7 @@ array specifies one extract to create. Just as on the command line you can
 specify the extract by bounding box or polygon (using any of the supported
 file formats). There are several ways to specify all the details. See the
 [`osmium-extract(1)` man
-page](http://docs.osmcode.org/osmium/latest/osmium-extract.html) and the
+page](https://docs.osmcode.org/osmium/latest/osmium-extract.html) and the
 [example
 config](https://github.com/osmcode/osmium-tool/tree/master/extract-example-config)
 for the details.

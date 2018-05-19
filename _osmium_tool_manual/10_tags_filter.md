@@ -97,5 +97,5 @@ use the `--invert-match` or `-i` option to invert the sense of your match:
         -o no-buildings.osm.pbf
 
 As always, you can find all the details in the [man
-page](http://docs.osmcode.org/osmium/latest/osmium-tags-filter.html)
+page](https://docs.osmcode.org/osmium/latest/osmium-tags-filter.html)
 

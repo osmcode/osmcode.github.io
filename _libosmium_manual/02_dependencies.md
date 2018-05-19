@@ -220,7 +220,7 @@ project OSM coordinates into spatial reference systems other than Web Mercator
 The Libosmium API documentation can be built using
 [Doxygen](http://www.doxygen.org/). Usually you do not need to do
 this, because the API reference is available
-[online](http://docs.osmcode.org/libosmium/latest/). If you want to build it
+[online](https://docs.osmcode.org/libosmium/latest/). If you want to build it
 yourself, you need [Graphviz](https://www.graphviz.org/) in addition to Doxygen.
 
 * Debian/Ubuntu: `doxygen`, `graphviz`

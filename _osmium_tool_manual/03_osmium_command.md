@@ -27,5 +27,5 @@ command:
 
 etc.
 
-The manpages are also available [on the web](http://docs.osmcode.org/osmium/latest/).
+The manpages are also available [on the web](https://docs.osmcode.org/osmium/latest/).
 

@@ -15,7 +15,7 @@ function compare_version(a, b) {
 
 function update_doc_refs(project) {
     var re = /[^0-9.]/g;
-    var url = 'http://docs.osmcode.org/' + project + '/',
+    var url = 'https://docs.osmcode.org/' + project + '/',
         ul = $('#source-code-reference');
     $.get(url, function(data) {
         var links = $($.parseHTML(data)).find('li').has('a[href^="v"]');
