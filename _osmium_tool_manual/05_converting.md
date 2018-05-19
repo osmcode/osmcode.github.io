@@ -6,7 +6,7 @@ title: OSM file formats and converting between them
 Osmium supports all popular OSM file formats (and some more): XML, PBF,
 O5M/O5C, OPL, and the already mentioned *debug* format. Some formats can
 only be read or only be written. See the
-[osmium-file-formats](http://docs.osmcode.org/osmium/latest/osmium-file-formats.html)
+[osmium-file-formats](https://docs.osmcode.org/osmium/latest/osmium-file-formats.html)
 man page for details. All the text-based formats can be automatically
 (de)compressed if they use the `gzip` or `bzip2` compression.
 
@@ -45,9 +45,9 @@ that unknown options are silently ignored, so if you mistype an option, you
 will not get an error message.
 
 See the
-[osmium-file-formats](http://docs.osmcode.org/osmium/latest/osmium-file-formats.html)
+[osmium-file-formats](https://docs.osmcode.org/osmium/latest/osmium-file-formats.html)
 man page for all the details. Btw: all these file formats and options are
-implemented in the [libosmium library](http://osmcode.org/libosmium/), so most
+implemented in the [libosmium library](https://osmcode.org/libosmium/), so most
 libosmium-based programs will understand them in the same fashion.
 
 While playing around with the command you might have noticed an error

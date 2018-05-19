@@ -1,7 +1,7 @@
 
 # osmcode.org Website
 
-This is the source code of the web site http://osmcode.org/ .
+This is the source code of the web site https://osmcode.org/ .
 
 ## Building
 
