@@ -28,5 +28,5 @@ Jessie those new packages are available in the
 ### Fedora
 
 Packages for several Fedora versions
-[are available](https://admin.fedoraproject.org/pkgdb/package/rpms/osmium-tool/).
+[are available](https://apps.fedoraproject.org/packages/osmium-tool).
 
