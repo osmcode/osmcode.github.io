@@ -11,7 +11,7 @@ that file. To find out run
 Say you downloaded an extract of the tiny country of
 [Liechtenstein](https://www.openstreetmap.org/relation/1155955)
 (it is always good to start your experiments with a small extract)
-from [Geofabrik](http://download.geofabrik.de/)
+from [Geofabrik](https://download.geofabrik.de/)
 and want to know what's in it:
 
     osmium fileinfo liechtenstein-latest.osm.pbf
