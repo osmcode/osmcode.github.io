@@ -163,7 +163,7 @@ std::unique_ptr<geos::geom::LineString> line = factory.create_linestring(way);
 
 ### GDAL/OGR
 
-The [GDAL/OGR](http://gdal.org/) library is very popular. Almost all Open
+The [GDAL/OGR](https://gdal.org/) library is very popular. Almost all Open
 Source GIS tools use it in one form or another to read or write geometries 
 from/to files or databases in dozens of different formats (Shapfiles,
 Spatialite, PostGIS, etc.) You can use it from libosmium, too:

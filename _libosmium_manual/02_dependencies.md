@@ -170,7 +170,7 @@ needed for parsing command line options in some examples.
 
 ### GDAL/OGR
 
-[GDAL/OGR](http://gdal.org/) is needed if you want to convert OSM geometries
+[GDAL/OGR](https://gdal.org/) is needed if you want to convert OSM geometries
 into OGR geometries.
 
 * Debian/Ubuntu: `libgdal-dev`
