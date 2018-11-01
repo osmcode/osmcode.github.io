@@ -182,15 +182,19 @@ The following external (header-only) libraries are included in the libosmium
 repository:
 
 * [gdalcpp](https://github.com/joto/gdalcpp)
-* [utfcpp](http://utfcpp.sourceforge.net/)
 
-If you want (some of) those libraries to be installed along with libosmium
+If you want this library to be installed along with libosmium
 itself when calling `make install`, you have to use the CMake options
-`INSTALL_GDALCPP` and/or `INSTALL_UTFCPP`.
+`INSTALL_GDALCPP`.
 
-(Libosmium versions 2.13 and before also included the
+(Libosmium versions 2.13 and before also included
 [protozero](https://github.com/mapbox/protozero) which could be included
 with `INSTALL_PROTOZERO`. Newer versions of libosmium don't include this any
+more.)
+
+(Libosmium versions 2.14.0 and before also included
+[utfcpp](http://utfcpp.sourceforge.net/) which could be included
+with `INSTALL_UTFCPP`. Newer versions of libosmium don't include this any
 more.)
 
 
@@ -219,6 +223,27 @@ the build. Changes here are usually not necessary though:
 | `BENCHMARK`              | If `BUILD_BENCHMARKS` is `ON`, this variable contains the semicolon-separated list of all benchmarks that should be built. The prefix `osmium_benchmark_` will be added to all executables.
 | `EXAMPLES`               | If `BUILD_EXAMPLES` is `ON`, this variable contains the semicolon-separated list of all examples that should be built. The prefix `osmium_` will be added to all executables.
 | `OSMIUM_WARNING_OPTIONS` | C++ compiler warning options used in `Dev` mode.
+
+
+## Running clang-tidy
+
+To check for problems in the source code not detected by compilers, you can run
+the `clang-tidy` command. If it is installed and CMake found it, you can call
+Make with the `clang-tidy` target:
+
+``` sh
+make clang-tidy
+```
+
+The configuration for clang-tidy is in the file `.clang-tidy`. It also contains
+documentation on why certain warnings are disabled.
+
+Running clang-tidy will take quite a while and might generate a lot of output.
+You can redirect the output to a file using something like this:
+
+``` sh
+make clang-tidy >clang-tidy.log 2>&1
+```
 
 
 ## Running CPPCheck
