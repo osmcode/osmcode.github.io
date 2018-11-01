@@ -239,27 +239,29 @@ class for details on setting and accessing these options.
 
 These header options are recognized by Osmium:
 
-| Format       | R/W | Option                                | Default        | Description
-| ------       | --- | ------                                | -------        | -----------
-| XML,PBF      | r/w | `generator`                           | Osmium/VERSION | The program that generated this file
-| XML          |   w | `xml_josm_upload`                     |                | Set `upload` attribute in header to specified value (`true` or `false`) for use in JOSM
-| XML          | r   | `version`                             | 0.6            | File version (always `0.6`)
-| PBF, O5M/O5C | r   | `timestamp`                           |                | (Replication) timestamp (*1*)
-| PBF          | r   | `pbf_dense_nodes`                     |                | Set when reading a PBF file with DenseNodes (*2*)
-| PBF          | r   | `pbf_optional_feature_#`              |                | Set for all optional features specified in PBF header (*3*)
-| PBF          | r/w | `osmosis_replication_timestamp`       |                | Timestamp used in replication (*1*, *4*)
-| PBF          | r/w | `osmosis_replication_sequence_number` |                | Sequence number used in replication (*4*)
-| PBF          | r/w | `osmosis_replication_base_url`        |                | Base URL for change files used in replication (*4*)
-| O5M/O5C      | r   | `o5m_timestamp`                       |                | (Replication) timestamp (*1*)
+| Format       | R/W | Option                                | Description
+| ------       | --- | ------                                | -----------
+| XML,PBF      | r/w | `generator`                           | The program that generated this file. If this is not set by an application, Libosmium will set it to `libosmium/VERSION` on writing.
+| XML          | r/w | `xml_josm_upload`                     | Value of the `upload` attribute on the `osm` XML element (`true` or `false`) for use in JOSM.
+| XML          | r   | `version`                             | File version (currently always set to `0.6`).
+| PBF, O5M/O5C | r   | `timestamp`                           | (Replication) timestamp (*1*).
+| PBF          | r   | `pbf_dense_nodes`                     | Set when reading a PBF file with DenseNodes (*2*).
+| PBF          | r   | `pbf_optional_feature_#`              | Set for all optional features specified in PBF header (*3*).
+| PBF          | r/w | `osmosis_replication_timestamp`       | Timestamp used in replication (*1*, *4*).
+| PBF          | r/w | `osmosis_replication_sequence_number` | Sequence number used in replication (*4*).
+| PBF          | r/w | `osmosis_replication_base_url`        | Base URL for change files used in replication (*4*).
+| O5M/O5C      | r   | `o5m_timestamp`                       | (Replication) timestamp (*1*).
 
 Notes:
 
 1. The `timestamp` field is set to the same value as either
-   `osmosis_replication_timestamp` or `o5m_timestamp` (if available).
+   `osmosis_replication_timestamp` or `o5m_timestamp` (if available). When
+   writing a file, a `timestamp` option is ignored, you have to use one of
+   the other ones.
 2. To disable DenseNodes when writing a file (they are enabled by default),
-   you have to do this not on the `Header`, but on the `File` object.
-3. When there are two optional features names "Foo" and "Bar" set in the
-   PBF header, the options `pbf_optional_feature_0=Foo` and
+   you have to set this option not on the `Header` but on the `File` object.
+3. Example: When there are two optional features names "Foo" and "Bar" set in
+   the PBF header, the options `pbf_optional_feature_0=Foo` and
    `pbf_optional_feature_1=Bar` are set.
 4. See the section "What are the replication fields for?" on
    `https://wiki.openstreetmap.org/wiki/PBF_Format` for details.
