@@ -200,13 +200,69 @@ entities within them. See the [Iterators] chapter and the [Handlers]
 chapter for more convenient methods of working with open files.
 
 
-### The Header
+### The File Header
 
-| Format | Option          | Default        | Description
-| ------ | ------          | -------        | -----------
-| all    | generator       | Osmium/VERSION | The program that generated this file
-| XML    | xml_josm_upload | not set        | Set `upload` attribute in header to given value (`true` or `false`) for use in JOSM
+Some OSM file formats contain a file header. The most popular formats XML
+and PBF have a header as well as the O5M/O5C format. The OPL format doesn't
+have a header.
 
+You access the header information of a file you are reading from the `Reader`
+object with the `header()` method:
+
+``` c++
+osmium::io::Header header = reader.header();
+```
+
+When writing a file the header can be set in the constructor of the `Writer`
+object, see below.
+
+The header can contain any number of bounding boxes, although usually there is
+only a single one (or none). PBF files only allow a single bounding box, but
+XML files can have multiple ones, although it is unusual and the semantics are
+unclear, so it is discouraged to create files with multiple bounding boxes.
+
+The header contains a flag telling you whether this file can contain multiple
+versions of the same object. This is true for history files and for change
+files, but not for normal OSM data files. Not all OSM file formats can
+distinguish between those cases, so the flag might be wrong.
+
+In addition the header can contain any number of key-value pairs with
+additional information. Most often this is used to set the `generator`, the
+program that generated the file. Depending on the file format some of these
+key-value pairs are handled specially. Because there is no generic header
+option facility in OSM files, you can only read/write options that Osmium
+recognizes. Unknown options or options not suitable for the file format you
+are writing are silently ignored.
+
+See the description of the `osmium::io::Header` and the `osmium::util::Options`
+class for details on setting and accessing these options.
+
+These header options are recognized by Osmium:
+
+| Format       | R/W | Option                                | Default        | Description
+| ------       | --- | ------                                | -------        | -----------
+| XML,PBF      | r/w | `generator`                           | Osmium/VERSION | The program that generated this file
+| XML          |   w | `xml_josm_upload`                     |                | Set `upload` attribute in header to specified value (`true` or `false`) for use in JOSM
+| XML          | r   | `version`                             | 0.6            | File version (always `0.6`)
+| PBF, O5M/O5C | r   | `timestamp`                           |                | (Replication) timestamp (*1*)
+| PBF          | r   | `pbf_dense_nodes`                     |                | Set when reading a PBF file with DenseNodes (*2*)
+| PBF          | r   | `pbf_optional_feature_#`              |                | Set for all optional features specified in PBF header (*3*)
+| PBF          | r/w | `osmosis_replication_timestamp`       |                | Timestamp used in replication (*1*, *4*)
+| PBF          | r/w | `osmosis_replication_sequence_number` |                | Sequence number used in replication (*4*)
+| PBF          | r/w | `osmosis_replication_base_url`        |                | Base URL for change files used in replication (*4*)
+| O5M/O5C      | r   | `o5m_timestamp`                       |                | (Replication) timestamp (*1*)
+
+Notes:
+
+1. The `timestamp` field is set to the same value as either
+   `osmosis_replication_timestamp` or `o5m_timestamp` (if available).
+2. To disable DenseNodes when writing a file (they are enabled by default),
+   you have to do this not on the `Header`, but on the `File` object.
+3. When there are two optional features names "Foo" and "Bar" set in the
+   PBF header, the options `pbf_optional_feature_0=Foo` and
+   `pbf_optional_feature_1=Bar` are set.
+4. See the section "What are the replication fields for?" on
+   `https://wiki.openstreetmap.org/wiki/PBF_Format` for details.
 
 ### Writing a File
 
