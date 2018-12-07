@@ -162,7 +162,7 @@ Please report any issues you have and we might be able to solve them.
 ## Building the reference documentation
 
 To build the documentation you'll need
-[Doxygen](http://www.stack.nl/~dimitri/doxygen/).
+[Doxygen](http://www.doxygen.nl/).
 
 After configuring with CMake as described above, call
 
