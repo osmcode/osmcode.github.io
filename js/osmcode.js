@@ -4,9 +4,9 @@ function compare_version(a, b) {
     a = (a + '').replace(re, '').split('.');
     b = (b + '').replace(re, '').split('.');
     len = Math.min(a.length, b.length);
-    for( i = 0; i < len; i++ ) {
+    for (i = 0; i < len; i++) {
         cmp = parseInt(b[i], 10) - parseInt(a[i], 10);
-        if( cmp !== 0 ) {
+        if (cmp !== 0) {
             return cmp;
         }
     }
