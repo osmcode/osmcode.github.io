@@ -129,7 +129,7 @@ references* (`NodeRef`).
 
 In Osmium, ways can optionally also have a location for each node reference.
 This will usually be empty but can be filled, for instance using the
-NodeLocationForWays handler (see below). This is very convenient for many use
+NodeLocationsForWays handler (see below). This is very convenient for many use
 cases.
 
 Ways with zero, one or more node references are allowed. In current OSM data
