@@ -30,3 +30,8 @@ Jessie those new packages are available in the
 Packages for several Fedora versions
 [are available](https://apps.fedoraproject.org/packages/osmium-tool).
 
+### Archlinux
+
+Packages can be installed from [AUR](https://aur.archlinux.org/):
+[osmium-tool](https://aur.archlinux.org/packages/osmium-tool/)
+
