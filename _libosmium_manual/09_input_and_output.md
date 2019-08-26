@@ -250,6 +250,7 @@ These header options are recognized by Osmium:
 | PBF          | r/w | `osmosis_replication_timestamp`       | Timestamp used in replication (*1*, *4*).
 | PBF          | r/w | `osmosis_replication_sequence_number` | Sequence number used in replication (*4*).
 | PBF          | r/w | `osmosis_replication_base_url`        | Base URL for change files used in replication (*4*).
+| PBF          | r/w | `sorting`                             | Sorting of the file (*5*).
 | O5M/O5C      | r   | `o5m_timestamp`                       | (Replication) timestamp (*1*).
 
 Notes:
@@ -265,6 +266,8 @@ Notes:
    `pbf_optional_feature_1=Bar` are set.
 4. See the section "What are the replication fields for?" on
    `https://wiki.openstreetmap.org/wiki/PBF_Format` for details.
+5. Read or write the optional header property `Sort.Type_then_ID` if set to
+   `Type_then_ID`.
 
 ### Writing a File
 
