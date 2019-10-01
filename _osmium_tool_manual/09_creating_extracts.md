@@ -55,6 +55,9 @@ all objects except the relation 7444 itself. This way only the relation itself
 is turned into a (multi)polygon and not other relations or closed ways that
 happen to be in the data.
 
+(If you have problems with relations downloaded from the API, the solution
+is the same. Run the mentioned `osmium getid` command on them.)
+
 And now you can create the extract:
 
     osmium extract -p paris-boundary.osm france.pbf -o paris.pbf
