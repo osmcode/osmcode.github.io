@@ -39,13 +39,21 @@ For Paris this could be
 
     https://www.openstreetmap.org/api/0.6/relation/7444/full
 
+(This will not always work, see below on how to fix this.)
+
 This works well for smaller multipolygons (such as city boundaries), but for
 very large multipolygons (such as a whole country) chances are you'll get a
 timeout from the API. If you have an OSM file lying around that contains the
 boundary, you can use osmium to get the relation and all the nodes and ways
 used in that relation:
 
-    osmium getid -r france.pbf r7444 -o paris-boundary.osm
+    osmium getid -r -t france.pbf r7444 -o paris-boundary.osm
+
+The options are important here: `-r` makes sure you get all the members of
+the relation and all the nodes in the member ways. `-t` removes the tags from
+all objects except the relation 7444 itself. This way only the relation itself
+is turned into a (multi)polygon and not other relations or closed ways that
+happen to be in the data.
 
 And now you can create the extract:
 
