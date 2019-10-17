@@ -21,7 +21,7 @@ If you happen to have a polygon describing Paris, you can use it instead:
 
     osmium extract -p paris-polygon.geojson france.pbf -o paris.pbf
 
-This assumes you have the polygon in [GeoJSON format](http://geojson.org/) in
+This assumes you have the polygon in [GeoJSON format](https://geojson.org/) in
 the file `paris-polygon.geojson`. Osmium also understands the [`POLY`
 format](https://wiki.openstreetmap.org/wiki/Osmosis/Polygon_Filter_File_Format),
 a text-based format popularized first by Osmosis and sometimes used in the OSM

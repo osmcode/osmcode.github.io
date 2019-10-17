@@ -185,7 +185,7 @@ std::unique_ptr<OGRLineString> line = factory.create_linestring(way);
 
 ### GeoJSON
 
-The [GeoJSON](http://geojson.org/) format describes how to encode geometries
+The [GeoJSON](https://geojson.org/) format describes how to encode geometries
 in JSON.
 
 Libosmium has two different GeoJSON factories. One creates normal

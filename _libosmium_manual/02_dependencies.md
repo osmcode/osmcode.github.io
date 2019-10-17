@@ -195,7 +195,7 @@ returns.
 
 ### GEOS
 
-[GEOS](http://trac.osgeo.org/geos/) is needed if you want to convert OSM
+[GEOS](https://trac.osgeo.org/geos/) is needed if you want to convert OSM
 geometries into GEOS geometries. The GEOS support is deprecated and works only
 until GEOS 3.5. For details see [this
 commit](https://github.com/osmcode/libosmium/commit/3424a7400d70d3b9c5b27b7f704eee2c1725450d).
