@@ -125,7 +125,8 @@ and for GZip support when reading and writing XML files.
 
 ### bz2lib
 
-bz2lib is needed for BZip2 support when reading and writing OSM XML files.
+[bz2lib](https://www.sourceware.org/bzip2/) is needed for BZip2 support when
+reading and writing OSM XML files.
 
 * Debian/Ubuntu: `libbz2-dev`
 * Fedora/CentOS: `bzip2-devel`
