@@ -71,8 +71,8 @@ files](https://wiki.openstreetmap.org/wiki/PBF_Format).
 
 _Not needed any more from version 2.3.0 onwards_
 
-The [OSMPBF library](https://github.com/scrosby/OSM-binary) is needed for
-reading and writing [OSM PBF
+The [OSMPBF library](https://github.com/openstreetmap/OSM-binary)
+is needed for reading and writing [OSM PBF
 files](https://wiki.openstreetmap.org/wiki/PBF_Format).
 
 * Debian/Ubuntu: `libosmpbf-dev` (The package in Ubuntu 14.04 and older is too old, install from source instead.)
