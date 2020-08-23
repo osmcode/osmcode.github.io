@@ -28,7 +28,7 @@ Jessie those new packages are available in the
 ### Fedora
 
 Packages for several Fedora versions
-[are available](https://apps.fedoraproject.org/packages/osmium-tool).
+[are available](https://src.fedoraproject.org/rpms/osmium-tool).
 
 ### Archlinux
 
