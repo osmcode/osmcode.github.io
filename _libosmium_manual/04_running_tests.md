@@ -98,7 +98,7 @@ If you have put the test data somewhere else, you can use the `OSM_TESTDATA`
 variable in CMake to point to that directory.
 
 The `testdata-multipolygon` test needs
-[Spatialite](http://www.gaia-gis.it/gaia-sins/index.html) and
+[Spatialite](https://www.gaia-gis.it/gaia-sins/index.html) and
 [Ruby](https://www.ruby-lang.org/) with the `json` gem installed. Those
 dependencies are currently not checked for in the CMake configuration.
 
