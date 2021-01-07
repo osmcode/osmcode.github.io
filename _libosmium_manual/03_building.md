@@ -70,8 +70,8 @@ Osmium. Debian wheezy (stable) and the Ubuntu LTS release 12.04 don't have
 compilers current enough. If you are stuck on these systems, use a backported
 compiler.
 
-Mac OSX: Osmium also works well on Mac OSX with the exception of the parts that
-need the mremap system call that is not available on Mac OSX.
+macOS: Osmium also works well on macOS with the exception of the parts that
+need the mremap system call that is not available on macOS.
 
 First clone Libosmium from the git repository (or install it in some other way):
 

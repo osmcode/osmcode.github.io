@@ -65,7 +65,7 @@ If your code doesn't work with older version of Libosmium, you can tell CMake
 the minimum version number:
 
 ``` cmake
-find_package(Osmium 2.10.2 REQUIRED)
+find_package(Osmium 2.15.6 REQUIRED)
 ```
 
 You can add an optional list of components that should be found also. For
@@ -107,7 +107,9 @@ Also see the [dependencies chapter](#dependencies).
 
 ### XML input
 
-For XML input you need the Expat XML parser, for XML output no special XML library is needed. In any case you need threading enabled. If you want to read or write compressed XML files you need ZLib and BZ2lib.
+For XML input you need the Expat XML parser, for XML output no special XML
+library is needed. In any case you need threading enabled. If you want to read
+or write compressed XML files you need ZLib and BZ2lib.
 
 * Dependencies: Expat, Zlib, BZ2lib
 * Link with: `libexpat`, enable multithreading
@@ -125,6 +127,9 @@ For version 2.3.0 and above you don't need much:
 * Classes: `osmium::io::Reader`, `osmium::io::Writer`
 * Include files: `osmium/io/any_input.hpp`, `osmium/io/any_output.hpp`, `osmium/io/pbf_input.hpp`, `osmium/io/pbf_output.hpp`
 
+If you want support for lz4 compression in PBF blobs, you also need the
+[LZ4 library](https://lz4.github.io/lz4/).
+
 For versions up to 2.2 you need some more libraries:
 
 * Dependencies: Google Protocol Buffers, OSMPBF, Zlib
@@ -134,16 +139,17 @@ For versions up to 2.2 you need some more libraries:
 
 ### GDAL/OGR
 
-The GDAL/OGR library is needed when you want to convert OSM geometries into OGR geometries or report problems building multipolygons into OGR formats.
+The GDAL/OGR library is needed when you want to convert OSM geometries into OGR
+geometries or report problems building multipolygons into OGR formats.
 
 * Link with: `libgdal`
 * Classes: `osmium::geom::OGRFactory`
 * Include files: `osmium/geom/ogr.hpp`, `osmium/area/problem_reporter_ogr.hpp`
 
 
-### Proj.4
+### PROJ
 
-The Proj.4 library is only needed when you want to project OSM locations into
+The PROJ library is only needed when you want to project OSM locations into
 arbitrary coordinate reference systems. If you only want to convert to Web
 Mercator, use `osmium::geom::MercatorProjection` instead and you don't need an
 extra library.
@@ -151,6 +157,8 @@ extra library.
 * Link with: `libproj`
 * Classes: `osmium::geom::Projection`
 * Include files: `osmium/geom/projection.hpp`
+
+Note that only PROJ up to version 5 is supported.
 
 
 ## Compiler options

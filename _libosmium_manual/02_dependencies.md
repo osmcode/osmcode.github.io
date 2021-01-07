@@ -17,16 +17,15 @@ On Linux systems most of these libraries are available through your package
 manager, see the list below for the names of the packages. But make sure to
 check the versions. If the packaged version available is not new enough, you'll
 have to install from source. Most likely this is the case for Protozero and
-Libosmium.
+Libosmium itself.
 
 On macOS many of the libraries above will be available through Homebrew.
 
 When building Libosmium tests and examples, CMake will automatically look for
 these libraries in the usual places on your system. In addition it will look
-for the Libosmium and Protozero libraries in the same directory where the
-Libosmium repository is. So if you are building from the Git repository and
-want to use the newest Libosmium and Protozero, clone both into the same
-directory:
+for the Protozero library in the same directory where the Libosmium repository
+is. So if you are building from the Git repository and want to use the newest
+Libosmium and Protozero, clone both into the same directory:
 
     mkdir work
     cd work
@@ -78,13 +77,13 @@ files](https://wiki.openstreetmap.org/wiki/PBF_Format).
 * Debian/Ubuntu: `libosmpbf-dev` (The package in Ubuntu 14.04 and older is too old, install from source instead.)
 * Homebrew: `osm-pbf`
 
-### Protozero >= 1.5.1 (since libosmium version 2.3.0)
+### Protozero >= 1.6.3 (since libosmium version 2.3.0)
 
 The [Protozero header only library](https://github.com/mapbox/protozero) is
 needed for reading and writing [OSM PBF
 files](https://wiki.openstreetmap.org/wiki/PBF_Format).
 
-You need at least version 1.5.1.
+You need at least version 1.6.3.
 
 Up to version 2.13 a copy of this library was included in the libosmium
 repository. For newer version you need to install either a packaged version or
@@ -93,7 +92,7 @@ a version from the git repository.
 * Debian/Ubuntu: `libprotozero-dev`
 * Fedora/CentOS: `protozero-devel`
 
-### Utfcpp
+### Utfcpp (until version 2.14.0)
 
 The [utf8-cpp](http://utfcpp.sourceforge.net/) library is needed for the OPL
 output format. A copy of this library is included in the libosmium repository
@@ -135,8 +134,8 @@ reading and writing OSM XML files.
 ### Boost >= 1.55
 
 [Boost](https://www.boost.org/) Iterator is used for Tag filters, and for the
-Object Pointer Collection. The CRC32 checksum implementatation from boost is
-needed for caclcuation checksums over OSM objects. Libosmium versions before
+Object Pointer Collection. The CRC32 checksum implementation from boost is
+needed for calculating checksums over OSM objects. Libosmium versions before
 2.6.1 also needed Boost for writing PBF files.
 
 You need at least Boost version 1.55.
@@ -151,7 +150,9 @@ You need at least Boost version 1.55.
 ### Google Sparsehash
 
 Google Sparsehash (https://github.com/sparsehash/sparsehash) is needed for
-the `sparse-mem-table` index map, often used as a node location store.
+the `sparse-mem-table` index map, sometimes used as a node location store.
+This isn't usually needed any more, because there are better implementations
+for the node location store available.
 
 * Debian/Ubuntu: `libsparsehash-dev`
 * Fedora/CentOS: `sparsehash-devel`
@@ -215,6 +216,14 @@ project OSM coordinates into spatial reference systems other than Web Mercator
 * Fedora/CentOS: `proj-devel`, `proj-epsg`
 * openSUSE: `libproj-devel`, `proj`
 
+### LZ4 (from 2.16.0)
+
+The [LZ4](https://lz4.github.io/lz4/) library is needed if you want to use
+LZ4 compression in PBF files. This is an optional feature available from
+libosmium version 2.16.0.
+
+* Debian/Ubuntu: `liblz4-dev`
+
 ### Doxygen
 
 The Libosmium API documentation can be built using
@@ -230,7 +239,7 @@ yourself, you need [Graphviz](https://www.graphviz.org/) in addition to Doxygen.
 
 ## Installing dependencies on some Linux systems
 
-### Debian Jessie
+### Debian Jessie and newer
 
 You can install all dependencies with:
 
@@ -246,31 +255,7 @@ apt-get install -q -y \
     libexpat1-dev \
     libgdal-dev \
     libgeos++-dev \
-    libproj-dev \
-    libsparsehash-dev \
-    make \
-    ruby \
-    ruby-json \
-    spatialite-bin \
-    zlib1g-dev
-```
-
-### Ubuntu Trusty (14.04)
-
-You can install all dependencies with:
-
-``` sh
-apt-get install -q -y \
-    cmake \
-    doxygen \
-    g++ \
-    git \
-    graphviz \
-    libboost-dev \
-    libbz2-dev \
-    libexpat1-dev \
-    libgdal-dev \
-    libgeos++-dev \
+    liblz4-dev \
     libproj-dev \
     libsparsehash-dev \
     make \
