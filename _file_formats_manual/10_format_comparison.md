@@ -16,10 +16,12 @@ But sometimes you can decide. Here are some guidelines:
   writing is fast in Osmium, because it uses multithreading. The only drawback
   is that you can't easily look inside those files because of the binary
   format.
-* You can disable compression (option `pbf_compression=none`) on PBF files
-  which makes them larger but faster to read. This might make sense if you
-  will read those files very often and aren't concerned about disk usage. You
-  have to experiment.
+* You can use LZ4 compression (option `pbf_compression=lz4`) on PBF files or
+  disable compression altogether (option `pbf_compression=none`) which makes
+  them larger but faster to read. This might make sense if you will read those
+  files very often and aren't concerned about disk usage. You have to
+  experiment. Note that most other PBF-reading programs will not support the
+  LZ4 compression.
 * The OSM API uses the XML format, so if you interact with that API, you'll
   want to use XML. Also OSM change files only come in XML format, so most
   software can only use them in that format.

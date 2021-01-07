@@ -156,16 +156,17 @@ description, even if the file name has the correct suffix.
 
 Here is a list of optional settings currently supported:
 
-| Format        | Option               | Default | Description
-| ------        | ------               | ------- | -----------
-| PBF           | `pbf_dense_nodes`    | true    | Use DenseNodes (more space efficient)
-| PBF           | `pbf_compression`    | gzip    | Compress blocks using gzip (use "none" to disable)
-| XML           | `xml_change_format`  | false   | Set change format, can also be set by using `osc` instead of `osm` suffix
-| XML           | `force_visible_flag` | false   | Write out `visible` flag on each object, also set if `osh` instead of `osm` suffix used
-| *all*         | `add_metadata`       | true    | *see below*
-| PBF, XML, OPL | `locations_on_ways`  | false   | Add node locations to way nodes (libosmium-specific extension)
-| DEBUG         | `use_color`          | false   | Output with ANSI colors
-| DEBUG         | `add_crc32`          | false   | Add CRC32 checksum to all objects
+| Format        | Option                  | Default | Description
+| ------        | ------                  | ------- | -----------
+| PBF           | `pbf_dense_nodes`       | true    | Use DenseNodes (more space efficient)
+| PBF           | `pbf_compression`       | zlib    | Compression for PBF blocks (`none`, `zlib`, `lz4`)
+| PBF           | `pbf_compression_level` |         | Compression level for PBF blobs
+| XML           | `xml_change_format`     | false   | Set change format, can also be set by using `osc` instead of `osm` suffix
+| XML           | `force_visible_flag`    | false   | Write out `visible` flag on each object, also set if `osh` instead of `osm` suffix used
+| *all*         | `add_metadata`          | true    | *see below*
+| PBF, XML, OPL | `locations_on_ways`     | false   | Add node locations to way nodes (libosmium-specific extension)
+| DEBUG         | `use_color`             | false   | Output with ANSI colors
+| DEBUG         | `add_crc32`             | false   | Add CRC32 checksum to all objects
 
 ### Writing metadata on OSM objects (`add_metadata`)
 
