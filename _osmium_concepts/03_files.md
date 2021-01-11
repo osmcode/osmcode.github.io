@@ -34,7 +34,7 @@ Osmium will fork and execute `curl` to get the file for you. This happens
 transparently and will work for all programs using Osmium.
 
 On Windows this feature is not available. You need to have
-[curl](https://curl.haxx.se/) installed on your system.
+[curl](https://curl.se/) installed on your system.
 
 Note that if there is an error during download, Osmium might not be able to
 detect it. So use caution if you use this feature.
