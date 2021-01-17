@@ -3,12 +3,13 @@ chapter: 1
 title: Introduction
 ---
 
-*This format is preliminary, it might change. Please send feedback if you use
-this format!*
-
 The OPL ("Object Per Line") format was created to allow easy access to and
-manipulation of OSM data with typical UNIX command line tools such as `grep`,
-`sed`, and `awk`. Each object is on its own line with a linefeed at the end.
+manipulation of OpenStreetMap data with typical UNIX command line tools such as
+`grep`, `sed`, and `awk`, or typical scripting languages such as Python, Ruby
+or Perl. It is also great for writing compact test cases.
+
+In an OPL file each OSM object is on its own line with a newline character at
+the end. Each line contains fields separated by spaces.
 
 This makes some ad-hoc OSM data manipulation easy to do, but it is not as fast
 as some specialized tool.

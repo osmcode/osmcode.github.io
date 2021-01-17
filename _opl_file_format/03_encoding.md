@@ -30,7 +30,7 @@ character. Any characters that have special meaning in OPL files (space,
 newline, ',' (comma), '=' (equals), '@', and '%') have to be escaped as well as
 any non-printing characters.
 
-Escaped characters are written as `%xxxx%`, ie a percent sign followed by the
+Escaped characters are written as `%xxxx%`, i.e. a percent sign followed by the
 hex code of the Unicode code point followed by another percent sign. The
 number of digits in the hex code is not fixed, but must be between 1 and 6,
 because all Unicode code points can be expressed in not more than 6 hex digits.
@@ -58,6 +58,9 @@ commas (`,`). Any equal sign or comma in the key or value is escaped.
 ## Nodes in ways
 
 Nodes in ways are written as a comma-separated list of `n`_ID_ combinations.
+
+Optionally node locations can also appear in the node list in ways. In this
+case they are encoded as `n`_ID_`x`_LON_`y`_LAT_.
 
 
 ## Relation members
