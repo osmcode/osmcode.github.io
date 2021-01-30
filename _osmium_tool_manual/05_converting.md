@@ -37,12 +37,12 @@ this:
 The output file will not have the `version`, `timestamp`, etc. fields and so
 it is much more compact than the usual XML format.
 
-As you can see you can add the options to the format separated by commas,
+As you can see, you can add the options to the format separated by commas,
 multiple options are possible. Some options are available for several or all
 formats (`add_metadata` for instance), others are specific to one of the
 formats, `pbf_dense_nodes` for instance only works on the PBF format. Note
 that unknown options are silently ignored, so if you mistype an option, you
-will not get an error message.
+will not get an error message!
 
 See the
 [osmium-file-formats](https://docs.osmcode.org/osmium/latest/osmium-file-formats.html)
@@ -53,7 +53,7 @@ libosmium-based programs will understand them in the same fashion.
 While playing around with the command you might have noticed an error
 message like `Open failed for 'output.osm.bz2': File exists`. By default
 Osmium will not overwrite an existing file. This is a safety measure to
-keep you from accidentally deleting that 30GB planet file, that took you
+keep you from accidentally deleting that 60GB planet file, that took you
 all day to download. With the `-O` or `--overwrite` option you can disable
 this check.
 

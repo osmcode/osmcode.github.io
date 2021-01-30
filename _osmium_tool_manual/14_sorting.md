@@ -21,7 +21,9 @@ Sorting a file is easy:
 Note that `osmium sort` reads the contents of the input file into main memory.
 This will take roughly 10 times as much memory as the files take on disk in
 .osm.bz2 or osm.pbf format. So this command is only useful for smaller OSM
-files.
+files. See the `--strategy` option in the [man
+page](https://docs.osmcode.org/osmium/latest/osmium-sort.html) for a way of
+saving some memory.
 
 Osmium `sort` will work correctly on history and change files.
 

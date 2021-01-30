@@ -22,16 +22,18 @@ This will show you something like the following:
       Name: liechtenstein-latest.osm.pbf
       Format: PBF
       Compression: none
-      Size: 1532846
+      Size: 2397841
     Header:
       Bounding boxes:
-        (9.47108,47.0477,9.63622,47.2713)
+          (9.471078,47.04774,9.636217,47.27128)
       With history: no
       Options:
-        generator=Osmium/1.8.0
-        osmosis_replication_timestamp=2016-04-12T19:14:02Z
+        generator=osmium/1.8.0
+        osmosis_replication_base_url=http://download.geofabrik.de/europe/liechtenstein-updates
+        osmosis_replication_sequence_number=2866
+        osmosis_replication_timestamp=2021-01-29T21:41:04Z
         pbf_dense_nodes=true
-        timestamp=2016-04-12T19:14:02Z
+        timestamp=2021-01-29T21:41:04Z
 
 The `File` section contains the information gleaned from the file system,
 the `Header` section contains, as the name implies, the information from the
@@ -46,32 +48,44 @@ gives you a lot more information:
       Name: liechtenstein-latest.osm.pbf
       Format: PBF
       Compression: none
-      Size: 1532846
+      Size: 2397841
     Header:
       Bounding boxes:
-        (9.47108,47.0477,9.63622,47.2713)
+        (9.471078,47.04774,9.636217,47.27128)
       With history: no
       Options:
-        generator=Osmium/1.8.0
-        osmosis_replication_timestamp=2016-04-12T19:14:02Z
+        generator=osmium/1.8.0
+        osmosis_replication_base_url=http://download.geofabrik.de/europe/liechtenstein-updates
+        osmosis_replication_sequence_number=2866
+        osmosis_replication_timestamp=2021-01-29T21:41:04Z
         pbf_dense_nodes=true
-        timestamp=2016-04-12T19:14:02Z
+        timestamp=2021-01-29T21:41:04Z
     Data:
-      Bounding box: (9.39778,46.9688,9.67146,47.5258)
+      Bounding box: (8.8331793,46.9688169,9.6717077,47.5258072)
       Timestamps:
         First: 2007-06-19T06:25:12Z
-        Last: 2016-04-11T07:49:32Z
+        Last: 2021-01-29T20:29:57Z
       Objects ordered (by type and id): yes
       Multiple versions of same object: no
-      CRC32: 727f1abf
+      CRC32: not calculated (use --crc/-c to enable)
       Number of changesets: 0
-      Number of nodes: 168683
-      Number of ways: 18784
-      Number of relations: 374
+      Number of nodes: 270019
+      Number of ways: 27962
+      Number of relations: 853
+      Smallest changeset ID: 0
+      Smallest node ID: 26032956
+      Smallest way ID: 4781367
+      Smallest relation ID: 8497
       Largest changeset ID: 0
-      Largest node ID: 4112691184
-      Largest way ID: 409348773
-      Largest relation ID: 6122095
+      Largest node ID: 8376540565
+      Largest way ID: 899612122
+      Largest relation ID: 12192313
+      Number of buffers: 402 (avg 743 objects per buffer)
+      Sum of buffer sizes: 25005184 (0.025 GB)
+      Sum of buffer capacities: 26345472 (0.026 GB, 95% full)
+    Metadata:
+      All objects have following metadata attributes: version+timestamp
+      Some objects have following metadata attributes: version+timestamp
 
 Sometimes your are only interested in a specific piece of information from this
 list. Use the `-g`, `--get` option to ask for it. For instance to get the last
@@ -81,7 +95,7 @@ timestamp used:
 
 This will result in just the timestamp:
 
-    2016-04-11T07:49:32Z
+    2021-01-29T20:29:57Z
 
 This format makes it easy to use the output in other shell commands. To put the
 CRC32 checkum into the `checksum` shell variable you can use the following

@@ -21,7 +21,7 @@ Packages called `osmium-tool` are available for Debian and Ubuntu systems.
 (Do not install the `osmium` package, it is a very old version of the Osmium
 library.) Depending on your system, the packages might be rather old. Debian
 unstable and testing are tracking the development of Osmium closely. For
-Jessie those new packages are available in the
+Debian Stable those new packages are available in the
 [backports repository](https://backports.debian.org/Instructions/).
 
 
