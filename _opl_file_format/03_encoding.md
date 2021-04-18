@@ -35,6 +35,9 @@ hex code of the Unicode code point followed by another percent sign. The
 number of digits in the hex code is not fixed, but must be between 1 and 6,
 because all Unicode code points can be expressed in not more than 6 hex digits.
 
+Do not use two percent characters directly after another `%%`, the result is
+currently not defined.
+
 Any code reading OPL files has to cope with encoded and non-encoded characters
 (except that characters used in the OPL file with special meaning will always
 be encoded).
