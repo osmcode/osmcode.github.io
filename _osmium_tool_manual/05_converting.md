@@ -70,7 +70,7 @@ There is one additional option of the `osmium cat` command that often comes
 handy. With `-t TYPE` it can be instructed to only copy objects of the given
 type. So
 
-    osmium input.osm.pbf -t node -o output.osm.pbf
+    osmium cat input.osm.pbf -t node -o output.osm.pbf
 
 will only copy the nodes, not the ways, or relations.
 
