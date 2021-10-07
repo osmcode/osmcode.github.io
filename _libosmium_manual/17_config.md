@@ -43,3 +43,16 @@ means that the work can't be parallelized as effectively.
 The minimum value for all queue sizes is 2. When set to 0, the default is
 used.
 
+## `OSMIUM_CLEAN_PAGE_CACHE_AFTER_READ`
+
+Since 2.17.0 Osmium will, when reading files, tell the kernel using `fadvise`
+that it can remove pages from the buffer cache that are not needed any more.
+This is usually beneficial, because the memory can be used for something else.
+But if you are reading the same OSM file multiple times at the same time or in
+short succession, it might be better to keep those buffer pages.
+
+Since 2.17.1 you can set the environment variable
+`OSMIUM_CLEAN_PAGE_CACHE_AFTER_READ` to `no` and Osmium will not call
+`fadvise`. Set it to `yes` or anything else (or not set it at all) to get the
+default behaviour.
+
