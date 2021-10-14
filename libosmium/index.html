@@ -14,12 +14,12 @@ js: $(function() { update_doc_refs('libosmium'); });
 
 <p>The Osmium Library has extensive support for all types of OSM entities:
 nodes, ways, relations, and changesets. It allows reading from and writing to
-OSM files in XML and PBF formats, including change files and full history
-files. Osmium can store OSM data in memory and on disk in various formats and
-using various indexes. Its easy to use <i>handler</i> interface allows you to
-quickly write data filtering and conversion functions. Osmium can create WKT,
-WKB, OGR, GEOS and GeoJSON geometries for easy conversion into many GIS
-formats and it can assemble multipolygons from ways and relations.</p>
+OSM files in XML, PBF, and several other formats, including change files and
+full history files. Osmium can store OSM data in memory and on disk in various
+formats and using various indexes. Its easy to use <i>handler</i> interface
+allows you to quickly write data filtering and conversion functions. Osmium can
+create WKT, WKB, OGR, GEOS and GeoJSON geometries for easy conversion into many
+GIS formats and it can assemble multipolygons from ways and relations.</p>
 
 
 <h2>Code</h2>
@@ -34,19 +34,26 @@ formats and it can assemble multipolygons from ways and relations.</p>
 <a href="https://github.com/osmcode/libosmium/blob/master/README.md">README</a>.
 For more detailed information look at the <a href="manual.html">manual</a>.</p>
 
+<p>The reference documentation contains all the details. It is available for
+several versions:</p>
+
+<ul id="source-code-reference">
+    <li><a target="_blank" href="https://docs.osmcode.org/libosmium/latest/">latest</a> (latest released version)</li>
+    <li><a target="_blank" href="https://docs.osmcode.org/libosmium/master/">master</a> (development version)</li>
+</ul>
 
 <h2>Download</h2>
 
 <p>Current and past releases can be downloaded from
 <a href="https://github.com/osmcode/libosmium/releases">GitHub</a>.</p>
 
-<p>Packages are available for several Linux distributions and OS/X:</p>
+<p>Packages are available for several Linux distributions and macOS:</p>
 
 <ul>
-    <li><a href="https://packages.debian.org/source/sid/libosmium">Debian</a> (including backports)</li>
+    <li><a href="https://packages.debian.org/source/libosmium">Debian/Ubuntu</a> (including Debian backports)</li>
     <li><a href="https://src.fedoraproject.org/rpms/libosmium">Fedora</a></li>
     <li><a href="https://aur.archlinux.org/packages/libosmium/">Archlinux</a></li>
-    <li><a href="https://formulae.brew.sh/formula/libosmium">OS/X (Homebrew)</a></li>
+    <li><a href="https://formulae.brew.sh/formula/libosmium">macOS (Homebrew)</a></li>
 </ul>
 
 <a href="https://repology.org/project/libosmium/versions"><img src="https://repology.org/badge/tiny-repos/libosmium.svg" alt="Packaging status"/></a>
@@ -55,11 +62,4 @@ For more detailed information look at the <a href="manual.html">manual</a>.</p>
 
 <p>The Osmium Library is available under the very liberal
 <a href="https://www.boost.org/LICENSE_1_0.txt">Boost Software License</a>.</p>
-
-
-<h2>The "Old" Osmium</h2>
-
-<p>An old version of the Osmium library has been around for years, but it is
-now in maintainance mode, ie no new features will be added. You can find it
-at <a href="https://github.com/joto/osmium">github.com/joto/osmium</a>.</p>
 

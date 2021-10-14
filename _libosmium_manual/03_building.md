@@ -14,7 +14,7 @@ Before building you need to install all the [dependencies](#dependencies).
 
 Libosmium uses the [CMake](https://cmake.org/) configuration system
 available on all major platforms. CMake will generate a configuration for a
-build system of your choice. On Linux and Mac OS/X this is usually GNU Make, on
+build system of your choice. On Linux and macOS this is usually GNU Make, on
 Windows Nmake or MSBuild.
 
 
@@ -62,7 +62,7 @@ etc.
 | `BUILD_TESTING` | `ON` | Build the unit tests. See chapter [Running Tests](#running-tests) for details.
 
 
-## Building on Linux and Mac OS/X
+## Building on Linux and macOS
 
 Linux: Osmium is developed on Linux and tested best on that system. Debian
 Jessie (testing) and current Ubuntu systems come with everything needed for
