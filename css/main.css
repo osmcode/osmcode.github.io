@@ -201,6 +201,17 @@ div.sponsoring {
     border-top: 1px solid #c0c0c0;
 }
 
+div.sponsorlist {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+div.sponsorlist div {
+    padding: 4px 40px 4px 0;
+    margin: auto 0;
+}
+
 .box {
     display: block;
     padding: 6px 8px 6px 48px;
