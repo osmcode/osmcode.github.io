@@ -45,7 +45,7 @@ h3 {
 /*
 /*****************************************************************************/
 
-#content {
+main {
     position: relative;
     margin: 0 auto;
     max-width: 910px;
@@ -66,7 +66,8 @@ h3 {
 }
 
 #menu {
-    background-color: rgba(32, 32, 96, 0.5);
+   /* background-color: rgba(32, 32, 96, 0.5);*/
+    background-color: #202060;
     text-align: center;
     font-size: 90%;
 }
@@ -176,41 +177,67 @@ span#githublink {
 
 /*****************************************************************************/
 
-@media all and (min-width: 910px) and (min-device-width: 910px) {
-    div.major h3 {
-        font-size: 160%;
-        margin: 8px 0;
-    }
+div.major-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
 
-    div.major-bottom {
-        top: 30em;
-    }
+div.major-projects div {
+}
 
-    div.leftcolumn {
-        position: absolute;
-        max-width: 420px;
-        float: left;
-    }
+div.other-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 20px;
+    padding-top: 16px;
+}
 
-    div.rightcolumn {
-        position: absolute;
-        max-width: 420px;
-        left: 480px;
-    }
+div.sponsoring {
+    border-top: 1px solid #c0c0c0;
+}
 
-    div.other-projects {
-        border-top: 1px dotted #c0c0c0;
-        position: absolute;
-        padding: 20px 0 0 0;
-        top: 42em;
-    }
+.box {
+    display: block;
+    padding: 6px 8px 6px 48px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #f8f8f0;
+}
 
-    div.other-projects h2 {
-        text-align: center;
-        font-variant: small-caps;
-        margin: 0;
-        padding: 6px 0;
-    }
+.box img {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 4px;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box:hover {
+    background-color: #ffffff;
+}
+
+.box:hover h3 {
+    text-decoration: underline;
+}
+
+div.other-projects .box {
+    padding: 8px 8px 8px 38px;
+}
+
+div.other-projects .box img {
+    margin-left: -24px;
+    margin-top: 0px;
+}
+
+div.other-projects .box h3 {
+    margin: 0 0 4px 0;
 }
 
 /*****************************************************************************/
@@ -234,10 +261,6 @@ div.impressum {
     text-decoration: none;
 }
 
-div.major .desc:hover, div.other-projects .desc:hover {
-    background-color: #ffffff;
-}
-
 .desc img {
     position: absolute;
     margin-left: -40px;
@@ -259,22 +282,6 @@ div.major .desc:hover, div.other-projects .desc:hover {
 
 .desc p {
     margin: 1px 0 0 40px;
-}
-
-div.other-projects .desc {
-    margin: 0px 0 14px 0px;
-    padding: 8px 8px 8px 38px;
-    width: 20em;
-    float: left;
-}
-
-div.other-projects .desc img {
-    margin-left: -24px;
-    margin-top: 0px;
-}
-
-div.other-projects .desc h3 {
-    margin: 0 0 4px 0;
 }
 
 /*****************************************************************************/
@@ -332,6 +339,9 @@ div.other-projects .desc h3 {
 @media all and (min-width: 600px) and (min-device-width: 600px) {
     #osmcode div.subtitle {
         margin-left: 205px;
+    }
+    #osmcode div.subtitle {
+        font-size: 150%;
     }
 }
 
