@@ -1,5 +1,5 @@
 name: osmcode
-gems:
+plugins:
     - jekyll-redirect-from
 collections:
     - file_formats_manual
