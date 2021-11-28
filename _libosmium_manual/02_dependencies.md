@@ -54,6 +54,54 @@ CMake usually generates a Makefile for Make, which you will also need.
 * Fedora/CentOS: `cmake`, `make`
 * openSUSE: `cmake`, `make`
 
+### Expat
+
+[Expat](https://libexpat.github.io/) is needed for parsing OSM XML files.
+
+* Debian/Ubuntu: `libexpat1-dev`
+* Fedora/CentOS: `expat-devel`
+* openSUSE: `libexpat-devel`
+* Homebrew: `expat`
+
+### ZLib
+
+[zlib](https://www.zlib.net/) is needed for reading and writing OSM PBF files
+and for GZip support when reading and writing XML files.
+
+* Debian/Ubuntu: `zlib1g-dev`
+* Fedora/CentOS: `zlib-devel`
+* openSUSE: `zlib-devel`
+
+### bz2lib
+
+[bz2lib](https://www.sourceware.org/bzip2/) is needed for BZip2 support when
+reading and writing OSM XML files.
+
+* Debian/Ubuntu: `libbz2-dev`
+* Fedora/CentOS: `bzip2-devel`
+* openSUSE: `libbz2-devel`
+
+### Boost >= 1.55
+
+[Boost](https://www.boost.org/) is used for some (limited) functionality
+in libosmium. Many programs using libosmium will not actually need boost
+or only need parts of it.
+
+* Boost Iterator is used for Tag filters, and for the Object Pointer Collection.
+  (needed until libosmium 2.17)
+* The CRC32 checksum implementation from boost can be used for calculating
+  checksums over OSM objects. The implementation in zlib is used otherwise.
+* Libosmium versions before 2.6.1 needed Boost for writing PBF files.
+* Libosmium from version 2.12.0 uses boost::variant in the osmium::StringMatcher
+  class.
+
+You need at least Boost version 1.55.
+
+* Debian/Ubuntu: `libboost-dev`
+* Fedora/CentOS: `boost-devel`
+* openSUSE: `boost-devel`
+* Homebrew: `boost`
+
 ### Google Protocol Buffers (until version 2.2)
 
 _Not needed any more from version 2.3.0 onwards_
@@ -94,6 +142,8 @@ a version from the git repository.
 
 ### Utfcpp (until version 2.14.0)
 
+_Not needed any more from version 2.15.0 onwards_
+
 The [utf8-cpp](http://utfcpp.sourceforge.net/) library is needed for the OPL
 output format. A copy of this library is included in the libosmium repository
 but not installed by default. Either use the packages of your distribution,
@@ -104,52 +154,11 @@ CMake configuration to install the bundled version.
 * Fedora/CentOS: `utf8cpp-devel`
 * openSUSE: `utfcpp`
 
-### Expat
-
-[Expat](https://libexpat.github.io/) is needed for parsing OSM XML files.
-
-* Debian/Ubuntu: `libexpat1-dev`
-* Fedora/CentOS: `expat-devel`
-* openSUSE: `libexpat-devel`
-* Homebrew: `expat`
-
-### ZLib
-
-[zlib](https://www.zlib.net/) is needed for reading and writing OSM PBF files
-and for GZip support when reading and writing XML files.
-
-* Debian/Ubuntu: `zlib1g-dev`
-* Fedora/CentOS: `zlib-devel`
-* openSUSE: `zlib-devel`
-
-### bz2lib
-
-[bz2lib](https://www.sourceware.org/bzip2/) is needed for BZip2 support when
-reading and writing OSM XML files.
-
-* Debian/Ubuntu: `libbz2-dev`
-* Fedora/CentOS: `bzip2-devel`
-* openSUSE: `libbz2-devel`
-
-### Boost >= 1.55
-
-[Boost](https://www.boost.org/) Iterator is used for Tag filters, and for the
-Object Pointer Collection. The CRC32 checksum implementation from boost is
-needed for calculating checksums over OSM objects. Libosmium versions before
-2.6.1 also needed Boost for writing PBF files.
-
-You need at least Boost version 1.55.
-
-* Debian/Ubuntu: `libboost-dev`
-* Fedora/CentOS: `boost-devel`
-* openSUSE: `boost-devel`
-* Homebrew: `boost`
-
 ## _Extra_ dependencies
 
-### Google Sparsehash
+### Google Sparsehash (deprecated)
 
-Google Sparsehash (https://github.com/sparsehash/sparsehash) is needed for
+Google Sparsehash (https://github.com/sparsehash/sparsehash) is used for
 the `sparse-mem-table` index map, sometimes used as a node location store.
 This isn't usually needed any more, because there are better implementations
 for the node location store available.
@@ -212,6 +221,10 @@ The [Proj.4](https://proj4.org/) library is needed if you want to
 project OSM coordinates into spatial reference systems other than Web Mercator
 (EPSG 3857, often named Google Mercator).
 
+Only the old `proj_api.h` based API is supported. If you need this to work
+with newer versions of Proj.4, have a look at https://github.com/osmcode/osmium-proj
+for some untested experimental code.
+
 * Debian/Ubuntu: `libproj-dev`
 * Fedora/CentOS: `proj-devel`, `proj-epsg`
 * openSUSE: `libproj-devel`, `proj`
@@ -239,7 +252,7 @@ yourself, you need [Graphviz](https://www.graphviz.org/) in addition to Doxygen.
 
 ## Installing dependencies on some Linux systems
 
-### Debian Jessie and newer
+### Debian Stretch, Buster, Bullseye or newer
 
 You can install all dependencies with:
 
@@ -257,7 +270,6 @@ apt-get install -q -y \
     libgeos++-dev \
     liblz4-dev \
     libproj-dev \
-    libsparsehash-dev \
     make \
     ruby \
     ruby-json \
@@ -265,7 +277,7 @@ apt-get install -q -y \
     zlib1g-dev
 ```
 
-### Ubuntu Xenial (16.04)
+### Ubuntu 18.04 or newer
 
 You can install all dependencies with:
 
@@ -281,8 +293,8 @@ apt-get install -q -y \
     libexpat1-dev \
     libgdal-dev \
     libgeos++-dev \
+    liblz4-dev \
     libproj-dev \
-    libsparsehash-dev \
     make \
     ruby \
     ruby-json \
@@ -290,7 +302,7 @@ apt-get install -q -y \
     zlib1g-dev
 ```
 
-### Fedora 26
+### Fedora
 
 You can install all dependencies with:
 
@@ -303,15 +315,15 @@ dnf install --quiet --assumeyes \
     expat-devel \
     gcc-c++ \
     gdal-devel \
+    gdalcpp-static \
     geos-devel \
     git \
     graphviz \
+    lz4-devel \
     make \
     proj-devel \
-    proj-epsg \
     ruby \
     rubygem-json \
-    sparsehash-devel \
     spatialite-tools \
     zlib-devel
 ```
@@ -335,7 +347,6 @@ zypper --non-interactive --no-color install \
     proj \
     ruby2.3 \
     ruby2.3-rubygem-json \
-    sparsehash-devel \
     zlib-devel
 ```
 
@@ -350,6 +361,6 @@ sudo pacman -Suy protobuf boost-libs zlib expat cmake make bzip2
 and all extra dependencies with:
 
 ``` sh
-sudo pacman -Suy sparsehash boost gdal proj doxygen
+sudo pacman -Suy boost gdal proj doxygen
 ```
 

@@ -152,6 +152,7 @@ This is mostly due to the 64 bit needed for node IDs. Also Osmium hasn't been
 tested well on 32 bit systems. Here are some issues you might run into:
 
 * Google Sparsehash does not work on 32 bit machines in our use case.
+  Support for it is deprecated and will be removed in a future version.
 * The `mmap` system call is called with a `size_t` argument, so it can't
   give you more than 4GByte of memory on 32 bit systems. This might be a
   problem.

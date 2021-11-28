@@ -83,7 +83,7 @@ find_package(Osmium REQUIRED COMPONENTS io gdal)
 * `io`         - include libraries needed for any type of input/output
 * `gdal`       - include if you want to use any of the OGR functions
 * `proj`       - include if you want to use any of the Proj.4 functions
-* `sparsehash` - include if you use the sparsehash index map (`sparse_mem_table`)
+* `sparsehash` - include if you use the sparsehash index map (`sparse_mem_table`), deprecated
 
 After that add the include directories:
 
