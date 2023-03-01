@@ -106,8 +106,8 @@ You need at least Boost version 1.55.
 
 _Not needed any more from version 2.3.0 onwards_
 
-[Google Protocol Buffers](https://developers.google.com/protocol-buffers/) in
-at least version 2.4.0 is needed for reading and writing [OSM PBF
+[Google Protocol Buffers](https://protobuf.dev/) in at least version 2.4.0 is
+needed for reading and writing [OSM PBF
 files](https://wiki.openstreetmap.org/wiki/PBF_Format).
 
 * Debian/Ubuntu: `libprotobuf-dev`, `protobuf-compiler`
@@ -144,7 +144,7 @@ a version from the git repository.
 
 _Not needed any more from version 2.15.0 onwards_
 
-The [utf8-cpp](http://utfcpp.sourceforge.net/) library is needed for the OPL
+The [utf8-cpp](https://utfcpp.sourceforge.net/) library is needed for the OPL
 output format. A copy of this library is included in the libosmium repository
 but not installed by default. Either use the packages of your distribution,
 install it from the source, or use the `INSTALL_UTFCPP` option of the libosmium

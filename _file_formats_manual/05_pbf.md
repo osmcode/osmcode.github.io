@@ -4,7 +4,7 @@ title: PBF Format
 ---
 
 The [PBF](https://wiki.openstreetmap.org/wiki/PBF_Format) file format is based
-on the [Google Protocol Buffers](https://developers.google.com/protocol-buffers/).
+on the [Google Protocol Buffers](https://protobuf.dev/).
 PBF files are very space efficient and faster to use than XML files. PBF files
 can contain normal OSM data or OSM history data, but there is no equivalent to
 the XML .osc format.

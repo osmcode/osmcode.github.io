@@ -194,7 +194,7 @@ with `INSTALL_PROTOZERO`. Newer versions of libosmium don't include this any
 more.)
 
 (Libosmium versions 2.14.0 and before also included
-[utfcpp](http://utfcpp.sourceforge.net/) which could be included
+[utfcpp](https://utfcpp.sourceforge.net/) which could be included
 with `INSTALL_UTFCPP`. Newer versions of libosmium don't include this any
 more.)
 
