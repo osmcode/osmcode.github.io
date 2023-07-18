@@ -79,7 +79,7 @@ osmium::Location location{9.3, 49.7};
 or using integers:
 
 ``` c++
-osmium::Location location{9300000000, 49700000000};
+osmium::Location location{93000000, 497000000};
 ```
 
 Make sure you are using the right number type or you will get very
