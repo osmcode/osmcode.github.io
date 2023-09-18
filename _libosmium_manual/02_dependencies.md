@@ -231,7 +231,7 @@ for some untested experimental code.
 
 ### LZ4 (from 2.16.0)
 
-The [LZ4](https://lz4.github.io/lz4/) library is needed if you want to use
+The [LZ4](https://lz4.org/) library is needed if you want to use
 LZ4 compression in PBF files. This is an optional feature available from
 libosmium version 2.16.0.
 

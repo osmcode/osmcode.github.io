@@ -33,5 +33,5 @@ Packages for several Fedora versions
 ### Archlinux
 
 Packages can be installed from [AUR](https://aur.archlinux.org/):
-[osmium-tool](https://aur.archlinux.org/packages/osmium-tool/)
+[osmium-tool](https://aur.archlinux.org/packages/osmium-tool)
 

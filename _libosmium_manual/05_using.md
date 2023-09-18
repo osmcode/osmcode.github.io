@@ -128,7 +128,7 @@ For version 2.3.0 and above you don't need much:
 * Include files: `osmium/io/any_input.hpp`, `osmium/io/any_output.hpp`, `osmium/io/pbf_input.hpp`, `osmium/io/pbf_output.hpp`
 
 If you want support for lz4 compression in PBF blobs, you also need the
-[LZ4 library](https://lz4.github.io/lz4/).
+[LZ4 library](https://lz4.org/).
 
 For versions up to 2.2 you need some more libraries:
 
