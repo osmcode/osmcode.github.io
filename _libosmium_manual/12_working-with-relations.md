@@ -206,7 +206,7 @@ int main(int argc, char* argv[]) {
     osmium::apply(reader, manager.handler());
 
     // Access data in output buffer
-    osmium::memory::Buffer = manager.read();
+    osmium::memory::Buffer buffer = manager.read();
     ...
 }
 ```
