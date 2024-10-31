@@ -15,8 +15,7 @@ js: $(function() { update_releases(); update_master(); });
     <tr>
         <th>Project</th>
         <th>Code on<br/>Github</th>
-        <th>Linux/OSX</th>
-        <th>Windows<br/>(<a href="https://www.appveyor.com/">Appveyor</a>)</th>
+        <th>CI</th>
         <th>Latest release</th>
         <th>Master<br/>Last commit</th>
         <th>Packaging<br/>(<a href="https://repology.org/">Repology</a>)</th>
@@ -27,7 +26,6 @@ js: $(function() { update_releases(); update_master(); });
         <td><img src="/img/logo-osmium-tool.svg" width="16" height="16"/> <a href="/osmium">osmium-tool</a></td>
         <td><a href="https://github.com/osmcode/osmium-tool">osmium-tool</a></td>
         <td><a href="https://github.com/osmcode/osmium-tool/actions"><img class="badge" src="https://github.com/osmcode/osmium-tool/workflows/CI/badge.svg?branch=master"/></a></td>
-        <td><a href="https://ci.appveyor.com/project/lonvia/osmium-tool/branch/master"><img class="badge" src="https://ci.appveyor.com/api/projects/status/k9v6et0o4baekrmi/branch/master?svg=true"/></a></td>
         <td class="release"></td>
         <td class="master"></td>
         <td><a href="https://repology.org/project/osmium-tool/versions"><img src="https://repology.org/badge/tiny-repos/osmium-tool.svg" alt="Packaging status"/></a></td>
@@ -36,7 +34,6 @@ js: $(function() { update_releases(); update_master(); });
         <td><img src="/img/logo-libosmium.svg" width="16" height="16"/> <a href="/libosmium">libosmium</a></td>
         <td><a href="https://github.com/osmcode/libosmium">libosmium</a></td>
         <td><a href="https://github.com/osmcode/libosmium/actions"><img class="badge" src="https://github.com/osmcode/libosmium/workflows/CI/badge.svg?branch=master"/></a></td>
-        <td><a href="https://ci.appveyor.com/project/lonvia/libosmium-eq41p/branch/master"><img class="badge" src="https://ci.appveyor.com/api/projects/status/yy099a4vxcb604rn/branch/master?svg=true"/></a></td>
         <td class="release"></td>
         <td class="master"></td>
         <td><a href="https://repology.org/project/libosmium/versions"><img src="https://repology.org/badge/tiny-repos/libosmium.svg" alt="Packaging status"/></a></td>
@@ -45,7 +42,6 @@ js: $(function() { update_releases(); update_master(); });
         <td><img src="/img/logo-pyosmium.svg" width="16" height="16"/> <a href="/pyosmium">pyosmium</a></td>
         <td><a href="https://github.com/osmcode/pyosmium">pyosmium</a></td>
         <td><a href="https://github.com/osmcode/pyosmium/actions"><img class="badge" src="https://github.com/osmcode/pyosmium/workflows/CI/badge.svg?branch=master"/></a></td>
-        <td>-</td>
         <td class="release"></td>
         <td class="master"></td>
         <td><a href="https://repology.org/project/pyosmium/versions"><img src="https://repology.org/badge/tiny-repos/pyosmium.svg" alt="Packaging status"/></a></td>
@@ -55,7 +51,6 @@ js: $(function() { update_releases(); update_master(); });
         <td><a href="https://github.com/osmcode/osm-area-tools">osm-area-tools</a></td>
         <td><a href="https://github.com/osmcode/osm-area-tools/actions"><img class="badge" src="https://github.com/osmcode/osm-area-tools/workflows/CI/badge.svg?branch=master"/></a></td>
         <td>-</td>
-        <td>-</td>
         <td class="master"></td>
         <td>-</td>
     </tr>
@@ -63,7 +58,6 @@ js: $(function() { update_releases(); update_master(); });
         <td><img src="/img/logo-osmcoastline.svg" width="16" height="16"/> <a href="/osmcoastline">osmcoastline</a></td>
         <td><a href="https://github.com/osmcode/osmcoastline">osmcoastline</a></td>
         <td><a href="https://github.com/osmcode/osmcoastline/actions"><img class="badge" src="https://github.com/osmcode/osmcoastline/workflows/CI/badge.svg?branch=master"/></a></td>
-        <td>-</td>
         <td class="release"></td>
         <td class="master"></td>
         <td><a href="https://repology.org/project/osmcoastline/versions"><img src="https://repology.org/badge/tiny-repos/osmcoastline.svg" alt="Packaging status"/></a></td>
@@ -73,7 +67,6 @@ js: $(function() { update_releases(); update_master(); });
         <td><a href="https://github.com/osmcode/osm-gis-export">osm-gis-export</a></td>
         <td><a href="https://github.com/osmcode/osm-gis-export/actions"><img class="badge" src="https://github.com/osmcode/osm-gis-export/workflows/CI/badge.svg?branch=master"/></a></td>
         <td>-</td>
-        <td>-</td>
         <td class="master"></td>
         <td>-</td>
     </tr>
@@ -81,7 +74,6 @@ js: $(function() { update_releases(); update_master(); });
         <td><img src="/img/logo-osmium-contrib.svg" width="16" height="16"/> <a href="/osmium-contrib">osmium-contrib</a></td>
         <td><a href="https://github.com/osmcode/osmium-contrib">osmium-contrib</a></td>
         <td><a href="https://github.com/osmcode/osmium-contrib/actions"><img class="badge" src="https://github.com/osmcode/osmium-contrib/workflows/CI/badge.svg?branch=master"/></a></td>
-        <td>-</td>
         <td>-</td>
         <td class="master"></td>
         <td>-</td>
@@ -91,10 +83,8 @@ js: $(function() { update_releases(); update_master(); });
         <td><a href="https://github.com/osmcode/osm-testdata">osm-testdata</a></td>
         <td><a href="https://github.com/osmcode/osm-testdata/actions"><img class="badge" src="https://github.com/osmcode/osm-testdata/workflows/CI/badge.svg?branch=master"/></a></td>
         <td>-</td>
-        <td>-</td>
         <td class="master"></td>
         <td>-</td>
     </tr>
     </tbody>
 </table>
-
