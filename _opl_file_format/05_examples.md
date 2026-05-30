@@ -37,11 +37,11 @@ Count how many objects were created in each hour of the day:
 
 Find all closed ways:
 
-    egrep '^w' data.osm.opl | egrep 'N(n[0-9]+),.*\1 '
+    egrep '^w' data.osm.opl | egrep 'N(n[0-9]+),.*\1'
 
 Find all ways tagged with `area=yes` that are not closed:
 
-    egrep '^w' data.osm.opl | egrep 'area=yes' | egrep -v 'N(n[0-9]+),.*\1 '
+    egrep '^w' data.osm.opl | egrep 'area=yes' | egrep -v 'N(n[0-9]+),.*\1'
 
 Find all users who have created post boxes:
 
